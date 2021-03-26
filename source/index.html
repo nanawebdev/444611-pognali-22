@@ -1,12 +1,389 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Погнали</title>
-  </head>
-  <body>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS. Адаптивная вёрстка и автоматизация</a>».</p>
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Погнали</title>
+</head>
 
-  </body>
+<body>
+  <header class="main-header">
+
+    <div class="logo-wrapper">
+      <!-- <img class="logo__image" src="" alt="logo"> -->
+      <span class="logo__title">Погнали</span>
+    </div>
+
+    <nav class="main-nav">
+      <button class="main-nav__toggle" type="button"></button>
+      <ul class="main-nav__site-list">
+        <li class="site-list__item">О сервисе</li>
+        <li class="site-list__item">Направление</li>
+        <li class="site-list__item">Попутчики</li>
+      </ul>
+    </nav>
+
+    <nav class="user-nav">
+      <ul class="contacts-list">
+        <li class="contacts-list__item">
+          <div class="action-wrapper">
+            <!-- <img class="action__icon" src="" alt="иконка"> -->
+            <a class="action__item">8 800 555-86-28</a>
+          </div>
+        </li>
+        <li class="contacts-list__item">
+          <div class="action-wrapper">
+            <!-- <img class="action__icon" src="" alt="иконка"> -->
+            <a class="action__item">mail@htmlacademy.ru</a>
+          </div>
+        </li>
+      </ul>
+      <button type="button" class="button">Авторизация</button>
+    </nav>
+
+    <ul class="socials-list">
+      <li class="socials-list__item">
+        <a class="socials-list__link">
+          <!-- <img class="socials-list__icon" src="" alt="иконка"> -->
+          <span class="visually-hidden">Facebook</span>
+        </a>
+      </li>
+      <li class="socials-list__item">
+        <a class="socials-list__link">
+          <!-- <img class="socials-list__icon" src="" alt="иконка"> -->
+          <span class="visually-hidden">VK</span>
+        </a>
+      </li>
+      <li class="socials-list__item">
+        <a class="socials-list__link">
+          <!-- <img class="socials-list__icon" src="" alt="иконка"> -->
+          <span class="visually-hidden">Instagram</span>
+        </a>
+      </li>
+    </ul>
+
+  </header>
+
+  <main class="main">
+
+    <section class="promo">
+      <h3 class="visually-hidden">Промо блок</h3>
+      <p class="promo__title">
+        В путешествие с крутыми попутчиками!
+      </p>
+
+      <ul class="contacts-list">
+        <li class="contacts-list__item">
+          <div class="action-wrapper">
+            <!-- <img class="action__icon" src="" alt="иконка"> -->
+            <a class="action__item">8 800 555-86-28</a>
+          </div>
+        </li>
+        <li class="contacts-list__item">
+          <div class="action-wrapper">
+            <!-- <img class="action__icon" src="" alt="иконка"> -->
+            <a class="action__item">mail@htmlacademy.ru</a>
+          </div>
+        </li>
+      </ul>
+
+      <blockquote class="blockquote">
+        <p>«Лучшее приложение, что я видел в жизни!»</p>
+        <div class="blockquote__author">
+          <cite class="author__name">Мурат Эльтазин</cite>
+          <span class="author__info">главный редактор газеты «гаджетлайф»</span>
+        </div>
+      </blockquote>
+
+      <ul class="steps-list">
+        <li class="steps-list__item">
+          Выберите направление
+        </li>
+        <li class="steps-list__item">
+          Изучите идеи путешественников
+        </li>
+        <li class="steps-list__item">
+          Находите тех, кто похож на вас
+        </li>
+        <li class="steps-list__item">
+          Путешествуйте вместе!
+        </li>
+      </ul>
+    </section>
+
+    <section class="about">
+      <h3 class="visually-hidden">Информация</h3>
+      <section class="about__service">
+        <h3 class="about__title">О сервисе</h3>
+        <p class="about__text">Любое путешествие веселее
+          с попутчиками, которые на одной волне с тобой! Делитесь своими идеями путешествий и черпайте вдохновение в
+          чужих.
+        </p>
+        <p class="about__text">А если найдете кого-то
+          близкого по духу — скорее
+          зовите в совместный трип!</p>
+        <button type="button" class="button">Подробнее</button>
+      </section>
+
+      <section class="about__directions">
+        <h3 class="about__title">Направления</h3>
+        <p class="about__text">Мы не продаем туры
+          и ничего не рекламируем.
+          Люди сами пишут о странах,
+          куда хотели бы отправиться
+          и чем можно там заняться.
+        </p>
+        <ul class="directions-list">
+          <li class="directions-list__item">
+            <div class="direction">
+              <!-- <img class="flag" src="" alt="Иконка флага"> -->
+              <!-- <img class="direction__image" alt="фотография Таиланда" src=""> -->
+              <span class="direction__title">Таиланд</span>
+              <span class="direction__subtitle">Джунгли зовут!</span>
+              <div class="direction__followers">
+                <!-- <img class="followers__icon" src="" alt="icon"> -->
+                <span class="followers__quantity">18321</span>
+              </div>
+            </div>
+          </li>
+          <li class="directions-list__item">
+            <div class="direction">
+              <!-- <img class="flag" src="" alt="Иконка флага"> -->
+              <!-- <img class="direction__image" alt="фотография Франции" src=""> -->
+              <span class="direction__title">Франция</span>
+              <span class="direction__subtitle">Трэ бьен, манифик!</span>
+              <div class="direction__followers">
+                <!-- <img class="followers__icon" src="" alt="icon"> -->
+                <span class="followers__quantity">12518</span>
+              </div>
+            </div>
+          </li>
+          <li class="directions-list__item">
+            <div class="direction">
+              <!-- <img class="flag" src="" alt="Иконка флага"> -->
+              <!-- <img class="direction__image" alt="фотография Чехии" src=""> -->
+              <span class="direction__title">Чехия</span>
+              <span class="direction__subtitle">Закоулки старой Европы</span>
+              <div class="direction__followers">
+                <!-- <img class="followers__icon" src="" alt="icon"> -->
+                <span class="followers__quantity">5326</span>
+              </div>
+            </div>
+          </li>
+        </ul>
+
+        <button type="button" class="button">Показать все</button>
+      </section>
+
+      <section class="about__users">
+        <h3 class="about__title">Попутчики</h3>
+        <p class="about__text">Все мы индивидуальны и у каждого свой взгляд на идеальный отдых. Одному нужен пляж и
+          коктейль, а другому
+          маршрут для хайкинга.
+        </p>
+        <p class="about__text">Теперь можно легко найти
+          единомышленников!</p>
+
+        <ul class="users-list">
+          <li class="users-list__item">
+            <div class="user">
+              <div class="user__lvl">
+                <span class="lvl__number">99</span>
+                <div class="divider"></div>
+                <span class="lvl__text">level</span>
+              </div>
+              <!-- <img class="user__avatar" src="" alt="аватар пользователя"> -->
+              <div class="flag-wrapper">
+                <!-- <img class="flag" src="" alt="Иконка флага"> -->
+                <!-- <img class="flag" src="" alt="Иконка флага"> -->
+                <!-- <img class="flag" src="" alt="Иконка флага"> -->
+              </div>
+              <span class="user__name">Таня Фирсова</span>
+              <div class="online"></div>
+
+              <ul class="user__tag-list">
+                <li class="tag-list__item">#ЗОЖ</li>
+                <li class="tag-list__item">#ПП</li>
+                <li class="tag-list__item">#Фитнес</li>
+                <li class="tag-list__item">#пляж</li>
+                <li class="tag-list__item">#авокадо</li>
+                <li class="tag-list__item">#смузи</li>
+              </ul>
+
+              <ul class="user__vehicles-list">
+                <li class="vehicles-list__item">
+                  <!-- <img class="vehicles-list__icon" alt="Иконка самолет" src=""> -->
+                  <!-- <img class="vehicles-list__icon" alt="Иконка автобус" src=""> -->
+                  <!-- <img class="vehicles-list__icon" alt="Иконка велосипед" src=""> -->
+                  <!-- <img class="vehicles-list__icon" alt="Иконка ходьба пешком" src=""> -->
+                </li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="users-list__item">
+            <div class="user">
+              <div class="user__lvl">
+                <span class="lvl__number">99</span>
+                <div class="divider"></div>
+                <span class="lvl__text">level</span>
+              </div>
+              <!-- <img class="user__avatar" src="" alt="аватар пользователя"> -->
+              <div class="flag-wrapper">
+                <!-- <img class="flag" src="" alt="Иконка флага"> -->
+                <!-- <img class="flag" src="" alt="Иконка флага"> -->
+                <!-- <img class="flag" src="" alt="Иконка флага"> -->
+              </div>
+
+              <span class="user__name">Петя Демин</span>
+              <div class="online"></div>
+
+              <ul class="user__tag-list">
+                <li class="tag-list__item">#бургер</li>
+                <li class="tag-list__item">#бар</li>
+                <li class="tag-list__item">#футбол</li>
+                <li class="tag-list__item">#концерт</li>
+                <li class="tag-list__item">#крафт</li>
+              </ul>
+
+              <ul class="user__vehicles-list">
+                <li class="vehicles-list__item">
+                  <!-- <img class="vehicles-list__icon" alt="Иконка самолет" src=""> -->
+                  <!-- <img class="vehicles-list__icon" alt="Иконка автобус" src=""> -->
+                  <!-- <img class="vehicles-list__icon" alt="Иконка велосипед" src=""> -->
+                  <!-- <img class="vehicles-list__icon" alt="Иконка ходьба пешком" src=""> -->
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+
+        <button type="button" class="button">Показать всеx</button>
+      </section>
+
+      <section class="about__rates">
+        <h3 class="visually-hidden">
+          О тарифах
+        </h3>
+        <div class="rates__advice">
+          <span class="advice__text">
+            Добавьте свой профиль
+          </span>
+          <div class="advice__icon">
+            <!-- <img class="advice__currency-icon" src="" alt="иконка валюты"> -->
+          </div>
+        </div>
+
+        <ul class="rates-list">
+          <li class="rates-list__item">
+            <div class="rate">
+              <div class="rate__number">1</div>
+              <span class="rate__title">Базовое размещение</span>
+              <span class="rate__price"></span>
+            </div>
+          </li>
+          <li class="rates-list__item"></li>
+          <li class="rates-list__item"></li>
+        </ul>
+
+        <div class="action-wrapper">
+          <!-- <img class="action__icon" src="" alt="иконка"> -->
+          <a class="action__item">Показать тарифы для бизнеса</a>
+        </div>
+
+      </section>
+
+      <section class="registration">
+        <h3 class="visually-hidden">Регистрация</h3>
+        <span class="registration__title">Заинтересовались?</span>
+        <p class="registration__text">
+          Зарегистрируйтесь,
+          это быстро и бесплатно!
+          Уже зарегистрированы? Тогда
+          скорее авторизуйтесь.
+        </p>
+
+        <form class="registration__form">
+          <h3 class="visually-hidden">Форма регистрации</h3>
+          <input type="text" aria-label="Поле для электронной почты">
+          <button type="submit" class="button">Регистрация</button>
+        </form>
+
+      </section>
+
+      <section class="feedback">
+        <h3 class="visually-hidden">Поддержка</h3>
+        <p class="feedback__text">Остались вопросы?
+          Мы с радостью на них ответим!
+        </p>
+
+        <ul class="contacts-list">
+          <li class="contacts-list__item">
+            <div class="action-wrapper">
+              <!-- <img class="action__icon" src="" alt="иконка"> -->
+              <a class="action__item">8 800 555-86-28</a>
+            </div>
+          </li>
+          <li class="contacts-list__item">
+            <div class="action-wrapper">
+              <!-- <img class="action__icon" src="" alt="иконка"> -->
+              <a class="action__item">mail@htmlacademy.ru</a>
+            </div>
+          </li>
+        </ul>
+      </section>
+    </section>
+
+    <section class="route">
+      <h3 class="visually-hidden">Местоположение</h3>
+
+      <div class="action-wrapper">
+        <!-- <img class="action__icon" src="" alt="иконка"> -->
+        <a class="action__item">ул. Большая
+          Конюшенная, 19/8</a>
+      </div>
+
+      <a class="route__link" href="#">Проложить маршрут</a>
+    </section>
+
+    <div class="map-wrapper">
+      <!-- Тут будет карта -->
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="logo-wrapper">
+      <!-- <img class="logo__image" src="" alt="logo"> -->
+      <span class="logo__title">Погнали</span>
+    </div>
+
+    <ul class="socials-list">
+      <li class="socials-list__item">
+        <a class="socials-list__link">
+          <!-- <img class="socials-list__icon" src="" alt="иконка"> -->
+          <span class="visually-hidden">Facebook</span>
+        </a>
+      </li>
+      <li class="socials-list__item">
+        <a class="socials-list__link">
+          <!-- <img class="socials-list__icon" src="" alt="иконка"> -->
+          <span class="visually-hidden">VK</span>
+        </a>
+      </li>
+      <li class="socials-list__item">
+        <a class="socials-list__link">
+          <!-- <img class="socials-list__icon" src="" alt="иконка"> -->
+          <span class="visually-hidden">Instagram</span>
+        </a>
+      </li>
+    </ul>
+
+    <div class="copyright">
+      <span class="copyright__text">Разработано</span>
+      <!-- <img class="copyright__logo" src="" alt="логотип Академии"> -->
+    </div>
+
+  </footer>
+</body>
+
 </html>
