@@ -9,14 +9,16 @@
 <body>
   <header class="main-header">
 
-    <div class="logo-wrapper">
-      <!-- <img class="logo__image" src="" alt="logo"> -->
-      <span class="logo__title">Погнали</span>
+      <div class="logo">
+        <div class="logo__wrapper">
+        <!-- <img class="logo__image" src="" alt="logo"> -->
+        <span class="logo__title">Погнали</span>
+      </div>
     </div>
 
     <nav class="main-nav">
       <button class="main-nav__toggle" type="button"></button>
-      <ul class="main-nav__site-list">
+      <ul class="site-list">
         <li class="site-list__item">О сервисе</li>
         <li class="site-list__item">Направление</li>
         <li class="site-list__item">Попутчики</li>
@@ -26,15 +28,20 @@
     <nav class="user-nav">
       <ul class="contacts-list">
         <li class="contacts-list__item">
-          <div class="action-wrapper">
-            <!-- <img class="action__icon" src="" alt="иконка"> -->
-            <a class="action__item">8 800 555-86-28</a>
+
+          <div class="action">
+            <div class="action__wrapper">
+              <!-- <img class="action__icon" src="" alt="иконка"> -->
+              <a class="action__item">8 800 555-86-28</a>
+            </div>
           </div>
         </li>
         <li class="contacts-list__item">
-          <div class="action-wrapper">
-            <!-- <img class="action__icon" src="" alt="иконка"> -->
-            <a class="action__item">mail@htmlacademy.ru</a>
+          <div class="action">
+            <div class="action__wrapper">
+              <!-- <img class="action__icon" src="" alt="иконка"> -->
+              <a class="action__item">mail@htmlacademy.ru</a>
+            </div>
           </div>
         </li>
       </ul>
@@ -74,22 +81,28 @@
 
       <ul class="contacts-list">
         <li class="contacts-list__item">
-          <div class="action-wrapper">
-            <!-- <img class="action__icon" src="" alt="иконка"> -->
-            <a class="action__item">8 800 555-86-28</a>
+
+          <div class="action">
+            <div class="action__wrapper">
+              <!-- <img class="action__icon" src="" alt="иконка"> -->
+              <a class="action__item">8 800 555-86-28</a>
+            </div>
           </div>
         </li>
         <li class="contacts-list__item">
-          <div class="action-wrapper">
-            <!-- <img class="action__icon" src="" alt="иконка"> -->
-            <a class="action__item">mail@htmlacademy.ru</a>
+
+          <div class="action">
+            <div class="action__wrapper">
+              <!-- <img class="action__icon" src="" alt="иконка"> -->
+              <a class="action__item">mail@htmlacademy.ru</a>
+            </div>
           </div>
         </li>
       </ul>
 
       <blockquote class="blockquote">
         <p>«Лучшее приложение, что я видел в жизни!»</p>
-        <div class="blockquote__author">
+        <div class="blockquote__author author">
           <cite class="author__name">Мурат Эльтазин</cite>
           <span class="author__info">главный редактор газеты «гаджетлайф»</span>
         </div>
@@ -140,7 +153,7 @@
               <!-- <img class="direction__image" alt="фотография Таиланда" src=""> -->
               <span class="direction__title">Таиланд</span>
               <span class="direction__subtitle">Джунгли зовут!</span>
-              <div class="direction__followers">
+              <div class="direction__followers followers">
                 <!-- <img class="followers__icon" src="" alt="icon"> -->
                 <span class="followers__quantity">18321</span>
               </div>
@@ -152,7 +165,7 @@
               <!-- <img class="direction__image" alt="фотография Франции" src=""> -->
               <span class="direction__title">Франция</span>
               <span class="direction__subtitle">Трэ бьен, манифик!</span>
-              <div class="direction__followers">
+              <div class="direction__followers followers">
                 <!-- <img class="followers__icon" src="" alt="icon"> -->
                 <span class="followers__quantity">12518</span>
               </div>
@@ -164,7 +177,7 @@
               <!-- <img class="direction__image" alt="фотография Чехии" src=""> -->
               <span class="direction__title">Чехия</span>
               <span class="direction__subtitle">Закоулки старой Европы</span>
-              <div class="direction__followers">
+              <div class="direction__followers followers">
                 <!-- <img class="followers__icon" src="" alt="icon"> -->
                 <span class="followers__quantity">5326</span>
               </div>
@@ -187,7 +200,7 @@
         <ul class="users-list">
           <li class="users-list__item">
             <div class="user">
-              <div class="user__lvl">
+              <div class="lvl">
                 <span class="lvl__number">99</span>
                 <div class="divider"></div>
                 <span class="lvl__text">level</span>
@@ -199,9 +212,9 @@
                 <!-- <img class="flag" src="" alt="Иконка флага"> -->
               </div>
               <span class="user__name">Таня Фирсова</span>
-              <div class="online"></div>
+              <div class="user__online"></div>
 
-              <ul class="user__tag-list">
+              <ul class="tag-list">
                 <li class="tag-list__item">#ЗОЖ</li>
                 <li class="tag-list__item">#ПП</li>
                 <li class="tag-list__item">#Фитнес</li>
@@ -210,7 +223,7 @@
                 <li class="tag-list__item">#смузи</li>
               </ul>
 
-              <ul class="user__vehicles-list">
+              <ul class="vehicles-list">
                 <li class="vehicles-list__item">
                   <!-- <img class="vehicles-list__icon" alt="Иконка самолет" src=""> -->
                   <!-- <img class="vehicles-list__icon" alt="Иконка автобус" src=""> -->
@@ -223,7 +236,7 @@
 
           <li class="users-list__item">
             <div class="user">
-              <div class="user__lvl">
+              <div class="lvl">
                 <span class="lvl__number">99</span>
                 <div class="divider"></div>
                 <span class="lvl__text">level</span>
@@ -236,9 +249,9 @@
               </div>
 
               <span class="user__name">Петя Демин</span>
-              <div class="online"></div>
+              <div class="user__online"></div>
 
-              <ul class="user__tag-list">
+              <ul class="tag-list">
                 <li class="tag-list__item">#бургер</li>
                 <li class="tag-list__item">#бар</li>
                 <li class="tag-list__item">#футбол</li>
@@ -246,7 +259,7 @@
                 <li class="tag-list__item">#крафт</li>
               </ul>
 
-              <ul class="user__vehicles-list">
+              <ul class="vehicles-list">
                 <li class="vehicles-list__item">
                   <!-- <img class="vehicles-list__icon" alt="Иконка самолет" src=""> -->
                   <!-- <img class="vehicles-list__icon" alt="Иконка автобус" src=""> -->
@@ -265,7 +278,7 @@
         <h3 class="visually-hidden">
           О тарифах
         </h3>
-        <div class="rates__advice">
+        <div class="advice">
           <span class="advice__text">
             Добавьте свой профиль
           </span>
@@ -286,9 +299,12 @@
           <li class="rates-list__item"></li>
         </ul>
 
-        <div class="action-wrapper">
-          <!-- <img class="action__icon" src="" alt="иконка"> -->
-          <a class="action__item">Показать тарифы для бизнеса</a>
+
+          <div class="action">
+            <div class="action__wrapper">
+            <!-- <img class="action__icon" src="" alt="иконка"> -->
+            <a class="action__item">Показать тарифы для бизнеса</a>
+          </div>
         </div>
 
       </section>
@@ -319,16 +335,23 @@
 
         <ul class="contacts-list">
           <li class="contacts-list__item">
-            <div class="action-wrapper">
-              <!-- <img class="action__icon" src="" alt="иконка"> -->
-              <a class="action__item">8 800 555-86-28</a>
+
+              <div class="action">
+                <div class="action__wrapper">
+                <!-- <img class="action__icon" src="" alt="иконка"> -->
+                <a class="action__item">8 800 555-86-28</a>
+              </div>
             </div>
           </li>
           <li class="contacts-list__item">
-            <div class="action-wrapper">
-              <!-- <img class="action__icon" src="" alt="иконка"> -->
-              <a class="action__item">mail@htmlacademy.ru</a>
+
+            <div class="action">
+              <div class="action__wrapper">
+                <!-- <img class="action__icon" src="" alt="иконка"> -->
+                <a class="action__item">mail@htmlacademy.ru</a>
+              </div>
             </div>
+
           </li>
         </ul>
       </section>
@@ -337,24 +360,29 @@
     <section class="route">
       <h3 class="visually-hidden">Местоположение</h3>
 
-      <div class="action-wrapper">
-        <!-- <img class="action__icon" src="" alt="иконка"> -->
-        <a class="action__item">ул. Большая
-          Конюшенная, 19/8</a>
+      <div class="action">
+        <div class="action__wrapper">
+          <!-- <img class="action__icon" src="" alt="иконка"> -->
+          <a class="action__item">ул. Большая
+            Конюшенная, 19/8</a>
+        </div>
       </div>
 
       <a class="route__link" href="#">Проложить маршрут</a>
     </section>
 
-    <div class="map-wrapper">
+    <div class="map">
       <!-- Тут будет карта -->
     </div>
   </main>
 
   <footer class="footer">
-    <div class="logo-wrapper">
-      <!-- <img class="logo__image" src="" alt="logo"> -->
-      <span class="logo__title">Погнали</span>
+
+    <div class="logo">
+      <div class="logo__wrapper">
+        <!-- <img class="logo__image" src="" alt="logo"> -->
+        <span class="logo__title">Погнали</span>
+      </div>
     </div>
 
     <ul class="socials-list">
