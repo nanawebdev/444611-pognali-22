@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Погнали</title>
+</head>
+
+<body>
+  <header class="main-header">
+
+    <div class="logo">
+      <div class="logo__wrapper">
+        <!-- <img class="logo__image" src="" alt="logo"> -->
+        <span class="logo__title">Погнали</span>
+      </div>
+    </div>
+
+    <nav class="main-nav">
+      <button class="main-nav__toggle" type="button"></button>
+      <ul class="site-list">
+        <li class="site-list__item">О сервисе</li>
+        <li class="site-list__item">Направление</li>
+        <li class="site-list__item">Попутчики</li>
+      </ul>
+    </nav>
+
+    <nav class="user-nav">
+      <ul class="contacts-list">
+        <li class="contacts-list__item">
+
+          <div class="action">
+            <div class="action__wrapper">
+              <!-- <img class="action__icon" src="" alt="иконка"> -->
+              <a class="action__item">8 800 555-86-28</a>
+            </div>
+          </div>
+        </li>
+        <li class="contacts-list__item">
+          <div class="action">
+            <div class="action__wrapper">
+              <!-- <img class="action__icon" src="" alt="иконка"> -->
+              <a class="action__item">mail@htmlacademy.ru</a>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <button type="button" class="button">Авторизация</button>
+    </nav>
+  </header>
+
+  <main class="companions">
+    <div class="page-header">
+      <h2 class="page-header__title">Попутчики</h2>
+    </div>
+
+    <div class="country-filter">
+      <!-- иконка фильтра  -->
+      <span class="country-filter__title">Фильтрация по странам:</span>
+
+      <button class="country-filter__open-modal" type="button">
+        <!-- иконка  -->
+        <span>показать все </span>
+      </button>
+      <ul class="country-list">
+        <li class="country-list__item">Европа</li>
+        <li class="country-list__item">Азия</li>
+        <li class="country-list__item">Америка</li>
+        <li class="country-list__item">Острова </li>
+      </ul>
+
+      <div class="modal">
+        <div class="country-options">
+          <div class="country-options__header">
+            <span class="country-options__text">Выберите страну</span>
+            <div class="country-options__cross"></div>
+          </div>
+          <div class="country-options__alphabet alphabet">
+            <div class="alphabet__table">
+              <div class="alphabet__row">
+                <div class="alphabet__cell alphabet__cell--selected">а</div>
+                <div class="alphabet__cell">б</div>
+                <div class="alphabet__cell">в</div>
+                <div class="alphabet__cell">г</div>
+                <div class="alphabet__cell">д</div>
+              </div>
+              <div class="alphabet__row">
+                <div class="alphabet__cell">е</div>
+                <div class="alphabet__cell">з</div>
+                <div class="alphabet__cell">и</div>
+                <div class="alphabet__cell">к</div>
+                <div class="alphabet__cell">л</div>
+              </div>
+              <div class="alphabet__row">
+                <div class="alphabet__cell">м</div>
+                <div class="alphabet__cell">н</div>
+                <div class="alphabet__cell">о</div>
+                <div class="alphabet__cell">п</div>
+                <div class="alphabet__cell">р</div>
+              </div>
+              <div class="alphabet__row">
+                <div class="alphabet__cell">с</div>
+                <div class="alphabet__cell">т</div>
+                <div class="alphabet__cell">у</div>
+                <div class="alphabet__cell">ф</div>
+                <div class="alphabet__cell">х</div>
+              </div>
+              <div class="alphabet__row">
+                <div class="alphabet__cell">ч</div>
+                <div class="alphabet__cell">ш</div>
+                <div class="alphabet__cell">э</div>
+                <div class="alphabet__cell">ю</div>
+                <div class="alphabet__cell">я</div>
+              </div>
+            </div>
+            <ul class="country-list">
+              <li class="country-list__item">Австралия</li>
+              <li class="country-list__item">Австрия</li>
+              <li class="country-list__item">Азербайджан</li>
+              <li class="country-list__item">Албания</li>
+              <li class="country-list__item">Алжир</li>
+              <li class="country-list__item">Ангола</li>
+              <li class="country-list__item">Андорра</li>
+              <li class="country-list__item">Антигуа и Барбуда</li>
+              <li class="country-list__item">Аргентина</li>
+              <li class="country-list__item">Армения</li>
+              <li class="country-list__item">Афганистан</li>
+            </ul>
+          </div>
+        </div>
+
+        <button type="button" class="button">
+          <!-- иконка  -->
+          Свернуть
+        </button>
+      </div>
+    </div>
+
+    <section class="companions-filter">
+      <h2 class="companions-filter__title">Подберите идеального попутчика</h2>
+      <form action="https://echo.htmlacademy.ru" method="post">
+        <div class="option">
+          <div class="option__title">Хобби</div>
+          <button class="option__button" type="button"></button>
+
+          <div class="suboptions-wrapper">
+            <ul class="suboptions-list">
+              <li class="suboptions-list__item">
+                <label>Спортзал
+                  <input type="checkbox" checked>
+                </label>
+              </li>
+              <li class="suboptions-list__item">
+                <label>Кальян
+                  <input type="checkbox">
+                </label>
+              </li>
+              <li class="suboptions-list__item">
+                <label>Диван
+                  <input type="checkbox">
+                </label>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="option">
+          <div class="option__title">Музыка</div>
+          <button class="option__button" type="button"></button>
+
+          <div class="suboptions-wrapper">
+            <ul class="suboptions-list">
+              <li class="suboptions-list__item">
+                <label>Тяжелый рок
+                  <input type="checkbox" checked>
+                </label>
+              </li>
+              <li class="suboptions-list__item">
+                <label>Русский рэп
+                  <input type="checkbox">
+                </label>
+              </li>
+              <li class="suboptions-list__item">
+                <label>Евроденс
+                  <input type="checkbox">
+                </label>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="option">
+          <div class="option__title">Еда</div>
+          <button class="option__button" type="button"></button>
+
+          <div class="suboptions-wrapper">
+            <ul class="suboptions-list">
+              <li class="suboptions-list__item">
+                <label>Мясоед
+                  <input type="checkbox" checked>
+                </label>
+              </li>
+              <li class="suboptions-list__item">
+                <label>Сидит на ПП
+                  <input type="checkbox">
+                </label>
+              </li>
+              <li class="suboptions-list__item">
+                <label>Веган-сыроед
+                  <input type="checkbox">
+                </label>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="option">
+          <div class="option__title">Транспорт</div>
+          <button class="option__button" type="button"></button>
+          <div class="suboptions-wrapper">
+            <ul class="vehicles-list">
+              <li class="vehicles-list__item">
+                <!-- <img class="vehicles-list__icon" alt="Иконка самолет" src=""> -->
+                <!-- <img class="vehicles-list__icon" alt="Иконка автобус" src=""> -->
+                <!-- <img class="vehicles-list__icon" alt="Иконка велосипед" src=""> -->
+                <!-- <img class="vehicles-list__icon" alt="Иконка ходьба пешком" src=""> -->
+              </li>
+            </ul>
+          </div>
+        </div>
+
+          <div class="option">
+            <div class="option__title">Левел</div>
+            <button class="option__button" type="button"></button>
+            <div class="suboptions-wrapper">
+              <div class="lvl-filter">
+                <!-- инпут для левела  -->
+              </div>
+            </div>
+          </div>
+          <button class="button" type="submit">Показать</button>
+      </form>
+
+    </section>
+
+    <section class="catalog">
+      <h3 class="visually-hidden">Список попутчиков</h3>
+      <ul class="companions-list">
+        <li class="companions-list__item">
+          <div class="companion">
+            <div class="companion-head">
+              <div class="companion-head__avatar avatar">
+                <!-- img  -->
+                <div class="avatar__like"></div>
+              </div>
+
+              <div class="companion-head__wrapper">
+                <span class="companion-head__name">Таня Фирсова</span>
+                <span class="companion-head__likes-quantity">1,5м</span>
+              </div>
+
+              <div class="companion__online"></div>
+            </div>
+            <div class="companion-tags">
+              <ul class="tag-list">
+                <li class="tag-list__item">#ЗОЖ</li>
+                <li class="tag-list__item">#ПП</li>
+                <li class="tag-list__item">#Фитнес</li>
+                <li class="tag-list__item">#пляж</li>
+                <li class="tag-list__item">#авокадо</li>
+                <li class="tag-list__item">#смузи</li>
+              </ul>
+            </div>
+
+            <div class="companion__wishes wishes">
+              <span class="wishes__title">Хочет посетить:</span>
+              <ul class="wish-list">
+                <li class="wish-list__item">
+                  <!-- <img class="flag" src="" alt="Иконка флага"> -->
+                  <span>Шри-ланка</span>
+                </li>
+                <li class="wish-list__item">
+                  <!-- <img class="flag" src="" alt="Иконка флага"> -->
+                  <span>Таиланд</span>
+                </li>
+                <li class="wish-list__item">
+                  <!-- <img class="flag" src="" alt="Иконка флага"> -->
+                  <span>Сейшелы</span>
+                </li>
+              </ul>
+
+            </div>
+
+            <div class="companion-footer">
+              <div class="companion-vehicles">
+                <ul class="vehicles-list">
+                  <li class="vehicles-list__item">
+                    <!-- <img class="vehicles-list__icon" alt="Иконка самолет" src=""> -->
+                    <!-- <img class="vehicles-list__icon" alt="Иконка автобус" src=""> -->
+                    <!-- <img class="vehicles-list__icon" alt="Иконка велосипед" src=""> -->
+                    <!-- <img class="vehicles-list__icon" alt="Иконка ходьба пешком" src=""> -->
+                  </li>
+                </ul>
+              </div>
+              <div class="lvl">
+                <span class="lvl__number">99</span>
+                <div class="divider"></div>
+                <span class="lvl__text">level</span>
+              </div>
+            </div>
+            <button type="button" class="button">Позвать!</button>
+          </div>
+        </li>
+        <li class="companions-list__item">
+          <div class="companion">
+            <div class="companion-head">
+              <div class="companion-head__avatar avatar">
+                <!-- img  -->
+                <div class="avatar__like"></div>
+              </div>
+
+              <div class="companion-head__wrapper">
+                <span class="companion-head__name">Петя Демин</span>
+                <span class="companion-head__likes-quantity">1500</span>
+              </div>
+
+              <div class="companion__online"></div>
+            </div>
+            <div class="companion-tags">
+              <ul class="tag-list">
+                <li class="tag-list__item">#бургер</li>
+                <li class="tag-list__item">#бар</li>
+                <li class="tag-list__item">#футбол</li>
+                <li class="tag-list__item">#концерт</li>
+                <li class="tag-list__item">#крафт</li>
+              </ul>
+            </div>
+
+            <div class="companion__wishes wishes">
+              <span class="wishes__title">Хочет посетить:</span>
+              <ul class="wish-list">
+                <li class="wish-list__item">
+                  <!-- <img class="flag" src="" alt="Иконка флага"> -->
+                  <span>Бельгия</span>
+                </li>
+                <li class="wish-list__item">
+                  <!-- <img class="flag" src="" alt="Иконка флага"> -->
+                  <span>Чехия</span>
+                </li>
+              </ul>
+
+            </div>
+
+            <div class="companion-footer">
+              <div class="companion-vehicles">
+                <ul class="vehicles-list">
+                  <li class="vehicles-list__item">
+                    <!-- <img class="vehicles-list__icon" alt="Иконка самолет" src=""> -->
+                    <!-- <img class="vehicles-list__icon" alt="Иконка автобус" src=""> -->
+                    <!-- <img class="vehicles-list__icon" alt="Иконка велосипед" src=""> -->
+                    <!-- <img class="vehicles-list__icon" alt="Иконка ходьба пешком" src=""> -->
+                  </li>
+                </ul>
+              </div>
+              <div class="lvl">
+                <span class="lvl__number">80</span>
+                <div class="divider"></div>
+                <span class="lvl__text">level</span>
+              </div>
+            </div>
+            <button type="button" class="button">Позвать!</button>
+          </div>
+        </li>
+        <li class="companions-list__item">
+          <div class="companion">
+            <div class="companion-head">
+              <div class="companion-head__avatar avatar">
+                <!-- img  -->
+                <div class="avatar__like"></div>
+              </div>
+
+              <div class="companion-head__wrapper">
+                <span class="companion-head__name">Марк Смолов</span>
+                <span class="companion-head__likes-quantity">170</span>
+              </div>
+
+              <div class="companion__online"></div>
+            </div>
+            <div class="companion-tags">
+              <ul class="tag-list">
+                <li class="tag-list__item">#рэп</li>
+                <li class="tag-list__item">#тату</li>
+                <li class="tag-list__item">#хайпбист</li>
+                <li class="tag-list__item">#кроссовки</li>
+                <li class="tag-list__item">#суприм</li>
+              </ul>
+            </div>
+
+            <div class="companion__wishes wishes">
+              <span class="wishes__title">Хочет посетить:</span>
+              <ul class="wish-list">
+                <li class="wish-list__item">
+                  <!-- <img class="flag" src="" alt="Иконка флага"> -->
+                  <span>Сша</span>
+                </li>
+                <li class="wish-list__item">
+                  <!-- <img class="flag" src="" alt="Иконка флага"> -->
+                  <span>Австралия</span>
+                </li>
+                <li class="wish-list__item">
+                  <!-- <img class="flag" src="" alt="Иконка флага"> -->
+                  <span>Доминикана</span>
+                </li>
+              </ul>
+
+            </div>
+
+            <div class="companion-footer">
+              <div class="companion-vehicles">
+                <ul class="vehicles-list">
+                  <li class="vehicles-list__item">
+                    <!-- <img class="vehicles-list__icon" alt="Иконка самолет" src=""> -->
+                    <!-- <img class="vehicles-list__icon" alt="Иконка автобус" src=""> -->
+                    <!-- <img class="vehicles-list__icon" alt="Иконка велосипед" src=""> -->
+                    <!-- <img class="vehicles-list__icon" alt="Иконка ходьба пешком" src=""> -->
+                  </li>
+                </ul>
+              </div>
+              <div class="lvl">
+                <span class="lvl__number">25</span>
+                <div class="divider"></div>
+                <span class="lvl__text">level</span>
+              </div>
+            </div>
+            <button type="button" class="button">Позвать!</button>
+          </div>
+        </li>
+        <li class="companions-list__item">
+          <div class="companion">
+            <div class="companion-head">
+              <div class="companion-head__avatar avatar">
+                <!-- img  -->
+                <div class="avatar__like"></div>
+              </div>
+              <div class="companion-head__wrapper">
+                <span class="companion-head__name">Лариса Роговая</span>
+                <span class="companion-head__likes-quantity">23</span>
+              </div>
+              <div class="companion__online"></div>
+            </div>
+            <div class="companion-tags">
+              <ul class="tag-list">
+                <li class="tag-list__item">#образование</li>
+                <li class="tag-list__item">#карьера</li>
+                <li class="tag-list__item">#учеба</li>
+                <li class="tag-list__item">#линкедин</li>
+              </ul>
+            </div>
+
+            <div class="companion__wishes wishes">
+              <span class="wishes__title">Хочет посетить:</span>
+              <ul class="wish-list">
+                <li class="wish-list__item">
+                  <!-- <img class="flag" src="" alt="Иконка флага"> -->
+                  <span>Великобритания</span>
+                </li>
+                <li class="wish-list__item">
+                  <!-- <img class="flag" src="" alt="Иконка флага"> -->
+                  <span>Германия</span>
+                </li>
+              </ul>
+            </div>
+            <div class="companion-footer">
+              <div class="companion-vehicles">
+                <ul class="vehicles-list">
+                  <li class="vehicles-list__item">
+                    <!-- <img class="vehicles-list__icon" alt="Иконка самолет" src=""> -->
+                    <!-- <img class="vehicles-list__icon" alt="Иконка автобус" src=""> -->
+                    <!-- <img class="vehicles-list__icon" alt="Иконка велосипед" src=""> -->
+                    <!-- <img class="vehicles-list__icon" alt="Иконка ходьба пешком" src=""> -->
+                  </li>
+                </ul>
+              </div>
+              <div class="lvl">
+                <span class="lvl__number">50</span>
+                <div class="divider"></div>
+                <span class="lvl__text">level</span>
+              </div>
+            </div>
+            <button type="button" class="button">Позвать!</button>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+  </main>
+  <footer class="footer">
+
+    <div class="logo">
+      <div class="logo__wrapper">
+        <!-- <img class="logo__image" src="" alt="logo"> -->
+        <span class="logo__title">Погнали</span>
+      </div>
+    </div>
+
+    <ul class="socials-list">
+      <li class="socials-list__item">
+        <a class="socials-list__link">
+          <!-- <img class="socials-list__icon" src="" alt="иконка"> -->
+          <span class="visually-hidden">Facebook</span>
+        </a>
+      </li>
+      <li class="socials-list__item">
+        <a class="socials-list__link">
+          <!-- <img class="socials-list__icon" src="" alt="иконка"> -->
+          <span class="visually-hidden">VK</span>
+        </a>
+      </li>
+      <li class="socials-list__item">
+        <a class="socials-list__link">
+          <!-- <img class="socials-list__icon" src="" alt="иконка"> -->
+          <span class="visually-hidden">Instagram</span>
+        </a>
+      </li>
+    </ul>
+
+    <div class="copyright">
+      <span class="copyright__text">Разработано</span>
+      <!-- <img class="copyright__logo" src="" alt="логотип Академии"> -->
+    </div>
+
+  </footer>
+
+</body>
+
+</html>
