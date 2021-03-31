@@ -1,0 +1,11 @@
+.promo {
+  background-color: #161c35;
+}
+
+@media (max-width: 320px) {
+  .promo__title,
+  .blockquote__text,
+  .promo .contacts-list {
+    display: none;
+  }
+}

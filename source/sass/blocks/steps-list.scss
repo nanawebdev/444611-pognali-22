@@ -1,0 +1,44 @@
+.steps-list {
+  color: $basic-blue;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 18px;
+}
+
+.steps-list__item {
+  height: 80px;
+  display: flex;
+  align-items: center;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  padding-left: 24px;
+}
+
+.steps-list__number {
+  color: $basic-white;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 18px;
+}
+
+.steps-list__item:first-child {
+  background-color: #ff8d30;
+}
+
+.steps-list__item:nth-child(2) {
+  background-color: #ffa530;
+}
+
+.steps-list__item:nth-child(3) {
+  background-color: $special-yellow-dark;
+}
+
+.steps-list__item:last-child {
+  background-color: $basic-yellow;
+}
+
+.steps-list__item:nth-child(2),
+.steps-list__item:nth-child(3),
+.steps-list__item:last-child {
+  margin-top: -5px;
+}

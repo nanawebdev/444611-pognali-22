@@ -1,1 +1,26 @@
-// Начните писать стили здесь
+@import "global/variables.scss";
+@import "global/helpers.scss";
+@import "global/base.scss";
+@import "blocks/header.scss";
+@import "blocks/button.scss";
+@import "blocks/site-navigation.scss";
+@import "blocks/action.scss";
+@import "blocks/promo.scss";
+@import "blocks/steps-list.scss";
+@import "blocks/about.scss";
+@import "blocks/direction.scss";
+@import "blocks/user.scss";
+@import "blocks/tags.scss";
+@import "blocks/lvl.scss";
+@import "blocks/flag.scss";
+@import "blocks/feedback.scss";
+@import "blocks/route.scss";
+@import "blocks/copyright.scss";
+@import "blocks/footer.scss";
+@import "blocks/socials-list.scss";
+@import "blocks/registration.scss";
+@import "blocks/rates.scss";
+@import "blocks/divider.scss";
+@import "blocks/blockquote.scss";
+@import "blocks/followers.scss";
+@import "blocks/nav-toggle.scss";

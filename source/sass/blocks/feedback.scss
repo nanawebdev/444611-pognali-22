@@ -1,0 +1,22 @@
+.feedback {
+  background-color: $special-blue-dark;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  padding: 25px 25px 16px 25px;
+}
+
+.feedback .action__item {
+  color: $basic-yellow;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.feedback__text {
+  color: $basic-white;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 22px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}

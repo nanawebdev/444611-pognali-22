@@ -1,0 +1,16 @@
+.action__item {
+  color: $special-blue-dark;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.action__icon {
+  margin-right: 16px;
+}
+
+.action__wrapper {
+  display: flex;
+  align-items: center;
+}

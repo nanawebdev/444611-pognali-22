@@ -1,0 +1,26 @@
+.rate__number {
+  color: $basic-white;
+}
+
+.rate__title,
+.rate__price,
+.rate .action__item {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 16px;
+}
+
+.rate .action__item {
+  color: #132576;
+  line-height: 16px;
+}
+
+.rate__price {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+}
+
+.rate__price:first-child {
+  background-color: $special-yellow-dark;
+}
