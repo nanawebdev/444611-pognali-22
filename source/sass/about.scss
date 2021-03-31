@@ -1,0 +1,65 @@
+.about {
+  display: flex;
+  flex-direction: column;
+}
+
+.about__title {
+  color: $special-orange;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 24px;
+  margin: 0;
+}
+
+.about__service {
+  background-color: $special-blue-dark;
+  color: $basic-white;
+  background-image: url(./../img/about-mobile.png);
+  height: 353px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.about__text {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.about__text:nth-of-type(2) {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.about__directions {
+  background-color: #edeff6;
+}
+
+.about__users {
+  background-image: url("./../img/back-companions.png");
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  background-color: $special-blue-dark;
+}
+
+.about__users .about__text {
+  color: $basic-white;
+}
+
+.about__rates {
+  background-color: #e6e8f1;
+}
+
+@media (max-width: 320px) {
+  .about .button,
+  .about .button__text {
+    display: none;
+  }
+
+  .about__directions .button,
+  .about__users .button {
+    display: flex;
+  }
+}

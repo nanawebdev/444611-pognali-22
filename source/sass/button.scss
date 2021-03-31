@@ -1,0 +1,48 @@
+.button {
+  background-color: $basic-yellow;
+  border: none;
+  height: 50px;
+  color: $basic-blue;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 30px;
+  border-radius: 25px;
+  width: 100%;
+}
+
+.button--transparent {
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 700;
+  color: $basic-blue-light;
+  border: 3px solid $basic-blue-light;
+  position: relative;
+  display: flex;
+  height: 56px;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.button--square {
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 18px;
+  position: relative;
+  height: 61px;
+}
+
+.button--transparent::after,
+.button--square::after {
+  content: "";
+  position: absolute;
+  top: 25px;
+  right: 20px;
+  background-image: url(./../img/right-icon.svg);
+  width: 13px;
+  height: 13px;
+  background-repeat: no-repeat;
+}

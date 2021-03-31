@@ -1,0 +1,40 @@
+.user {
+  background-color: $basic-white;
+  border-radius: 14px;
+  position: relative;
+  width: 270px;
+  margin-bottom: 8px;
+  overflow: hidden;
+}
+
+.users-list__item {
+  overflow: hidden;
+}
+
+.user__name {
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 21px;
+  color: $basic-blue-light;
+  margin-left: 10px;
+}
+
+.user__online {
+  border-radius: 50px;
+  width: 6px;
+  height: 6px;
+  background-color: red;
+}
+
+.user__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.user__information {
+  padding: 27px 40px 20px 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
