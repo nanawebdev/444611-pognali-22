@@ -1,3 +1,4 @@
+// у враппера длина зависит от уровня
 .lvl-wrapper {
   position: absolute;
 }
@@ -36,4 +37,9 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 14px;
+}
+
+.form-page .lvl {
+  background-color: transparent;
+  color: $basic-blue;
 }

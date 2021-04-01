@@ -8,6 +8,15 @@
   line-height: 30px;
   border-radius: 25px;
   width: 100%;
+
+  &--special {
+    background-color: transparent;
+    border: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 30px;
+  }
 }
 
 .button--transparent {
@@ -45,4 +54,17 @@
   width: 13px;
   height: 13px;
   background-repeat: no-repeat;
+}
+
+.user__button {
+  display: none;
+}
+
+.form-page .user__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  background-color: #cbced9;
+  color: $basic-blue;
 }

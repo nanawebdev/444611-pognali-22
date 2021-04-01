@@ -1,0 +1,66 @@
+.calendar__header {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 20px;
+  color: $basic-blue-light;
+  border-top: 1px solid #d6d9e6;
+  border-bottom: 1px solid #d6d9e6;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 0;
+}
+
+.calendar__button {
+  background-color: transparent;
+  border: none;
+}
+
+.calendar__day-names {
+  display: flex;
+}
+
+.calendar__day-name {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: $special-grey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 34px;
+  height: 32px;
+
+  &--holiday {
+    color: #ff5c23;
+  }
+}
+
+.calendar__row {
+  display: flex;
+}
+
+.calendar__cell {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  color: $basic-blue-light;
+  display: flex;
+  width: 32px;
+  height: 32px;
+  border: 1px solid #cbced9;
+  justify-content: center;
+  align-items: center;
+  background-color: #edeff6;
+
+  &--disabled {
+    color: rgba($special-grey, 0.3);
+    background-color: $basic-white;
+  }
+
+  &--selected {
+    color: $basic-white;
+    background-color: $basic-blue-light;
+    border: 1px solid $basic-blue-light;
+  }
+}

@@ -6,7 +6,7 @@
 }
 
 .direction__subtitle {
-  color: desaturate($special-grey, 30%);
+  color: fade-out($special-grey, 0.3);
   font-weight: 500;
   font-size: 16px;
   line-height: 18px;

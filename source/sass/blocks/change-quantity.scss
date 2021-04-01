@@ -1,0 +1,51 @@
+.change-quantity {
+  border: 1px solid #cbced9;
+  border-radius: 4px;
+  display: flex;
+  justify-content: space-between;
+  height: 43px;
+  align-items: center;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 14px;
+}
+
+.quantity-input__item {
+  color: rgba($basic-blue-light, 0.6);
+}
+
+.change-quantity__button {
+  height: 100%;
+  width: 43px;
+  background-color: transparent;
+  border: none;
+  color: #cccccc;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.change-quantity__button::after {
+  position: absolute;
+  content: "";
+  width: 14px;
+  height: 1px;
+  background-color: #cccccc;
+}
+
+.change-quantity__button:nth-of-type(2)::before {
+  position: absolute;
+  content: "";
+  width: 14px;
+  height: 1px;
+  background-color: #cccccc;
+  transform: rotate(90deg);
+}
+
+.add-plan__add-children {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 15px;
+  color: $basic-blue-light;
+}
