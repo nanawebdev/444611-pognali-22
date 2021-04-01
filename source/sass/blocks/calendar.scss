@@ -3,8 +3,8 @@
   font-size: 20px;
   line-height: 20px;
   color: $basic-blue-light;
-  border-top: 1px solid #d6d9e6;
-  border-bottom: 1px solid #d6d9e6;
+  border-top: 1px solid $border-color-2;
+  border-bottom: 1px solid $border-color-2;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -32,7 +32,7 @@
   height: 32px;
 
   &--holiday {
-    color: #ff5c23;
+    color: $special-sealer;
   }
 }
 
@@ -48,10 +48,10 @@
   display: flex;
   width: 32px;
   height: 32px;
-  border: 1px solid #cbced9;
+  border: 1px solid $border-color-1;
   justify-content: center;
   align-items: center;
-  background-color: #edeff6;
+  background-color: $block-light-background;
 
   &--disabled {
     color: rgba($special-grey, 0.3);

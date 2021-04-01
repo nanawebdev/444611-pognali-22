@@ -56,15 +56,11 @@
   background-repeat: no-repeat;
 }
 
-.user__button {
-  display: none;
-}
-
 .form-page .user__button {
   display: flex;
   align-items: center;
   justify-content: center;
   text-transform: uppercase;
-  background-color: #cbced9;
+  background-color: $border-color-1;
   color: $basic-blue;
 }
