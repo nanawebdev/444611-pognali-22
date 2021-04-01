@@ -1,0 +1,23 @@
+.purpose__input:placeholder-shown {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: rgba($special-grey, 0.3);
+}
+
+.purpose__input {
+  min-height: 220px;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  width: 100%;
+  padding-top: 11px;
+  padding-left: 14px;
+  padding-right: 19px;
+}
+
+.purpose__title {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 18px;
+}

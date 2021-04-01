@@ -12,7 +12,7 @@
 }
 
 .about__service {
-  background-color: $special-blue-dark;
+  background-color: $special-blue-1;
   color: $basic-white;
   background-image: url("./../img/about-mobile.png");
   height: 353px;
@@ -33,7 +33,7 @@
 }
 
 .about__directions {
-  background-color: #edeff6;
+  background-color: $block-light-background;
 }
 
 .about__users {
@@ -41,7 +41,7 @@
   background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
-  background-color: $special-blue-dark;
+  background-color: $special-blue-1;
 }
 
 .about__users .about__text {
@@ -49,7 +49,7 @@
 }
 
 .about__rates {
-  background-color: #e6e8f1;
+  background-color: $block-background-2;
 }
 
 @media (max-width: 320px) {

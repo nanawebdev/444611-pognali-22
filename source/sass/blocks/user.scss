@@ -23,7 +23,7 @@
   border-radius: 50px;
   width: 6px;
   height: 6px;
-  background-color: red;
+  background-color: $special-red;
 }
 
 .user__wrapper {
@@ -37,4 +37,18 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.form-page .user {
+  background-color: $special-blue-light;
+  width: 100%;
+}
+
+.form-page .user__name,
+.form-page .user__online {
+  display: none;
+}
+
+.user__button {
+  display: none;
 }

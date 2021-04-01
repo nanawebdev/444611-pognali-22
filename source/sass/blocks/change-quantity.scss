@@ -1,0 +1,40 @@
+.change-quantity {
+  border: 1px solid $border-color-1;
+  border-radius: 4px;
+  display: flex;
+  justify-content: space-between;
+  height: 43px;
+  align-items: center;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 14px;
+}
+
+.change-quantity__button {
+  height: 100%;
+  width: 43px;
+  background-color: transparent;
+  border: none;
+  color: $block-background-3;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.change-quantity__button::after {
+  position: absolute;
+  content: "";
+  width: 14px;
+  height: 1px;
+  background-color: $block-background-3;
+}
+
+.change-quantity__button:nth-of-type(2)::before {
+  position: absolute;
+  content: "";
+  width: 14px;
+  height: 1px;
+  background-color: $block-background-3;
+  transform: rotate(90deg);
+}

@@ -1,0 +1,17 @@
+.address {
+  background-color: $basic-yellow;
+  padding: 63px 25px 25px 25px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  margin-top: -30px;
+}
+
+.address .action__item {
+  color: $basic-blue-light;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.address .action {
+  margin-bottom: 32px;
+}

@@ -1,0 +1,26 @@
+.alphabet {
+  background: $basic-white;
+  box-shadow: 0 2px 16px rgba(212, 217, 235, 0.25);
+  border-radius: 4px;
+}
+
+.alphabet__row {
+  display: flex;
+}
+
+.alphabet__cell {
+  width: 43px;
+  height: 41px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  border: 1px solid $border-color-1;
+
+  &--selected {
+    background-color: $block-light-background;
+  }
+}
