@@ -21,7 +21,7 @@
   content: "";
   top: 0;
   left: 0;
-  background-image: url("./../img/orange-border.svg");
+  // background-image: url("./../img/orange-border.svg");
   width: 60px;
   height: 60px;
   background-repeat: no-repeat;
@@ -42,4 +42,20 @@
 .form-page .lvl {
   background-color: transparent;
   color: $basic-blue;
+}
+
+.companion__level .lvl {
+  background-color: transparent;
+  color: $basic-blue-light;
+  width: 43px;
+  height: 43px;
+}
+
+.companion__level .lvl::before {
+  width: 43px;
+  height: 43px;
+}
+
+.companion__level .lvl__text {
+  display: none;
 }
