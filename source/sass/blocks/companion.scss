@@ -1,0 +1,30 @@
+.companions-filter {
+  background-color: $basic-yellow;
+  border-radius: 20px;
+}
+
+.companion__subtitle {
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 16px;
+  color: $special-grey;
+}
+
+.companion__name {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 20px;
+}
+
+.companion__likes {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  color: $basic-blue;
+}
+
+.companion__avatar {
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+}

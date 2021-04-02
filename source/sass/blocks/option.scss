@@ -1,0 +1,20 @@
+.option__title {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $basic-blue-light;
+}
+
+.option__button {
+  background-color: transparent;
+  border: none;
+}
+
+.option__submit {
+  background-color: $basic-white;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 17px;
+  text-transform: uppercase;
+}
