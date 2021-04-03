@@ -1,0 +1,22 @@
+.site-list {
+  color: $special-blue-1;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 35px;
+  text-transform: uppercase;
+  grid-column: 1 / 3;
+  // display: flex;
+  // flex-direction: column;
+  // align-items: center;
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    color: $basic-white;
+    flex-direction: row;
+  }
+}
+
+.form-page .site-list {
+  color: $basic-white;
+}

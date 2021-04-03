@@ -9,6 +9,11 @@
   font-size: 24px;
   line-height: 24px;
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 45px;
+    line-height: 45px;
+  }
 }
 
 .about__service {
@@ -18,30 +23,97 @@
   height: 353px;
   background-repeat: no-repeat;
   background-position: center;
+
+  @media (min-width: $tablet-width) {
+    background-image: url("./../img/service-tablet.png");
+    background-position: right 0;
+    height: 675px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    padding-left: 74px;
+  }
+}
+
+.about__service-wrapper {
+  @media (min-width: $tablet-width) {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    padding-top: 40px;
+  }
 }
 
 .about__text {
   font-weight: 300;
   font-size: 16px;
   line-height: 22px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 28px;
+    line-height: 33px;
+  }
 }
 
 .about__text:nth-of-type(2) {
   font-weight: 700;
   font-size: 16px;
   line-height: 22px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
+    line-height: 25px;
+  }
 }
 
-// .about__directions {
-//   background-color: $block-light-background;
-// }
+.about__directions {
+  background-color: $block-background-1;
+  padding: 0 25px;
+
+  @media (min-width: $tablet-width) {
+    // background-image: url("./../../img/directions-tablet.png");
+    background-repeat: no-repeat;
+    background-position: 40px 0;
+    padding: 0 25px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr max-content;
+  }
+}
+
+.about__directions-wrapper {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    width: 378px;
+    padding-left: 75px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 2/3;
+    grid-row: 1 / 2;
+  }
+}
 
 .about__users {
-  background-image: url("./../img/back-companions.png");
+  // background-image: url("./../img/back-companions.png");
   background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
   background-color: $special-blue-1;
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr max-content;
+  }
 }
 
 .about__users .about__text {
@@ -52,14 +124,15 @@
   background-color: $block-background-2;
 }
 
-@media (max-width: 320px) {
-  .about .button,
-  .about .button__text {
-    display: none;
-  }
 
-  .about__directions .button,
-  .about__users .button {
-    display: flex;
+.rate .about__title {
+  display: flex;
+  justify-content: center;
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+
+  @media (min-width: $tablet-width) {
+    grid-column: 1 / -1;
+    grid-row: 1 / 2;
   }
 }
