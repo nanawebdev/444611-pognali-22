@@ -1,0 +1,40 @@
+@media (min-width: $tablet-width) {
+  .plans-list__item {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  .plans-list__direction {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+  }
+
+  .plans-list__number {
+    position: static;
+    grid-column: 3 /4;
+    grid-row: 1 / 2;
+  }
+
+  .plans-list__date {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+  }
+
+  .plans-list__companions {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+  }
+
+  .plans-list__button {
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .plans-list__item {
+    display: flex;
+    flex-direction: row;
+  }
+}

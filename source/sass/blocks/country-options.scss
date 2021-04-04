@@ -13,3 +13,15 @@
 .country-options {
   margin: 0 auto;
 }
+
+.country-options__wrapper {
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
+}
+
+.select-country__buttons-wrapper {
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
+}

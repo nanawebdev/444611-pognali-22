@@ -1,0 +1,15 @@
+.pagination {
+  display: flex;
+
+  @media (min-width: $desktop-width) {
+    flex-direction: column;
+  }
+}
+
+.pagination__text {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
+}
