@@ -22,3 +22,13 @@
 .form-page .list__title {
   display: flex;
 }
+
+.companion__vehicles-list .list__title {
+  position: static;
+  display: flex;
+  background-color: $basic-white;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 16px;
+  text-transform: none;
+}

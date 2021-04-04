@@ -1,4 +1,5 @@
-.form-page .user-nav {
+.form-page .user-nav,
+.catalog-page .user-nav {
   @media (min-width: $tablet-width) {
     display: flex;
   }

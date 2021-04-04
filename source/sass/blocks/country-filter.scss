@@ -1,9 +1,20 @@
-// .country-filter {
+.country-filter__country-list {
+  display: none;
 
-// }
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
+}
+
+.country-filter .modal {
+  display: none;
+}
 
 .country-filter__head {
   background-color: $block-background-5;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .country-filter__title {
@@ -11,4 +22,22 @@
   font-size: 16px;
   line-height: 18px;
   color: $special-blue-1;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
+}
+
+.country-filte__icon {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
 }
