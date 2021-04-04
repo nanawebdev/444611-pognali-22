@@ -1,5 +1,9 @@
 .registration {
   background-color: $special-blue-1;
+
+  @media (min-width: $tablet-width) {
+    text-align: center;
+  }
 }
 
 .registration__title {
@@ -29,12 +33,4 @@
 
 .registration__wrapper {
   display: flex;
-}
-
-
-@media (max-width: 320px) {
-  .registration .button {
-    display: flex;
-    max-width: 62px;
-  }
 }

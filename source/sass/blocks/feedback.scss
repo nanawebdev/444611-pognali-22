@@ -19,4 +19,9 @@
   display: flex;
   justify-content: center;
   text-align: center;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+  }
 }

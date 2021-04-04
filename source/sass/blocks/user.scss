@@ -52,3 +52,15 @@
 .user__button {
   display: none;
 }
+
+.users-list {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: row;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 2/3;
+    grid-row: 1/3;
+  }
+}

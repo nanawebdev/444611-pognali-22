@@ -1,8 +1,19 @@
 .main-header {
   color: $special-blue-1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  row-gap: 51px;
+  padding: 0 25px;
+  padding-top: 27px;
+  background-color: $basic-blue;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .form-page .main-header {
   background-color: $block-background-4;
-  color: $basic-white;
 }

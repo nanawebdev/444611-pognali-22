@@ -1,0 +1,12 @@
+.main-header .contacts-list {
+  grid-column: 1/3;
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
+}
+
+.promo__nav .contacts-list {
+  display: flex;
+}

@@ -1,4 +1,52 @@
 .main-nav__toggle {
   background-color: transparent;
   border: none;
+  position: relative;
+  width: 18px;
+  height: 19px;
+  padding: 0;
+  margin-left: auto;
+
+  &::after,
+  &::before {
+    position: absolute;
+    content: "";
+    background-color: $block-background-3;
+    transform: rotate(180deg);
+    transition: transform 0.5s;
+    width: 25px;
+    height: 3px;
+  }
+
+  &::after {
+    top: 9px;
+  }
+
+  &::before {
+    top: 2px;
+  }
+
+  &--active::after {
+    top: 7px;
+    left: -3px;
+    width: 24px;
+    height: 2px;
+    transform: rotate(45deg);
+  }
+
+  &--active::before {
+    top: 7px;
+    left: -3px;
+    width: 24px;
+    height: 2px;
+    transform: rotate(-45deg);
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-left: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
 }

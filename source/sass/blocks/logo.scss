@@ -1,3 +1,22 @@
-.logo__icon {
-  fill: $basic-white;
+.logo {
+  background-image: url("./../../img/logo-mobile-dark.png");
+  width: 100px;
+  height: 15px;
+  background-repeat: no-repeat;
+
+  @media (min-width: $tablet-width) {
+    background-image: url("./../../img/logo-tablet-light.png");
+    width: 166px;
+    height: 42px;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: url("./../../img/logo-desktop-light.png");
+    width: 200px;
+    height: 52px;
+  }
+}
+
+.main-page .logo {
+  background-image: url("./../../img/logo_mobile.png");
 }

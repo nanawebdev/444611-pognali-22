@@ -3,8 +3,23 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
+
+  @media (min-width: $tablet-width) {
+    font-weight: 300;
+    font-size: 28px;
+    line-height: 33px;
+    width: 264px;
+  }
 }
 
 .author__name {
   font-style: normal;
+}
+
+.blockquote__author {
+  @media (min-width: $tablet-width) {
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 25px;
+  }
 }
