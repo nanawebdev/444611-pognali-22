@@ -1,20 +1,9 @@
 .direction {
   position: relative;
   background-color: $block-background-1;
-
-  @media (min-width: $tablet-width) {
-    display: grid;
-    grid-template-columns: 1fr 185px;
-    grid-template-rows: 140px;
-    height: 140px;
-    padding: 0 36px;
-  }
 }
 
 .direction__wrapper {
-  display: grid;
-  grid-template-columns: 1fr max-content;
-  grid-template-rows: 1fr;
   background-color: $basic-white;
   padding: 24px;
   border-top-left-radius: 10px;
@@ -22,11 +11,7 @@
   margin-top: -10px;
 
   @media (min-width: $tablet-width) {
-    grid-column: 1 / 2;
-    grid-row: 1 / 2;
     margin-top: 0;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
     border-top-right-radius: 0;
@@ -53,8 +38,6 @@
   background-repeat: no-repeat;
 
   @media (min-width: $tablet-width) {
-    // outline: 1px solid red;
-    grid-column: 2 / 3;
     height: 100%;
   }
 }
@@ -91,8 +74,6 @@
   font-weight: 700;
   font-size: 21px;
   line-height: 21px;
-  grid-row: 1 / 2;
-  grid-column: 1 / 2;
 }
 
 .direction__subtitle {
@@ -100,8 +81,6 @@
   font-weight: 500;
   font-size: 16px;
   line-height: 18px;
-  grid-row: 2 / 3;
-  grid-column: 1 / 2;
 }
 
 .directions-list {

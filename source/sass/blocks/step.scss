@@ -1,11 +1,21 @@
-.step-2 .button:last-of-type {
-  background-color: transparent;
-}
-
 .step .button {
   font-weight: 700;
   font-size: 17px;
   line-height: 30px;
   letter-spacing: 0.01em;
   text-transform: uppercase;
+}
+
+.step-2 .modal {
+  display: none;
+}
+
+.step-2 {
+  border-radius: 20px;
+}
+
+.step__buttons-wrapper {
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
 }

@@ -39,9 +39,21 @@
   line-height: 14px;
 }
 
+.form-page .lvl-wrapper {
+  @media (min-width: $tablet-width) {
+    position: static;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+  }
+}
+
 .form-page .lvl {
   background-color: transparent;
   color: $basic-blue;
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
 }
 
 .companion__level .lvl {
@@ -58,4 +70,20 @@
 
 .companion__level .lvl__text {
   display: none;
+}
+
+.form-header .lvl-wrapper {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
+}
+
+.form-header .lvl__text,
+.form-header .lvl__number {
+  @media (min-width: $desktop-width) {
+    display: block;
+    color: $basic-white;
+  }
 }

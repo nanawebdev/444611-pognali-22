@@ -97,7 +97,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    grid-column: 2/3;
+    grid-column: 2 / 3;
     grid-row: 1 / 2;
   }
 }
@@ -122,17 +122,4 @@
 
 .about__rates {
   background-color: $block-background-2;
-}
-
-
-.rate .about__title {
-  display: flex;
-  justify-content: center;
-  grid-column: 1 / 2;
-  grid-row: 1 / 2;
-
-  @media (min-width: $tablet-width) {
-    grid-column: 1 / -1;
-    grid-row: 1 / 2;
-  }
 }

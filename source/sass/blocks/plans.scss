@@ -4,12 +4,6 @@
   padding: 28px 25px 59px 25px;
 }
 
-.plans-list__direction {
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 16px;
-}
-
 .plans-list__companions,
 .plans-list__date {
   font-weight: 500;
@@ -26,9 +20,27 @@
   border: none;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  display: flex;
+  justify-content: flex-start;
 }
 
 .plans-list__item {
+  position: relative;
   background-color: $basic-white;
   margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.plans-list__number {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.plans-list__direction {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 16px;
+  padding-left: 20px;
 }
