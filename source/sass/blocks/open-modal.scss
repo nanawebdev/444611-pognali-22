@@ -1,0 +1,17 @@
+.open-modal__text {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
+}
+
+.open-modal {
+  background-color: transparent;
+  border: none;
+  display: flex;
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}

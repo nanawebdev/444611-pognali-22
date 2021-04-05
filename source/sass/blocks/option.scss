@@ -11,10 +11,6 @@
   border: none;
 }
 
-.option__submit {
-  background-color: $basic-white;
-  font-weight: 700;
-  font-size: 17px;
-  line-height: 17px;
-  text-transform: uppercase;
+.option {
+  display: flex;
 }

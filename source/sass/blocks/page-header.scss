@@ -1,4 +1,5 @@
-.form-header {
+.form-header,
+.companions-header {
   background-color: $block-background-4;
   display: flex;
   justify-content: space-between;
@@ -11,7 +12,8 @@
   }
 }
 
-.form-header__title {
+.form-header__title,
+.companions-header__title {
   color: $basic-white;
   background-color: $block-background-4;
   margin: 0;
@@ -22,4 +24,13 @@
 
 .form-header__wrapper {
   display: flex;
+}
+
+.companions-header__link {
+  display: none;
+  color: $basic-white;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
 }

@@ -1,8 +1,3 @@
-.companions-filter {
-  background-color: $basic-yellow;
-  border-radius: 20px;
-}
-
 .companion__subtitle {
   font-weight: normal;
   font-size: 15px;
@@ -23,8 +18,94 @@
   color: $basic-blue;
 }
 
+.companion {
+  position: relative;
+  margin-bottom: 10px;
+  border-radius: 20px;
+  background-color: $basic-white;
+  padding: 15px 22px 23px 25px;
+}
+
+.companion__like {
+  position: absolute;
+  top: 60px;
+  left: 70px;
+
+  @media (min-width: $tablet-width) {
+    position: static;
+  }
+}
+
+.companions {
+  background-color: $block-background-8;
+}
+
+
 .companion__avatar {
   border-radius: 50%;
   width: 70px;
   height: 70px;
+
+  @media (min-width: $tablet-width) {
+    border-radius: 20px;
+    width: 190px;
+    height: 190px;
+  }
+
+  @media (min-width: $desktop-width) {
+    border-radius: 0;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    width: 285px;
+    height: 285px;
+  }
+}
+
+.companions-list__item:nth-of-type(1) .companion__avatar {
+  background-image: url("./../../img/firsova-mobile.jpg");
+
+  @media (min-width: $tablet-width) {
+    background-image: url("./../../img/firsova-tablet-catalog.jpg");
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: url("./../../img/firsova-desktop-catalog.jpg");
+  }
+}
+
+
+.companions-list__item:nth-of-type(2) .companion__avatar {
+  background-image: url("./../../img/demin-mobile.jpg");
+
+  @media (min-width: $tablet-width) {
+    background-image: url("./../../img/demin-tablet-catalog.jpg");
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: url("./../../img/demin-desktop-catalog.jpg");
+  }
+}
+
+.companions-list__item:nth-of-type(3) .companion__avatar {
+  background-image: url("./../../img/smolov-mobile.jpg");
+
+  @media (min-width: $tablet-width) {
+    background-image: url("./../../img/smolov-tablet-catalog.jpg");
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: url("./../../img/smolov-desktop-catalog.jpg");
+  }
+}
+
+.companions-list__item:nth-of-type(4) .companion__avatar {
+  background-image: url("./../../img/rogovaya-mobile.jpg");
+
+  @media (min-width: $tablet-width) {
+    background-image: url("./../../img/rogovaya-tablet-catalog.jpg");
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: url("./../../img/rogova-desktop-catalog.jpg");
+  }
 }

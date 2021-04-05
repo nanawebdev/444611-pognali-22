@@ -1,0 +1,11 @@
+.catalog-wrapper {
+  @media (min-width: $desktop-width) {
+    display: flex;
+  }
+}
+
+.catalog {
+  @media (min-width: $desktop-width) {
+    order: -1;
+  }
+}

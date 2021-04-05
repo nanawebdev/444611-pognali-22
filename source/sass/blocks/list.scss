@@ -1,11 +1,11 @@
-.list {
-  border: 1px solid $border-color-1;
-  padding: 25px;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  border-radius: 10px;
-}
+// .list {
+//   border: 1px solid $border-color-1;
+//   padding: 25px;
+//   position: relative;
+//   display: flex;
+//   justify-content: center;
+//   border-radius: 10px;
+// }
 
 .list__title {
   display: none;
@@ -21,4 +21,14 @@
 
 .form-page .list__title {
   display: flex;
+}
+
+.companion__vehicles-list .list__title {
+  position: static;
+  display: flex;
+  background-color: $basic-white;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 16px;
+  text-transform: none;
 }
