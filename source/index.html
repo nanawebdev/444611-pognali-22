@@ -18,7 +18,7 @@
       </div>
     </div>
 
-    <button class="main-nav__toggle" type="button"></button>
+    <button class="main-nav__toggle toggle" type="button"></button>
 
     <ul class="site-list">
       <li class="site-list__item">О сервисе</li>
@@ -145,10 +145,10 @@
         </div>
 
         <blockquote class="blockquote">
-          <p class="blockquote__text">«Лучшее приложение, что я видел в жизни!»</p>
+          <p class="blockquote__text">«Лучшее приложение, <br> что я видел в жизни!»</p>
           <div class="blockquote__author author">
-            <cite class="author__name">Мурат Э льтазин</cite><br>
-            <span class="author__info">главный редактор газеты «гаджетлайф»</span>
+            <cite class="author__name">Мурат Эльтазин</cite><br>
+            <span class="author__info">главный редактор <br class="br-first"> газеты <br class="br-second">«гаджетлайф»</span>
           </div>
         </blockquote>
       </div>
@@ -467,15 +467,23 @@
           <h3 class="visually-hidden">
             О тарифах
           </h3>
-          <span class="about__title">Добавьте свой профиль</span>
+          <div class="about__title">
+            <span>Добавьте <br> свой <br> профиль</span>
+          </div>
           <img src="img/add-profile-icon.png" alt="иконка" width="100" height="100" class="rate__image">
-          <div class="rate__one rate__number">1</div>
+          <div class="rate__cell rate__one">
+            <div class="rate__number">1</div>
+          </div>
           <div class="rate__one rate__item">Базовое размещение</div>
           <div class="rate__one rate__price">Бесплатно</div>
-          <div class="rate__two rate__number">2</div>
+          <div class="rate__cell rate__two">
+            <div class="rate__number">3</div>
+          </div>
           <div class="rate__two rate__item">Вывод на первых позициях</div>
           <div class="rate__two rate__price">99 руб./мес</div>
-          <div class="rate__three rate__number">3</div>
+          <div class="rate__cell rate__three">
+            <div class="rate__number">3</div>
+          </div>
           <div class="rate__three rate__item">Кастомный цвет карточки</div>
           <div class="rate__three rate__price">59 руб./мес</div>
 
@@ -498,9 +506,9 @@
         <h3 class="visually-hidden">Регистрация</h3>
         <span class="registration__title">Заинтересовались?</span>
         <p class="registration__text">
-          Зарегистрируйтесь,
-          это быстро и бесплатно!
-          Уже зарегистрированы? Тогда
+          Зарегистрируйтесь,<br>
+          это быстро и бесплатно!<br>
+          Уже зарегистрированы? Тогда<br>
           скорее
           <a class="registration__link" href="#">авторизуйтесь.</a>
         </p>
@@ -508,7 +516,7 @@
         <form class="registration__form">
           <h3 class="visually-hidden">Форма регистрации</h3>
           <div class="registration__wrapper">
-            <input type="text" aria-label="Поле для электронной почты" class="registration__email-input">
+            <input type="text" placeholder="E-mail" aria-label="Поле для электронной почты" class="registration__email-input">
             <button type="submit" class="button button--square" aria-label="Регистрация">
               <span class="button__text">Регистрация</span>
             </button>
@@ -627,7 +635,7 @@
       <li class="socials-list__item">
         <a class="socials-list__link">
           <svg class="socials-list__icon" width="18" height="18" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <g opacity=".5" fill="#192144">
+            <g opacity="1" fill="#192144">
               <path
                 d="M12.96 1.8a3.247 3.247 0 013.24 3.24v7.92a3.247 3.247 0 01-3.24 3.24H5.04a3.247 3.247 0 01-3.233-3.24V5.04A3.247 3.247 0 015.04 1.8h7.92zm0-1.08H5.04A4.32 4.32 0 00.72 5.04v7.92a4.32 4.32 0 004.32 4.32h7.92a4.32 4.32 0 004.32-4.32V5.04A4.32 4.32 0 0012.96.72z" />
               <path
@@ -639,22 +647,23 @@
       </li>
     </ul>
 
-    <!-- кривое лого  -->
     <div class="copyright">
       <span class="copyright__text">Разработано</span>
 
-      <!-- <svg width="40" height="40" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <g clip-path="url(#clip0)">
-          <path
-            d="M13.643.101L13.5.086 0 1.464v24.102l13.5 7.823L27 25.566V1.464L13.643.101zM25.234 24.59l-11.734 6.8-11.734-6.8v-9.88l11.685 6.774.02 1.228-8.017-4.646-.011 1.2 8.046 4.71.02 1.26-8.045-4.66-.01 1.2 8.046 4.71 8.124-4.734v-5.103l3.62-2.105-.01 10.046zm0-11.327l-3.22 1.842-1.482.857-7.065-4.101-.011 1.2 6.04 3.5-.053.03-.13.074-.86.482-4.986-2.888-.011 1.2 3.936 2.28-.933.598-.021.012-2.971-1.706-.011 1.2 1.947 1.11-1.988 1.163-11.618-6.731 11.638-6.815 11.8 6.693zm0-1.2L13.44 5.288 1.766 12.055v-9.04l11.734-1.2 11.734 1.2v9.047z"
-            fill="#192144" />
-        </g>
-        <defs>
-          <clipPath id="clip0">
-            <path fill="#fff" transform="translate(0 .086)" d="M0 0h27v33.303H0z" />
-          </clipPath>
-        </defs>
-      </svg> -->
+      <div>
+        <svg width="40" height="40" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g clip-path="url(#clip0)">
+            <path
+              d="M13.643.101L13.5.086 0 1.464v24.102l13.5 7.823L27 25.566V1.464L13.643.101zM25.234 24.59l-11.734 6.8-11.734-6.8v-9.88l11.685 6.774.02 1.228-8.017-4.646-.011 1.2 8.046 4.71.02 1.26-8.045-4.66-.01 1.2 8.046 4.71 8.124-4.734v-5.103l3.62-2.105-.01 10.046zm0-11.327l-3.22 1.842-1.482.857-7.065-4.101-.011 1.2 6.04 3.5-.053.03-.13.074-.86.482-4.986-2.888-.011 1.2 3.936 2.28-.933.598-.021.012-2.971-1.706-.011 1.2 1.947 1.11-1.988 1.163-11.618-6.731 11.638-6.815 11.8 6.693zm0-1.2L13.44 5.288 1.766 12.055v-9.04l11.734-1.2 11.734 1.2v9.047z"
+              fill="#192144" />
+          </g>
+          <defs>
+            <clipPath id="clip0">
+              <path fill="#fff" transform="translate(0 .086)" d="M0 0h27v33.303H0z" />
+            </clipPath>
+          </defs>
+        </svg>
+      </div>
 
     </div>
 

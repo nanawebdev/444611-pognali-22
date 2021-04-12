@@ -24,14 +24,22 @@
   }
 }
 
-.rate__number.rate__one {
+.rate__one .rate__number {
   background-color: $special-orange;
+
 }
 
-.rate__number.rate__two {
+.rate__two .rate__number {
   background-color: $special-yellow-dark;
 }
 
-.rate__number.rate__three {
+.rate__three .rate__number {
   background-color: $basic-yellow;
+}
+
+.rate__item {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 16px;
+  color: $special-grey;
 }

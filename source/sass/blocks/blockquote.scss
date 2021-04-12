@@ -8,7 +8,7 @@
     font-weight: 300;
     font-size: 28px;
     line-height: 33px;
-    width: 264px;
+    // width: 264px;
   }
 }
 
@@ -21,5 +21,19 @@
     font-weight: bold;
     font-size: 21px;
     line-height: 25px;
+  }
+}
+
+.author__info .br-first {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.author__info .br-second {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
   }
 }

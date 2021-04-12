@@ -2,7 +2,7 @@
   background-color: $special-blue-1;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
-  padding: 25px 25px 16px 25px;
+  padding: 13px 25px 29px 25px;
 }
 
 .feedback .action__item {
@@ -20,6 +20,8 @@
   justify-content: center;
   text-align: center;
   flex-direction: column;
+  margin: 0;
+  margin-bottom: 17px;
 
   @media (min-width: $tablet-width) {
     flex-direction: row;

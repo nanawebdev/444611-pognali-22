@@ -1,1 +1,4 @@
-const navToggle = document.querySelector('.main-nav__toggle')
+const toggle = document.querySelector('.toggle')
+toggle.addEventListener('click', () => {
+
+})

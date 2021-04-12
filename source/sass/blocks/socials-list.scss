@@ -18,11 +18,26 @@
   width: 45px;
   height: 45px;
   border-radius: 50%;
+  text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
+  line-height: 0;
 }
 
 .footer .socials-list {
   display: flex;
+  padding-bottom: 37px;
+  position: relative;
+  justify-content: center;
+}
+
+.footer .socials-list::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 1px;
+  width: 100%;
+  background-color: $divider;
 }

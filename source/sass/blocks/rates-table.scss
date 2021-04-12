@@ -2,6 +2,7 @@
   display: grid;
   grid-template-columns: 1fr max-content;
   grid-template-rows: repeat(8, max-content);
+  column-gap: 40px;
 
   @media (min-width: $tablet-width) {
     grid-template-columns: max-content 1fr 1fr;
@@ -15,9 +16,10 @@
 
 .rate .about__title {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   grid-column: 1 / 2;
   grid-row: 1 / 2;
+  padding-top: 16px;
 
   @media (min-width: $tablet-width) {
     grid-column: 1 / -1;
@@ -35,17 +37,26 @@
   }
 }
 
-.rate__number.rate__one {
+.rate__cell {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.rate__cell:first-of-type {
+  margin-top: 31px;
+}
+
+.rate__cell.rate__one {
   grid-column: 2 / 3;
   grid-row: 2 / 4;
 }
 
-.rate__number.rate__two {
+.rate__cell.rate__two {
   grid-column: 2 / 3;
   grid-row: 4 / 6;
 }
 
-.rate__number.rate__three {
+.rate__cell.rate__three {
   grid-column: 2 / 3;
   grid-row: 6 / 8;
 }
@@ -88,9 +99,18 @@
   grid-row: 1 / 2;
 }
 
+.rate__price {
+  padding-bottom: 15px;
+  padding-top: 6px;
+}
+
+.rate__item {
+  padding-top: 13px;
+}
+
 @media (min-width: $tablet-width) {
   // 1
-  .rate__number.rate__one {
+  .rate__cell.rate__one {
     grid-column: 1 / 2;
     grid-row: 2 / 3;
   }
@@ -106,7 +126,7 @@
   }
 
   // 2
-  .rate__number.rate__two {
+  .rate__cell.rate__two {
     grid-column: 1 / 2;
     grid-row: 3 / 4;
   }
@@ -122,7 +142,7 @@
   }
 
   // 3
-  .rate__number.rate__three {
+  .rate__cell.rate__three {
     grid-column: 1 / 2;
     grid-row: 4 / 5;
   }

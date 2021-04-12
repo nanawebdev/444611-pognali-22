@@ -3,9 +3,9 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
-  row-gap: 51px;
-  padding: 0 25px;
-  padding-top: 27px;
+  // row-gap: 51px;
+  padding: 19px 26px;
+  // padding-top: 27px;
   background-color: $basic-blue;
 
   @media (min-width: $tablet-width) {
