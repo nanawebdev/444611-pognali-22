@@ -6,6 +6,7 @@
 
   @media (min-width: $tablet-width) {
     text-align: center;
+    padding-top: 117px;
   }
 }
 
@@ -14,6 +15,11 @@
   font-weight: 700;
   font-size: 24px;
   line-height: 24px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 45px;
+    line-height: 45px;
+  }
 }
 
 .registration__text {
@@ -23,6 +29,24 @@
   line-height: 22px;
   margin-top: 18px;
   margin-bottom: 30px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 28px;
+    line-height: 32px;
+    margin-top: 58px;
+  }
+}
+
+.registration__text br {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.registration__text .second-br {
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
 }
 
 .registration__link {
@@ -40,12 +64,34 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 18px;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    padding-top: 31px;
+    padding-bottom: 29px;
+    border-radius: 20px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    margin-right: 0;
+    padding-left: 37px;
+  }
 }
 
 .registration__email-input::placeholder {
   color: rgba($special-grey, 0.3);
+
+  @media (min-width: $tablet-width) {
+    font-size: 24px;
+    line-height: 24px;
+  }
 }
 
 .registration__wrapper {
   display: flex;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 66px;
+    margin-left: 51px;
+    margin-right: 51px;
+  }
 }

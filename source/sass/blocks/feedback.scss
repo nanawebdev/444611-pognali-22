@@ -7,12 +7,6 @@
   z-index: $z-feedback;
 }
 
-.feedback .action__item {
-  color: $basic-yellow;
-  font-size: 16px;
-  line-height: 22px;
-}
-
 .feedback__text {
   color: $basic-white;
   font-weight: 300;
@@ -27,5 +21,10 @@
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
+    font-size: 28px;
+    line-height: 30px;
+    text-align: center;
+    letter-spacing: 0.01em;
+    margin-top: 30px;
   }
 }

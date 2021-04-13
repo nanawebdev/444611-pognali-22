@@ -16,3 +16,10 @@
   flex-direction: column;
   margin-top: 51px;
 }
+
+.feedback .contacts-list {
+  @media (min-width: $tablet-width) {
+    margin-top: 57px;
+    margin-left: 79px;
+  }
+}
