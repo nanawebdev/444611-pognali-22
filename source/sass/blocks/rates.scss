@@ -6,12 +6,77 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  font-weight: 400;
+
+  @media (min-width: $tablet-width) {
+    width: 68px;
+    height: 68px;
+    font-size: 28px;
+    line-height: 28px;
+  }
 }
 
 .rate {
   font-weight: 300;
   font-size: 16px;
   line-height: 16px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 23px;
+  }
+}
+
+.rate__item {
+  padding-top: 11px;
+  position: relative;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 16px;
+  color: $special-grey;
+
+  @media (min-width: $tablet-width) {
+    font-size: 28px;
+    line-height: 28px;
+    padding-top: 23px;
+    margin-left: 23px;
+  }
+}
+
+.rate__item::before {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: $special-divider;
+}
+
+.rate__three {
+  padding-top: 14px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 20px;
+  }
+}
+
+.rate__three.rate__price {
+  padding-top: 6px;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 20px;
+  }
+}
+
+.rate__three.rate__price::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: $special-divider;
 }
 
 .rate .action__item {
@@ -24,9 +89,12 @@
   }
 }
 
+.rate__cell.rate__three {
+  padding-top: 3px;
+}
+
 .rate__one .rate__number {
   background-color: $special-orange;
-
 }
 
 .rate__two .rate__number {
@@ -37,9 +105,27 @@
   background-color: $basic-yellow;
 }
 
-.rate__item {
-  font-weight: 300;
-  font-size: 16px;
-  line-height: 16px;
-  color: $special-grey;
+.rate br {
+  display: block;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.rate__price {
+  @media (min-width: $tablet-width) {
+    font-weight: 300;
+    font-size: 28px;
+    line-height: 28px;
+    padding-right: 50px;
+    text-align: right;
+    padding-top: 20px;
+  }
+}
+
+.rate__price.rate__one {
+  @media (min-width: $tablet-width) {
+    padding-top: 23px;
+  }
 }

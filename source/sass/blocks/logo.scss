@@ -17,12 +17,6 @@
   }
 }
 
-.main-page .logo,
-.form-page .logo,
-.catalog-page .logo {
-  background-image: url("./../../img/logo_mobile.png");
-}
-
 .footer .logo {
   background-image: url("./../../img/logo-mobile-dark.png");
   background-repeat: no-repeat;
@@ -33,6 +27,8 @@
     background-image: url("./../../img/logo_footer_tablet.png");
     width: 166px;
     height: 42px;
+    margin: 0;
+    padding: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -45,4 +41,8 @@
 .footer .logo__wrapper {
   width: 100px;
   height: 15px;
+}
+
+.main-page__main-header--open .logo {
+  background-image: url("./../../img/logo-mobile-dark.png");
 }

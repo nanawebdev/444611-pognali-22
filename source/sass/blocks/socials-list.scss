@@ -23,6 +23,11 @@
   justify-content: center;
   align-items: center;
   line-height: 0;
+
+  @media (min-width: $tablet-width) {
+    width: 62px;
+    height: 62px;
+  }
 }
 
 .footer .socials-list {
@@ -30,6 +35,10 @@
   padding-bottom: 37px;
   position: relative;
   justify-content: center;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
 }
 
 .footer .socials-list::after {
@@ -40,4 +49,33 @@
   height: 1px;
   width: 100%;
   background-color: $divider;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.socials-list__icon {
+  fill: $special-blue-1;
+  width: 45px;
+  height: 45px;
+
+  &--disabled {
+    opacity: 0.5;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 62px;
+    height: 62px;
+  }
+}
+
+.main-page__main-header--open .socials-list {
+  display: flex;
+  margin-top: 30px;
+  padding-left: 67px;
+}
+
+.main-page__main-header--open .socials-list__item {
+  margin-right: 0;
 }

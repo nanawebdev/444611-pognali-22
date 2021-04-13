@@ -3,7 +3,6 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 18px;
-  margin: 0 25px;
 
   @media (min-width: $tablet-width) {
     display: grid;
@@ -22,7 +21,8 @@
 // не проходит на переполнение
 .steps-list__item {
   display: grid;
-  grid-template-columns: 140px 1fr;
+  grid-template-columns: 1fr min-content;
+  grid-template-rows: 1fr;
   column-gap: 10px;
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
@@ -36,6 +36,7 @@
     padding-top: 31px;
     padding-left: 32px;
     padding-bottom: 21px;
+    position: relative;
   }
 
   @media (min-width: $desktop-width) {
@@ -64,8 +65,9 @@
   background-color: $special-orange;
 
   @media (min-width: $tablet-width) {
-    border-top-left-radius: 8px;
+    border-top-left-radius: 18px;
     border-top-right-radius: 0;
+    margin-right: -20px;
   }
 
   @media (min-width: $desktop-width) {
@@ -80,7 +82,10 @@
 
   @media (min-width: $tablet-width) {
     margin-top: 0;
-    margin-left: -5px;
+    margin-left: 0;
+    border-top-right-radius: 18px;
+    border-top-left-radius: 18px;
+    z-index: $z-steps;
   }
 
   @media (min-width: $desktop-width) {
@@ -98,8 +103,9 @@
   @media (min-width: $tablet-width) {
     border-top-right-radius: 0;
     border-top-left-radius: 0;
-    border-bottom-left-radius: 8px;
+    border-bottom-left-radius: 18px;
     margin-top: 0;
+    margin-right: -20px;
   }
 
   @media (min-width: $desktop-width) {
@@ -118,10 +124,11 @@
 
   @media (min-width: $tablet-width) {
     border-top-left-radius: 0;
-    border-bottom-left-radius: 8px;
+    border-bottom-left-radius: 18px;
     border-top-right-radius: 0;
+    border-bottom-right-radius: 18px;
     margin-top: 0;
-    margin-left: -5px;
+    z-index: $z-steps;
   }
 
   @media (min-width: $desktop-width) {

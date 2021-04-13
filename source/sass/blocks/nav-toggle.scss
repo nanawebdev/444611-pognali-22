@@ -21,11 +21,11 @@
   }
 
   &::after {
-    top: 8px;
+    top: 12px;
   }
 
   &::before {
-    top: 0;
+    top: 4px;
   }
 
   &--active::after {
@@ -45,7 +45,8 @@
   }
 
   @media (min-width: $tablet-width) {
-    margin-left: 0;
+    margin-left: 22px;
+    margin-top: -5px;
   }
 
   @media (min-width: $desktop-width) {

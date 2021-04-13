@@ -4,32 +4,78 @@
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
+  margin-left: 16px;
 
   @media (min-width: $tablet-width) {
     display: none;
   }
 }
 
+.action {
+  display: flex;
+  align-items: center;
+}
+
 .action__icon {
   margin-right: 16px;
-  fill: block-background-6;
+  fill: $block-background-6;
+  width: 40px;
+  height: 40px;
 }
 
-.promo__nav .action__icon:first-child {
-  fill: $special-orange;
+.rate .action__icon {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    margin: 0;
+  }
 }
 
-.promo__nav .action__icon-path {
-  fill: $basic-blue;
-}
+.rate .action__item {
+  margin-top: 30px;
 
-.promo__nav .action__icon:last-child {
-  fill: $special-yellow-dark;
+  @media (min-width: $tablet-width) {
+    margin-top: 0;
+  }
 }
 
 .action__wrapper {
   display: flex;
   align-items: center;
+  border-radius: 50%;
+
+  &--phone {
+    background-color: $special-orange;
+
+    &:hover {
+      background-color: $phone-button-hover;
+    }
+  }
+
+  &--email {
+    background-color: $special-yellow-dark;
+  }
+
+  &:hover {
+    background-color: $special-orange;
+  }
+
+  &--basic {
+    width: 45px;
+    height: 45px;
+    background-color: $block-background-6;
+  }
+}
+
+.action__wrapper--basic .action__icon {
+  width: 45px;
+  height: 45px;
+  fill: $basic-yellow;
+}
+
+.action__wrapper:active .action__icon-path {
+  opacity: 0.3;
 }
 
 .form-page .action__item {
@@ -42,4 +88,44 @@
 
 .promo__nav .action__icon {
   margin-right: 0;
+}
+
+.promo__nav .action__icon-path {
+  fill: $basic-blue;
+}
+
+.address .action__item {
+  color: $basic-blue-light;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.address .action {
+  margin-bottom: 32px;
+}
+
+.about__rates .action__item {
+  margin-left: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+.rate .action__wrapper {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 68px;
+    height: 68px;
+    background-color: $block-background-5;
+    margin-right: 23px;
+  }
+}
+
+.rate .action {
+  margin-top: 27px;
+  // margin-left: 40px;
 }

@@ -4,8 +4,19 @@
   flex-direction: column;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
+  margin-top: -37px;
+  z-index: $z-footer;
+  background-color: $basic-white;
+  position: relative;
 
   @media (min-width: $tablet-width) {
-    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 46px 40px 32px 38px;
+    align-items: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 47px 60px 43px 58px;
   }
 }

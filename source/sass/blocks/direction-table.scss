@@ -3,15 +3,14 @@
     display: grid;
     grid-template-columns: 1fr 185px;
     grid-template-rows: 140px;
-    height: 140px;
-    padding: 0 36px;
   }
 }
 
 .direction__wrapper {
   display: grid;
   grid-template-columns: 1fr max-content;
-  grid-template-rows: 1fr;
+  grid-template-rows: 1fr 1fr;
+  height: 100%;
 }
 
 .direction__title {

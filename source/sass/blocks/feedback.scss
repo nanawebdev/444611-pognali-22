@@ -1,8 +1,10 @@
 .feedback {
   background-color: $special-blue-1;
-  border-bottom-left-radius: 20px;
-  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
   padding: 13px 25px 29px 25px;
+  position: relative;
+  z-index: $z-feedback;
 }
 
 .feedback .action__item {

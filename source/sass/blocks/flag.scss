@@ -17,3 +17,9 @@
 .form-page .flag-wrapper {
   display: none;
 }
+
+.about__users .flag-wrapper {
+  @media (min-width: $tablet-width) {
+    top: 272px;
+  }
+}

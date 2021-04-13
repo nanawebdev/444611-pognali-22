@@ -20,3 +20,10 @@
 .form-page .site-list {
   color: $basic-white;
 }
+
+.main-page__main-header--open .site-list {
+  display: flex;
+  flex-direction: column;
+  padding-top: 76px;
+  align-items: center;
+}

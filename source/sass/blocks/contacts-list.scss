@@ -2,11 +2,17 @@
   grid-column: 1/3;
   display: none;
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $desktop-width) {
     display: flex;
   }
 }
 
 .promo__nav .contacts-list {
   display: flex;
+}
+
+.main-page__main-header--open .contacts-list {
+  display: flex;
+  flex-direction: column;
+  margin-top: 51px;
 }

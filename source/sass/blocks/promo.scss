@@ -1,16 +1,17 @@
 .promo {
-  background-color: $basic-blue;
-  padding-top: 21px;
+  background-color: $block-background-4;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 41px;
   padding-bottom: 39px;
   background-image: url("./../../img/promo-mobile-back.png");
   background-repeat: no-repeat;
-  background-position: 0 -70px;
+  background-position: 0 -53px;
 
   @media (min-width: $tablet-width) {
     background-image: url("./../../img/promo-back-tablet.png");
-    background-position: 0 220px;
-    padding-top: 0;
-    padding-bottom: 96px;
+    background-position: 0 275px;
+    padding: 0 40px 96px 40px;
   }
 
   @media (min-width: $desktop-width) {
@@ -21,8 +22,7 @@
 
 .promo__nav {
   display: flex;
-  margin-top: -20px;
-  padding: 0 25px;
+  margin-top: -25px;
   position: relative;
 
   @media (min-width: $tablet-width) {
@@ -45,12 +45,13 @@
     font-weight: bold;
     font-size: 60px;
     line-height: 70px;
+    padding-top: 53px;
   }
 }
 
 .promo__wrapper {
   @media (min-width: $tablet-width) {
-    height: 690px;
+    height: 747px;
   }
 
   @media (min-width: $desktop-width) {
@@ -61,4 +62,8 @@
 
 .promo__header {
   height: 388px;
+
+  @media (min-width: $tablet-width) {
+    height: 320px;
+  }
 }

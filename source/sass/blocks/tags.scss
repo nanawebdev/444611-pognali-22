@@ -25,3 +25,22 @@
     grid-row: 2 / 3;
   }
 }
+
+.main-page .tag-list {
+  width: 180px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.main-page .tag-list-wrapper {
+  margin-top: 15px;
+  margin-bottom: 12px;
+}
+
+.about__users .tag-list__item {
+  @media (min-width: $tablet-width) {
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 23px;
+  }
+}
