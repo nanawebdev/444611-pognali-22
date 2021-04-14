@@ -7,7 +7,7 @@
 //   border-radius: 10px;
 // }
 
-.list__title {
+.list-title {
   display: none;
   position: absolute;
   top: 0;
@@ -19,11 +19,11 @@
   text-transform: uppercase;
 }
 
-.form-page .list__title {
+.form-page .list-title {
   display: flex;
 }
 
-.companion__vehicles-list .list__title {
+.companion__vehicles-list .list-title {
   position: static;
   display: flex;
   background-color: $basic-white;

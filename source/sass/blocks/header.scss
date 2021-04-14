@@ -14,19 +14,18 @@
     padding-left: 40px;
     padding-right: 40px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 46px;
+    padding-left: 60px;
+    padding-right: 60px;
+    display: grid;
+  }
 }
 
 .form-page .main-header,
 .catalog-page .main-header {
   background-color: $block-background-4;
-}
-
-.main-page__main-header {
-  &--open {
-    background-color: $basic-white;
-    color: $special-blue-1;
-    padding-top: 27px;
-  }
 }
 
 .main-header__button {
@@ -55,4 +54,15 @@
   justify-content: center;
   margin-top: 51px;
   padding: 12px 0 8px 0;
+}
+
+.main-page__main-header {
+  &--no-js,
+  &--open {
+    @media (max-width: $only-mobile) {
+      background-color: $basic-white;
+      color: $special-blue-1;
+      padding-top: 27px;
+    }
+  }
 }

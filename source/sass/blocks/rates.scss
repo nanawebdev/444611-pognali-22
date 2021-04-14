@@ -122,6 +122,10 @@
     text-align: right;
     padding-top: 20px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 379px;
+  }
 }
 
 .rate__price.rate__one {

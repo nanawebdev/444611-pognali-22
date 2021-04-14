@@ -5,10 +5,18 @@
   @media (min-width: $tablet-width) {
     height: 581px;
   }
+
+  @media (min-width: $desktop-width) {
+    height: 584px;
+  }
 }
 
 .map {
   position: relative;
   z-index: $z-map;
   margin-top: -20px;
+
+  @media (min-width: $desktop-width) {
+    margin-top: -40px;
+  }
 }

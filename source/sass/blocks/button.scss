@@ -87,6 +87,10 @@
     width: 276px;
     padding-left: 32px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 86px;
+  }
 }
 
 .about__service .button--square::after {
@@ -116,6 +120,12 @@
     font-size: 24px;
     line-height: 24px;
     border-radius: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 275px;
+    margin-top: 0;
+    margin-bottom: 29px;
   }
 }
 
@@ -148,7 +158,12 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 330px;
+    width: 475px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    font-size: 24px;
+    line-height: 24px;
+    padding-left: 40px;
   }
 }
 
@@ -220,6 +235,28 @@
 
 .address .button--transparent {
   padding: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 44px;
+    padding-top: 27px;
+    padding-bottom: 23px;
+    border-radius: 20px;
+    font-size: 24px;
+    line-height: 24px;
+    padding-left: 34px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    padding-right: 62px;
+  }
+}
+
+.address .button--transparent::after {
+  @media (min-width: $tablet-width) {
+    top: 32px;
+    right: 31px;
+  }
 }
 
 .about__users .button--square {
@@ -232,6 +269,11 @@
     padding-left: 31px;
     border-radius: 20px;
     margin-right: 10px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 17px;
+    width: 282px;
   }
 }
 

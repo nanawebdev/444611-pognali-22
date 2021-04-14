@@ -15,7 +15,9 @@
   }
 
   @media (min-width: $desktop-width) {
-    grid-template-columns: max-content 1fr 1fr 1fr;
+    grid-template-columns: max-content 1fr 1fr;
+    background-image: url("./../../img/rates-back-desktop-item1.png");
+    background-position: 980px 249px;
   }
 }
 
@@ -32,6 +34,14 @@
     padding-left: 104px;
     padding-top: 38px;
     margin-bottom: 69px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    padding: 0;
+    padding-top: 70px;
+    margin-bottom: 131px;
+    padding-left: 352px;
   }
 }
 

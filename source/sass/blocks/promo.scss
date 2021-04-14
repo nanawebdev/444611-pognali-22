@@ -16,7 +16,11 @@
 
   @media (min-width: $desktop-width) {
     background-image: url("./../../img/promo-back-desktop.png");
-    background-position: 0 220px;
+    background-position: 0 -118px;
+    background-color: $basic-blue;
+    padding: 0 60px;
+    padding-bottom: 122px;
+    border-radius: 0;
   }
 }
 
@@ -47,6 +51,11 @@
     line-height: 70px;
     padding-top: 53px;
   }
+
+  @media (min-width: $desktop-width) {
+    text-align: left;
+    padding-top: 17px;
+  }
 }
 
 .promo__wrapper {
@@ -55,8 +64,11 @@
   }
 
   @media (min-width: $desktop-width) {
+    padding-left: 68px;
+    padding-top: 75px;
+    padding-right: 27px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
   }
 }
 

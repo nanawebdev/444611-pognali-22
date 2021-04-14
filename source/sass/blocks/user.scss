@@ -98,14 +98,30 @@
   @media (min-width: $tablet-width) {
     padding-top: 34px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
 }
 
 .about__users .users-list__item {
   margin-bottom: 60px;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
 }
 
 .about__users .users-list__item:first-child {
-  margin-right: 50px;
+  @media (min-width: $tablet-width) {
+    margin-right: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 60px;
+  }
 }
 
 .about__users .user__information {
@@ -126,6 +142,9 @@
 }
 
 .about__users .user__avatar {
+  width: 270px;
+  height: 270px;
+
   @media (min-width: $tablet-width) {
     width: 285px;
     height: 285px;

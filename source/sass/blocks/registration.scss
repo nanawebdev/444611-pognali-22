@@ -6,7 +6,13 @@
 
   @media (min-width: $tablet-width) {
     text-align: center;
-    padding-top: 117px;
+    padding-top: 137px;
+    margin-top: -60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 80px;
+    padding-top: 170px;
   }
 }
 
@@ -93,5 +99,9 @@
     margin-top: 66px;
     margin-left: 51px;
     margin-right: 51px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 56px;
   }
 }

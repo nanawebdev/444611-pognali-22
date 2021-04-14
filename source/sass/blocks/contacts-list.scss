@@ -11,15 +11,48 @@
   display: flex;
 }
 
+.main-page__main-header--no-js .contacts-list,
 .main-page__main-header--open .contacts-list {
-  display: flex;
-  flex-direction: column;
-  margin-top: 51px;
+  @media (max-width: $only-mobile) {
+    display: flex;
+    flex-direction: column;
+    margin-top: 51px;
+  }
 }
 
 .feedback .contacts-list {
   @media (min-width: $tablet-width) {
-    margin-top: 57px;
-    margin-left: 79px;
+    margin-top: 41px;
+    margin-left: 75px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+.contacts-list.main-header__contacts-list--desktop {
+  display: none;
+}
+
+@media (min-width: $desktop-width) {
+  .contacts-list.main-header__contacts-list {
+    display: none;
+  }
+
+  .contacts-list.main-header__contacts-list--desktop {
+    display: flex;
+  }
+
+  .main-header__contacts-list--desktop .action__wrapper {
+    width: 50px;
+    height: 50px;
+  }
+
+  .main-header__contacts-list--desktop .action__icon {
+    width: 50px;
+    height: 50px;
+    margin-right: 0;
   }
 }

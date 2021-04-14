@@ -1,12 +1,6 @@
 .socials-list {
   grid-column: 1 / 3;
-  // display: flex;
-  // justify-content: center;
   display: none;
-
-  // @media (min-width: $tablet-width) {
-  //   display: none;
-  // }
 }
 
 .main-header .socials-list__item {
@@ -38,6 +32,11 @@
 
   @media (min-width: $tablet-width) {
     padding: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 368px;
+    margin-right: 414px;
   }
 }
 

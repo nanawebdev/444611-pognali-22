@@ -14,9 +14,14 @@
     justify-content: space-between;
     padding: 46px 40px 32px 38px;
     align-items: center;
+    margin-top: -52px;
+    border-top-left-radius: 60px;
+    border-top-right-radius: 60px;
   }
 
   @media (min-width: $desktop-width) {
     padding: 47px 60px 43px 58px;
+    margin-top: -153px;
+    justify-content: flex-start;
   }
 }
