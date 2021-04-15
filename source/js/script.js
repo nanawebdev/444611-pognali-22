@@ -1,6 +1,14 @@
-// const toggle = document.querySelector('.toggle')
-// const mainPageMainHeader = document.querySelector('.main-page__main-header')
 
-// toggle.addEventListener('click', () => {
-//   mainPageMainHeader.classList.toggle('main-page__main-header--open')
-// })
+// const mainHeader = document.querySelector('.main-header');
+
+// window.addEventListener('scroll', toggleClassOnScroll.bind(mainHeader, 100));
+
+// function toggleClassOnScroll(pxAmount) {
+//   let scrollTop = document.body.scrollTop;
+
+//   if(scrollTop > pxAmount) {
+//     this.classList.add('main-header--sticky');
+//   } else {
+//     this.classList.remove('main-header--sticky');
+//   }
+// }

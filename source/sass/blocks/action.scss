@@ -165,7 +165,11 @@
 }
 
 .rate .action {
-  margin-top: 27px;
+  margin-top: 0;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 27px;
+  }
 }
 
 .rate .action__icon {

@@ -20,6 +20,9 @@
     padding-left: 60px;
     padding-right: 60px;
     display: grid;
+    position: sticky;
+    top: 0;
+    z-index: $z-sticky-header;
   }
 }
 
@@ -64,5 +67,14 @@
       color: $special-blue-1;
       padding-top: 27px;
     }
+  }
+}
+
+.main-header--sticky {
+  @media (min-width: $desktop-width) {
+    padding-top: 17px;
+    padding-bottom: 13px;
+    background-color: $basic-white;
+    display: flex;
   }
 }

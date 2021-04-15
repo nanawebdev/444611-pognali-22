@@ -7,6 +7,9 @@
 
 .main-page .vehicles-list {
   margin-left: 32px;
+  @media (min-width: $tablet-width) {
+    margin-left: 53px;
+  }
 }
 
 .vehicles-list__icon {

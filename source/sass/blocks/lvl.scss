@@ -98,7 +98,7 @@
 
 $circleLength: 2 * 3.1416 * 28px;
 
-.lvl-circle {
+.lvl__circle {
   position: absolute;
   stroke-dasharray: $circleLength;
   stroke-dashoffset: $circleLength * (100 - 80) / 100;

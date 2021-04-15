@@ -44,3 +44,12 @@
     line-height: 23px;
   }
 }
+
+.about__users .tag-list {
+  margin-bottom: 14px;
+
+  @media (min-width: $tablet-width) {
+    width: 230px;
+    margin-bottom: 24px;
+  }
+}

@@ -40,3 +40,16 @@
     align-items: center;
   }
 }
+
+.main-header--sticky .site-list {
+  @media (min-width: $desktop-width) {
+    color: $special-blue-1;
+    display: flex;
+    flex-direction: row;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 20px;
+    margin-left: 145px;
+    flex-wrap: wrap;
+  }
+}

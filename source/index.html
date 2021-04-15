@@ -23,7 +23,7 @@
       <li class="site-list__item">Попутчики</li>
     </ul>
 
-    <button type="button" class="button main-header__button">Авторизация</button>
+    <button type="button" class="main-header__button button">Авторизация</button>
 
     <ul class="contacts-list main-header__contacts-list">
       <li class="contacts-list__item">
@@ -315,11 +315,11 @@
             <div class="user">
               <div class="lvl-wrapper">
                 <div class="lvl">
-                  <svg class="lvl-circle" stroke="#FF8D30" stroke-width="2" width="60" height="60" fill="none">
+                  <svg class="lvl__circle" stroke="#FF8D30" stroke-width="2" width="60" height="60" fill="none">
                     <circle cx="30" cy="30" r="28"></circle>
                   </svg>
                   <span class="lvl__number">99</span>
-                  <div class="divider"></div>
+                  <div class="lvl__divider"></div>
                   <span class="lvl__text">level</span>
                 </div>
               </div>
@@ -341,17 +341,17 @@
                   <span class="user__name">Таня Фирсова</span>
                 </div>
 
-                  <div class="list-title">
-                    <span>Тэги</span>
-                  </div>
-                  <ul class="tag-list">
-                    <li class="tag-list__item">#ЗОЖ</li>
-                    <li class="tag-list__item">#ПП</li>
-                    <li class="tag-list__item">#Фитнес</li>
-                    <li class="tag-list__item">#пляж</li>
-                    <li class="tag-list__item">#авокадо</li>
-                    <li class="tag-list__item">#смузи</li>
-                  </ul>
+                <div class="list-title">
+                  <span>Тэги</span>
+                </div>
+                <ul class="tag-list">
+                  <li class="tag-list__item">#ЗОЖ</li>
+                  <li class="tag-list__item">#ПП</li>
+                  <li class="tag-list__item">#Фитнес</li>
+                  <li class="tag-list__item">#пляж</li>
+                  <li class="tag-list__item">#авокадо</li>
+                  <li class="tag-list__item">#смузи</li>
+                </ul>
 
                 <div class="list-title">
                   <span>Транспорт</span>
@@ -403,19 +403,17 @@
                   </li>
                 </ul>
               </div>
-
             </div>
           </li>
-
           <li class="users-list__item">
             <div class="user">
               <div class="lvl-wrapper">
                 <div class="lvl">
-                  <svg class="lvl-circle" stroke="#FF8D30" stroke-width="2" width="60" height="60" fill="none">
+                  <svg class="lvl__circle" stroke="#FF8D30" stroke-width="2" width="60" height="60" fill="none">
                     <circle cx="30" cy="30" r="28"></circle>
                   </svg>
                   <span class="lvl__number">80 </span>
-                  <div class="divider"></div>
+                  <div class="lvl__divider"></div>
                   <span class="lvl__text">level</span>
                 </div>
               </div>
@@ -435,16 +433,21 @@
                   <div class="user__online"></div>
                   <span class="user__name">Петя Демин</span>
                 </div>
-                <div class="tag-list-wrapper">
-                  <ul class="tag-list">
-                    <li class="tag-list__item">#бургер</li>
-                    <li class="tag-list__item">#бар</li>
-                    <li class="tag-list__item">#футбол</li>
-                    <li class="tag-list__item">#концерт</li>
-                    <li class="tag-list__item">#крафт</li>
-                  </ul>
-                </div>
 
+                <div class="list-title">
+                  <span>Тэги</span>
+                </div>
+                <ul class="tag-list">
+                  <li class="tag-list__item">#бургер</li>
+                  <li class="tag-list__item">#бар</li>
+                  <li class="tag-list__item">#футбол</li>
+                  <li class="tag-list__item">#концерт</li>
+                  <li class="tag-list__item">#крафт</li>
+                </ul>
+
+                <div class="list-title">
+                  <span>Транспорт</span>
+                </div>
                 <ul class="vehicles-list">
                   <li class="vehicles-list__item">
                     <svg class="vehicles-list__icon" width="21" height="23" fill="none"
@@ -492,11 +495,8 @@
                   </li>
                 </ul>
               </div>
-
             </div>
           </li>
-
-
         </ul>
 
         <button type="button" class="button button--square">Показать всеx</button>
@@ -708,8 +708,8 @@
       </svg>
 
     </div>
-
   </footer>
+  <script src="./js/script.js"></script>
 </body>
 
 </html>
