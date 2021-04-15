@@ -1,6 +1,10 @@
-.divider {
+.lvl__divider {
   background-color: $basic-white;
   opacity: 0.3;
   width: 20px;
   height: 1px;
+
+  @media (min-width: $tablet-width) {
+    width: 30px;
+  }
 }

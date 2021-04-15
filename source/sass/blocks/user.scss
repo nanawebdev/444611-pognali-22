@@ -1,10 +1,21 @@
 .user {
   background-color: $basic-white;
-  border-radius: 14px;
+  border-radius: 11px;
   position: relative;
   width: 270px;
   margin-bottom: 8px;
   overflow: hidden;
+
+  @media (min-width: $tablet-width) {
+    width: 285px;
+    border-radius: 20px;
+  }
+}
+
+.user__information {
+  padding: 23px 59px 17px 43px;
+  display: flex;
+  flex-direction: column;
 }
 
 .users-list__item {
@@ -16,7 +27,6 @@
   font-size: 21px;
   line-height: 21px;
   color: $basic-blue-light;
-  margin-left: 10px;
 }
 
 .user__online {
@@ -24,6 +34,8 @@
   width: 6px;
   height: 6px;
   background-color: $special-red;
+  margin-right: 10px;
+  margin-bottom: 17px;
 }
 
 .user__wrapper {
@@ -58,6 +70,8 @@
 }
 
 .users-list {
+  padding-top: 30px;
+
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: row;
@@ -76,6 +90,71 @@
 
   @media (min-width: $desktop-width) {
     display: none;
+  }
+}
+
+.about__users .users-list {
+  margin-bottom: 13px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 34px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
+
+.about__users .users-list__item {
+  margin-bottom: 0;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+}
+
+.about__users .users-list__item:first-child {
+  @media (min-width: $tablet-width) {
+    margin-right: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 60px;
+  }
+}
+
+.about__users .user__information {
+  padding: 23px 59px 17px 43px;
+
+  @media (min-width: $tablet-width) {
+    padding: 26px 59px 23px 28px;
+  }
+}
+
+.about__users .user__name {
+  margin-bottom: 14px;
+
+  @media (min-width: $tablet-width) {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 22px;
+    margin-bottom: 24px;
+  }
+}
+
+.about__users .user__avatar {
+  width: 270px;
+  height: 270px;
+
+  @media (min-width: $tablet-width) {
+    width: 285px;
+    height: 285px;
   }
 }
 

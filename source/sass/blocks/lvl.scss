@@ -1,6 +1,8 @@
 // у враппера длина зависит от уровня
 .lvl-wrapper {
   position: absolute;
+  top: 18px;
+  left: 18px;
 }
 
 .lvl {
@@ -16,16 +18,18 @@
   justify-content: center;
 }
 
-.lvl::before {
-  position: absolute;
-  content: "";
-  top: 0;
-  left: 0;
-  // background-image: url("./../img/orange-border.svg");
-  width: 60px;
-  height: 60px;
-  background-repeat: no-repeat;
-}
+// .lvl::before {
+//   position: absolute;
+//   content: "";
+//   top: -4px;
+//   left: -4px;
+//   border: 4px solid green;
+//   border-radius: 50px;
+//   width: 60px;
+//   height: 60px;
+//   background-repeat: no-repeat;
+//   clip: rect(0, 50px, 100px, 0);
+// }
 
 .lvl__number {
   font-weight: bold;
@@ -90,4 +94,14 @@
 
 .companion__level .lvl-wrapper {
   position: static;
+}
+
+$circleLength: 2 * 3.1416 * 28px;
+
+.lvl__circle {
+  position: absolute;
+  stroke-dasharray: $circleLength;
+  stroke-dashoffset: $circleLength * (100 - 80) / 100;
+  transform: rotate(-90deg);
+  stroke-linecap: round;
 }

@@ -1,17 +1,25 @@
 .address {
   background-color: $basic-yellow;
-  padding: 63px 25px 25px 25px;
-  border-bottom-left-radius: 20px;
-  border-bottom-right-radius: 20px;
-  margin-top: -30px;
-}
+  padding: 57px 25px 34px 25px;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  margin-top: -25px;
+  position: relative;
+  z-index: $z-address;
 
-.address .action__item {
-  color: $basic-blue-light;
-  font-size: 16px;
-  line-height: 22px;
-}
+  @media (min-width: $tablet-width) {
+    padding-top: 104px;
+    margin-top: -55px;
+    padding-left: 75px;
+    padding-right: 75px;
+  }
 
-.address .action {
-  margin-bottom: 32px;
+  @media (min-width: $desktop-width) {
+    display: flex;
+    padding-left: 283px;
+    padding-top: 110px;
+    padding-bottom: 55px;
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+  }
 }

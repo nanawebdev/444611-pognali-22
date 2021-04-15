@@ -1,14 +1,23 @@
 .feedback {
   background-color: $special-blue-1;
-  border-bottom-left-radius: 20px;
-  border-bottom-right-radius: 20px;
-  padding: 25px 25px 16px 25px;
-}
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  padding: 13px 25px 29px 25px;
+  position: relative;
+  z-index: $z-feedback;
 
-.feedback .action__item {
-  color: $basic-yellow;
-  font-size: 16px;
-  line-height: 22px;
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    padding-top: 12px;
+    padding-bottom: 60px;
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 211px;
+    padding-bottom: 105px;
+  }
 }
 
 .feedback__text {
@@ -20,8 +29,22 @@
   justify-content: center;
   text-align: center;
   flex-direction: column;
+  margin: 0;
+  margin-bottom: 17px;
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
+    font-size: 28px;
+    line-height: 30px;
+    text-align: center;
+    letter-spacing: 0.01em;
+    margin-top: 30px;
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 59px;
+    justify-content: flex-start;
+    padding-left: 203px;
   }
 }

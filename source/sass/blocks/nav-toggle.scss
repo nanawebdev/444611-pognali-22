@@ -1,9 +1,9 @@
-.main-nav__toggle {
+.main-page .toggle {
   background-color: transparent;
   border: none;
   position: relative;
-  width: 18px;
-  height: 19px;
+  width: 25px;
+  height: 11px;
   padding: 0;
   margin-left: auto;
 
@@ -16,14 +16,16 @@
     transition: transform 0.5s;
     width: 25px;
     height: 3px;
+    border-radius: 1px;
+    left: 0;
   }
 
   &::after {
-    top: 9px;
+    top: 12px;
   }
 
   &::before {
-    top: 2px;
+    top: 4px;
   }
 
   &--active::after {
@@ -43,7 +45,8 @@
   }
 
   @media (min-width: $tablet-width) {
-    margin-left: 0;
+    margin-left: 22px;
+    margin-top: -5px;
   }
 
   @media (min-width: $desktop-width) {

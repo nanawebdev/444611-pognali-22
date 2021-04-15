@@ -4,3 +4,15 @@
     grid-row: 2 / 3;
   }
 }
+
+.main-page .vehicles-list {
+  margin-left: 32px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 53px;
+  }
+}
+
+.vehicles-list__icon {
+  margin-right: 7px;
+}

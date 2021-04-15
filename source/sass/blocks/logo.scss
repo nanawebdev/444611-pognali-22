@@ -1,5 +1,6 @@
 .logo {
-  background-image: url("./../../img/logo-mobile-dark.png");
+  background-image: url("./../../img/logo_mobile.png");
+  // background-image: url("./../../img/logo-mobile-dark.png");
   width: 100px;
   height: 15px;
   background-repeat: no-repeat;
@@ -17,27 +18,42 @@
   }
 }
 
-.main-page .logo,
-.form-page .logo,
-.catalog-page .logo {
-  background-image: url("./../../img/logo_mobile.png");
-}
-
 .footer .logo {
   background-image: url("./../../img/logo-mobile-dark.png");
-  width: 100px;
-  height: 15px;
   background-repeat: no-repeat;
+  padding-bottom: 40px;
+  margin: 0 auto;
 
   @media (min-width: $tablet-width) {
     background-image: url("./../../img/logo_footer_tablet.png");
     width: 166px;
     height: 42px;
+    margin: 0;
+    padding: 0;
   }
 
   @media (min-width: $desktop-width) {
     background-image: url("./../../img/logo_footer_desktop.png");
     width: 200px;
     height: 52px;
+  }
+}
+
+.footer .logo__wrapper {
+  width: 100px;
+  height: 15px;
+}
+
+.main-page__main-header--no-js .logo,
+.main-page__main-header--open .logo {
+  @media (max-width: $only-mobile) {
+    background-image: url("./../../img/logo-mobile-dark.png");
+  }
+}
+
+.main-header--sticky .logo {
+  @media (min-width: $desktop-width) {
+    background-image: url("./../../img/logo-desktop-dark.png");
+    background-repeat: no-repeat;
   }
 }
