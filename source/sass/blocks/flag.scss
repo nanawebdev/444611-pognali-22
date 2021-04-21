@@ -32,3 +32,26 @@
     left: 339px;
   }
 }
+
+.step-3 .flag,
+.select-country__flag .flag {
+  margin-right: 0;
+
+  @media (min-width: $tablet-width) {
+    width: 70px;
+    height: 47px;
+  }
+}
+
+.step-2 .flag {
+  @media (min-width: $tablet-width) {
+    width: 70px;
+    height: 47px;
+  }
+}
+
+.step-3 .flag {
+  @media (min-width: $desktop-width) {
+    margin-right: 116px;
+  }
+}

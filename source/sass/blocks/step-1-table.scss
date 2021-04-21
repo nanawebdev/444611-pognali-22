@@ -1,8 +1,28 @@
+@media (min-width: $tablet-width) {
+  .step-1 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .quantity-input-2 {
+    order: 6;
+  }
+
+  .step-1 .add-plan__dates {
+    order: 7;
+  }
+
+  .step-1 .button {
+    order: 8;
+  }
+}
+
+
 @media (min-width: $desktop-width) {
   .step-1 {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(6, 1fr);
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: max-content max-content max-content max-content max-content 1fr max-content;
   }
 
   .step-1 .add-plan__title {
@@ -22,17 +42,18 @@
     grid-row: 2 / 3;
   }
 
-  .step-1 .quantity-input:nth-of-type(1) {
-    grid-column: 1 / 2;
-    grid-row: 3 / 4;
-  }
-
-  .step-1 .quantity-input:nth-of-type(2) {
+  // длительность
+  .step-1 .quantity-input-2 {
     grid-column: 1 / 2;
     grid-row: 4 / 5;
   }
 
-  .step-1 .add-plan__add-children {
+  .step-1 .quantity-input-1 {
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+  }
+
+  .step-1 .add-plan__children-approve {
     grid-column: 2 / 3;
     grid-row: 3 / 4;
   }

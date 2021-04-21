@@ -1,12 +1,115 @@
-.quantity-input__text {
-  color: $basic-blue-light;
+.quantity-input__text,
+.quantity-input__item {
   font-weight: 500;
   font-size: 16px;
   line-height: 16px;
   letter-spacing: 0.09em;
   text-transform: uppercase;
+  margin-bottom: 7px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 18px;
+    letter-spacing: 0.1em;
+    margin-bottom: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0;
+    padding-top: 8px;
+  }
 }
+
+.quantity-input__text {
+  color: $basic-blue-light;
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+
+  @media (min-width: $desktop-width) {
+    min-width: 222px;
+    font-size: 20px;
+    line-height: 18px;
+    letter-spacing: 0;
+  }
+}
+
 
 .quantity-input__item {
   color: rgba($basic-blue-light, 0.6);
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+
+  @media (min-width: $desktop-width) {
+    order: 1;
+    color: $basic-blue-light;
+  }
+}
+
+.quantity-input {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr max-content;
+  grid-template-rows: max-content max-content;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 26px;
+  }
+
+  @media (min-width: $desktop-width) {
+    // display: grid;
+    // grid-template-columns: 223px max-content max-content;
+    // grid-template-rows: max-content;
+    display: flex;
+    padding-top: 31px;
+    align-items: center;
+  }
+}
+
+.quantity-input::before {
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    height: 1px;
+    width: 100%;
+    background-color: $special-lvl__divider;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.quantity-input-2 {
+  margin-bottom: 5px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 34px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 13px;
+    margin-top: 0;
+  }
+}
+
+.quantity-input-1 {
+  @media (min-width: $desktop-width) {
+    position: relative;
+  }
+}
+
+.quantity-input-1::after {
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    height: 1px;
+    width: 100%;
+    background-color: $special-lvl__divider;
+  }
 }

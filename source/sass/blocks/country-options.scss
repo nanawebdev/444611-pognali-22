@@ -1,17 +1,22 @@
-.country-options__header {
-  background-color: $basic-blue-light;
-  color: $basic-white;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 18px;
-  letter-spacing: 0.02em;
-  text-transform: uppercase;
-  padding: 14px 0;
-  padding-left: 17px;
+.country-options-wrapper {
+  position: relative;
 }
 
 .country-options {
   margin: 0 auto;
+  position: absolute;
+  top: 41px;
+  left: 0;
+  z-index: $z-modal;
+  background-color: $basic-white;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
+  box-shadow: 0 8px 16px rgba(#365094, 0.1);
+
+  @media (min-width: $tablet-width) {
+    top: 70px;
+  }
 }
 
 .country-options__wrapper {

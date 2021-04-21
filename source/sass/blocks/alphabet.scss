@@ -2,6 +2,17 @@
   background: $basic-white;
   box-shadow: 0 2px 16px rgba(212, 217, 235, 0.25);
   border-radius: 4px;
+
+  @media (min-width: $tablet-width) {
+    padding-right: 65px;
+    padding-top: 38px;
+    padding-bottom: 33px;
+    padding-left: 27px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 123px;
+  }
 }
 
 .alphabet__row {
@@ -9,8 +20,8 @@
 }
 
 .alphabet__cell {
-  width: 43px;
-  height: 41px;
+  width: 41px;
+  height: 39px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -20,7 +31,21 @@
   line-height: 18px;
   border: 1px solid $border-color-1;
 
-  // &--selected {
-  //   background-color: $block-light-background;
-  // }
+  @media (min-width: $tablet-width) {
+    width: 53px;
+    height: 68px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 16px;
+    margin-bottom: 16px;
+    width: 58px;
+  }
+
+  &--selected {
+    background-color: $special-blue-3;
+    color: $basic-white;
+  }
 }

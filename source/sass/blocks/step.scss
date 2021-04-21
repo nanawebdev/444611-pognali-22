@@ -1,21 +1,111 @@
-.step .button {
-  font-weight: 700;
-  font-size: 17px;
-  line-height: 30px;
-  letter-spacing: 0.01em;
-  text-transform: uppercase;
+.step-1,
+.step-2,
+.step-3 {
+  background-color: $basic-white;
+  padding-top: 24px;
+  padding-left: 25px;
+  padding-right: 24px;
+  padding-bottom: 24px;
+  border-radius: 10px;
+  margin-bottom: 8px;
+
+  @media (min-width: $tablet-width) {
+    border-radius: 29px;
+    padding-top: 48px;
+    padding-left: 39px;
+    padding-right: 40px;
+    padding-bottom: 56px;
+    margin-bottom: 39px;
+  }
+
+  @media (min-width: $desktop-width) {
+    border-radius: 58px;
+  }
 }
 
-.step-2 .modal {
-  display: none;
+.step-1 {
+  @media (min-width: $tablet-width) {
+    padding-bottom: 56px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 98px;
+    padding-left: 159px;
+    padding-bottom: 109px;
+    padding-right: 159px;
+  }
 }
 
 .step-2 {
-  border-radius: 20px;
+  padding-bottom: 7px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 54px;
+    margin-bottom: 51px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 103px;
+    padding-left: 159px;
+    padding-bottom: 104px;
+    padding-right: 159px;
+    margin-bottom: 43px;
+  }
 }
 
-.step__buttons-wrapper {
+.step-3 {
+  position: relative;
+  padding-bottom: 7px;
+
   @media (min-width: $tablet-width) {
-    display: flex;
+    padding-top: 46px;
+    padding-right: 72px;
+    padding-left: 44px;
+    padding-bottom: 54px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 100px;
+    padding-right: 159px;
+    padding-left: 158px;
+    padding-bottom: 104px;
+  }
+}
+
+.step-3__icon {
+  position: absolute;
+  top: 196px;
+  left: 11px;
+  width: 17px;
+  height: 287px;
+  background-image: url("./../../img/purpose-line-mobile.svg");
+
+  @media (min-width: $tablet-width) {
+    background-image: url("./../../img/purpose-line-tablet.svg");
+    width: 14px;
+    height: 274px;
+    left: 563px;
+    top: 280px;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: 927px;
+    top: 362px;
+  }
+}
+
+.step-2 .first-br {
+  display: block;
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.step-2 .second-br {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
   }
 }

@@ -10,31 +10,10 @@
   margin-right: 4px;
 }
 
-.form-page .tag-list {
-  color: rgba($special-grey, 0.6);
-}
-
-.form-page .tag-list-wrapper {
-  @media (min-width: $tablet-width) {
-    grid-column: 1 / -1;
-    grid-row: 3 / 4;
-  }
-
-  @media (min-width: $desktop-width) {
-    grid-column: 1 / 2;
-    grid-row: 2 / 3;
-  }
-}
-
 .main-page .tag-list {
   width: 180px;
   flex-wrap: wrap;
   justify-content: center;
-}
-
-.main-page .tag-list-wrapper {
-  margin-top: 15px;
-  margin-bottom: 12px;
 }
 
 .about__users .tag-list__item {
@@ -52,4 +31,13 @@
     width: 230px;
     margin-bottom: 24px;
   }
+}
+
+.form-page .tag-list {
+  color: rgba($special-grey, 0.6);
+}
+
+.list-wrapper .tag-list {
+  display: flex;
+  flex-wrap: wrap;
 }

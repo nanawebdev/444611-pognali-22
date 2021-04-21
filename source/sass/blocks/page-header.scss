@@ -3,27 +3,97 @@
   background-color: $block-background-4;
   display: flex;
   justify-content: space-between;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
+  padding-left: 25px;
+  padding-top: 39px;
+  padding-bottom: 12px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  position: relative;
+}
+
+.form-page .form-header {
+  @media (min-width: $desktop-width) {
+    justify-content: flex-start;
+  }
+}
+
+.form-header {
+  margin-bottom: 4px;
 
   @media (min-width: $tablet-width) {
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+    padding-bottom: 65px;
+  }
+
+  @media (min-width: $desktop-width) {
+    border-bottom-left-radius: 56px;
+    border-bottom-right-radius: 56px;
+    padding-bottom: 0;
+    padding-top: 40px;
+    padding-right: 155px;
+  }
+}
+
+.form-header::after,
+.companions-header::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 25px;
+  width: 214px;
+  height: 5px;
+  border-radius: 4px;
+  background-color: $special-orange;
+
+  @media (min-width: $tablet-width) {
+    width: 358px;
+    height: 8px;
+    bottom: -9px;
+    left: 75px;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: 126px;
+    bottom: -4px;
   }
 }
 
 .form-header__title,
 .companions-header__title {
   color: $basic-white;
-  background-color: $block-background-4;
+  // background-color: $block-background-4;
   margin: 0;
   font-weight: 700;
   font-size: 36px;
   line-height: 36px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    padding-top: 76px;
+    padding-left: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 64px;
+    padding-left: 99px;
+  }
+}
+
+.form-page .form-header__wrapper {
+  @media (min-width: $desktop-width) {
+    margin-left: auto;
+  }
 }
 
 .form-header__wrapper {
-  display: flex;
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    overflow: hidden;
+  }
 }
 
 .companions-header__link {

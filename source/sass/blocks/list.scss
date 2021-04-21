@@ -1,29 +1,37 @@
-// .list {
-//   border: 1px solid $border-color-1;
-//   padding: 25px;
-//   position: relative;
-//   display: flex;
-//   justify-content: center;
-//   border-radius: 10px;
-// }
-
-.list-title {
-  display: none;
+.list__title-wrapper {
+  display: flex;
+  justify-content: center;
+  width: 100%;
   position: absolute;
-  top: 0;
-  background-color: $special-blue-light;
+  top: -9px;
+  left: 0;
+
+  @media (min-width: $tablet-width) {
+    height: 100%;
+    align-items: center;
+  }
+}
+
+.list__title {
+  background-color: $block-background-1;
   padding: 0 12px;
   font-weight: 700;
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    bottom: -23px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 20px;
+    padding: 0 16px;
+    letter-spacing: 0.1em;
+  }
 }
 
-.form-page .list-title {
-  display: flex;
-}
-
-.companion__vehicles-list .list-title {
+.companion__vehicles-list .list__title-wrapper {
   position: static;
   display: flex;
   background-color: $basic-white;
@@ -31,4 +39,57 @@
   font-size: 15px;
   line-height: 16px;
   text-transform: none;
+}
+
+.list-wrapper {
+  position: relative;
+  border: 2px solid $border-color-1;
+  border-radius: 10px;
+  padding-top: 24px;
+  padding-left: 25px;
+  padding-right: 25px;
+  margin-bottom: 24px;
+  padding-bottom: 26px;
+}
+
+.list-wrapper__vehicles-list {
+  padding: 14px 0;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 63px;
+    margin-bottom: 52px;
+    padding: 23px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 25px;
+    padding-left: 104px;
+    padding-bottom: 67px;
+    padding-right: 97px;
+    margin-right: 0;
+  }
+}
+
+.list-wrapper__tag-list {
+  @media (min-width: $tablet-width) {
+    padding-top: 36px;
+    padding-left: 36px;
+    padding-bottom: 36px;
+    padding-right: 36px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 22px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 37px;
+    padding-bottom: 55px;
+    padding-right: 100px;
+  }
+}
+
+.list-wrapper__tag-list .list__title {
+  @media (min-width: $desktop-width) {
+    left: 21px;
+  }
 }

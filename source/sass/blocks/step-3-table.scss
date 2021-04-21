@@ -1,6 +1,6 @@
 .step-3 {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr max-content;
 }
 
 .step-3 .add-plan__title {
@@ -13,29 +13,53 @@
   grid-row: 2 / 3;
 }
 
-.step-3 .purpose__title {
+.step-3 .add-plan__purpose {
   grid-column: 1 / 2;
 }
 
-.step-3 .purpose__flag {
+.step-3 .flag {
   grid-column: 2 / 3;
 }
 
-.step-3 .purpose__input {
+.step-3 .add-plan__input {
   grid-column: 1 / -1;
 }
 
-.step-3 .step__buttons-wrapper {
+.step-3 .step-buttons {
   grid-column: 1 / -1;
 }
+
 
 @media (min-width: $desktop-width) {
   .step-3 .pagination {
     grid-column: 2 / 3;
+    grid-row: 1 / 3;
+  }
+
+  .step-3 .add-plan__input {
+    grid-column: 1 / 2;
+  }
+
+  .step-3 .add-plan__title {
+    grid-column: 1 / 2;
     grid-row: 1 / 2;
   }
 
-  .step-3 .purpose__input {
+  .step-3 .add-plan__text {
+    grid-column: 1 / -1;
+    grid-row: 2 / 3;
+  }
+
+  .step-3 .add-plan__purpose {
     grid-column: 1 / 2;
+  }
+
+  .step-3 .flag {
+    grid-column: 2 / 3;
+  }
+
+
+  .step-3 .step-buttons {
+    grid-column: 1 / -1;
   }
 }
