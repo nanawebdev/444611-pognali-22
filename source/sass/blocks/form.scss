@@ -5,3 +5,51 @@
   color: $basic-blue-light;
   margin: 0;
 }
+
+.form {
+  background-color: $basic-yellow;
+
+  @media (min-width: $tablet-width) {
+    background-color: $block-background-1;
+  }
+}
+
+.plans .form__subtitle {
+  margin-bottom: 29px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+    margin-bottom: 48px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 6px;
+    margin-bottom: 49px;
+  }
+}
+
+.add-plan .form__subtitle {
+  margin-bottom: 29px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+    padding-bottom: 27px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 70px;
+  }
+}
+
+.form__subtitle-wrapper {
+  display: flex;
+  align-items: center;
+  margin-bottom: 29px;
+  justify-content: space-between;
+}
+
+.form__subtitle-wrapper .form__subtitle {
+  margin-bottom: 0;
+}

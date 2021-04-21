@@ -2,6 +2,23 @@
   color: $basic-blue-light;
   background-color: $special-blue-light;
   padding: 28px 25px 59px 25px;
+  position: relative;
+  z-index: $z-plans;
+  border-top-left-radius: 29px;
+  border-top-right-radius: 29px;
+  margin-top: -21px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: -64px;
+    padding: 56px 75px 104px 75px;
+  }
+
+  @media (min-width: $desktop-width) {
+    border-top-left-radius: 54px;
+    border-top-right-radius: 54px;
+    margin-top: -39px;
+    padding: 54px 56px 98px 124px;
+  }
 }
 
 .plans-list__companions,
@@ -9,6 +26,34 @@
   font-weight: 500;
   font-size: 14px;
   line-height: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: 0.1em;
+  }
+}
+
+.plans-list__companions {
+  margin-bottom: 6px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
+}
+
+.plans-list__date {
+  margin-bottom: 24px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 176px;
+  }
 }
 
 .plans-list__button {
@@ -22,25 +67,92 @@
   text-transform: uppercase;
   display: flex;
   justify-content: flex-start;
+  padding: 0;
+
+  @media (min-width: $tablet-width) {
+    justify-content: flex-end;
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: 0.1em;
+  }
 }
 
 .plans-list__item {
   position: relative;
   background-color: $basic-white;
   margin-bottom: 10px;
-  display: flex;
-  flex-direction: column;
+  padding-top: 24px;
+  padding-left: 25px;
+  padding-bottom: 22px;
+  padding-right: 25px;
+  border-radius: 10px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 40px;
+    padding-left: 38px;
+    padding-bottom: 14px;
+    padding-right: 33px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 15px;
+    padding-left: 42px;
+    padding-right: 46px;
+    padding-bottom: 33px;
+  }
+}
+
+.plans-list__item::after {
+  @media (min-width: $tablet-width) {
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    background-color: $border-color-1;
+    opacity: 0.3;
+    bottom: 54px;
+    left: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
 }
 
 .plans-list__number {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 22px;
+  left: 24px;
+
+  @media (min-width: $tablet-width) {
+    position: static;
+    display: flex;
+    justify-content: flex-end;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    justify-content: flex-start;
+  }
 }
 
 .plans-list__direction {
   font-weight: 700;
   font-size: 16px;
   line-height: 16px;
-  padding-left: 20px;
+  padding-left: 17px;
+  margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 24px;
+    line-height: 24px;
+    padding-left: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+    margin-left: 53px;
+  }
 }

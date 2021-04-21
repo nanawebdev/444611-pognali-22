@@ -25,3 +25,15 @@
     justify-content: flex-start;
   }
 }
+
+.form-page .footer {
+  margin-top: 43px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 72px;
+  }
+}

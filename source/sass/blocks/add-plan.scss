@@ -1,5 +1,27 @@
 .add-plan {
   padding: 0 25px;
+  padding-top: 30px;
+  background-color: $block-background-9;
+  position: relative;
+  z-index: $z-add-plan;
+  margin-top: -39px;
+  border-top-left-radius: 29px;
+  border-top-right-radius: 29px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 54px;
+    padding-left: 76px;
+    padding-right: 75px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: -48px;
+    padding-top: 54px;
+    padding-left: 60px;
+    padding-right: 60px;
+    border-top-left-radius: 55px;
+    border-top-right-radius: 55px;
+  }
 }
 
 .add-plan__title {
@@ -7,6 +29,18 @@
   font-weight: 700;
   font-size: 20px;
   line-height: 20px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+    margin-bottom: 34px;
+  }
+}
+
+.add-plan__title br {
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
 }
 
 .add-plan__text {
@@ -14,14 +48,53 @@
   font-size: 16px;
   line-height: 22px;
   color: $special-grey;
+  margin: 0;
+  margin-bottom: 20px;
+  margin-top: 17px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 1px;
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 38px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 55px;
+  }
 }
 
-.add-plan .button {
-  font-weight: 700;
-  font-size: 17px;
-  line-height: 30px;
-  color: $basic-blue-light;
-  text-transform: uppercase;
+.add-plan__text br {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+}
+
+.step-3 .add-plan__text {
+  @media (min-width: $tablet-width) {
+    margin-bottom: 27px;
+    position: relative;
+    padding-bottom: 33px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 54px;
+    margin-bottom: 70px;
+  }
+}
+
+.step-3 .add-plan__text::after {
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 0;
+    height: 1px;
+    width: 100%;
+    background-color: $special-lvl__divider;
+  }
 }
 
 .add-plan__add-children {
@@ -29,4 +102,154 @@
   font-size: 15px;
   line-height: 15px;
   color: $basic-blue-light;
+}
+
+.add-plan__dates {
+  margin-top: 25px;
+}
+
+.add-plan__children-approve {
+  @media (min-width: $desktop-width) {
+    padding-top: 57px;
+    position: relative;
+  }
+}
+
+.add-plan__children-approve::after {
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    height: 1px;
+    width: 100%;
+    background-color: $special-lvl__divider;
+  }
+}
+
+// PURPOSE
+
+.step-3 .add-plan__item {
+  position: relative;
+}
+
+.step-3 .add-plan__item::after {
+  content: "";
+  top: 0;
+  right: 0;
+  width: 50px;
+  height: 24px;
+  position: absolute;
+  background: linear-gradient(to left, $basic-white 40%, rgba($basic-white, 0.3) 90%);
+}
+
+.step-3 .add-plan__input {
+  margin-top: 9px;
+  height: 203px;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  // width: 100%;
+  padding-top: 11px;
+  padding-left: 14px;
+  padding-right: 19px;
+  border: 3px solid $block-background-1;
+  border-radius: 4px;
+  margin-bottom: 23px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 17px;
+    padding-left: 21px;
+    padding-right: 19px;
+    height: 118px;
+    margin-bottom: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 687px;
+  }
+}
+
+.step-3 .add-plan__input::placeholder {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: rgba($special-grey, 0.3);
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+.step-3 .add-plan__input:nth-of-type(2) {
+  @media (min-width: $tablet-width) {
+    margin-bottom: 24px;
+  }
+}
+
+.step-3 .add-plan__purpose {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 18px;
+  padding-left: 11px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 30px;
+    padding-left: 0;
+    margin-bottom: 29px;
+    padding-top: 10px;
+  }
+}
+
+.step-2 .add-plan__text {
+  @media (min-width: $tablet-width) {
+    position: relative;
+    padding-bottom: 33px;
+    margin-bottom: 42px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 52px;
+    margin-bottom: 62px;
+  }
+}
+
+.step-2 .add-plan__text::after {
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    content: "";
+    height: 1px;
+    width: 100%;
+    background-color: $special-lvl__divider;
+    bottom: 0;
+    left: 0;
+  }
+}
+
+.step-2 .add-plan__text::before {
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    content: "";
+    height: 73px;
+    width: 1px;
+    background-color: $special-lvl__divider;
+    bottom: -73px;
+    left: 398px;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: 775px;
+    height: 87px;
+    bottom: -85px;
+  }
+}
+
+.add-plan__input br {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
 }

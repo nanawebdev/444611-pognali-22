@@ -1,0 +1,81 @@
+.step-button {
+  min-width: 221px;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 30px;
+}
+
+.step-button.button:nth-child(2) {
+  background-color: transparent;
+  margin-top: 6px;
+}
+
+.step-button__icon {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .step-buttons {
+    display: flex;
+    margin-top: 21px;
+  }
+
+  .step-button.button {
+    text-transform: none;
+    position: relative;
+  }
+
+  .step-button.button:nth-child(1) {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    line-height: 24px;
+    padding-top: 27px;
+    border-radius: 20px;
+    padding-bottom: 27px;
+    margin-right: 66px;
+    min-width: 286px;
+  }
+
+  .step-button.button:nth-child(2) {
+    font-size: 24px;
+    line-height: 22px;
+    padding-top: 25px;
+    padding-bottom: 27px;
+  }
+
+  .step-button__icon {
+    position: absolute;
+    display: block;
+  }
+
+  .step-button.button:nth-child(1) .step-button__icon {
+    top: 33px;
+    right: 32px;
+    width: 13px;
+    height: 13px;
+  }
+
+  .step-button.button:nth-child(2) .step-button__icon {
+    top: 26px;
+    left: 0;
+    transform: rotate(180deg);
+    width: 16px;
+    height: 15px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .step-2 .step-buttons {
+    margin-top: 29px;
+  }
+
+  .step-3 .step-buttons {
+    margin-top: 31px;
+  }
+
+  .step-3 .step-button.button:nth-child(2) {
+    display: flex;
+    justify-content: flex-end;
+  }
+}

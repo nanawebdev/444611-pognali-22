@@ -3,11 +3,37 @@
   border-radius: 4px;
   display: flex;
   justify-content: space-between;
-  height: 43px;
+  height: 40px;
   align-items: center;
   font-weight: 500;
   font-size: 15px;
   line-height: 14px;
+  margin-bottom: 18px;
+  grid-column: 1 / -1;
+  grid-row: 2 / 3;
+
+  @media (min-width: $tablet-width) {
+    height: 70px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 180px;
+    margin-right: 35px;
+    height: 68px;
+  }
+}
+
+.change-quantity:last-child {
+  margin-bottom: 22px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 29px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+    padding-top: 0;
+  }
 }
 
 .change-quantity__button {
@@ -22,12 +48,28 @@
   align-items: center;
 }
 
+.change-quantity__button:first-child {
+  @media (min-width: $tablet-width) {
+    padding-left: 29px;
+  }
+}
+
+.change-quantity__button:last-child {
+  @media (min-width: $tablet-width) {
+    padding-right: 29px;
+  }
+}
+
 .change-quantity__button::after {
   position: absolute;
   content: "";
   width: 14px;
   height: 1px;
   background-color: $block-background-3;
+
+  @media (min-width: $tablet-width) {
+    width: 20px;
+  }
 }
 
 .change-quantity__button:nth-of-type(2)::before {
@@ -37,4 +79,12 @@
   height: 1px;
   background-color: $block-background-3;
   transform: rotate(90deg);
+}
+
+.change-quantity__quantity {
+  @media (min-width: $tablet-width) {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 20px;
+  }
 }

@@ -1,0 +1,72 @@
+.children-approve__checkbox {
+  opacity: 0;
+  // z-index: $z-checkbox;
+  position: absolute;
+  top: -7px;
+  left: 0;
+  width: 26px;
+  height: 26px;
+
+  @media (min-width: $tablet-width) {
+    width: 32px;
+    height: 32px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 50px;
+  }
+}
+
+.children-approve {
+  position: relative;
+}
+
+.children-approve__checkbox + .children-approve::before {
+  content: "";
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  border-radius: 6px;
+  top: -7px;
+  left: 0;
+  border: 2px solid $border-color-1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    width: 32px;
+    height: 32px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: -12px;
+    left: 5px;
+  }
+}
+
+.children-approve__checkbox:checked + .children-approve::before {
+  background-image: url("./../../img/icon_check-mark.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 17px 18px;
+}
+
+.children-approve__text {
+  padding-left: 40px;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 15px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    padding-left: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 68px;
+  }
+}

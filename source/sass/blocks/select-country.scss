@@ -1,32 +1,311 @@
-// .select-country__wrapper {
-//   display: flex;
-//   font-weight: 500;
-//   font-size: 14px;
-//   line-height: 18px;
-//   letter-spacing: 0.1em;
-//   text-transform: uppercase;
-//   border: 1px solid $border-color-1;
-//   justify-content: space-between;
-//   padding: 11px;
-//   border-radius: 4px;
+.select-country {
+  background-color: transparent;
+  border: 1px solid $border-color-1;
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  padding: 11px 0;
+  display: grid;
+  grid-template-columns: 1fr max-content;
+  grid-template-rows: max-content;
+  position: relative;
+  padding-left: 11px;
+  margin-bottom: 22px;
+  width: 168px;
+
+  @media (min-width: $tablet-width) {
+    width: 369px;
+    padding-top: 27px;
+    padding-left: 27px;
+    padding-bottom: 21px;
+    margin-bottom: 16px;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 730px;
+  }
+}
+
+.select-country__text {
+  white-space: nowrap;
+  letter-spacing: 0.1em;
+  display: flex;
+  overflow: hidden;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: 0.1em;
+  }
+}
+
+.select-country--modal {
+  background-color: $basic-blue-light;
+  color: $basic-white;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.select-country--modal .select-country__icon,
+.select-country--modal.chose-country::after {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+}
+
+.select-country__flag {
+  padding: 0 9px;
+  height: 40px;
+  border: 1px solid $border-color-1;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+    padding: 0 22px;
+    padding-right: 44px;
+    margin-top: 15px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 116px;
+    margin-top: 11px;
+  }
+}
+
+.select-country__item {
+  background: linear-gradient(to left, $basic-white 40%, rgba($basic-white, 0.3) 90%);
+  width: 75px;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.select-country__icon {
+  margin-right: 14px;
+  width: 12px;
+  height: 16px;
+  fill: $basic-black;
+
+  @media (min-width: $tablet-width) {
+    width: 24px;
+    height: 20px;
+    margin-right: 20px;
+  }
+}
+
+.select-country.add-country,
+.select-country.chose-country {
+  width: 220px;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    width: 369px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 730px;
+  }
+}
+
+.select-country.add-country::after,
+.select-country.chose-country::after {
+  content: "";
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background-color: transparent;
+  border: 1px solid $border-color-1;
+  left: 164px;
+  top: 15px;
+
+  @media (min-width: $tablet-width) {
+    width: 14px;
+    height: 14px;
+    left: 390px;
+    top: 25px;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: 768px;
+    top: 25px;
+  }
+}
+
+.select-country.add-country::after {
+  @media (min-width: $tablet-width) {
+    background-color: $block-background-1;
+  }
+}
+
+.select-country.chose-country::before {
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    content: "";
+    height: 73px;
+    width: 1px;
+    background-color: #e1e3e9;
+    bottom: -44px;
+    right: -32px;
+  }
+
+  @media (min-width: $desktop-width) {
+    right: -47px;
+  }
+}
+
+.select-country.add-country::before {
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    content: "";
+    height: 73px;
+    width: 1px;
+    bottom: -44px;
+    right: -32px;
+    background-image: linear-gradient(180deg, #e1e3e9 17%, #ffffff 100%);
+  }
+
+  @media (min-width: $desktop-width) {
+    right: -47px;
+  }
+}
+
+.select-country.add-country {
+  background-color: $block-background-1;
+  border-color: $block-background-1;
+  position: relative;
+}
+
+.select-country__delete {
+  position: absolute;
+  width: 21px;
+  height: 21px;
+  background-color: $block-background-1;
+  border: none;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+
+  @media (min-width: $tablet-width) {
+    width: 22px;
+    height: 24px;
+    background-color: transparent;
+  }
+}
+
+.select-country__delete-icon {
+  width: 11px;
+  height: 21px;
+
+  @media (min-width: $tablet-width) {
+    width: 22px;
+    height: 24px;
+    stroke: $basic-black;
+    opacity: 0.5;
+  }
+}
+
+.select-country__flag .select-country__delete {
+  left: 100%;
+  top: -10px;
+
+  @media (min-width: $tablet-width) {
+    left: 115px;
+    top: 7px;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: 182px;
+    top: 10px;
+  }
+}
+
+.select-country.chose-country .select-country__delete:nth-of-type(1) {
+  display: none;
+}
+
+// .select-country.chose-country .select-country__delete,
+// .select-country.add-country .select-country__delete {
+//   @media (min-width: $tablet-width) {
+//     left: 0;
+//   }
 // }
 
-// .select-country__wrapper:first-of-type {
-//   flex-grow: 1;
-// }
+.select-country__arrow-icon {
+  position: absolute;
+  width: 8px;
+  height: 11px;
+  bottom: -19px;
+  right: -5px;
 
-// .select-country__indicator {
-//   width: 8px;
-//   height: 8px;
-//   background-color: $basic-blue-light;
-//   border-radius: 50%;
-// }
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
 
-// .select-country__delete {
-//   width: 21px;
-//   height: 21px;
-//   border-radius: 50%;
-// }
+.chose-country .select-country__arrow-icon {
+  right: 48px;
+}
 
-// // .select-country:last-of-type {
-// // }
+.add-country {
+  margin-bottom: 25px;
+}
+
+.chosen-country::before {
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: $basic-black;
+  right: 0;
+  top: 15px;
+
+  @media (min-width: $tablet-width) {
+    width: 14px;
+    height: 14px;
+    right: 0;
+    top: 11px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 15px;
+    right: -54px;
+  }
+}
+
+.chosen-country::after {
+  @media (min-width: $tablet-width) {
+    top: 0;
+    right: 0;
+    position: absolute;
+    content: "";
+    height: 82px;
+    width: 1px;
+    background-color: #e1e3e9;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 29px;
+    right: -47px;
+  }
+}
