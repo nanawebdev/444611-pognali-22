@@ -53,3 +53,10 @@
     flex-wrap: wrap;
   }
 }
+
+.site-list__link {
+  @media (min-width: $desktop-width) {
+    color: $basic-white;
+    text-decoration: none;
+  }
+}
