@@ -57,6 +57,7 @@
   }
 }
 
+.symbol-results__link,
 .symbol__result-link {
   text-decoration: none;
   font-weight: normal;
@@ -139,7 +140,7 @@
   }
 }
 
-.symbol__results--mobile {
+.symbol-results--mobile {
   @media (max-width: $only-mobile) {
     grid-row: 2 / 3;
     padding-left: 25px;
