@@ -13,11 +13,6 @@
     padding-top: 47px;
     padding-left: 60px;
     padding-right: 60px;
-  }
-}
-
-.main-page .main-header {
-  @media (min-width: $desktop-width) {
     position: sticky;
     top: 0;
     z-index: $z-sticky-header;
@@ -79,4 +74,8 @@
     background-color: $basic-white;
     display: flex;
   }
+}
+
+.main-header.main-header--scroll {
+  background-color: $basic-white;
 }

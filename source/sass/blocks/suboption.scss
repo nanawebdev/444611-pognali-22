@@ -3,13 +3,50 @@
   font-size: 15px;
   line-height: 20px;
   color: $basic-black;
+  padding-top: 2px;
+  padding-bottom: 2px;
+
+  @media (min-width: $tablet-width) {
+    min-width: 170px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 17px;
+  }
 }
 
 .suboptions-wrapper {
   display: none;
+  padding-bottom: 13px;
 
   @media (min-width: $tablet-width) {
     display: flex;
+    padding-bottom: 25px;
+    align-items: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.option:nth-child(3) .suboptions-wrapper {
+  @media (min-width: $tablet-width) {
+    padding-bottom: 7px;
+  }
+}
+
+.option:nth-child(4) .suboptions-wrapper {
+  @media (min-width: $tablet-width) {
+    padding-bottom: 4px;
+  }
+}
+
+.option:nth-child(5) .suboptions-wrapper {
+  @media (min-width: $tablet-width) {
+    padding-bottom: 4px;
   }
 }
 
@@ -20,4 +57,62 @@
   @media (min-width: $tablet-width) {
     flex-direction: row;
   }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: column;
+  }
+}
+
+.option--expanded .suboptions-wrapper {
+  display: block;
+}
+
+.suboptions-list__checkbox {
+  opacity: 0;
+  z-index: $z-checkbox;
+  width: 18px;
+  height: 18px;
+
+  @media (min-width: $desktop-width) {
+    width: 24px;
+    height: 24px;
+    right: 0;
+    top: 0;
+  }
+}
+
+.suboptions-list__label {
+  position: relative;
+  width: 18px;
+  height: 18px;
+  padding-left: 4px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 14px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 17px;
+  }
+}
+
+.suboptions-list__label::before {
+  content: "";
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  background-color: $basic-white;
+  border-radius: 4px;
+  left: -20px;
+
+  @media (min-width: $tablet-width) {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+.suboptions-list__checkbox:checked + .suboptions-list__label::before {
+  background-image: url("./../../img/suboption-check.svg");
+  background-repeat: no-repeat;
+  background-position: center;
 }

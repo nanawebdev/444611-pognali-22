@@ -3,6 +3,11 @@
 
   @media (min-width: $tablet-width) {
     display: flex;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 20px;
+    color: $special-blue-1;
+    margin-right: 25px;
   }
 }
 
@@ -10,8 +15,21 @@
   background-color: transparent;
   border: none;
   display: flex;
+  text-transform: uppercase;
+  align-items: center;
 
-  @media (min-width: $desktop-width) {
-    display: none;
+  @media (min-width: $tablet-width) {
+    padding-right: 50px;
+    padding-top: 20px;
+  }
+}
+
+.open-modal__icon {
+  width: 17px;
+  height: 13px;
+
+  @media (min-width: $tablet-width) {
+    width: 30px;
+    height: 6px;
   }
 }

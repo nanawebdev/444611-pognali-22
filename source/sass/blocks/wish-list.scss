@@ -3,4 +3,26 @@
   font-size: 15px;
   line-height: 16px;
   text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  padding-top: 10px;
+
+  @media (min-width: $desktop-width) {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+.wish-list {
+  padding-top: 9px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: column;
+    min-height: 93px;
+  }
 }

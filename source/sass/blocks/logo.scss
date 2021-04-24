@@ -57,3 +57,10 @@
     background-repeat: no-repeat;
   }
 }
+
+.main-header.main-header--scroll .logo {
+  @media (min-width: $tablet-width) {
+    background-image: url("./../../img/logo-desktop-dark.png");
+    background-repeat: no-repeat;
+  }
+}

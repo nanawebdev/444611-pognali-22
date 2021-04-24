@@ -1,0 +1,58 @@
+.open-countries {
+  background-color: transparent;
+  border: none;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+
+  @media (min-width: $desktop-width) {
+    margin-left: auto;
+  }
+}
+
+.open-countries__text {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 700;
+    margin-right: 24px;
+    text-transform: uppercase;
+    color: $special-blue-1;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 27px;
+  }
+}
+
+.open-countries__open-icon {
+  width: 17px;
+  height: 3px;
+
+  @media (min-width: $tablet-width) {
+    width: 30px;
+    height: 6px;
+  }
+}
+
+.open-countries__close-icon {
+  width: 16px;
+  height: 16px;
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    width: 22px;
+    height: 24px;
+  }
+}
+
+.country-filter__modal--open .open-countries__open-icon {
+  display: none;
+}
+
+.country-filter__modal--open .open-countries__close-icon {
+  display: block;
+}

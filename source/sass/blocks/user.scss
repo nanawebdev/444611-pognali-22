@@ -29,15 +29,6 @@
   color: $basic-blue-light;
 }
 
-.user__online {
-  border-radius: 50px;
-  width: 6px;
-  height: 6px;
-  background-color: $special-red;
-  margin-right: 10px;
-  margin-bottom: 17px;
-}
-
 .user__wrapper {
   display: flex;
   align-items: center;
@@ -65,6 +56,15 @@
     padding-top: 69px;
     padding-right: 59px;
   }
+}
+
+.user__online {
+  background-color: $special-red;
+  margin-right: 10px;
+  margin-bottom: 17px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
 }
 
 .form-page .user__name,
