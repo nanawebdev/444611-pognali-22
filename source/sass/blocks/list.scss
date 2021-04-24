@@ -31,16 +31,6 @@
   }
 }
 
-.companion__vehicles-list .list__title-wrapper {
-  position: static;
-  display: flex;
-  background-color: $basic-white;
-  font-weight: normal;
-  font-size: 15px;
-  line-height: 16px;
-  text-transform: none;
-}
-
 .list-wrapper {
   position: relative;
   border: 2px solid $border-color-1;
@@ -92,4 +82,51 @@
   @media (min-width: $desktop-width) {
     left: 21px;
   }
+}
+
+.companion__level .companion__subtitle,
+.companion__vehicles-list .list__title {
+  background-color: $basic-white;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 16px;
+  text-transform: none;
+  padding: 0 10px;
+  position: relative;
+  z-index: 1;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.companion__vehicles-list {
+  padding-top: 19px;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 0;
+  }
+}
+
+.companion__vehicles-list::after,
+.companion__vehicles-list::before {
+  content: "";
+  position: absolute;
+  background-color: $block-background-1;
+  height: 1px;
+  top: 27px;
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.companion__vehicles-list::before {
+  left: -25px;
+}
+
+.companion__vehicles-list::after {
+  right: -95px;
 }

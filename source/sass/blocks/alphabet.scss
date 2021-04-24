@@ -1,51 +1,21 @@
 .alphabet {
-  background: $basic-white;
+  display: flex;
   box-shadow: 0 2px 16px rgba(212, 217, 235, 0.25);
   border-radius: 4px;
+  flex-wrap: wrap;
+  width: 218px;
+  margin-left: 25px;
+  grid-column: 1 / -1;
+  grid-row: 1 / 2;
+  position: relative;
 
   @media (min-width: $tablet-width) {
-    padding-right: 65px;
-    padding-top: 38px;
-    padding-bottom: 33px;
-    padding-left: 27px;
+    width: 466px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-right: 123px;
-  }
-}
-
-.alphabet__row {
-  display: flex;
-}
-
-.alphabet__cell {
-  width: 41px;
-  height: 39px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-transform: uppercase;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 18px;
-  border: 1px solid $border-color-1;
-
-  @media (min-width: $tablet-width) {
-    width: 53px;
-    height: 68px;
-    font-size: 20px;
-    line-height: 20px;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin-right: 16px;
-    margin-bottom: 16px;
-    width: 58px;
-  }
-
-  &--selected {
-    background-color: $special-blue-3;
-    color: $basic-white;
+    width: 100%;
+    // grid-column: 1 / -1;
+    // grid-row: 1 / 2;
   }
 }

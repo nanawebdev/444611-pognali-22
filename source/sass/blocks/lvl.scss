@@ -40,20 +40,15 @@
   }
 }
 
-.companion__level .lvl {
-  background-color: transparent;
-  color: $basic-blue-light;
-  width: 43px;
-  height: 43px;
-}
+.companion__level {
+  padding-top: 19px;
+  margin-left: 19px;
 
-.companion__level .lvl::before {
-  width: 43px;
-  height: 43px;
-}
-
-.companion__level .lvl__text {
-  display: none;
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    margin: 0;
+    margin-left: auto;
+  }
 }
 
 .form-header .lvl__text,
@@ -62,10 +57,6 @@
     display: block;
     color: $basic-white;
   }
-}
-
-.companion__level .lvl-wrapper {
-  position: static;
 }
 
 .form-page__user .lvl-wrapper {
@@ -182,3 +173,42 @@ $circleLengthBig: 2 * 3.1416 * 48px;
 //     padding-top: 5px;
 //   }
 // }
+
+.companion__level .lvl-wrapper {
+  position: static;
+  width: 45px;
+  height: 45px;
+}
+
+.companion__level .lvl {
+  background-color: transparent;
+  color: $basic-blue-light;
+  width: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10px;
+
+  @media (min-width: $desktop-width) {
+    width: 60px;
+  }
+}
+
+// .companion__level .lvl::before {
+//   width: 43px;
+//   height: 43px;
+// }
+
+.companion__level .lvl__text {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+}
+
+.companion__level .lvl__divider {
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+}

@@ -16,6 +16,19 @@
     line-height: 20px;
     margin-left: 145px;
     flex-wrap: wrap;
+    position: relative;
+  }
+}
+
+.site-list::before {
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    content: "";
+    width: 60px;
+    height: 2px;
+    background-color: $basic-white;
+    top: 25px;
+    left: -105px;
   }
 }
 
@@ -52,4 +65,15 @@
     margin-left: 145px;
     flex-wrap: wrap;
   }
+}
+
+.site-list__link {
+  @media (min-width: $desktop-width) {
+    color: $basic-white;
+    text-decoration: none;
+  }
+}
+
+.main-header.main-header--scroll .site-list__link {
+  color: $special-blue-1;
 }

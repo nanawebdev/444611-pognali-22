@@ -1,14 +1,29 @@
+const optionHeaders = document.querySelectorAll('.option__header')
 
-// const mainHeader = document.querySelector('.main-header');
+for (let i=0; i < optionHeaders.length; i++) {
+  const optionHeader = optionHeaders[i]
 
-// window.addEventListener('scroll', toggleClassOnScroll.bind(mainHeader, 100));
+  optionHeader.addEventListener('click', function() {
+    optionHeader.parentElement.classList.toggle('option--expanded')
+  })
+}
 
-// function toggleClassOnScroll(pxAmount) {
-//   let scrollTop = document.body.scrollTop;
+const openCountries = document.querySelector('.open-countries')
+const countryFilterModal = document.querySelector('.country-filter__modal')
 
-//   if(scrollTop > pxAmount) {
-//     this.classList.add('main-header--sticky');
-//   } else {
-//     this.classList.remove('main-header--sticky');
-//   }
-// }
+openCountries.addEventListener('click', function() {
+  countryFilterModal.classList.toggle('country-filter__modal--open')
+})
+
+// const header = document.querySelector('.main-header')
+
+// window.addEventListener('scroll', function() {
+//   console.log("dd")
+//     header.classList.add('main-header--scroll')
+// })
+
+const closeCountries = document.querySelector('.close-countries')
+
+closeCountries.addEventListener('click', function() {
+  countryFilterModal.classList.remove('country-filter__modal--open')
+})

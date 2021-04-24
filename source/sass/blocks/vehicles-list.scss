@@ -30,3 +30,144 @@
   display: flex;
   justify-content: center;
 }
+
+.companion__vehicles-list .vehicles-list {
+  display: flex;
+  flex-direction: row;
+  padding-top: 17px;
+  padding-bottom: 13px;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: column;
+    padding-top: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    margin-right: 50px;
+  }
+}
+
+.companion__vehicles-list .vehicles-list__item {
+  background-color: $block-background-1;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    background-color: transparent;
+    width: 26px;
+    height: 25px;
+  }
+}
+
+.companion__vehicles-list .vehicles-list__icon {
+  color: $basic-blue-light;
+  opacity: 0.15;
+  // width: 15px;
+  // height: 17px;
+  display: block;
+}
+
+.vehicles-list__item--active .vehicles-list__icon {
+  opacity: 1;
+}
+
+.companion__vehicles-list .vehicles-list__aero {
+  width: 14px;
+  height: 16px;
+
+  @media (min-width: $tablet-width) {
+    width: 23px;
+    height: 22px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 22px;
+    height: 22px;
+  }
+}
+
+.companion__vehicles-list .vehicles-list__bus {
+  width: 13px;
+  height: 16px;
+
+  @media (min-width: $tablet-width) {
+    width: 20px;
+    height: 19px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 18px;
+    height: 20px;
+  }
+}
+
+.companion__vehicles-list .vehicles-list__bike {
+  width: 15px;
+  height: 17px;
+
+  @media (min-width: $tablet-width) {
+    width: 26px;
+    height: 25px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 25px;
+    height: 25px;
+  }
+}
+
+.companion__vehicles-list .vehicles-list__run {
+  width: 14px;
+  height: 17px;
+
+  @media (min-width: $tablet-width) {
+    width: 23px;
+    height: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 23px;
+    height: 24px;
+  }
+}
+
+.suboptions-wrapper .vehicles-list {
+  display: flex;
+  padding-bottom: 7px;
+  padding-top: 4px;
+
+  @media (min-width: $desktop-width) {
+    padding-top: 10px;
+  }
+}
+
+.suboptions-wrapper .vehicles-list__item {
+  width: 32px;
+  height: 32px;
+  background-color: $basic-white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 1px;
+
+  @media (min-width: $tablet-width) {
+    width: 44px;
+    height: 44px;
+  }
+}
+
+.suboptions-wrapper .vehicles-list__icon {
+  width: 16px;
+  height: 16px;
+
+  @media (min-width: $tablet-width) {
+    width: 22px;
+    height: 22px;
+  }
+}

@@ -10,313 +10,761 @@
 </head>
 
 <body class="catalog-page">
-  <header class="main-header">
-
+  <header class="catalog-page__main-header main-header">
     <div class="logo">
       <div class="logo__wrapper">
         <span class="visually-hidden">Погнали</span>
       </div>
     </div>
+    <button class="toggle" type="button"></button>
+    <ul class="site-list">
+      <li class="site-list__item">
+        <a href="./index.html" class="site-list__link">О сервисе</a>
+      </li>
+      <li class="site-list__item">
+        <a href="#" class="site-list__link">Направления</a>
+      </li>
+      <li class="site-list__item">
+        <a href="./catalog.html" class="site-list__link">Попутчики</a>
+      </li>
+    </ul>
 
-    <nav class="main-nav">
-      <button class="main-nav__toggle" type="button"></button>
-      <ul class="site-list">
-        <li class="site-list__item">О сервисе</li>
-        <li class="site-list__item">Направление</li>
-        <li class="site-list__item">Попутчики</li>
-      </ul>
-    </nav>
+    <button type="button" class="main-header__button button">Авторизация</button>
 
-    <nav class="user-nav">
-      <ul class="contacts-list">
-        <li class="contacts-list__item">
-
-          <div class="action">
-            <div class="action__wrapper">
-              <svg class="action__icon" width="45" height="45" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="22.5" cy="22.5" r="22.5" fill="#121936" />
-                <path fill-rule="evenodd" clip-rule="evenodd"
-                  d="M22.5 15.086c-2.797 0-5.6.473-6.617 1.415-.844.781-1.125 2.162-1.22 3.037 0 0-.013.086-.013.123 0 .343.294.618.654.618.043 0 1.616-.12 2.565-.195.022-.003.045-.006.068-.012.353-.01.638-.281.638-.618l.003-1.217c0-.377.324-.68.723-.68H25.7c.399 0 .723.303.723.68l.003 1.217c0 .337.284.609.638.618.022.006.046.01.069.012.948.074 2.521.195 2.564.195.36 0 .654-.275.654-.618 0-.037-.013-.123-.013-.123-.095-.875-.376-2.255-1.22-3.037-1.017-.942-3.82-1.415-6.617-1.415zm0 8.032c-.723 0-1.308.553-1.308 1.235 0 .683.585 1.236 1.308 1.236.723 0 1.308-.553 1.308-1.236 0-.682-.585-1.235-1.308-1.235zm-.981-2.78v-.773c0-.426-.367-.772-.818-.772-.451 0-.818.346-.818.772v.772l-4.412 4.452a1.504 1.504 0 00-.494 1.106v1.239c0 .682.586 1.235 1.308 1.235h.328v.772c0 .427.366.773.817.773.451 0 .818-.346.818-.773v-.772h8.504v.772c0 .427.366.773.818.773.451 0 .817-.346.817-.773v-.772h.327c.723 0 1.309-.553 1.309-1.235v-1.24c0-.432-.19-.824-.494-1.105l-4.412-4.452v-.772c0-.426-.367-.772-.818-.772-.451 0-.818.346-.818.772v.772H21.52zm.98 1.544c1.447 0 2.618 1.106 2.618 2.471 0 1.366-1.171 2.472-2.617 2.472s-2.617-1.106-2.617-2.472c0-1.365 1.171-2.47 2.617-2.47z"
-                  fill="#FFD74B" />
-              </svg>
-              <a class="action__item">8 800 555-86-28</a>
-            </div>
+    <ul class="contacts-list main-header__contacts-list">
+      <li class="contacts-list__item">
+        <div class="action">
+          <div class="action__wrapper action__wrapper--basic">
+            <svg viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M22.5 15.086c-2.797 0-5.6.473-6.617 1.415-.844.781-1.125 2.162-1.22 3.036 0 0-.013.087-.013.124 0 .343.294.618.654.618.043 0 1.616-.12 2.565-.195.022-.003.045-.006.068-.012.353-.01.638-.281.638-.618l.003-1.217c0-.377.324-.68.723-.68H25.7c.399 0 .723.303.723.68l.003 1.217c0 .337.284.608.638.618.022.006.046.009.069.012.948.074 2.521.195 2.564.195.36 0 .654-.275.654-.618 0-.037-.013-.124-.013-.124-.095-.874-.376-2.255-1.22-3.036-1.017-.942-3.82-1.415-6.617-1.415zm0 8.031c-.723 0-1.308.553-1.308 1.236 0 .683.585 1.236 1.308 1.236.723 0 1.308-.553 1.308-1.236 0-.683-.585-1.236-1.308-1.236zm-.981-2.78v-.772c0-.426-.367-.772-.818-.772-.451 0-.818.346-.818.772v.772l-4.412 4.452a1.504 1.504 0 00-.494 1.106v1.238c0 .683.586 1.236 1.308 1.236h.328v.772c0 .427.366.772.817.772.451 0 .818-.346.818-.772v-.772h8.504v.772c0 .427.366.772.818.772.451 0 .817-.346.817-.772v-.772h.327c.723 0 1.309-.553 1.309-1.236v-1.238c0-.433-.19-.825-.494-1.106l-4.412-4.452v-.772c0-.426-.367-.772-.818-.772-.451 0-.818.346-.818.772v.772H21.52zm.98 1.545c1.447 0 2.618 1.106 2.618 2.471s-1.171 2.471-2.617 2.471-2.617-1.106-2.617-2.47c0-1.366 1.171-2.472 2.617-2.472z"
+                fill="#FFD74B" />
+            </svg>
           </div>
-        </li>
-        <li class="contacts-list__item">
-
-          <div class="action">
-            <div class="action__wrapper">
-              <svg class="action__icon" width="45" height="45" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="22.5" cy="22.5" r="22.5" fill="#121936" />
-                <path fill-rule="evenodd" clip-rule="evenodd"
-                  d="M30.14 27.466L25.808 23.5l4.33-3.966-.59-.631-6.299 5.769-6.299-5.77-.59.632 4.33 3.966-4.33 3.966.59.631 4.38-4.011 1.919 1.758 1.92-1.758 4.379 4.011.59-.63zM15.575 17.25c-.81 0-1.465.699-1.465 1.558v9.384c0 .86.65 1.558 1.465 1.558h15.348c.809 0 1.465-.699 1.465-1.558v-9.384c0-.86-.65-1.558-1.465-1.558H15.576z"
-                  fill="#FFD74B" />
-              </svg>
-              <a class="action__item">mail@htmlacademy.ru</a>
-            </div>
+          <a class="action__item">8 800 555-86-28</a>
+        </div>
+      </li>
+      <li class="contacts-list__item">
+        <div class="action">
+          <div class="action__wrapper action__wrapper--basic">
+            <svg viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M30.14 27.466L25.808 23.5l4.33-3.966-.59-.631-6.299 5.769-6.299-5.77-.59.632 4.33 3.966-4.33 3.966.59.631 4.38-4.011 1.919 1.758 1.92-1.758 4.379 4.011.59-.63zM15.575 17.25c-.81 0-1.465.699-1.465 1.558v9.384c0 .86.65 1.558 1.465 1.558h15.348c.809 0 1.465-.699 1.465-1.558v-9.384c0-.86-.65-1.558-1.465-1.558H15.576z"
+                fill="#FFD74B" />
+            </svg>
           </div>
-        </li>
-      </ul>
+          <a class="action__item">mail@htmlacademy.ru</a>
+        </div>
 
-      <button type="button" class="button main-header__button">Авторизация</button>
-    </nav>
+      </li>
+    </ul>
+
+    <ul class="contacts-list main-header__contacts-list main-header__contacts-list--desktop">
+      <li class="contacts-list__item">
+
+        <div class="action">
+          <div class="action__wrapper action__wrapper--phone">
+            <svg class="action__icon" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path class="action__icon-path"
+                d="M19.774 19.224c0 .189.154.337.342.337a.7.7 0 01.703.696.34.34 0 00.341.337.34.34 0 00.342-.337 1.38 1.38 0 00-1.386-1.37.34.34 0 00-.342.337zm5.558 1.37a.338.338 0 00.341-.337c0-3.031-2.492-5.495-5.557-5.495a.34.34 0 00-.342.338.34.34 0 00.342.337c2.69 0 4.875 2.164 4.875 4.82a.34.34 0 00.341.337z"
+                fill="inherit" />
+              <path class="action__icon-path"
+                d="M22.905 20.257a.34.34 0 00.341.337.34.34 0 00.341-.337c0-1.894-1.556-3.433-3.471-3.433a.34.34 0 00-.342.338c0 .189.154.337.342.337 1.54 0 2.789 1.239 2.789 2.758zm-2.79-7.557a.34.34 0 00-.34.338.34.34 0 00.34.337c3.841 0 6.965 3.088 6.965 6.882 0 .185.15.337.341.337a.34.34 0 00.342-.337c0-4.169-3.431-7.557-7.647-7.557zm3.336 11.114l-.447.24c-.755.408-1.342 1.527-2.273.684l-2.43-2.438-2.101-2.043c-1.055-1.334.126-1.65.54-2.4l.242-.439c.273-.5.372-1.06.29-1.62a2.558 2.558 0 00-.744-1.475 2.636 2.636 0 00-1.868-.762c-.706 0-1.372.27-1.87.762l-.174.176c-.922.911-1.028 2.48-.3 4.425.685 1.856 2.068 3.867 3.884 5.663 2.769 2.737 5.851 4.313 8.063 4.313.874 0 1.615-.246 2.14-.766l.178-.176c.495-.489.772-1.144.775-1.85a2.636 2.636 0 00-.775-1.845 2.683 2.683 0 00-3.13-.45z"
+                fill="inherit" />
+            </svg>
+            <a class="action__item">8 800 555-86-28</a>
+          </div>
+        </div>
+      </li>
+
+      <li class="contacts-list__item">
+
+        <div class="action">
+
+          <div class="action__wrapper action__wrapper--email">
+            <svg class="action__icon" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path class="action__icon-path"
+                d="M12.017 15.325l6.75 4.23c.226.143.52.21.815.21.295 0 .589-.067.815-.21l6.75-4.23c.44-.276.856-1.35.049-1.35H11.969c-.807 0-.392 1.074.048 1.35zm15.335 2.313l-6.955 4.229c-.306.187-.52.209-.815.209-.295 0-.51-.022-.815-.21-.306-.186-6.42-3.925-6.92-4.229-.35-.214-.347.037-.347.23v7.658c0 .441.51 1.05.9 1.05h14.4c.39 0 .9-.609.9-1.05v-7.657c0-.193.004-.444-.348-.23z"
+                fill="inherit" />
+            </svg>
+            <a class="action__item">mail@htmlacademy.ru</a>
+          </div>
+        </div>
+      </li>
+    </ul>
+
+    <ul class="socials-list">
+      <li class="socials-list__item">
+        <a class="socials-list__link">
+          <svg class="socials-list__icon" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M24.488 32.77h-5.359V23.25H17v-4.707h2.066c-.157-2.132.236-3.69 1.195-4.752a4.883 4.883 0 011.635-1.106 5.151 5.151 0 011.971-.392h3.756v4.538h-2.954a4.554 4.554 0 00-.197 1.712h3.143v4.707h-3.143l.016 9.518zm-4.172-1.107h2.97v-9.518h3.143v-2.472h-3.143v-.56c0-1.477 0-2.797.785-3.292l.15-.096h2.208v-2.324h-2.53a3.878 3.878 0 00-1.497.28c-.472.19-.897.472-1.246.827-.785.908-1.107 2.427-.864 4.53l.079.613h-2.192v2.494h2.137v9.518z"
+              fill="inherit" />
+          </svg>
+          <span class="visually-hidden">Facebook</span>
+        </a>
+      </li>
+      <li class="socials-list__item">
+        <a class="socials-list__link">
+          <svg class="socials-list__icon" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M28.766 28.854a3.017 3.017 0 01-1.543-.465 7.53 7.53 0 01-1.32-1.129c-.327-.324-.868-.87-1.076-.87-.208 0-.356.679-.349 1.158.003.331-.122.65-.349.893-.258.21-.573.338-.905.369H21.8a8.424 8.424 0 01-5.513-2.214c-2.73-2.486-5.075-7.238-5.171-7.444a.984.984 0 01.111-1.092c.283-.235.641-.36 1.01-.355H15.352c.25.037.49.125.704.259.202.134.363.32.468.538.32.681.686 1.34 1.098 1.97.971 1.476 1.402 1.815 1.558 1.89a5.957 5.957 0 00.14-2.118 1.983 1.983 0 00-.155-.945.99.99 0 00-.572-.214l-.541-.509c-.104-.487.438-.907.816-1.07a6.482 6.482 0 012.337-.28h.527a6.799 6.799 0 011.595.147c1.261.266 1.217 1.277 1.165 2.443 0 .339-.037.738-.037 1.195v.354c-.03.321-.007.645.067.96a6.719 6.719 0 001.535-1.83c.43-.659.807-1.35 1.128-2.067a1.168 1.168 0 011.187-.7h3.176c.093-.01.188-.01.282 0 .742 0 1.18.213 1.357.627.178.413.127 1.224-1.75 3.401l-.742.834c-.36.347-.67.742-.92 1.173.28.318.6.6.95.841a10.543 10.543 0 012.225 2.265 1.177 1.177 0 01.193 1.24 1.705 1.705 0 01-1.395.738l-2.812.037-.17-.03zm-3.94-3.571c.668 0 1.247.583 1.863 1.195.333.362.706.683 1.113.96.308.203.67.31 1.039.31h.074l2.82-.038c.138-.007.274-.043.4-.103l-.074-.118a9.779 9.779 0 00-1.989-2.007c-.883-.738-1.335-1.084-1.387-1.652-.052-.569.363-1.063 1.194-2l.742-.82a7.914 7.914 0 001.521-2.176 4.25 4.25 0 00-.497 0h-3.242a.412.412 0 00-.178 0A15.09 15.09 0 0127 21.084c-1.403 2.081-2.063 2.362-2.53 2.362a.887.887 0 01-.416-.104c-.742-.42-.742-1.357-.697-2.036v-.317c0-.48 0-.893.037-1.247.06-1.24 0-1.247-.282-1.314a6.383 6.383 0 00-1.38-.117h-.512a9.696 9.696 0 00-1.41.073c.071.052.134.114.186.185a2.8 2.8 0 01.438 1.608c.096 1.218.044 2.804-.742 3.188-.14.065-.292.097-.446.096-.69 0-1.372-.65-2.537-2.406a17.246 17.246 0 01-1.195-2.103l-.059-.073a.901.901 0 00-.237-.082h-3.02c.438.9 2.515 4.885 4.837 6.973a7.44 7.44 0 004.764 1.94h1.372a.743.743 0 00.2-.073v-.067c0-.199 0-1.918 1.173-2.213.09-.036.185-.06.282-.074z"
+              fill="inherit" />
+          </svg>
+          <span class="visually-hidden">VK</span>
+        </a>
+      </li>
+      <li class="socials-list__item">
+        <a class="socials-list__link">
+          <svg class="socials-list__icon" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip1)" fill="#192144">
+              <path
+                d="M26.96 16.033a3.275 3.275 0 012.289.936c.607.597.95 1.407.951 2.252v7.791a3.169 3.169 0 01-.951 2.252 3.275 3.275 0 01-2.289.936h-7.92a3.274 3.274 0 01-2.284-.938 3.169 3.169 0 01-.949-2.25v-7.791a3.169 3.169 0 01.949-2.25 3.274 3.274 0 012.284-.938h7.92zm0-1.062h-7.92a4.356 4.356 0 00-3.055 1.244 4.215 4.215 0 00-1.265 3.006v7.791c0 1.127.455 2.208 1.265 3.005a4.356 4.356 0 003.055 1.245h7.92a4.357 4.357 0 003.055-1.245 4.216 4.216 0 001.265-3.005v-7.791a4.216 4.216 0 00-1.265-3.006 4.357 4.357 0 00-3.055-1.244z" />
+              <path
+                d="M23.007 19.985c.63 0 1.247.184 1.772.529a3.15 3.15 0 011.175 1.408 3.09 3.09 0 01.181 1.813 3.122 3.122 0 01-.873 1.607 3.206 3.206 0 01-1.633.858 3.238 3.238 0 01-1.843-.178 3.18 3.18 0 01-1.431-1.156 3.102 3.102 0 01.395-3.964 3.189 3.189 0 011.035-.68 3.228 3.228 0 011.222-.237zm0-1.063a4.32 4.32 0 00-2.374.705 4.216 4.216 0 00-1.576 1.883 4.137 4.137 0 00-.246 2.428 4.18 4.18 0 001.167 2.152 4.292 4.292 0 002.186 1.152c.829.162 1.688.08 2.468-.238a4.256 4.256 0 001.917-1.547 4.153 4.153 0 00-.525-5.304c-.396-.39-.867-.7-1.384-.91a4.325 4.325 0 00-1.633-.32zM27.428 19.73a.957.957 0 00.965-.948.957.957 0 00-.965-.95.957.957 0 00-.965.95c0 .524.432.949.965.949z" />
+            </g>
+            <defs>
+              <clipPath id="clip1">
+                <path fill="#fff" transform="translate(14 14.262)" d="M0 0h18v17.708H0z" />
+              </clipPath>
+            </defs>
+          </svg>
+          <span class="visually-hidden">Instagram</span>
+        </a>
+      </li>
+    </ul>
+
   </header>
 
   <main class="companions">
     <div class="companions-header">
       <h2 class="companions-header__title">Попутчики</h2>
-      <a class="companions-header__link">
-        <span>На главную</span>
+      <a class="header-link">
+        <span class="header-link__text">На главную</span>
+        <svg class="header-link__icon" width="32" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M4 16h24a4 4 0 004-4V7a4 4 0 00-4-4H4v2h24a2 2 0 012 2v5a2 2 0 01-2 2H4v2z" fill="#fff" />
+          <path d="M0 4L9 .536v6.928L0 4z" fill="#fff" />
+        </svg>
       </a>
     </div>
 
     <div class="country-filter">
-      <div class="country-filter__head">
-        <svg class="country-filter__icon" width="16" height="10" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path fill="#192144"
-            d="M7.174 0H15v2H7.174zM7.174 8H15v2H7.174zM0 4h7.826v2H0zM3.913 0H5.87v2H3.913zM3.913 8H5.87v2H3.913zM9.13 4h1.957v2H9.13zM0 0h2.609v2H0zM0 8h2.609v2H0zM12.391 4H15v2h-2.609z" />
-        </svg>
-        <span class="country-filter__title">Фильтрация по странам:</span>
-        <ul class="country-list country-filter__country-list">
-          <li class="country-list__item">Европа</li>
-          <li class="country-list__item">Азия</li>
-          <li class="country-list__item">Америка</li>
-          <li class="country-list__item">Острова </li>
-        </ul>
-        <button class="country-filter__open-modal open-modal" type="button">
-          <svg width="17" height="3" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="1.5" cy="1.5" r="1.5" fill="#192144" />
-            <circle cx="8.5" cy="1.5" r="1.5" fill="#192144" />
-            <circle cx="15.5" cy="1.5" r="1.5" fill="#192144" />
-          </svg>
-          <span class="open-modal__text">показать все </span>
-        </button>
-      </div>
 
-      <div class="modal">
-        <div class="country-options">
-          <div class="country-options__header">
-            <span class="country-options__text">Выберите страну</span>
-            <div class="country-options__cross"></div>
-          </div>
-          <div class="country-options__alphabet alphabet">
-            <div class="alphabet__table">
-              <div class="alphabet__row">
-                <div class="alphabet__cell alphabet__cell--selected">а</div>
-                <div class="alphabet__cell">б</div>
-                <div class="alphabet__cell">в</div>
-                <div class="alphabet__cell">г</div>
-                <div class="alphabet__cell">д</div>
-              </div>
-              <div class="alphabet__row">
-                <div class="alphabet__cell">е</div>
-                <div class="alphabet__cell">з</div>
-                <div class="alphabet__cell">и</div>
-                <div class="alphabet__cell">к</div>
-                <div class="alphabet__cell">л</div>
-              </div>
-              <div class="alphabet__row">
-                <div class="alphabet__cell">м</div>
-                <div class="alphabet__cell">н</div>
-                <div class="alphabet__cell">о</div>
-                <div class="alphabet__cell">п</div>
-                <div class="alphabet__cell">р</div>
-              </div>
-              <div class="alphabet__row">
-                <div class="alphabet__cell">с</div>
-                <div class="alphabet__cell">т</div>
-                <div class="alphabet__cell">у</div>
-                <div class="alphabet__cell">ф</div>
-                <div class="alphabet__cell">х</div>
-              </div>
-              <div class="alphabet__row">
-                <div class="alphabet__cell">ч</div>
-                <div class="alphabet__cell">ш</div>
-                <div class="alphabet__cell">э</div>
-                <div class="alphabet__cell">ю</div>
-                <div class="alphabet__cell">я</div>
-              </div>
-            </div>
-            <ul class="country-list">
-              <li class="country-list__item">Австралия</li>
-              <li class="country-list__item">Австрия</li>
-              <li class="country-list__item">Азербайджан</li>
-              <li class="country-list__item">Албания</li>
-              <li class="country-list__item">Алжир</li>
-              <li class="country-list__item">Ангола</li>
-              <li class="country-list__item">Андорра</li>
-              <li class="country-list__item">Антигуа и Барбуда</li>
-              <li class="country-list__item">Аргентина</li>
-              <li class="country-list__item">Армения</li>
-              <li class="country-list__item">Афганистан</li>
-            </ul>
-          </div>
+      <div class="country-filter__modal">
+
+        <div class="country-filter__head">
+          <svg class="country-filter__icon" viewBox="0 0 16 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill="#192144"
+              d="M7.174 0H15v2H7.174zM7.174 8H15v2H7.174zM0 4h7.826v2H0zM3.913 0H5.87v2H3.913zM3.913 8H5.87v2H3.913zM9.13 4h1.957v2H9.13zM0 0h2.609v2H0zM0 8h2.609v2H0zM12.391 4H15v2h-2.609z" />
+          </svg>
+          <span class="country-filter__title">Фильтрация по странам:</span>
+
+          <ul class="country-filter__head-list">
+            <li class="country-filter__head-item country-filter__head-item--current">Европа</li>
+            <li class="country-filter__head-item">Азия</li>
+            <li class="country-filter__head-item">Америка</li>
+            <li class="country-filter__head-item">Острова </li>
+          </ul>
+
+
+          <button type="button" class="country-filter__open-countries open-countries">
+            <span class="open-countries__text">показать все</span>
+            <span class="open-countries__text-close">свернуть</span>
+            <svg class="open-countries__open-icon" viewBox="0 0 30 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="3" cy="3" r="3" fill="#192144" />
+              <circle cx="15" cy="3" r="3" fill="#192144" />
+              <circle cx="27" cy="3" r="3" fill="#192144" />
+            </svg>
+            <svg class="open-countries__close-icon" viewBox="0 0 24 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip3)" stroke="#192144" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round">
+                <path d="M21 2.916L3 19.343M3 2.916l18 16.427" />
+              </g>
+              <defs>
+                <clipPath id="clip3">
+                  <path fill="#fff" transform="rotate(-90 11.04 11.04)" d="M0 0h21.903v24H0z" />
+                </clipPath>
+              </defs>
+            </svg>
+          </button>
         </div>
 
-        <button type="button" class="button">
-          <!-- иконка  -->
-          Свернуть
-        </button>
+        <div class="countries">
+          <div class="countries__upper">
+            <ul class="countries__alphabet alphabet">
+              <li class="alphabet__symbol symbol symbol--selected">
+                <a class="symbol__link" href="#">A</a>
+                <ul class="symbol__results">
+                  <li class="symbol__title">А</li>
+                  <li class="symbol__result"><a class="symbol__result-link" href="#">Афганистан</a></li>
+                  <li class="symbol__result"><a class="symbol__result-link" href="#">Албания</a></li>
+                  <li class="symbol__result"><a class="symbol__result-link" href="#">Алгерия</a></li>
+                  <li class="symbol__result"><a class="symbol__result-link" href="#">Андорра</a></li>
+                  <li class="symbol__result"><a class="symbol__result-link" href="#">Аргентина</a></li>
+                  <li class="symbol__result"><a class="symbol__result-link" href="#">Армения</a></li>
+                  <li class="symbol__result"><a class="symbol__result-link" href="#">Австралия</a></li>
+                  <li class="symbol__result"><a class="symbol__result-link" href="#">Австрия</a></li>
+                  <li class="symbol__result"><a class="symbol__result-link" href="#">Азербайджан</a></li>
+                </ul>
+              </li>
+              <li class="alphabet__symbol symbol">
+                <a class="symbol__link" href="#">Б</a>
+                <ul class="symbol__results">
+                  <li class="symbol__title">Б</li>
+                  <li class="symbol__result"><a class="symbol__result-link" href="#">Багамские&nbsp;Острова</a></li>
+                  <li class="symbol__result"><a class="symbol__result-link" href="#">Бангладеш</a></li>
+                  <li class="symbol__result"><a class="symbol__result-link" href="#">Барбадос</a></li>
+                  <li class="symbol__result"><a class="symbol__result-link" href="#">Бахрейн</a></li>
+                  <li class="symbol__result"><a class="symbol__result-link" href="#">Белоруссия</a></li>
+                  <li class="symbol__result"><a class="symbol__result-link" href="#">Белиз</a></li>
+                  <li class="symbol__result"><a class="symbol__result-link" href="#">Бельгия</a></li>
+                  <li class="symbol__result"><a class="symbol__result-link" href="#">Бенин</a></li>
+                  <li class="symbol__result"><a class="symbol__result-link" href="#">Болгария</a></li>
+                  <li class="symbol__result"><a class="symbol__result-link" href="#">Боливия</a></li>
+                  <li class="symbol__result"><a class="symbol__result-link" href="#">Босния&nbsp;и&nbsp;Герцеговина</a>
+                  </li>
+                  <li class="symbol__result"><a class="symbol__result-link" href="#">Ботсвана</a></li>
+                  <li class="symbol__result"><a class="symbol__result-link" href="#">Бразилия</a></li>
+                  <li class="symbol__result"><a class="symbol__result-link" href="#">Бруней</a></li>
+                  <li class="symbol__result"><a class="symbol__result-link" href="#">Буркина‑Фасо</a></li>
+                  <li class="symbol__result"><a class="symbol__result-link" href="#">Бурунди</a></li>
+                  <li class="symbol__result"><a class="symbol__result-link" href="#">Бутан</a></li>
+                </ul>
+              </li>
+              <li class="alphabet__symbol symbol">
+                <a class="symbol__link" href="#">В</a>
+                <ul class="symbol__results">
+                  <li class="symbol__title">В</li>
+                  <li class="symbol__result"><a class="symbol__result-link" href="#">Вануату</a></li>
+                  <li class="symbol__result"><a class="symbol__result-link" href="#">Великобритания</a></li>
+                  <li class="symbol__result"><a class="symbol__result-link" href="#">Венгрия</a></li>
+                  <li class="symbol__result"><a class="symbol__result-link" href="#">Венесуэла</a></li>
+                  <li class="symbol__result"><a class="symbol__result-link" href="#">Восточный&nbsp;Тимор</a></li>
+                  <li class="symbol__result"><a class="symbol__result-link" href="#">Вьетнам</a></li>
+                </ul>
+              </li>
+              <li class="alphabet__symbol symbol">
+                <a class="symbol__link" href="#">Г</a>
+                <ul class="symbol__results">
+                  <li class="symbol__title">Г</li>
+                  <li class="symbol__result"><a class="symbol__result-link" href="#">Габон</a></li>
+                  <li class="symbol__result"><a class="symbol__result-link" href="#">Гаити</a></li>
+                  <li class="symbol__result"><a class="symbol__result-link" href="#">Гайана</a></li>
+                  <li class="symbol__result"><a class="symbol__result-link" href="#">Гамбия</a></li>
+                  <li class="symbol__result"><a class="symbol__result-link" href="#">Гана</a></li>
+                  <li class="symbol__result"><a class="symbol__result-link" href="#">Гватемала</a></li>
+                  <li class="symbol__result"><a class="symbol__result-link" href="#">Гвинея</a></li>
+                  <li class="symbol__result"><a class="symbol__result-link" href="#">Гвинея‑Бисау</a></li>
+                  <li class="symbol__result"><a class="symbol__result-link" href="#">Германия</a></li>
+                  <li class="symbol__result"><a class="symbol__result-link" href="#">Гондурас</a></li>
+                  <li class="symbol__result"><a class="symbol__result-link" href="#">Гренада</a></li>
+                  <li class="symbol__result"><a class="symbol__result-link" href="#">Греция</a></li>
+                  <li class="symbol__result"><a class="symbol__result-link" href="#">Грузия</a></li>
+                </ul>
+              </li>
+              <li class="alphabet__symbol symbol">
+                <a class="symbol__link" href="#">Д</a>
+                <ul class="symbol__results">
+                  <li class="symbol__title">Д</li>
+                  <li class="symbol__result"><a class="symbol__result-link" href="#">Дания</a></li>
+                  <li class="symbol__result"><a class="symbol__result-link" href="#">Джибути</a></li>
+                  <li class="symbol__result"><a class="symbol__result-link" href="#">Доминика</a></li>
+                  <li class="symbol__result"><a class="symbol__result-link" href="#">Доминикана</a></li>
+                </ul>
+              </li>
+              <li class="alphabet__symbol symbol">
+                <a class="symbol__link" href="#">Е</a>
+                <ul class="symbol__results">
+                  <li class="symbol__title">Е</li>
+                  <li class="symbol__result"><a class="symbol__result-link" href="#">Египет</a></li>
+                </ul>
+              </li>
+              <li class="alphabet__symbol symbol">
+                <a class="symbol__link" href="#">З</a>
+                <ul class="symbol__results">
+                  <li class="symbol__title">З</li>
+                  <li class="symbol__result"><a class="symbol__result-link" href="#">Замбия</a></li>
+                  <li class="symbol__result"><a class="symbol__result-link" href="#">Зимбабве</a></li>
+                </ul>
+              </li>
+              <li class="alphabet__symbol symbol">
+                <a class="symbol__link" href="#">И</a>
+                <ul class="symbol__results">
+                  <li class="symbol__title">И</li>
+                  <li class="symbol__result"><a class="symbol__result-link" href="#">Израиль</a></li>
+                  <li class="symbol__result"><a class="symbol__result-link" href="#">Индия</a></li>
+                  <li class="symbol__result"><a class="symbol__result-link" href="#">Индонезия</a></li>
+                  <li class="symbol__result"><a class="symbol__result-link" href="#">Иордания</a></li>
+                  <li class="symbol__result"><a class="symbol__result-link" href="#">Ирак</a></li>
+                  <li class="symbol__result"><a class="symbol__result-link" href="#">Иран</a></li>
+                  <li class="symbol__result"><a class="symbol__result-link" href="#">Ирландия</a></li>
+                  <li class="symbol__result"><a class="symbol__result-link" href="#">Исландия</a></li>
+                  <li class="symbol__result"><a class="symbol__result-link" href="#">Испания</a></li>
+                  <li class="symbol__result"><a class="symbol__result-link" href="#">Италия</a></li>
+                </ul>
+              </li>
+
+              <li class="alphabet__symbol symbol">
+                <a class="symbol__link" href="#">К</a>
+                <ul class="symbol__results">
+                  <li class="symbol__title">К</li>
+                  <li class="symbol__result"><a class="symbol__result-link" href="#">Кабо‑Верде</a></li>
+                  <li class="symbol__result"><a class="symbol__result-link" href="#">Казахстан</a></li>
+                  <li class="symbol__result"><a class="symbol__result-link" href="#">Камбоджа</a></li>
+                  <li class="symbol__result"><a class="symbol__result-link" href="#">Камерун</a></li>
+                  <li class="symbol__result"><a class="symbol__result-link" href="#">Канада</a></li>
+                  <li class="symbol__result"><a class="symbol__result-link" href="#">Катар</a></li>
+                  <li class="symbol__result"><a class="symbol__result-link" href="#">Кения</a></li>
+                  <li class="symbol__result"><a class="symbol__result-link" href="#">Кипр</a></li>
+                  <li class="symbol__result"><a class="symbol__result-link" href="#">Киргизия</a></li>
+                  <li class="symbol__result"><a class="symbol__result-link" href="#">Кирибати</a></li>
+                  <li class="symbol__result"><a class="symbol__result-link" href="#">Китай</a></li>
+                  <li class="symbol__result"><a class="symbol__result-link" href="#">Колумбия</a></li>
+                  <li class="symbol__result"><a class="symbol__result-link" href="#">Коморы</a></li>
+                  <li class="symbol__result"><a class="symbol__result-link" href="#">Конго</a></li>
+                  <li class="symbol__result"><a class="symbol__result-link" href="#">КНДР</a></li>
+                  <li class="symbol__result"><a class="symbol__result-link" href="#">Республика&nbsp;Корея</a></li>
+                  <li class="symbol__result"><a class="symbol__result-link" href="#">Коста-Рика</a></li>
+                  <li class="symbol__result"><a class="symbol__result-link" href="#">Кот‑д'Ивуар</a></li>
+                  <li class="symbol__result"><a class="symbol__result-link" href="#">Куба</a></li>
+                  <li class="symbol__result"><a class="symbol__result-link" href="#">Кувейт</a></li>
+                </ul>
+              </li>
+              <li class="alphabet__symbol symbol">
+                <a class="symbol__link" href="#">Л</a>
+                <ul class="symbol__results">
+                  <li class="symbol__title">Л</li>
+                  <li class="symbol__result"><a class="symbol__result-link" href="#">Лаос</a></li>
+                  <li class="symbol__result"><a class="symbol__result-link" href="#">Латвия</a></li>
+                  <li class="symbol__result"><a class="symbol__result-link" href="#">Лесото</a></li>
+                  <li class="symbol__result"><a class="symbol__result-link" href="#">Либерия</a></li>
+                  <li class="symbol__result"><a class="symbol__result-link" href="#">Ливан</a></li>
+                  <li class="symbol__result"><a class="symbol__result-link" href="#">Ливия</a></li>
+                  <li class="symbol__result"><a class="symbol__result-link" href="#">Литва</a></li>
+                  <li class="symbol__result"><a class="symbol__result-link" href="#">Лихтенштейн</a></li>
+                  <li class="symbol__result"><a class="symbol__result-link" href="#">Люксембург</a></li>
+                </ul>
+              </li>
+
+              <li class="alphabet__symbol symbol">
+                <a class="symbol__link" href="#">М</a>
+                <ul class="symbol__results">
+                  <li class="symbol__title">М</li>
+                  <li class="symbol__result"><a class="symbol__result-link" href="#">Маврикий</a></li>
+                  <li class="symbol__result"><a class="symbol__result-link" href="#">Мавритания</a></li>
+                  <li class="symbol__result"><a class="symbol__result-link" href="#">Мадагаскар</a></li>
+                  <li class="symbol__result"><a class="symbol__result-link" href="#">Малави</a></li>
+                  <li class="symbol__result"><a class="symbol__result-link" href="#">Малайзия</a></li>
+                  <li class="symbol__result"><a class="symbol__result-link" href="#">Мали</a></li>
+                  <li class="symbol__result"><a class="symbol__result-link" href="#">Мальдивы</a></li>
+                  <li class="symbol__result"><a class="symbol__result-link" href="#">Мальта</a></li>
+                  <li class="symbol__result"><a class="symbol__result-link" href="#">Марокко</a></li>
+                  <li class="symbol__result"><a class="symbol__result-link" href="#">Маршалловы&nbsp;Острова</a></li>
+                  <li class="symbol__result"><a class="symbol__result-link" href="#">Мексика</a></li>
+                  <li class="symbol__result"><a class="symbol__result-link" href="#">Мозамбик</a></li>
+                  <li class="symbol__result"><a class="symbol__result-link" href="#">Молдавия</a></li>
+                  <li class="symbol__result"><a class="symbol__result-link" href="#">Монако</a></li>
+                  <li class="symbol__result"><a class="symbol__result-link" href="#">Монголия</a></li>
+                  <li class="symbol__result"><a class="symbol__result-link" href="#">Мьянма</a></li>
+                </ul>
+              </li>
+              <li class="alphabet__symbol symbol">
+                <a class="symbol__link" href="#">Н</a>
+                <ul class="symbol__results">
+                  <li class="symbol__title">Н</li>
+                  <li class="symbol__result"><a class="symbol__result-link" href="#">Намибия</a></li>
+                  <li class="symbol__result"><a class="symbol__result-link" href="#">Науру</a></li>
+                  <li class="symbol__result"><a class="symbol__result-link" href="#">Непал</a></li>
+                  <li class="symbol__result"><a class="symbol__result-link" href="#">Нигер</a></li>
+                  <li class="symbol__result"><a class="symbol__result-link" href="#">Нигерия</a></li>
+                  <li class="symbol__result"><a class="symbol__result-link" href="#">Нидерланды</a></li>
+                  <li class="symbol__result"><a class="symbol__result-link" href="#">Никарагуа</a></li>
+                  <li class="symbol__result"><a class="symbol__result-link" href="#">Новая&nbsp;Зеландия</a></li>
+                  <li class="symbol__result"><a class="symbol__result-link" href="#">Норвегия</a></li>
+                </ul>
+              </li>
+              <li class="alphabet__symbol symbol">
+                <a class="symbol__link" href="#">О</a>
+                <ul class="symbol__results">
+                  <li class="symbol__title">О</li>
+                  <li class="symbol__result"><a class="symbol__result-link" href="#">ОАЭ</a></li>
+                  <li class="symbol__result"><a class="symbol__result-link" href="#">Оман</a></li>
+                </ul>
+              </li>
+              <li class="alphabet__symbol symbol">
+                <a class="symbol__link" href="#">П</a>
+                <ul class="symbol__results">
+                  <li class="symbol__title">П</li>
+                  <li class="symbol__result"><a class="symbol__result-link" href="#">Пакистан</a></li>
+                  <li class="symbol__result"><a class="symbol__result-link" href="#">Палау</a></li>
+                  <li class="symbol__result"><a class="symbol__result-link" href="#">Панама</a></li>
+                  <li class="symbol__result"><a class="symbol__result-link"
+                      href="#">Папуа&nbsp;‑&nbsp;Новая&nbsp;Гвинея</a></li>
+                  <li class="symbol__result"><a class="symbol__result-link" href="#">Парагвай</a></li>
+                  <li class="symbol__result"><a class="symbol__result-link" href="#">Перу</a></li>
+                  <li class="symbol__result"><a class="symbol__result-link" href="#">Польша</a></li>
+                  <li class="symbol__result"><a class="symbol__result-link" href="#">Португалия</a></li>
+                </ul>
+              </li>
+              <li class="alphabet__symbol symbol">
+                <a class="symbol__link" href="#">Р</a>
+                <ul class="symbol__results">
+                  <li class="symbol__title">Р</li>
+                  <li class="symbol__result"><a class="symbol__result-link" href="#">Руанда</a></li>
+                  <li class="symbol__result"><a class="symbol__result-link" href="#">Румыния</a></li>
+                  <li class="symbol__result"><a class="symbol__result-link" href="#">Россия</a></li>
+                </ul>
+              </li>
+              <li class="alphabet__symbol symbol">
+                <a class="symbol__link" href="#">С</a>
+                <ul class="symbol__results">
+                  <li class="symbol__title">С</li>
+                  <li class="symbol__result"><a class="symbol__result-link" href="#">Сальвадор</a></li>
+                  <li class="symbol__result"><a class="symbol__result-link" href="#">Самоа</a></li>
+                  <li class="symbol__result"><a class="symbol__result-link" href="#">Сан‑Марино</a></li>
+                  <li class="symbol__result"><a class="symbol__result-link" href="#">Сан‑Томе&nbsp;и&nbsp;Принсипи</a>
+                  </li>
+                  <li class="symbol__result"><a class="symbol__result-link" href="#">Саудовская&nbsp;Аравия</a></li>
+                  <li class="symbol__result"><a class="symbol__result-link" href="#">Северная&nbsp;Македония</a></li>
+                  <li class="symbol__result"><a class="symbol__result-link" href="#">Сейшелы</a></li>
+                  <li class="symbol__result"><a class="symbol__result-link" href="#">Сенегал</a></li>
+                  <li class="symbol__result"><a class="symbol__result-link" href="#">Сент‑Люсия</a></li>
+                  <li class="symbol__result"><a class="symbol__result-link" href="#">Сербия</a></li>
+                  <li class="symbol__result"><a class="symbol__result-link" href="#">Сингапур</a></li>
+                  <li class="symbol__result"><a class="symbol__result-link" href="#">Сирия</a></li>
+                  <li class="symbol__result"><a class="symbol__result-link" href="#">Словакия</a></li>
+                  <li class="symbol__result"><a class="symbol__result-link" href="#">Словения</a></li>
+                  <li class="symbol__result"><a class="symbol__result-link" href="#">США</a></li>
+                  <li class="symbol__result"><a class="symbol__result-link" href="#">Сомали</a></li>
+                  <li class="symbol__result"><a class="symbol__result-link" href="#">Судан</a></li>
+                  <li class="symbol__result"><a class="symbol__result-link" href="#">Суринам</a></li>
+                  <li class="symbol__result"><a class="symbol__result-link" href="#">Сьерра‑Леоне</a></li>
+                </ul>
+              </li>
+              <li class="alphabet__symbol symbol">
+                <a class="symbol__link" href="#">Т</a>
+                <ul class="symbol__results">
+                  <li class="symbol__title">Т</li>
+                  <li class="symbol__result"><a class="symbol__result-link" href="#">Таджикистан</a></li>
+                  <li class="symbol__result"><a class="symbol__result-link" href="#">Таиланд</a></li>
+                  <li class="symbol__result"><a class="symbol__result-link" href="#">Танзания</a></li>
+                  <li class="symbol__result"><a class="symbol__result-link" href="#">Того</a></li>
+                  <li class="symbol__result"><a class="symbol__result-link" href="#">Тонга</a></li>
+                  <li class="symbol__result"><a class="symbol__result-link" href="#">Тринидад&nbsp;и&nbsp;Тобаго</a>
+                  </li>
+                  <li class="symbol__result"><a class="symbol__result-link" href="#">Тувалу</a></li>
+                  <li class="symbol__result"><a class="symbol__result-link" href="#">Тунис</a></li>
+                  <li class="symbol__result"><a class="symbol__result-link" href="#">Туркмения</a></li>
+                  <li class="symbol__result"><a class="symbol__result-link" href="#">Турция</a></li>
+                </ul>
+              </li>
+              <li class="alphabet__symbol symbol">
+                <a class="symbol__link" href="#">У</a>
+                <ul class="symbol__results">
+                  <li class="symbol__title">У</li>
+                  <li class="symbol__result"><a class="symbol__result-link" href="#">Уганда</a></li>
+                  <li class="symbol__result"><a class="symbol__result-link" href="#">Узбекистан</a></li>
+                  <li class="symbol__result"><a class="symbol__result-link" href="#">Украина</a></li>
+                  <li class="symbol__result"><a class="symbol__result-link" href="#">Уругвай</a></li>
+                </ul>
+              </li>
+              <li class="alphabet__symbol symbol">
+                <a class="symbol__link" href="#">Ф</a>
+                <ul class="symbol__results">
+                  <li class="symbol__title">Ф</li>
+                  <li class="symbol__result"><a class="symbol__result-link" href="#">Фиджи</a></li>
+                  <li class="symbol__result"><a class="symbol__result-link" href="#">Филиппины</a></li>
+                  <li class="symbol__result"><a class="symbol__result-link" href="#">Финляндия</a></li>
+                  <li class="symbol__result"><a class="symbol__result-link" href="#">Франция</a></li>
+                </ul>
+              </li>
+              <li class="alphabet__symbol symbol">
+                <a class="symbol__link" href="#">Х</a>
+                <ul class="symbol__results">
+                  <li class="symbol__title">Х</li>
+                  <li class="symbol__result"><a class="symbol__result-link" href="#">Хорватия</a></li>
+                </ul>
+              </li>
+              <li class="alphabet__symbol symbol">
+                <a class="symbol__link" href="#">Ч</a>
+                <ul class="symbol__results">
+                  <li class="symbol__title">Ч</li>
+                  <li class="symbol__result"><a class="symbol__result-link" href="#">Чад</a></li>
+                  <li class="symbol__result"><a class="symbol__result-link" href="#">Черногория</a></li>
+                  <li class="symbol__result"><a class="symbol__result-link" href="#">Чехия</a></li>
+                  <li class="symbol__result"><a class="symbol__result-link" href="#">Чили</a></li>
+                </ul>
+              </li>
+              <li class="alphabet__symbol symbol">
+                <a class="symbol__link" href="#">Ш</a>
+                <ul class="symbol__results">
+                  <li class="symbol__title">Ш</li>
+                  <li class="symbol__result"><a class="symbol__result-link" href="#">Швейцария</a></li>
+                  <li class="symbol__result"><a class="symbol__result-link" href="#">Швеция</a></li>
+                  <li class="symbol__result"><a class="symbol__result-link" href="#">Шри‑Ланка</a></li>
+                </ul>
+              </li>
+              <li class="alphabet__symbol symbol">
+                <a class="symbol__link" href="#">Э</a>
+                <ul class="symbol__results">
+                  <li class="symbol__title">Э</li>
+                  <li class="symbol__result"><a class="symbol__result-link" href="#">Эквадор</a></li>
+                  <li class="symbol__result"><a class="symbol__result-link" href="#">Эритрея</a></li>
+                  <li class="symbol__result"><a class="symbol__result-link" href="#">Эсватини</a></li>
+                  <li class="symbol__result"><a class="symbol__result-link" href="#">Эстония</a></li>
+                  <li class="symbol__result"><a class="symbol__result-link" href="#">Эфиопия</a></li>
+                </ul>
+              </li>
+              <li class="alphabet__symbol symbol">
+                <a class="symbol__link" href="#">Ю</a>
+                <ul class="symbol__results">
+                  <li class="symbol__title">Ю</li>
+                  <li class="symbol__result"><a class="symbol__result-link" href="#">ЮАР</a></li>
+                  <li class="symbol__result"><a class="symbol__result-link" href="#">Южный&nbsp;Судан</a></li>
+                </ul>
+              </li>
+              <li class="alphabet__symbol symbol">
+                <a class="symbol__link" href="#">Я</a>
+                <ul class="symbol__results">
+                  <li class="symbol__title">Я</li>
+                  <li class="symbol__result"><a class="symbol__result-link" href="#">Ямайка</a></li>
+                  <li class="symbol__result"><a class="symbol__result-link" href="#">Япония</a></li>
+                </ul>
+              </li>
+            </ul>
+
+              <ul class="symbol-results symbol-results--mobile">
+                <li class="symbol-results__result"><a class="symbol-results__link" href="#">Афганистан</a></li>
+                <li class="symbol-results__result"><a class="symbol-results__link" href="#">Албания</a></li>
+                <li class="symbol-results__result"><a class="symbol-results__link" href="#">Алгерия</a></li>
+                <li class="symbol-results__result"><a class="symbol-results__link" href="#">Андорра</a></li>
+                <li class="symbol-results__result"><a class="symbol-results__link" href="#">Аргентина</a></li>
+                <li class="symbol-results__result"><a class="symbol-results__link" href="#">Армения</a></li>
+                <li class="symbol-results__result"><a class="symbol-results__link" href="#">Австралия</a></li>
+                <li class="symbol-results__result"><a class="symbol-results__link" href="#">Австрия</a></li>
+                <li class="symbol-results__result"><a class="symbol-results__link" href="#">Азербайджан</a></li>
+              </ul>
+
+
+          </div>
+
+          <button class="countries__close-countries close-countries" type="button">
+            <svg class="close-countries__close-icon" viewBox="0 0 24 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip2)" stroke="#192144" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round">
+                <path d="M21 2.916L3 19.343M3 2.916l18 16.427" />
+              </g>
+              <defs>
+                <clipPath id="clip2">
+                  <path fill="#fff" transform="rotate(-90 11.04 11.04)" d="M0 0h21.903v24H0z" />
+                </clipPath>
+              </defs>
+            </svg>
+            <span class="close-countries__text">Свернуть</span>
+          </button>
+        </div>
       </div>
     </div>
+
+
     <div class="catalog-wrapper">
       <section class="companions-filter">
-        <h2 class="companions-filter__title">Подберите идеального попутчика</h2>
+        <h2 class="companions-filter__title">Подберите <br> идеального <br> попутчика</h2>
         <form action="https://echo.htmlacademy.ru" method="post">
+
           <div class="option">
-            <div class="option__title">Хобби</div>
-            <button class="option__button" type="button">
-              <svg width="10" height="5" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M5 5L.67.5h8.66L5 5z" fill="#192144" />
-              </svg>
-            </button>
+            <div class="option__header">
+              <div class="option__title">
+                <span>Хобби</span>
+                <span class="colon">:</span>
+              </div>
+              <button class="option__button" type="button">
+                <svg width="10" height="5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M5 5L.67.5h8.66L5 5z" fill="#192144" />
+                </svg>
+              </button>
+            </div>
 
             <div class="suboptions-wrapper">
               <ul class="suboptions-list">
                 <li class="suboptions-list__item">
-                  <label>Спортзал
-                    <input type="checkbox" checked>
-                  </label>
+                  <input type="checkbox" id="suboptions-gym" class="suboptions-list__checkbox" checked>
+                  <label for="suboptions-gym" class="suboptions-list__label">Спортзал</label>
                 </li>
                 <li class="suboptions-list__item">
-                  <label>Кальян
-                    <input type="checkbox">
-                  </label>
+                  <input type="checkbox" id="suboptions-hooka" class="suboptions-list__checkbox" checked>
+                  <label for="suboptions-hooka" class="suboptions-list__label">Кальян</label>
                 </li>
                 <li class="suboptions-list__item">
-                  <label>Диван
-                    <input type="checkbox">
-                  </label>
+                  <input type="checkbox" id="suboptions-sofa" class="suboptions-list__checkbox">
+                  <label for="suboptions-sofa" class="suboptions-list__label">Диван</label>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="option option--expanded">
+            <div class="option__header">
+              <div class="option__title">
+                <span>Музыка</span>
+                <span class="colon">:</span>
+              </div>
+              <button class="option__button" type="button">
+                <svg width="10" height="5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M5 5L.67.5h8.66L5 5z" fill="#192144" />
+                </svg>
+              </button>
+            </div>
+
+            <div class="suboptions-wrapper">
+              <ul class="suboptions-list">
+                <li class="suboptions-list__item">
+                  <input type="checkbox" id="suboptions-rock" class="suboptions-list__checkbox" checked>
+                  <label for="suboptions-rock" class="suboptions-list__label">Тяжелый рок</label>
+                </li>
+                <li class="suboptions-list__item">
+                  <input type="checkbox" id="suboptions-rap" class="suboptions-list__checkbox" checked>
+                  <label for="suboptions-rap" class="suboptions-list__label">Русский рэп</label>
+                </li>
+                <li class="suboptions-list__item">
+                  <input type="checkbox" id="suboptions-eurodance" class="suboptions-list__checkbox">
+                  <label for="suboptions-eurodance" class="suboptions-list__label">Евроденс</label>
                 </li>
               </ul>
             </div>
           </div>
           <div class="option">
-            <div class="option__title">Музыка</div>
-            <button class="option__button" type="button">
-              <svg width="10" height="5" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M5 5L.67.5h8.66L5 5z" fill="#192144" />
-              </svg>
-            </button>
+            <div class="option__header">
+              <div class="option__title">
+                <span>Еда</span>
+                <span class="colon">:</span>
+              </div>
+              <button class="option__button" type="button">
+
+                <svg width="10" height="5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M5 5L.67.5h8.66L5 5z" fill="#192144" />
+                </svg>
+              </button>
+            </div>
 
             <div class="suboptions-wrapper">
               <ul class="suboptions-list">
                 <li class="suboptions-list__item">
-                  <label>Тяжелый рок
-                    <input type="checkbox" checked>
-                  </label>
+                  <input type="checkbox" id="suboptions-meat" class="suboptions-list__checkbox" checked>
+                  <label for="suboptions-meat" class="suboptions-list__label">Мясоед</label>
                 </li>
                 <li class="suboptions-list__item">
-                  <label>Русский рэп
-                    <input type="checkbox">
-                  </label>
+                  <input type="checkbox" id="suboptions-pp" class="suboptions-list__checkbox">
+                  <label for="suboptions-pp" class="suboptions-list__label">Сидит на ПП</label>
                 </li>
                 <li class="suboptions-list__item">
-                  <label>Евроденс
-                    <input type="checkbox">
-                  </label>
+                  <input type="checkbox" id="suboptions-vegan" class="suboptions-list__checkbox">
+                  <label for="suboptions-vegan" class="suboptions-list__label">Веган-сыроед</label>
                 </li>
               </ul>
             </div>
           </div>
-          <div class="option">
-            <div class="option__title">Еда</div>
-            <button class="option__button" type="button">
-              <svg width="10" height="5" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M5 5L.67.5h8.66L5 5z" fill="#192144" />
-              </svg>
-            </button>
-
-            <div class="suboptions-wrapper">
-              <ul class="suboptions-list">
-                <li class="suboptions-list__item">
-                  <label>Мясоед
-                    <input type="checkbox" checked>
-                  </label>
-                </li>
-                <li class="suboptions-list__item">
-                  <label>Сидит на ПП
-                    <input type="checkbox">
-                  </label>
-                </li>
-                <li class="suboptions-list__item">
-                  <label>Веган-сыроед
-                    <input type="checkbox">
-                  </label>
-                </li>
-              </ul>
+          <div class="option option--expanded">
+            <div class="option__header">
+              <div class="option__title">
+                <span>Транспорт</span>
+                <span class="colon">:</span>
+              </div>
+              <button class="option__button" type="button">
+                <svg width="10" height="5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M5 5L.67.5h8.66L5 5z" fill="#192144" />
+                </svg>
+              </button>
             </div>
-          </div>
-          <div class="option">
-            <div class="option__title">Транспорт</div>
-            <button class="option__button" type="button">
-              <svg width="10" height="5" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M5 5L.67.5h8.66L5 5z" fill="#192144" />
-              </svg>
-            </button>
-
             <div class="suboptions-wrapper">
               <ul class="vehicles-list">
-                <li class="vehicles-list__item">
-                  <svg class="vehicles-list__icon" width="21" height="23" fill="none"
+                <li class="vehicles-list__item vehicles-list__item--active">
+                  <svg class="vehicles-list__icon vehicles-list__aero" viewBox="0 0 23 23" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
-                    <g clip-path="url(#clip0)">
+                    <g clip-path="url(#clip5)">
                       <path
-                        d="M16.783 2.093c-.728.173-1.46.347-1.733.824l-2.107 4.199L1.63 9.806l-.458 1.341 8.658.82-1.47 3.634-3.283.78-.824 1.43 2.369.256.27 1.169c.12.414.545.69.908.604l1.095-.26 1.268 2.163.825-1.428-.81-3.505 2.377-3.03 4.536 7.961.914-1.038L15.213 8.63l2.563-3.895c.276-.477.096-1.255-.085-2.036-.09-.387-.545-.691-.908-.605z"
-                        fill="#101D41" />
+                        d="M18.488 1.18c-.8.18-1.602.362-1.9.859l-2.312 4.373L1.864 9.215l-.503 1.397 9.498.853-1.611 3.786-3.602.813-.905 1.488 2.599.268.296 1.217c.133.432.599.72.996.63l1.201-.271 1.392 2.253.904-1.488-.889-3.65 2.608-3.157 4.976 8.293 1.004-1.081-3.063-12.577 2.813-4.057c.302-.498.105-1.308-.093-2.122-.099-.403-.6-.72-.997-.63z"
+                        fill="currentColor" />
                     </g>
                     <defs>
-                      <clipPath>
-                        <path fill="#fff" transform="translate(0 .96)" d="M0 0h20.826v21.12H0z" />
+                      <clipPath id="clip5">
+                        <path fill="#fff" transform="translate(.077)" d="M0 0h22.847v22H0z" />
                       </clipPath>
                     </defs>
                   </svg>
-                  <svg class="vehicles-list__icon" width="18" height="21" fill="none"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <g clip-path="url(#clip0)">
-                      <path opacity=".15"
-                        d="M4.34 13.948a1.3 1.3 0 00-.415-.97 1.392 1.392 0 00-1.004-.4c-.392 0-.726.133-1.003.4a1.3 1.3 0 00-.416.97c0 .38.138.702.416.97.277.268.611.402 1.003.402.392 0 .726-.134 1.004-.402.277-.268.415-.59.415-.97zm11.356 0a1.3 1.3 0 00-.416-.97 1.392 1.392 0 00-1.004-.4c-.392 0-.726.133-1.003.4a1.3 1.3 0 00-.416.97c0 .38.138.702.416.97.277.268.611.402 1.003.402.392 0 .726-.134 1.004-.402a1.3 1.3 0 00.416-.97zm-.51-4.242l-.799-4.115a.695.695 0 00-.25-.401.698.698 0 00-.449-.156H3.508c-.17 0-.319.052-.448.156a.695.695 0 00-.25.401l-.798 4.115a.661.661 0 00.155.568c.14.164.322.246.543.246h11.777a.682.682 0 00.543-.246.661.661 0 00.155-.568zm-2.507-6.558a.488.488 0 00-.155-.364.523.523 0 00-.377-.15H5.05a.523.523 0 00-.377.15.488.488 0 00-.155.364.523.523 0 00.532.514h7.097c.148 0 .274-.05.377-.15a.488.488 0 00.155-.364zm4.436 7.768v6.461h-1.42v1.372a1.3 1.3 0 01-.415.97 1.392 1.392 0 01-1.004.4c-.392 0-.726-.133-1.003-.4a1.299 1.299 0 01-.416-.97v-1.372H4.34v1.372c0 .378-.138.701-.415.97a1.392 1.392 0 01-1.004.4c-.392 0-.726-.133-1.003-.4a1.299 1.299 0 01-.416-.97v-1.372H.082v-6.46c0-.8.093-1.597.278-2.39l1.142-4.864c.066-.557.427-1.047 1.08-1.468.655-.422 1.505-.74 2.551-.954C6.18 1.027 7.334.92 8.6.92c1.264 0 2.419.107 3.465.321 1.046.215 1.896.532 2.55.954.655.421 1.015.91 1.082 1.468l1.164 4.864c.17.729.255 1.525.255 2.39z"
-                        fill="#1D2E5B" />
-                    </g>
-                    <defs>
-                      <clipPath>
-                        <path fill="#fff" transform="translate(.08 .92)" d="M0 0h17.04v19.2H0z" />
-                      </clipPath>
-                    </defs>
-                  </svg>
+                </li>
 
-                  <svg class="vehicles-list__icon" width="25" height="24" fill="none"
+                <li class="vehicles-list__item vehicles-list__item--active">
+                  <svg class="vehicles-list__icon vehicles-list__bus" viewBox="0 0 19 20" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
-                    <path opacity=".15"
-                      d="M18.308 21a4.21 4.21 0 01-2.363-.727 4.3 4.3 0 01-1.566-1.935 4.37 4.37 0 01-.242-2.492 4.331 4.331 0 011.163-2.208 4.234 4.234 0 012.178-1.18 4.198 4.198 0 012.457.245c.777.327 1.441.88 1.908 1.589a4.357 4.357 0 01-.53 5.443A4.227 4.227 0 0118.308 21zm0-7.125c-.549 0-1.085.165-1.541.474a2.804 2.804 0 00-1.022 1.262 2.85 2.85 0 00-.158 1.625c.107.546.372 1.047.76 1.44a2.737 2.737 0 003.022.61c.507-.213.94-.573 1.244-1.036a2.84 2.84 0 00-.345-3.55 2.757 2.757 0 00-1.96-.825zM6.104 21a4.21 4.21 0 01-2.362-.727 4.3 4.3 0 01-1.566-1.935 4.369 4.369 0 01-.242-2.492 4.331 4.331 0 011.163-2.208 4.235 4.235 0 012.178-1.18 4.198 4.198 0 012.457.245c.777.327 1.441.88 1.908 1.589a4.356 4.356 0 01-.53 5.443A4.227 4.227 0 016.104 21zm0-7.125c-.548 0-1.084.165-1.54.474a2.804 2.804 0 00-1.022 1.262 2.85 2.85 0 00-.158 1.625c.107.546.372 1.047.76 1.44a2.738 2.738 0 003.022.61c.507-.213.94-.573 1.245-1.036a2.84 2.84 0 00-.346-3.55 2.758 2.758 0 00-1.96-.825zM15.164 6a1.456 1.456 0 001.05-.44 1.495 1.495 0 00.43-1.065 1.495 1.495 0 00-.426-1.06 1.458 1.458 0 00-1.61-.323 1.478 1.478 0 00-.804.81 1.518 1.518 0 00.316 1.635A1.477 1.477 0 0015.164 6z"
-                      fill="#1D2E5B" />
-                    <path opacity=".15"
-                      d="M17.362 9H15.34a.183.183 0 01-.163-.097L13.71 6.176a1.447 1.447 0 00-.435-.511 1.422 1.422 0 00-1.279-.204 1.43 1.43 0 00-.568.352l-3.23 3.3c-.27.28-.425.656-.43 1.05 0 .815.583 1.106.856 1.27 1.317.77 2.245 1.332 2.754 1.645a.187.187 0 01.088.16v3.24c0 .404.306.75.704.77a.732.732 0 00.546-.206.75.75 0 00.23-.542v-4.031a.757.757 0 00-.308-.61l-1.71-1.247a.187.187 0 01-.077-.134.19.19 0 01.05-.147l1.941-2.1A.185.185 0 0113 8.173a.183.183 0 01.139.095l1.008 1.846a.745.745 0 00.647.386h2.589a.73.73 0 00.536-.232A.751.751 0 0017.362 9z"
-                      fill="#1D2E5B" />
+                    <g clip-path="url(#clip44)">
+                      <path
+                        d="M4.835 13.571c0-.394-.152-.73-.457-1.01a1.574 1.574 0 00-1.102-.418c-.43 0-.798.14-1.103.418a1.321 1.321 0 00-.457 1.01c0 .395.153.732.457 1.01.305.28.672.419 1.103.419.43 0 .798-.14 1.102-.418.305-.28.457-.616.457-1.01zm12.475 0a1.32 1.32 0 00-.457-1.01 1.574 1.574 0 00-1.103-.418c-.43 0-.797.14-1.102.418a1.32 1.32 0 00-.457 1.01c0 .395.152.732.457 1.01.305.28.672.419 1.103.419.43 0 .798-.14 1.102-.418.305-.28.457-.616.457-1.01zm-.56-4.42l-.878-4.285a.72.72 0 00-.274-.418.794.794 0 00-.493-.162H3.92a.794.794 0 00-.493.162.72.72 0 00-.274.418l-.877 4.286c-.04.223.016.42.17.591a.767.767 0 00.597.257h12.938a.767.767 0 00.597-.257.664.664 0 00.17-.591zm-2.754-6.83a.496.496 0 00-.17-.379.591.591 0 00-.415-.156H5.615c-.163 0-.3.052-.414.156a.496.496 0 00-.171.38c0 .148.057.275.17.379a.591.591 0 00.415.156h7.796c.163 0 .301-.052.415-.156a.496.496 0 00.17-.38zm4.873 8.092v6.73h-1.56v1.428c0 .395-.151.731-.456 1.01A1.574 1.574 0 0115.75 20c-.43 0-.797-.14-1.102-.419a1.32 1.32 0 01-.457-1.01v-1.428H4.835v1.428c0 .395-.152.731-.457 1.01A1.574 1.574 0 013.276 20c-.43 0-.798-.14-1.103-.419a1.321 1.321 0 01-.457-1.01v-1.428H.157v-6.73c0-.833.102-1.663.305-2.489l1.254-5.067c.073-.58.47-1.09 1.188-1.529C3.623.89 4.557.558 5.706.335 6.856.112 8.124 0 9.513 0c1.389 0 2.658.112 3.807.335 1.15.223 2.083.554 2.802.993.719.44 1.115.949 1.188 1.53l1.279 5.066c.187.759.28 1.589.28 2.489z"
+                        fill="currentColor" />
+                    </g>
+                    <defs>
+                      <clipPath id="clip44">
+                        <path fill="#fff" transform="translate(.154)" d="M0 0h18.72v20H0z" />
+                      </clipPath>
+                    </defs>
                   </svg>
-                  <svg class="vehicles-list__icon" width="21" height="24" fill="none"
+                </li>
+
+                <li class="vehicles-list__item">
+                  <svg class="vehicles-list__icon vehicles-list__bike" viewBox="0 0 26 25" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
-                    <path opacity=".15"
-                      d="M14.976 5.76c.95 0 1.721-.86 1.721-1.92s-.77-1.92-1.721-1.92c-.95 0-1.721.86-1.721 1.92s.77 1.92 1.72 1.92zM13.923 10.53c.198.329.481.581.812.724.33.142.693.168 1.037.073l2.854-.796-.416-1.862-2.854.796L14.17 7.48a1.735 1.735 0 00-1.094-.82l-3.31-.739a1.56 1.56 0 00-1.094.158c-.34.185-.614.49-.783.867l-1.427 3.183 1.54.86 1.427-3.185 1.692.378-4.377 8.138H2.927v1.92h3.816c.601 0 1.166-.357 1.476-.932l1.65-3.068 4.45.992 1.562 5.231 1.632-.607-1.562-5.23a1.955 1.955 0 00-.495-.833 1.665 1.665 0 00-.801-.444l-2.615-.583 1.525-2.836.358.6z"
-                      fill="#1D2E5B" />
+                    <path
+                      d="M19.703 21.875a4.806 4.806 0 01-2.595-.757 4.535 4.535 0 01-1.721-2.016 4.333 4.333 0 01-.266-2.596 4.441 4.441 0 011.279-2.3 4.733 4.733 0 012.392-1.23 4.846 4.846 0 012.699.257c.854.34 1.583.915 2.097 1.654a4.37 4.37 0 01.787 2.496 4.411 4.411 0 01-1.37 3.175 4.773 4.773 0 01-3.302 1.317zm0-7.422c-.602 0-1.192.172-1.693.494-.5.322-.891.78-1.122 1.315a2.825 2.825 0 00-.173 1.692c.117.569.407 1.09.834 1.5.426.41.969.69 1.56.802a3.161 3.161 0 001.76-.166 3.024 3.024 0 001.367-1.08 2.85 2.85 0 00.514-1.627c0-.777-.322-1.522-.893-2.07a3.114 3.114 0 00-2.154-.86zM6.297 21.875a4.806 4.806 0 01-2.596-.757 4.535 4.535 0 01-1.72-2.016 4.332 4.332 0 01-.266-2.596 4.441 4.441 0 011.278-2.3 4.733 4.733 0 012.392-1.23 4.846 4.846 0 012.7.257c.853.34 1.583.915 2.096 1.654a4.37 4.37 0 01.788 2.496 4.411 4.411 0 01-1.37 3.175 4.773 4.773 0 01-3.302 1.317zm0-7.422c-.603 0-1.192.172-1.693.494-.5.322-.891.78-1.122 1.315a2.825 2.825 0 00-.173 1.692c.117.569.407 1.09.833 1.5.427.41.97.69 1.56.802a3.161 3.161 0 001.76-.166 3.025 3.025 0 001.368-1.08 2.85 2.85 0 00.514-1.627c-.001-.777-.322-1.522-.894-2.07a3.113 3.113 0 00-2.153-.86zM16.25 6.25c.214 0 .426-.04.624-.118.198-.078.378-.194.529-.34.15-.145.27-.319.351-.51.081-.19.122-.394.121-.6a1.49 1.49 0 00-.118-.597c-.08-.19-.199-.362-.35-.507-.15-.145-.329-.26-.526-.338a1.659 1.659 0 00-.62-.115c-.214 0-.426.04-.623.117a1.63 1.63 0 00-.528.337 1.56 1.56 0 00-.354.506 1.511 1.511 0 00.346 1.704 1.681 1.681 0 001.148.461z"
+                      fill="#161C35" />
+                    <path
+                      d="M18.665 9.375h-2.223a.209.209 0 01-.103-.027.199.199 0 01-.075-.075l-1.612-2.84a1.532 1.532 0 00-.477-.532 1.634 1.634 0 00-1.405-.212 1.587 1.587 0 00-.625.366L8.597 9.492a1.56 1.56 0 00-.472 1.094c0 .85.64 1.152.94 1.323 1.447.802 2.466 1.388 3.025 1.714a.19.19 0 01.098.166v3.376c0 .42.336.78.773.802a.843.843 0 00.6-.215.78.78 0 00.252-.564v-4.2a.756.756 0 00-.09-.356.79.79 0 00-.249-.278l-1.879-1.3a.198.198 0 01-.084-.14.188.188 0 01.055-.153l2.133-2.187a.203.203 0 01.173-.06.208.208 0 01.153.099l1.108 1.923c.07.122.173.223.298.294.125.07.268.108.413.107h2.844a.839.839 0 00.588-.241.776.776 0 00.224-.577c-.021-.42-.398-.744-.835-.744z"
+                      fill="currentColor" />
+                  </svg>
+                </li>
+
+                <li class="vehicles-list__item vehicles-list__item--active">
+                  <svg class="vehicles-list__icon vehicles-list__run" viewBox="0 0 23 24" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M16.188 6c1.045 0 1.891-.895 1.891-2s-.846-2-1.89-2c-1.045 0-1.892.895-1.892 2s.847 2 1.891 2zM15.032 10.969c.217.342.528.605.892.754a1.8 1.8 0 001.139.076l3.135-.829-.457-1.94-3.135.829-1.304-2.067a1.9 1.9 0 00-1.202-.854l-3.636-.77a1.797 1.797 0 00-1.202.164c-.373.193-.675.51-.86.903l-1.568 3.316 1.691.895 1.568-3.317 1.86.394L7.144 17H2.952v2h4.192c.66 0 1.281-.372 1.622-.971l1.813-3.196 4.887 1.034 1.717 5.449 1.793-.633-1.716-5.448a2.019 2.019 0 00-.544-.867 1.86 1.86 0 00-.88-.463l-2.874-.607 1.676-2.954.394.625z"
+                      fill="currentColor" />
                   </svg>
                 </li>
               </ul>
             </div>
           </div>
-
-          <div class="option">
-            <div class="option__title">Левел</div>
-            <button class="option__button" type="button">
-              <svg width="10" height="5" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M5 5L.67.5h8.66L5 5z" fill="#192144" />
-              </svg>
-            </button>
-            <div class="suboptions-wrapper">
-              <div class="lvl-filter">
-                <!-- инпут для левела  -->
+          <div class="option option--expanded">
+            <div class="option__header">
+              <div class="option__title">
+                <span>Левел</span>
+                <span class="colon">:</span>
               </div>
+              <button class="option__button" type="button">
+                <svg width="10" height="5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M5 5L.67.5h8.66L5 5z" fill="#192144" />
+                </svg>
+              </button>
+            </div>
+
+            <div class="suboptions-wrapper">
+
+              <div class="range-slider">
+                <div class="range-slider__wrapper">
+                  <div class="range-slider__item"></div>
+                  <div class="range-slider__item">
+                    <div class="range-slider__slider"></div>
+                  </div>
+                </div>
+
+                <div class="range-slider__inputs">
+                  <input type="number" class="range-slider__input" aria-label="поле для ввода нижнего значения"
+                    placeholder="30">
+                  <input type="number" class="range-slider__input" aria-label="поле для ввода верхнего значения"
+                    placeholder="100">
+                </div>
+              </div>
+
             </div>
           </div>
           <button class="button submit" type="submit">Показать</button>
@@ -330,10 +778,33 @@
           <li class="companions-list__item">
             <div class="companion">
               <div class="companion__avatar"></div>
-              <div class="companion__like">like</div>
+
+              <div class="companion__like like">
+                <div class="like__wrapper like__wrapper--active">
+                  <svg class="like__icon like__icon--active" viewBox="0 0 13 11" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M3.255.474c1.693 0 3.064 1.348 3.064 3.01 0-1.662 1.371-3.01 3.064-3.01s3.064 1.348 3.064 3.01c0 2.505-2.477 3.389-5.828 7.377a.394.394 0 01-.6 0C2.669 6.873.192 5.989.192 3.484c0-1.662 1.37-3.01 3.063-3.01z"
+                      fill="#F02323" />
+                  </svg>
+                  <svg class="like__icon" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip6)">
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M6 5.665l.67-1.41c.167-.349.456-.85.865-1.256.401-.4.883-.671 1.465-.671 1.257 0 2.25 1.044 2.25 2.3 0 .954-.415 1.627-1.401 2.655-.253.263-.54.547-.86.86-.83.82-1.864 1.84-2.989 3.202-1.125-1.363-2.159-2.382-2.99-3.201a44.458 44.458 0 01-.859-.861C1.166 6.255.75 5.582.75 4.628c0-1.256.993-2.3 2.25-2.3.582 0 1.064.272 1.465.67.41.407.698.908.865 1.257L6 5.665zm.294 6.532A.387.387 0 016 12.34a.369.369 0 01-.294-.143c-1.2-1.499-2.288-2.57-3.182-3.451C.975 7.218 0 6.258 0 4.628 0 2.923 1.343 1.54 3 1.54c1.2 0 2.04.827 2.553 1.582.195.287.343.564.447.781.13-.272.28-.533.447-.781C6.961 2.366 7.8 1.54 9 1.54c1.658 0 3 1.383 3 3.088 0 1.63-.975 2.59-2.524 4.118-.895.882-1.981 1.953-3.182 3.45z"
+                        fill="inherit" opacity="inherit" />
+                    </g>
+                    <defs>
+                      <clipPath id="clip6">
+                        <path fill="#fff" transform="translate(0 .79)" d="M0 0h12v12H0z" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </div>
+                <span class="like__quantity">1,5м</span>
+              </div>
+
               <span class="companion__name">Таня Фирсова</span>
-              <span class="companion__likes-quantity">1,5м</span>
-              <div class="companion__online">online</div>
+              <div class="companion__online online"></div>
 
               <ul class="companion__tag-list tag-list">
                 <li class="tag-list__item">#ЗОЖ</li>
@@ -363,52 +834,60 @@
               </div>
 
               <div class="companion__vehicles-list list">
-                <div class="list__title-wrapper">
-                  <span>транспорт</span>
-                </div>
-                <ul class="vehicles-list">
-                  <li class="vehicles-list__item">
-                    <svg class="vehicles-list__icon" width="21" height="23" fill="none"
-                      xmlns="http://www.w3.org/2000/svg">
-                      <g clip-path="url(#clip0)">
-                        <path
-                          d="M16.783 2.093c-.728.173-1.46.347-1.733.824l-2.107 4.199L1.63 9.806l-.458 1.341 8.658.82-1.47 3.634-3.283.78-.824 1.43 2.369.256.27 1.169c.12.414.545.69.908.604l1.095-.26 1.268 2.163.825-1.428-.81-3.505 2.377-3.03 4.536 7.961.914-1.038L15.213 8.63l2.563-3.895c.276-.477.096-1.255-.085-2.036-.09-.387-.545-.691-.908-.605z"
-                          fill="#101D41" />
-                      </g>
-                      <defs>
-                        <clipPath>
-                          <path fill="#fff" transform="translate(0 .96)" d="M0 0h20.826v21.12H0z" />
-                        </clipPath>
-                      </defs>
-                    </svg>
-                    <svg class="vehicles-list__icon" width="18" height="21" fill="none"
-                      xmlns="http://www.w3.org/2000/svg">
-                      <g clip-path="url(#clip0)">
-                        <path opacity=".15"
-                          d="M4.34 13.948a1.3 1.3 0 00-.415-.97 1.392 1.392 0 00-1.004-.4c-.392 0-.726.133-1.003.4a1.3 1.3 0 00-.416.97c0 .38.138.702.416.97.277.268.611.402 1.003.402.392 0 .726-.134 1.004-.402.277-.268.415-.59.415-.97zm11.356 0a1.3 1.3 0 00-.416-.97 1.392 1.392 0 00-1.004-.4c-.392 0-.726.133-1.003.4a1.3 1.3 0 00-.416.97c0 .38.138.702.416.97.277.268.611.402 1.003.402.392 0 .726-.134 1.004-.402a1.3 1.3 0 00.416-.97zm-.51-4.242l-.799-4.115a.695.695 0 00-.25-.401.698.698 0 00-.449-.156H3.508c-.17 0-.319.052-.448.156a.695.695 0 00-.25.401l-.798 4.115a.661.661 0 00.155.568c.14.164.322.246.543.246h11.777a.682.682 0 00.543-.246.661.661 0 00.155-.568zm-2.507-6.558a.488.488 0 00-.155-.364.523.523 0 00-.377-.15H5.05a.523.523 0 00-.377.15.488.488 0 00-.155.364.523.523 0 00.532.514h7.097c.148 0 .274-.05.377-.15a.488.488 0 00.155-.364zm4.436 7.768v6.461h-1.42v1.372a1.3 1.3 0 01-.415.97 1.392 1.392 0 01-1.004.4c-.392 0-.726-.133-1.003-.4a1.299 1.299 0 01-.416-.97v-1.372H4.34v1.372c0 .378-.138.701-.415.97a1.392 1.392 0 01-1.004.4c-.392 0-.726-.133-1.003-.4a1.299 1.299 0 01-.416-.97v-1.372H.082v-6.46c0-.8.093-1.597.278-2.39l1.142-4.864c.066-.557.427-1.047 1.08-1.468.655-.422 1.505-.74 2.551-.954C6.18 1.027 7.334.92 8.6.92c1.264 0 2.419.107 3.465.321 1.046.215 1.896.532 2.55.954.655.421 1.015.91 1.082 1.468l1.164 4.864c.17.729.255 1.525.255 2.39z"
-                          fill="#1D2E5B" />
-                      </g>
-                      <defs>
-                        <clipPath>
-                          <path fill="#fff" transform="translate(.08 .92)" d="M0 0h17.04v19.2H0z" />
-                        </clipPath>
-                      </defs>
-                    </svg>
 
-                    <svg class="vehicles-list__icon" width="25" height="24" fill="none"
+                <span class="list__title">транспорт</span>
+
+                <ul class="vehicles-list">
+                  <li class="vehicles-list__item vehicles-list__item--active">
+                    <svg class="vehicles-list__icon vehicles-list__aero" viewBox="0 0 23 23" fill="none"
                       xmlns="http://www.w3.org/2000/svg">
-                      <path opacity=".15"
-                        d="M18.308 21a4.21 4.21 0 01-2.363-.727 4.3 4.3 0 01-1.566-1.935 4.37 4.37 0 01-.242-2.492 4.331 4.331 0 011.163-2.208 4.234 4.234 0 012.178-1.18 4.198 4.198 0 012.457.245c.777.327 1.441.88 1.908 1.589a4.357 4.357 0 01-.53 5.443A4.227 4.227 0 0118.308 21zm0-7.125c-.549 0-1.085.165-1.541.474a2.804 2.804 0 00-1.022 1.262 2.85 2.85 0 00-.158 1.625c.107.546.372 1.047.76 1.44a2.737 2.737 0 003.022.61c.507-.213.94-.573 1.244-1.036a2.84 2.84 0 00-.345-3.55 2.757 2.757 0 00-1.96-.825zM6.104 21a4.21 4.21 0 01-2.362-.727 4.3 4.3 0 01-1.566-1.935 4.369 4.369 0 01-.242-2.492 4.331 4.331 0 011.163-2.208 4.235 4.235 0 012.178-1.18 4.198 4.198 0 012.457.245c.777.327 1.441.88 1.908 1.589a4.356 4.356 0 01-.53 5.443A4.227 4.227 0 016.104 21zm0-7.125c-.548 0-1.084.165-1.54.474a2.804 2.804 0 00-1.022 1.262 2.85 2.85 0 00-.158 1.625c.107.546.372 1.047.76 1.44a2.738 2.738 0 003.022.61c.507-.213.94-.573 1.245-1.036a2.84 2.84 0 00-.346-3.55 2.758 2.758 0 00-1.96-.825zM15.164 6a1.456 1.456 0 001.05-.44 1.495 1.495 0 00.43-1.065 1.495 1.495 0 00-.426-1.06 1.458 1.458 0 00-1.61-.323 1.478 1.478 0 00-.804.81 1.518 1.518 0 00.316 1.635A1.477 1.477 0 0015.164 6z"
-                        fill="#1D2E5B" />
-                      <path opacity=".15"
-                        d="M17.362 9H15.34a.183.183 0 01-.163-.097L13.71 6.176a1.447 1.447 0 00-.435-.511 1.422 1.422 0 00-1.279-.204 1.43 1.43 0 00-.568.352l-3.23 3.3c-.27.28-.425.656-.43 1.05 0 .815.583 1.106.856 1.27 1.317.77 2.245 1.332 2.754 1.645a.187.187 0 01.088.16v3.24c0 .404.306.75.704.77a.732.732 0 00.546-.206.75.75 0 00.23-.542v-4.031a.757.757 0 00-.308-.61l-1.71-1.247a.187.187 0 01-.077-.134.19.19 0 01.05-.147l1.941-2.1A.185.185 0 0113 8.173a.183.183 0 01.139.095l1.008 1.846a.745.745 0 00.647.386h2.589a.73.73 0 00.536-.232A.751.751 0 0017.362 9z"
-                        fill="#1D2E5B" />
+                      <g clip-path="url(#clip8)">
+                        <path
+                          d="M18.488 1.18c-.8.18-1.602.362-1.9.859l-2.312 4.373L1.864 9.215l-.503 1.397 9.498.853-1.611 3.786-3.602.813-.905 1.488 2.599.268.296 1.217c.133.432.599.72.996.63l1.201-.271 1.392 2.253.904-1.488-.889-3.65 2.608-3.157 4.976 8.293 1.004-1.081-3.063-12.577 2.813-4.057c.302-.498.105-1.308-.093-2.122-.099-.403-.6-.72-.997-.63z"
+                          fill="currentColor" />
+                      </g>
+                      <defs>
+                        <clipPath id="clip8">
+                          <path fill="#fff" transform="translate(.077)" d="M0 0h22.847v22H0z" />
+                        </clipPath>
+                      </defs>
                     </svg>
-                    <svg class="vehicles-list__icon" width="21" height="24" fill="none"
+                  </li>
+
+                  <li class="vehicles-list__item">
+                    <svg class="vehicles-list__icon vehicles-list__bus" viewBox="0 0 19 20" fill="none"
                       xmlns="http://www.w3.org/2000/svg">
-                      <path opacity=".15"
-                        d="M14.976 5.76c.95 0 1.721-.86 1.721-1.92s-.77-1.92-1.721-1.92c-.95 0-1.721.86-1.721 1.92s.77 1.92 1.72 1.92zM13.923 10.53c.198.329.481.581.812.724.33.142.693.168 1.037.073l2.854-.796-.416-1.862-2.854.796L14.17 7.48a1.735 1.735 0 00-1.094-.82l-3.31-.739a1.56 1.56 0 00-1.094.158c-.34.185-.614.49-.783.867l-1.427 3.183 1.54.86 1.427-3.185 1.692.378-4.377 8.138H2.927v1.92h3.816c.601 0 1.166-.357 1.476-.932l1.65-3.068 4.45.992 1.562 5.231 1.632-.607-1.562-5.23a1.955 1.955 0 00-.495-.833 1.665 1.665 0 00-.801-.444l-2.615-.583 1.525-2.836.358.6z"
-                        fill="#1D2E5B" />
+                      <g clip-path="url(#clip7)">
+                        <path
+                          d="M4.835 13.571c0-.394-.152-.73-.457-1.01a1.574 1.574 0 00-1.102-.418c-.43 0-.798.14-1.103.418a1.321 1.321 0 00-.457 1.01c0 .395.153.732.457 1.01.305.28.672.419 1.103.419.43 0 .798-.14 1.102-.418.305-.28.457-.616.457-1.01zm12.475 0a1.32 1.32 0 00-.457-1.01 1.574 1.574 0 00-1.103-.418c-.43 0-.797.14-1.102.418a1.32 1.32 0 00-.457 1.01c0 .395.152.732.457 1.01.305.28.672.419 1.103.419.43 0 .798-.14 1.102-.418.305-.28.457-.616.457-1.01zm-.56-4.42l-.878-4.285a.72.72 0 00-.274-.418.794.794 0 00-.493-.162H3.92a.794.794 0 00-.493.162.72.72 0 00-.274.418l-.877 4.286c-.04.223.016.42.17.591a.767.767 0 00.597.257h12.938a.767.767 0 00.597-.257.664.664 0 00.17-.591zm-2.754-6.83a.496.496 0 00-.17-.379.591.591 0 00-.415-.156H5.615c-.163 0-.3.052-.414.156a.496.496 0 00-.171.38c0 .148.057.275.17.379a.591.591 0 00.415.156h7.796c.163 0 .301-.052.415-.156a.496.496 0 00.17-.38zm4.873 8.092v6.73h-1.56v1.428c0 .395-.151.731-.456 1.01A1.574 1.574 0 0115.75 20c-.43 0-.797-.14-1.102-.419a1.32 1.32 0 01-.457-1.01v-1.428H4.835v1.428c0 .395-.152.731-.457 1.01A1.574 1.574 0 013.276 20c-.43 0-.798-.14-1.103-.419a1.321 1.321 0 01-.457-1.01v-1.428H.157v-6.73c0-.833.102-1.663.305-2.489l1.254-5.067c.073-.58.47-1.09 1.188-1.529C3.623.89 4.557.558 5.706.335 6.856.112 8.124 0 9.513 0c1.389 0 2.658.112 3.807.335 1.15.223 2.083.554 2.802.993.719.44 1.115.949 1.188 1.53l1.279 5.066c.187.759.28 1.589.28 2.489z"
+                          fill="currentColor" />
+                      </g>
+                      <defs>
+                        <clipPath id="clip7">
+                          <path fill="#fff" transform="translate(.154)" d="M0 0h18.72v20H0z" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </li>
+
+                  <li class="vehicles-list__item">
+                    <svg class="vehicles-list__icon vehicles-list__bike" viewBox="0 0 26 25" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M19.703 21.875a4.806 4.806 0 01-2.595-.757 4.535 4.535 0 01-1.721-2.016 4.333 4.333 0 01-.266-2.596 4.441 4.441 0 011.279-2.3 4.733 4.733 0 012.392-1.23 4.846 4.846 0 012.699.257c.854.34 1.583.915 2.097 1.654a4.37 4.37 0 01.787 2.496 4.411 4.411 0 01-1.37 3.175 4.773 4.773 0 01-3.302 1.317zm0-7.422c-.602 0-1.192.172-1.693.494-.5.322-.891.78-1.122 1.315a2.825 2.825 0 00-.173 1.692c.117.569.407 1.09.834 1.5.426.41.969.69 1.56.802a3.161 3.161 0 001.76-.166 3.024 3.024 0 001.367-1.08 2.85 2.85 0 00.514-1.627c0-.777-.322-1.522-.893-2.07a3.114 3.114 0 00-2.154-.86zM6.297 21.875a4.806 4.806 0 01-2.596-.757 4.535 4.535 0 01-1.72-2.016 4.332 4.332 0 01-.266-2.596 4.441 4.441 0 011.278-2.3 4.733 4.733 0 012.392-1.23 4.846 4.846 0 012.7.257c.853.34 1.583.915 2.096 1.654a4.37 4.37 0 01.788 2.496 4.411 4.411 0 01-1.37 3.175 4.773 4.773 0 01-3.302 1.317zm0-7.422c-.603 0-1.192.172-1.693.494-.5.322-.891.78-1.122 1.315a2.825 2.825 0 00-.173 1.692c.117.569.407 1.09.833 1.5.427.41.97.69 1.56.802a3.161 3.161 0 001.76-.166 3.025 3.025 0 001.368-1.08 2.85 2.85 0 00.514-1.627c-.001-.777-.322-1.522-.894-2.07a3.113 3.113 0 00-2.153-.86zM16.25 6.25c.214 0 .426-.04.624-.118.198-.078.378-.194.529-.34.15-.145.27-.319.351-.51.081-.19.122-.394.121-.6a1.49 1.49 0 00-.118-.597c-.08-.19-.199-.362-.35-.507-.15-.145-.329-.26-.526-.338a1.659 1.659 0 00-.62-.115c-.214 0-.426.04-.623.117a1.63 1.63 0 00-.528.337 1.56 1.56 0 00-.354.506 1.511 1.511 0 00.346 1.704 1.681 1.681 0 001.148.461z"
+                        fill="currentColor" />
+                      <path
+                        d="M18.665 9.375h-2.223a.209.209 0 01-.103-.027.199.199 0 01-.075-.075l-1.612-2.84a1.532 1.532 0 00-.477-.532 1.634 1.634 0 00-1.405-.212 1.587 1.587 0 00-.625.366L8.597 9.492a1.56 1.56 0 00-.472 1.094c0 .85.64 1.152.94 1.323 1.447.802 2.466 1.388 3.025 1.714a.19.19 0 01.098.166v3.376c0 .42.336.78.773.802a.843.843 0 00.6-.215.78.78 0 00.252-.564v-4.2a.756.756 0 00-.09-.356.79.79 0 00-.249-.278l-1.879-1.3a.198.198 0 01-.084-.14.188.188 0 01.055-.153l2.133-2.187a.203.203 0 01.173-.06.208.208 0 01.153.099l1.108 1.923c.07.122.173.223.298.294.125.07.268.108.413.107h2.844a.839.839 0 00.588-.241.776.776 0 00.224-.577c-.021-.42-.398-.744-.835-.744z"
+                        fill="currentColor" />
+                    </svg>
+                  </li>
+
+                  <li class="vehicles-list__item">
+                    <svg class="vehicles-list__icon vehicles-list__run" viewBox="0 0 23 24" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M16.188 6c1.045 0 1.891-.895 1.891-2s-.846-2-1.89-2c-1.045 0-1.892.895-1.892 2s.847 2 1.891 2zM15.032 10.969c.217.342.528.605.892.754a1.8 1.8 0 001.139.076l3.135-.829-.457-1.94-3.135.829-1.304-2.067a1.9 1.9 0 00-1.202-.854l-3.636-.77a1.797 1.797 0 00-1.202.164c-.373.193-.675.51-.86.903l-1.568 3.316 1.691.895 1.568-3.317 1.86.394L7.144 17H2.952v2h4.192c.66 0 1.281-.372 1.622-.971l1.813-3.196 4.887 1.034 1.717 5.449 1.793-.633-1.716-5.448a2.019 2.019 0 00-.544-.867 1.86 1.86 0 00-.88-.463l-2.874-.607 1.676-2.954.394.625z"
+                        fill="currentColor" />
                     </svg>
                   </li>
                 </ul>
@@ -418,6 +897,9 @@
                 <span class="companion__subtitle">левел:</span>
                 <div class="lvl-wrapper">
                   <div class="lvl">
+                    <svg class=" lvl__circle" stroke="#FF8D30" stroke-width="3" viewBox="0 0 60 60" fill="none">
+                      <circle cx="30" cy="30" r="28"></circle>
+                    </svg>
                     <span class="lvl__number">99</span>
                     <div class="lvl__divider"></div>
                     <span class="lvl__text">level</span>
@@ -432,13 +914,36 @@
           <li class="companions-list__item">
             <div class="companion">
               <div class="companion__avatar"></div>
-              <div class="companion__like">like</div>
+
+              <div class="companion__like like">
+                <div class="like__wrapper">
+                  <svg class="like__icon like__icon--active" viewBox="0 0 13 11" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M3.255.474c1.693 0 3.064 1.348 3.064 3.01 0-1.662 1.371-3.01 3.064-3.01s3.064 1.348 3.064 3.01c0 2.505-2.477 3.389-5.828 7.377a.394.394 0 01-.6 0C2.669 6.873.192 5.989.192 3.484c0-1.662 1.37-3.01 3.063-3.01z"
+                      fill="#F02323" />
+                  </svg>
+                  <svg class="like__icon" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip9)">
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M6 5.665l.67-1.41c.167-.349.456-.85.865-1.256.401-.4.883-.671 1.465-.671 1.257 0 2.25 1.044 2.25 2.3 0 .954-.415 1.627-1.401 2.655-.253.263-.54.547-.86.86-.83.82-1.864 1.84-2.989 3.202-1.125-1.363-2.159-2.382-2.99-3.201a44.458 44.458 0 01-.859-.861C1.166 6.255.75 5.582.75 4.628c0-1.256.993-2.3 2.25-2.3.582 0 1.064.272 1.465.67.41.407.698.908.865 1.257L6 5.665zm.294 6.532A.387.387 0 016 12.34a.369.369 0 01-.294-.143c-1.2-1.499-2.288-2.57-3.182-3.451C.975 7.218 0 6.258 0 4.628 0 2.923 1.343 1.54 3 1.54c1.2 0 2.04.827 2.553 1.582.195.287.343.564.447.781.13-.272.28-.533.447-.781C6.961 2.366 7.8 1.54 9 1.54c1.658 0 3 1.383 3 3.088 0 1.63-.975 2.59-2.524 4.118-.895.882-1.981 1.953-3.182 3.45z"
+                        fill="inherit" opacity="inherit" />
+                    </g>
+                    <defs>
+                      <clipPath id="clip9">
+                        <path fill="#fff" transform="translate(0 .79)" d="M0 0h12v12H0z" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </div>
+                <span class="like__quantity">1500</span>
+              </div>
+
               <span class="companion__name">Петя Демин</span>
-              <span class="companion__likes-quantity">1500</span>
 
-              <div class="companion__online">online</div>
+              <div class="companion__online online"></div>
 
-              <ul class="companion__tag-list  tag-list">
+              <ul class="companion__tag-list tag-list">
                 <li class="tag-list__item">#бургер</li>
                 <li class="tag-list__item">#бар</li>
                 <li class="tag-list__item">#футбол</li>
@@ -447,7 +952,7 @@
               </ul>
 
               <div class="companion__wishes wishes">
-                <span class="wishes__title">Хочет посетить:</span>
+                <span class="wishes__title">хочет посетить:</span>
                 <ul class="wish-list">
                   <li class="wish-list__item">
                     <img src="img/Belgium.png" width="35" height="25" alt="Флаг" class="flag">
@@ -462,52 +967,58 @@
               </div>
 
               <div class="companion__vehicles-list list">
-                <div class="list__title-wrapper">
-                  <span>Транспорт</span>
-                </div>
+                <span class="list__title">транспорт</span>
                 <ul class="vehicles-list">
-                  <li class="vehicles-list__item">
-                    <svg class="vehicles-list__icon" width="21" height="23" fill="none"
+                  <li class="vehicles-list__item vehicles-list__item--active">
+                    <svg class="vehicles-list__icon vehicles-list__aero" viewBox="0 0 23 23" fill="none"
                       xmlns="http://www.w3.org/2000/svg">
-                      <g clip-path="url(#clip0)">
+                      <g clip-path="url(#clip10)">
                         <path
-                          d="M16.783 2.093c-.728.173-1.46.347-1.733.824l-2.107 4.199L1.63 9.806l-.458 1.341 8.658.82-1.47 3.634-3.283.78-.824 1.43 2.369.256.27 1.169c.12.414.545.69.908.604l1.095-.26 1.268 2.163.825-1.428-.81-3.505 2.377-3.03 4.536 7.961.914-1.038L15.213 8.63l2.563-3.895c.276-.477.096-1.255-.085-2.036-.09-.387-.545-.691-.908-.605z"
-                          fill="#101D41" />
+                          d="M18.488 1.18c-.8.18-1.602.362-1.9.859l-2.312 4.373L1.864 9.215l-.503 1.397 9.498.853-1.611 3.786-3.602.813-.905 1.488 2.599.268.296 1.217c.133.432.599.72.996.63l1.201-.271 1.392 2.253.904-1.488-.889-3.65 2.608-3.157 4.976 8.293 1.004-1.081-3.063-12.577 2.813-4.057c.302-.498.105-1.308-.093-2.122-.099-.403-.6-.72-.997-.63z"
+                          fill="currentColor" />
                       </g>
                       <defs>
-                        <clipPath>
-                          <path fill="#fff" transform="translate(0 .96)" d="M0 0h20.826v21.12H0z" />
+                        <clipPath id="clip10">
+                          <path fill="#fff" transform="translate(.077)" d="M0 0h22.847v22H0z" />
                         </clipPath>
                       </defs>
                     </svg>
-                    <svg class="vehicles-list__icon" width="18" height="21" fill="none"
-                      xmlns="http://www.w3.org/2000/svg">
-                      <g clip-path="url(#clip0)">
-                        <path opacity=".15"
-                          d="M4.34 13.948a1.3 1.3 0 00-.415-.97 1.392 1.392 0 00-1.004-.4c-.392 0-.726.133-1.003.4a1.3 1.3 0 00-.416.97c0 .38.138.702.416.97.277.268.611.402 1.003.402.392 0 .726-.134 1.004-.402.277-.268.415-.59.415-.97zm11.356 0a1.3 1.3 0 00-.416-.97 1.392 1.392 0 00-1.004-.4c-.392 0-.726.133-1.003.4a1.3 1.3 0 00-.416.97c0 .38.138.702.416.97.277.268.611.402 1.003.402.392 0 .726-.134 1.004-.402a1.3 1.3 0 00.416-.97zm-.51-4.242l-.799-4.115a.695.695 0 00-.25-.401.698.698 0 00-.449-.156H3.508c-.17 0-.319.052-.448.156a.695.695 0 00-.25.401l-.798 4.115a.661.661 0 00.155.568c.14.164.322.246.543.246h11.777a.682.682 0 00.543-.246.661.661 0 00.155-.568zm-2.507-6.558a.488.488 0 00-.155-.364.523.523 0 00-.377-.15H5.05a.523.523 0 00-.377.15.488.488 0 00-.155.364.523.523 0 00.532.514h7.097c.148 0 .274-.05.377-.15a.488.488 0 00.155-.364zm4.436 7.768v6.461h-1.42v1.372a1.3 1.3 0 01-.415.97 1.392 1.392 0 01-1.004.4c-.392 0-.726-.133-1.003-.4a1.299 1.299 0 01-.416-.97v-1.372H4.34v1.372c0 .378-.138.701-.415.97a1.392 1.392 0 01-1.004.4c-.392 0-.726-.133-1.003-.4a1.299 1.299 0 01-.416-.97v-1.372H.082v-6.46c0-.8.093-1.597.278-2.39l1.142-4.864c.066-.557.427-1.047 1.08-1.468.655-.422 1.505-.74 2.551-.954C6.18 1.027 7.334.92 8.6.92c1.264 0 2.419.107 3.465.321 1.046.215 1.896.532 2.55.954.655.421 1.015.91 1.082 1.468l1.164 4.864c.17.729.255 1.525.255 2.39z"
-                          fill="#1D2E5B" />
-                      </g>
-                      <defs>
-                        <clipPath>
-                          <path fill="#fff" transform="translate(.08 .92)" d="M0 0h17.04v19.2H0z" />
-                        </clipPath>
-                      </defs>
-                    </svg>
+                  </li>
 
-                    <svg class="vehicles-list__icon" width="25" height="24" fill="none"
+                  <li class="vehicles-list__item vehicles-list__item--active">
+                    <svg class="vehicles-list__icon vehicles-list__bus" viewBox="0 0 19 20" fill="none"
                       xmlns="http://www.w3.org/2000/svg">
-                      <path opacity=".15"
-                        d="M18.308 21a4.21 4.21 0 01-2.363-.727 4.3 4.3 0 01-1.566-1.935 4.37 4.37 0 01-.242-2.492 4.331 4.331 0 011.163-2.208 4.234 4.234 0 012.178-1.18 4.198 4.198 0 012.457.245c.777.327 1.441.88 1.908 1.589a4.357 4.357 0 01-.53 5.443A4.227 4.227 0 0118.308 21zm0-7.125c-.549 0-1.085.165-1.541.474a2.804 2.804 0 00-1.022 1.262 2.85 2.85 0 00-.158 1.625c.107.546.372 1.047.76 1.44a2.737 2.737 0 003.022.61c.507-.213.94-.573 1.244-1.036a2.84 2.84 0 00-.345-3.55 2.757 2.757 0 00-1.96-.825zM6.104 21a4.21 4.21 0 01-2.362-.727 4.3 4.3 0 01-1.566-1.935 4.369 4.369 0 01-.242-2.492 4.331 4.331 0 011.163-2.208 4.235 4.235 0 012.178-1.18 4.198 4.198 0 012.457.245c.777.327 1.441.88 1.908 1.589a4.356 4.356 0 01-.53 5.443A4.227 4.227 0 016.104 21zm0-7.125c-.548 0-1.084.165-1.54.474a2.804 2.804 0 00-1.022 1.262 2.85 2.85 0 00-.158 1.625c.107.546.372 1.047.76 1.44a2.738 2.738 0 003.022.61c.507-.213.94-.573 1.245-1.036a2.84 2.84 0 00-.346-3.55 2.758 2.758 0 00-1.96-.825zM15.164 6a1.456 1.456 0 001.05-.44 1.495 1.495 0 00.43-1.065 1.495 1.495 0 00-.426-1.06 1.458 1.458 0 00-1.61-.323 1.478 1.478 0 00-.804.81 1.518 1.518 0 00.316 1.635A1.477 1.477 0 0015.164 6z"
-                        fill="#1D2E5B" />
-                      <path opacity=".15"
-                        d="M17.362 9H15.34a.183.183 0 01-.163-.097L13.71 6.176a1.447 1.447 0 00-.435-.511 1.422 1.422 0 00-1.279-.204 1.43 1.43 0 00-.568.352l-3.23 3.3c-.27.28-.425.656-.43 1.05 0 .815.583 1.106.856 1.27 1.317.77 2.245 1.332 2.754 1.645a.187.187 0 01.088.16v3.24c0 .404.306.75.704.77a.732.732 0 00.546-.206.75.75 0 00.23-.542v-4.031a.757.757 0 00-.308-.61l-1.71-1.247a.187.187 0 01-.077-.134.19.19 0 01.05-.147l1.941-2.1A.185.185 0 0113 8.173a.183.183 0 01.139.095l1.008 1.846a.745.745 0 00.647.386h2.589a.73.73 0 00.536-.232A.751.751 0 0017.362 9z"
-                        fill="#1D2E5B" />
+                      <g clip-path="url(#clip20)">
+                        <path
+                          d="M4.835 13.571c0-.394-.152-.73-.457-1.01a1.574 1.574 0 00-1.102-.418c-.43 0-.798.14-1.103.418a1.321 1.321 0 00-.457 1.01c0 .395.153.732.457 1.01.305.28.672.419 1.103.419.43 0 .798-.14 1.102-.418.305-.28.457-.616.457-1.01zm12.475 0a1.32 1.32 0 00-.457-1.01 1.574 1.574 0 00-1.103-.418c-.43 0-.797.14-1.102.418a1.32 1.32 0 00-.457 1.01c0 .395.152.732.457 1.01.305.28.672.419 1.103.419.43 0 .798-.14 1.102-.418.305-.28.457-.616.457-1.01zm-.56-4.42l-.878-4.285a.72.72 0 00-.274-.418.794.794 0 00-.493-.162H3.92a.794.794 0 00-.493.162.72.72 0 00-.274.418l-.877 4.286c-.04.223.016.42.17.591a.767.767 0 00.597.257h12.938a.767.767 0 00.597-.257.664.664 0 00.17-.591zm-2.754-6.83a.496.496 0 00-.17-.379.591.591 0 00-.415-.156H5.615c-.163 0-.3.052-.414.156a.496.496 0 00-.171.38c0 .148.057.275.17.379a.591.591 0 00.415.156h7.796c.163 0 .301-.052.415-.156a.496.496 0 00.17-.38zm4.873 8.092v6.73h-1.56v1.428c0 .395-.151.731-.456 1.01A1.574 1.574 0 0115.75 20c-.43 0-.797-.14-1.102-.419a1.32 1.32 0 01-.457-1.01v-1.428H4.835v1.428c0 .395-.152.731-.457 1.01A1.574 1.574 0 013.276 20c-.43 0-.798-.14-1.103-.419a1.321 1.321 0 01-.457-1.01v-1.428H.157v-6.73c0-.833.102-1.663.305-2.489l1.254-5.067c.073-.58.47-1.09 1.188-1.529C3.623.89 4.557.558 5.706.335 6.856.112 8.124 0 9.513 0c1.389 0 2.658.112 3.807.335 1.15.223 2.083.554 2.802.993.719.44 1.115.949 1.188 1.53l1.279 5.066c.187.759.28 1.589.28 2.489z"
+                          fill="currentColor" />
+                      </g>
+                      <defs>
+                        <clipPath id="clip20">
+                          <path fill="#fff" transform="translate(.154)" d="M0 0h18.72v20H0z" />
+                        </clipPath>
+                      </defs>
                     </svg>
-                    <svg class="vehicles-list__icon" width="21" height="24" fill="none"
+                  </li>
+
+                  <li class="vehicles-list__item">
+                    <svg class="vehicles-list__icon vehicles-list__bike" viewBox="0 0 26 25" fill="none"
                       xmlns="http://www.w3.org/2000/svg">
-                      <path opacity=".15"
-                        d="M14.976 5.76c.95 0 1.721-.86 1.721-1.92s-.77-1.92-1.721-1.92c-.95 0-1.721.86-1.721 1.92s.77 1.92 1.72 1.92zM13.923 10.53c.198.329.481.581.812.724.33.142.693.168 1.037.073l2.854-.796-.416-1.862-2.854.796L14.17 7.48a1.735 1.735 0 00-1.094-.82l-3.31-.739a1.56 1.56 0 00-1.094.158c-.34.185-.614.49-.783.867l-1.427 3.183 1.54.86 1.427-3.185 1.692.378-4.377 8.138H2.927v1.92h3.816c.601 0 1.166-.357 1.476-.932l1.65-3.068 4.45.992 1.562 5.231 1.632-.607-1.562-5.23a1.955 1.955 0 00-.495-.833 1.665 1.665 0 00-.801-.444l-2.615-.583 1.525-2.836.358.6z"
-                        fill="#1D2E5B" />
+                      <path
+                        d="M19.703 21.875a4.806 4.806 0 01-2.595-.757 4.535 4.535 0 01-1.721-2.016 4.333 4.333 0 01-.266-2.596 4.441 4.441 0 011.279-2.3 4.733 4.733 0 012.392-1.23 4.846 4.846 0 012.699.257c.854.34 1.583.915 2.097 1.654a4.37 4.37 0 01.787 2.496 4.411 4.411 0 01-1.37 3.175 4.773 4.773 0 01-3.302 1.317zm0-7.422c-.602 0-1.192.172-1.693.494-.5.322-.891.78-1.122 1.315a2.825 2.825 0 00-.173 1.692c.117.569.407 1.09.834 1.5.426.41.969.69 1.56.802a3.161 3.161 0 001.76-.166 3.024 3.024 0 001.367-1.08 2.85 2.85 0 00.514-1.627c0-.777-.322-1.522-.893-2.07a3.114 3.114 0 00-2.154-.86zM6.297 21.875a4.806 4.806 0 01-2.596-.757 4.535 4.535 0 01-1.72-2.016 4.332 4.332 0 01-.266-2.596 4.441 4.441 0 011.278-2.3 4.733 4.733 0 012.392-1.23 4.846 4.846 0 012.7.257c.853.34 1.583.915 2.096 1.654a4.37 4.37 0 01.788 2.496 4.411 4.411 0 01-1.37 3.175 4.773 4.773 0 01-3.302 1.317zm0-7.422c-.603 0-1.192.172-1.693.494-.5.322-.891.78-1.122 1.315a2.825 2.825 0 00-.173 1.692c.117.569.407 1.09.833 1.5.427.41.97.69 1.56.802a3.161 3.161 0 001.76-.166 3.025 3.025 0 001.368-1.08 2.85 2.85 0 00.514-1.627c-.001-.777-.322-1.522-.894-2.07a3.113 3.113 0 00-2.153-.86zM16.25 6.25c.214 0 .426-.04.624-.118.198-.078.378-.194.529-.34.15-.145.27-.319.351-.51.081-.19.122-.394.121-.6a1.49 1.49 0 00-.118-.597c-.08-.19-.199-.362-.35-.507-.15-.145-.329-.26-.526-.338a1.659 1.659 0 00-.62-.115c-.214 0-.426.04-.623.117a1.63 1.63 0 00-.528.337 1.56 1.56 0 00-.354.506 1.511 1.511 0 00.346 1.704 1.681 1.681 0 001.148.461z"
+                        fill="#161C35" />
+                      <path
+                        d="M18.665 9.375h-2.223a.209.209 0 01-.103-.027.199.199 0 01-.075-.075l-1.612-2.84a1.532 1.532 0 00-.477-.532 1.634 1.634 0 00-1.405-.212 1.587 1.587 0 00-.625.366L8.597 9.492a1.56 1.56 0 00-.472 1.094c0 .85.64 1.152.94 1.323 1.447.802 2.466 1.388 3.025 1.714a.19.19 0 01.098.166v3.376c0 .42.336.78.773.802a.843.843 0 00.6-.215.78.78 0 00.252-.564v-4.2a.756.756 0 00-.09-.356.79.79 0 00-.249-.278l-1.879-1.3a.198.198 0 01-.084-.14.188.188 0 01.055-.153l2.133-2.187a.203.203 0 01.173-.06.208.208 0 01.153.099l1.108 1.923c.07.122.173.223.298.294.125.07.268.108.413.107h2.844a.839.839 0 00.588-.241.776.776 0 00.224-.577c-.021-.42-.398-.744-.835-.744z"
+                        fill="currentColor" />
+                    </svg>
+                  </li>
+
+                  <li class="vehicles-list__item vehicles-list__item--active">
+                    <svg class="vehicles-list__icon vehicles-list__run" viewBox="0 0 23 24" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M16.188 6c1.045 0 1.891-.895 1.891-2s-.846-2-1.89-2c-1.045 0-1.892.895-1.892 2s.847 2 1.891 2zM15.032 10.969c.217.342.528.605.892.754a1.8 1.8 0 001.139.076l3.135-.829-.457-1.94-3.135.829-1.304-2.067a1.9 1.9 0 00-1.202-.854l-3.636-.77a1.797 1.797 0 00-1.202.164c-.373.193-.675.51-.86.903l-1.568 3.316 1.691.895 1.568-3.317 1.86.394L7.144 17H2.952v2h4.192c.66 0 1.281-.372 1.622-.971l1.813-3.196 4.887 1.034 1.717 5.449 1.793-.633-1.716-5.448a2.019 2.019 0 00-.544-.867 1.86 1.86 0 00-.88-.463l-2.874-.607 1.676-2.954.394.625z"
+                        fill="currentColor" />
                     </svg>
                   </li>
                 </ul>
@@ -515,10 +1026,15 @@
 
               <div class="companion__level">
                 <span class="companion__subtitle">левел:</span>
-                <div class="lvl">
-                  <span class="lvl__number">80</span>
-                  <div class="lvl__divider"></div>
-                  <span class="lvl__text">level</span>
+                <div class="lvl-wrapper">
+                  <div class="lvl">
+                    <svg class="lvl__circle" stroke="#FF8D30" stroke-width="3" viewBox="0 0 60 60" fill="none">
+                      <circle cx="30" cy="30" r="28"></circle>
+                    </svg>
+                    <span class="lvl__number">99</span>
+                    <div class="lvl__divider"></div>
+                    <span class="lvl__text">level</span>
+                  </div>
                 </div>
               </div>
               <button type="button" class="button">Позвать!</button>
@@ -529,10 +1045,34 @@
           <li class="companions-list__item">
             <div class="companion">
               <div class="companion__avatar"></div>
+
+              <div class="companion__like like">
+                <div class="like__wrapper">
+                  <svg class="like__icon like__icon--active" viewBox="0 0 13 11" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M3.255.474c1.693 0 3.064 1.348 3.064 3.01 0-1.662 1.371-3.01 3.064-3.01s3.064 1.348 3.064 3.01c0 2.505-2.477 3.389-5.828 7.377a.394.394 0 01-.6 0C2.669 6.873.192 5.989.192 3.484c0-1.662 1.37-3.01 3.063-3.01z"
+                      fill="#F02323" />
+                  </svg>
+                  <svg class="like__icon" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip30)">
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M6 5.665l.67-1.41c.167-.349.456-.85.865-1.256.401-.4.883-.671 1.465-.671 1.257 0 2.25 1.044 2.25 2.3 0 .954-.415 1.627-1.401 2.655-.253.263-.54.547-.86.86-.83.82-1.864 1.84-2.989 3.202-1.125-1.363-2.159-2.382-2.99-3.201a44.458 44.458 0 01-.859-.861C1.166 6.255.75 5.582.75 4.628c0-1.256.993-2.3 2.25-2.3.582 0 1.064.272 1.465.67.41.407.698.908.865 1.257L6 5.665zm.294 6.532A.387.387 0 016 12.34a.369.369 0 01-.294-.143c-1.2-1.499-2.288-2.57-3.182-3.451C.975 7.218 0 6.258 0 4.628 0 2.923 1.343 1.54 3 1.54c1.2 0 2.04.827 2.553 1.582.195.287.343.564.447.781.13-.272.28-.533.447-.781C6.961 2.366 7.8 1.54 9 1.54c1.658 0 3 1.383 3 3.088 0 1.63-.975 2.59-2.524 4.118-.895.882-1.981 1.953-3.182 3.45z"
+                        fill="inherit" opacity="inherit" />
+                    </g>
+                    <defs>
+                      <clipPath id="clip30">
+                        <path fill="#fff" transform="translate(0 .79)" d="M0 0h12v12H0z" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </div>
+                <span class="like__quantity">170</span>
+              </div>
+
               <span class="companion__name">Марк Смолов</span>
-              <div class="companion__like">like</div>
-              <span class="companion__likes-quantity">170</span>
-              <div class="companion__online">online</div>
+
+              <div class="companion__online online"></div>
 
               <ul class="companion__tag-list tag-list">
                 <li class="tag-list__item">#рэп</li>
@@ -543,7 +1083,7 @@
               </ul>
 
               <div class="companion__wishes wishes">
-                <span class="wishes__title">Хочет посетить:</span>
+                <span class="wishes__title">хочет посетить:</span>
                 <ul class="wish-list">
                   <li class="wish-list__item">
                     <img src="img/United-States-of-America.png" width="35" height="25" alt="Флаг" class="flag">
@@ -562,62 +1102,72 @@
               </div>
 
               <div class="companion__vehicles-list list">
-                <div class="list__title-wrapper">
-                  <span>Транспорт</span>
-                </div>
+                <span class="list__title">транспорт</span>
                 <ul class="vehicles-list">
-                  <li class="vehicles-list__item">
-                    <svg class="vehicles-list__icon" width="21" height="23" fill="none"
+                  <li class="vehicles-list__item vehicles-list__item--active">
+                    <svg class="vehicles-list__icon vehicles-list__aero" viewBox="0 0 23 23" fill="none"
                       xmlns="http://www.w3.org/2000/svg">
-                      <g clip-path="url(#clip0)">
+                      <g clip-path="url(#clip40)">
                         <path
-                          d="M16.783 2.093c-.728.173-1.46.347-1.733.824l-2.107 4.199L1.63 9.806l-.458 1.341 8.658.82-1.47 3.634-3.283.78-.824 1.43 2.369.256.27 1.169c.12.414.545.69.908.604l1.095-.26 1.268 2.163.825-1.428-.81-3.505 2.377-3.03 4.536 7.961.914-1.038L15.213 8.63l2.563-3.895c.276-.477.096-1.255-.085-2.036-.09-.387-.545-.691-.908-.605z"
-                          fill="#101D41" />
+                          d="M18.488 1.18c-.8.18-1.602.362-1.9.859l-2.312 4.373L1.864 9.215l-.503 1.397 9.498.853-1.611 3.786-3.602.813-.905 1.488 2.599.268.296 1.217c.133.432.599.72.996.63l1.201-.271 1.392 2.253.904-1.488-.889-3.65 2.608-3.157 4.976 8.293 1.004-1.081-3.063-12.577 2.813-4.057c.302-.498.105-1.308-.093-2.122-.099-.403-.6-.72-.997-.63z"
+                          fill="currentColor" />
                       </g>
                       <defs>
-                        <clipPath>
-                          <path fill="#fff" transform="translate(0 .96)" d="M0 0h20.826v21.12H0z" />
+                        <clipPath id="clip40">
+                          <path fill="#fff" transform="translate(.077)" d="M0 0h22.847v22H0z" />
                         </clipPath>
                       </defs>
                     </svg>
-                    <svg class="vehicles-list__icon" width="18" height="21" fill="none"
-                      xmlns="http://www.w3.org/2000/svg">
-                      <g clip-path="url(#clip0)">
-                        <path opacity=".15"
-                          d="M4.34 13.948a1.3 1.3 0 00-.415-.97 1.392 1.392 0 00-1.004-.4c-.392 0-.726.133-1.003.4a1.3 1.3 0 00-.416.97c0 .38.138.702.416.97.277.268.611.402 1.003.402.392 0 .726-.134 1.004-.402.277-.268.415-.59.415-.97zm11.356 0a1.3 1.3 0 00-.416-.97 1.392 1.392 0 00-1.004-.4c-.392 0-.726.133-1.003.4a1.3 1.3 0 00-.416.97c0 .38.138.702.416.97.277.268.611.402 1.003.402.392 0 .726-.134 1.004-.402a1.3 1.3 0 00.416-.97zm-.51-4.242l-.799-4.115a.695.695 0 00-.25-.401.698.698 0 00-.449-.156H3.508c-.17 0-.319.052-.448.156a.695.695 0 00-.25.401l-.798 4.115a.661.661 0 00.155.568c.14.164.322.246.543.246h11.777a.682.682 0 00.543-.246.661.661 0 00.155-.568zm-2.507-6.558a.488.488 0 00-.155-.364.523.523 0 00-.377-.15H5.05a.523.523 0 00-.377.15.488.488 0 00-.155.364.523.523 0 00.532.514h7.097c.148 0 .274-.05.377-.15a.488.488 0 00.155-.364zm4.436 7.768v6.461h-1.42v1.372a1.3 1.3 0 01-.415.97 1.392 1.392 0 01-1.004.4c-.392 0-.726-.133-1.003-.4a1.299 1.299 0 01-.416-.97v-1.372H4.34v1.372c0 .378-.138.701-.415.97a1.392 1.392 0 01-1.004.4c-.392 0-.726-.133-1.003-.4a1.299 1.299 0 01-.416-.97v-1.372H.082v-6.46c0-.8.093-1.597.278-2.39l1.142-4.864c.066-.557.427-1.047 1.08-1.468.655-.422 1.505-.74 2.551-.954C6.18 1.027 7.334.92 8.6.92c1.264 0 2.419.107 3.465.321 1.046.215 1.896.532 2.55.954.655.421 1.015.91 1.082 1.468l1.164 4.864c.17.729.255 1.525.255 2.39z"
-                          fill="#1D2E5B" />
-                      </g>
-                      <defs>
-                        <clipPath>
-                          <path fill="#fff" transform="translate(.08 .92)" d="M0 0h17.04v19.2H0z" />
-                        </clipPath>
-                      </defs>
-                    </svg>
+                  </li>
 
-                    <svg class="vehicles-list__icon" width="25" height="24" fill="none"
+                  <li class="vehicles-list__item">
+                    <svg class="vehicles-list__icon vehicles-list__bus" viewBox="0 0 19 20" fill="none"
                       xmlns="http://www.w3.org/2000/svg">
-                      <path opacity=".15"
-                        d="M18.308 21a4.21 4.21 0 01-2.363-.727 4.3 4.3 0 01-1.566-1.935 4.37 4.37 0 01-.242-2.492 4.331 4.331 0 011.163-2.208 4.234 4.234 0 012.178-1.18 4.198 4.198 0 012.457.245c.777.327 1.441.88 1.908 1.589a4.357 4.357 0 01-.53 5.443A4.227 4.227 0 0118.308 21zm0-7.125c-.549 0-1.085.165-1.541.474a2.804 2.804 0 00-1.022 1.262 2.85 2.85 0 00-.158 1.625c.107.546.372 1.047.76 1.44a2.737 2.737 0 003.022.61c.507-.213.94-.573 1.244-1.036a2.84 2.84 0 00-.345-3.55 2.757 2.757 0 00-1.96-.825zM6.104 21a4.21 4.21 0 01-2.362-.727 4.3 4.3 0 01-1.566-1.935 4.369 4.369 0 01-.242-2.492 4.331 4.331 0 011.163-2.208 4.235 4.235 0 012.178-1.18 4.198 4.198 0 012.457.245c.777.327 1.441.88 1.908 1.589a4.356 4.356 0 01-.53 5.443A4.227 4.227 0 016.104 21zm0-7.125c-.548 0-1.084.165-1.54.474a2.804 2.804 0 00-1.022 1.262 2.85 2.85 0 00-.158 1.625c.107.546.372 1.047.76 1.44a2.738 2.738 0 003.022.61c.507-.213.94-.573 1.245-1.036a2.84 2.84 0 00-.346-3.55 2.758 2.758 0 00-1.96-.825zM15.164 6a1.456 1.456 0 001.05-.44 1.495 1.495 0 00.43-1.065 1.495 1.495 0 00-.426-1.06 1.458 1.458 0 00-1.61-.323 1.478 1.478 0 00-.804.81 1.518 1.518 0 00.316 1.635A1.477 1.477 0 0015.164 6z"
-                        fill="#1D2E5B" />
-                      <path opacity=".15"
-                        d="M17.362 9H15.34a.183.183 0 01-.163-.097L13.71 6.176a1.447 1.447 0 00-.435-.511 1.422 1.422 0 00-1.279-.204 1.43 1.43 0 00-.568.352l-3.23 3.3c-.27.28-.425.656-.43 1.05 0 .815.583 1.106.856 1.27 1.317.77 2.245 1.332 2.754 1.645a.187.187 0 01.088.16v3.24c0 .404.306.75.704.77a.732.732 0 00.546-.206.75.75 0 00.23-.542v-4.031a.757.757 0 00-.308-.61l-1.71-1.247a.187.187 0 01-.077-.134.19.19 0 01.05-.147l1.941-2.1A.185.185 0 0113 8.173a.183.183 0 01.139.095l1.008 1.846a.745.745 0 00.647.386h2.589a.73.73 0 00.536-.232A.751.751 0 0017.362 9z"
-                        fill="#1D2E5B" />
+                      <g clip-path="url(#clip50)">
+                        <path
+                          d="M4.835 13.571c0-.394-.152-.73-.457-1.01a1.574 1.574 0 00-1.102-.418c-.43 0-.798.14-1.103.418a1.321 1.321 0 00-.457 1.01c0 .395.153.732.457 1.01.305.28.672.419 1.103.419.43 0 .798-.14 1.102-.418.305-.28.457-.616.457-1.01zm12.475 0a1.32 1.32 0 00-.457-1.01 1.574 1.574 0 00-1.103-.418c-.43 0-.797.14-1.102.418a1.32 1.32 0 00-.457 1.01c0 .395.152.732.457 1.01.305.28.672.419 1.103.419.43 0 .798-.14 1.102-.418.305-.28.457-.616.457-1.01zm-.56-4.42l-.878-4.285a.72.72 0 00-.274-.418.794.794 0 00-.493-.162H3.92a.794.794 0 00-.493.162.72.72 0 00-.274.418l-.877 4.286c-.04.223.016.42.17.591a.767.767 0 00.597.257h12.938a.767.767 0 00.597-.257.664.664 0 00.17-.591zm-2.754-6.83a.496.496 0 00-.17-.379.591.591 0 00-.415-.156H5.615c-.163 0-.3.052-.414.156a.496.496 0 00-.171.38c0 .148.057.275.17.379a.591.591 0 00.415.156h7.796c.163 0 .301-.052.415-.156a.496.496 0 00.17-.38zm4.873 8.092v6.73h-1.56v1.428c0 .395-.151.731-.456 1.01A1.574 1.574 0 0115.75 20c-.43 0-.797-.14-1.102-.419a1.32 1.32 0 01-.457-1.01v-1.428H4.835v1.428c0 .395-.152.731-.457 1.01A1.574 1.574 0 013.276 20c-.43 0-.798-.14-1.103-.419a1.321 1.321 0 01-.457-1.01v-1.428H.157v-6.73c0-.833.102-1.663.305-2.489l1.254-5.067c.073-.58.47-1.09 1.188-1.529C3.623.89 4.557.558 5.706.335 6.856.112 8.124 0 9.513 0c1.389 0 2.658.112 3.807.335 1.15.223 2.083.554 2.802.993.719.44 1.115.949 1.188 1.53l1.279 5.066c.187.759.28 1.589.28 2.489z"
+                          fill="currentColor" />
+                      </g>
+                      <defs>
+                        <clipPath id="clip50">
+                          <path fill="#fff" transform="translate(.154)" d="M0 0h18.72v20H0z" />
+                        </clipPath>
+                      </defs>
                     </svg>
-                    <svg class="vehicles-list__icon" width="21" height="24" fill="none"
+                  </li>
+
+                  <li class="vehicles-list__item vehicles-list__item--active">
+                    <svg class="vehicles-list__icon vehicles-list__bike" viewBox="0 0 26 25" fill="none"
                       xmlns="http://www.w3.org/2000/svg">
-                      <path opacity=".15"
-                        d="M14.976 5.76c.95 0 1.721-.86 1.721-1.92s-.77-1.92-1.721-1.92c-.95 0-1.721.86-1.721 1.92s.77 1.92 1.72 1.92zM13.923 10.53c.198.329.481.581.812.724.33.142.693.168 1.037.073l2.854-.796-.416-1.862-2.854.796L14.17 7.48a1.735 1.735 0 00-1.094-.82l-3.31-.739a1.56 1.56 0 00-1.094.158c-.34.185-.614.49-.783.867l-1.427 3.183 1.54.86 1.427-3.185 1.692.378-4.377 8.138H2.927v1.92h3.816c.601 0 1.166-.357 1.476-.932l1.65-3.068 4.45.992 1.562 5.231 1.632-.607-1.562-5.23a1.955 1.955 0 00-.495-.833 1.665 1.665 0 00-.801-.444l-2.615-.583 1.525-2.836.358.6z"
-                        fill="#1D2E5B" />
+                      <path
+                        d="M19.703 21.875a4.806 4.806 0 01-2.595-.757 4.535 4.535 0 01-1.721-2.016 4.333 4.333 0 01-.266-2.596 4.441 4.441 0 011.279-2.3 4.733 4.733 0 012.392-1.23 4.846 4.846 0 012.699.257c.854.34 1.583.915 2.097 1.654a4.37 4.37 0 01.787 2.496 4.411 4.411 0 01-1.37 3.175 4.773 4.773 0 01-3.302 1.317zm0-7.422c-.602 0-1.192.172-1.693.494-.5.322-.891.78-1.122 1.315a2.825 2.825 0 00-.173 1.692c.117.569.407 1.09.834 1.5.426.41.969.69 1.56.802a3.161 3.161 0 001.76-.166 3.024 3.024 0 001.367-1.08 2.85 2.85 0 00.514-1.627c0-.777-.322-1.522-.893-2.07a3.114 3.114 0 00-2.154-.86zM6.297 21.875a4.806 4.806 0 01-2.596-.757 4.535 4.535 0 01-1.72-2.016 4.332 4.332 0 01-.266-2.596 4.441 4.441 0 011.278-2.3 4.733 4.733 0 012.392-1.23 4.846 4.846 0 012.7.257c.853.34 1.583.915 2.096 1.654a4.37 4.37 0 01.788 2.496 4.411 4.411 0 01-1.37 3.175 4.773 4.773 0 01-3.302 1.317zm0-7.422c-.603 0-1.192.172-1.693.494-.5.322-.891.78-1.122 1.315a2.825 2.825 0 00-.173 1.692c.117.569.407 1.09.833 1.5.427.41.97.69 1.56.802a3.161 3.161 0 001.76-.166 3.025 3.025 0 001.368-1.08 2.85 2.85 0 00.514-1.627c-.001-.777-.322-1.522-.894-2.07a3.113 3.113 0 00-2.153-.86zM16.25 6.25c.214 0 .426-.04.624-.118.198-.078.378-.194.529-.34.15-.145.27-.319.351-.51.081-.19.122-.394.121-.6a1.49 1.49 0 00-.118-.597c-.08-.19-.199-.362-.35-.507-.15-.145-.329-.26-.526-.338a1.659 1.659 0 00-.62-.115c-.214 0-.426.04-.623.117a1.63 1.63 0 00-.528.337 1.56 1.56 0 00-.354.506 1.511 1.511 0 00.346 1.704 1.681 1.681 0 001.148.461z"
+                        fill="currentColor" />
+                      <path
+                        d="M18.665 9.375h-2.223a.209.209 0 01-.103-.027.199.199 0 01-.075-.075l-1.612-2.84a1.532 1.532 0 00-.477-.532 1.634 1.634 0 00-1.405-.212 1.587 1.587 0 00-.625.366L8.597 9.492a1.56 1.56 0 00-.472 1.094c0 .85.64 1.152.94 1.323 1.447.802 2.466 1.388 3.025 1.714a.19.19 0 01.098.166v3.376c0 .42.336.78.773.802a.843.843 0 00.6-.215.78.78 0 00.252-.564v-4.2a.756.756 0 00-.09-.356.79.79 0 00-.249-.278l-1.879-1.3a.198.198 0 01-.084-.14.188.188 0 01.055-.153l2.133-2.187a.203.203 0 01.173-.06.208.208 0 01.153.099l1.108 1.923c.07.122.173.223.298.294.125.07.268.108.413.107h2.844a.839.839 0 00.588-.241.776.776 0 00.224-.577c-.021-.42-.398-.744-.835-.744z"
+                        fill="currentColor" />
+                    </svg>
+                  </li>
+
+                  <li class="vehicles-list__item">
+                    <svg class="vehicles-list__icon vehicles-list__run" viewBox="0 0 23 24" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M16.188 6c1.045 0 1.891-.895 1.891-2s-.846-2-1.89-2c-1.045 0-1.892.895-1.892 2s.847 2 1.891 2zM15.032 10.969c.217.342.528.605.892.754a1.8 1.8 0 001.139.076l3.135-.829-.457-1.94-3.135.829-1.304-2.067a1.9 1.9 0 00-1.202-.854l-3.636-.77a1.797 1.797 0 00-1.202.164c-.373.193-.675.51-.86.903l-1.568 3.316 1.691.895 1.568-3.317 1.86.394L7.144 17H2.952v2h4.192c.66 0 1.281-.372 1.622-.971l1.813-3.196 4.887 1.034 1.717 5.449 1.793-.633-1.716-5.448a2.019 2.019 0 00-.544-.867 1.86 1.86 0 00-.88-.463l-2.874-.607 1.676-2.954.394.625z"
+                        fill="currentColor" />
                     </svg>
                   </li>
                 </ul>
+
               </div>
 
               <div class="companion__level">
                 <span class="companion__subtitle">левел:</span>
                 <div class="lvl-wrapper">
                   <div class="lvl">
-                    <span class="lvl__number">25</span>
+                    <svg class="lvl__circle" stroke="#FF8D30" stroke-width="2" width="60" height="60" fill="none">
+                      <circle cx="30" cy="30" r="28"></circle>
+                    </svg>
+                    <span class="lvl__number">99</span>
                     <div class="lvl__divider"></div>
                     <span class="lvl__text">level</span>
                   </div>
@@ -631,10 +1181,34 @@
           <li class="companions-list__item">
             <div class="companion">
               <div class="companion__avatar"></div>
+
+              <div class="companion__like like">
+                <div class="like__wrapper">
+                  <svg class="like__icon like__icon--active" viewBox="0 0 13 11" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M3.255.474c1.693 0 3.064 1.348 3.064 3.01 0-1.662 1.371-3.01 3.064-3.01s3.064 1.348 3.064 3.01c0 2.505-2.477 3.389-5.828 7.377a.394.394 0 01-.6 0C2.669 6.873.192 5.989.192 3.484c0-1.662 1.37-3.01 3.063-3.01z"
+                      fill="#F02323" />
+                  </svg>
+                  <svg class="like__icon" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip60)">
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M6 5.665l.67-1.41c.167-.349.456-.85.865-1.256.401-.4.883-.671 1.465-.671 1.257 0 2.25 1.044 2.25 2.3 0 .954-.415 1.627-1.401 2.655-.253.263-.54.547-.86.86-.83.82-1.864 1.84-2.989 3.202-1.125-1.363-2.159-2.382-2.99-3.201a44.458 44.458 0 01-.859-.861C1.166 6.255.75 5.582.75 4.628c0-1.256.993-2.3 2.25-2.3.582 0 1.064.272 1.465.67.41.407.698.908.865 1.257L6 5.665zm.294 6.532A.387.387 0 016 12.34a.369.369 0 01-.294-.143c-1.2-1.499-2.288-2.57-3.182-3.451C.975 7.218 0 6.258 0 4.628 0 2.923 1.343 1.54 3 1.54c1.2 0 2.04.827 2.553 1.582.195.287.343.564.447.781.13-.272.28-.533.447-.781C6.961 2.366 7.8 1.54 9 1.54c1.658 0 3 1.383 3 3.088 0 1.63-.975 2.59-2.524 4.118-.895.882-1.981 1.953-3.182 3.45z"
+                        fill="inherit" opacity="inherit" />
+                    </g>
+                    <defs>
+                      <clipPath id="clip60">
+                        <path fill="#fff" transform="translate(0 .79)" d="M0 0h12v12H0z" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </div>
+                <span class="like__quantity">23</span>
+              </div>
+
               <span class="companion__name">Лариса Роговая</span>
-              <span class="companion__likes-quantity">23</span>
-              <div class="companion__like">like</div>
-              <div class="companion__online">online</div>
+
+              <div class="companion__online online online--active"></div>
 
               <ul class="companion__tag-list tag-list">
                 <li class="tag-list__item">#образование</li>
@@ -644,7 +1218,8 @@
               </ul>
               <!-- класс List для бордера  -->
               <div class="companion__wishes wishes">
-                <span class="companion__title">Хочет посетить:</span>
+                <span class="wishes__title">хочет посетить:</span>
+
                 <ul class="wish-list">
                   <li class="wish-list__item">
                     <img src="img/United-Kingdom.png" width="35" height="25" alt="Флаг" class="flag">
@@ -658,52 +1233,58 @@
               </div>
 
               <div class="companion__vehicles-list list">
-                <div class="list__title-wrapper">
-                  <span>Транспорт</span>
-                </div>
+                <span class="list__title">транспорт</span>
                 <ul class="vehicles-list">
-                  <li class="vehicles-list__item">
-                    <svg class="vehicles-list__icon" width="21" height="23" fill="none"
+                  <li class="vehicles-list__item vehicles-list__item--active">
+                    <svg class="vehicles-list__icon vehicles-list__aero" viewBox="0 0 23 23" fill="none"
                       xmlns="http://www.w3.org/2000/svg">
-                      <g clip-path="url(#clip0)">
+                      <g clip-path="url(#clip70)">
                         <path
-                          d="M16.783 2.093c-.728.173-1.46.347-1.733.824l-2.107 4.199L1.63 9.806l-.458 1.341 8.658.82-1.47 3.634-3.283.78-.824 1.43 2.369.256.27 1.169c.12.414.545.69.908.604l1.095-.26 1.268 2.163.825-1.428-.81-3.505 2.377-3.03 4.536 7.961.914-1.038L15.213 8.63l2.563-3.895c.276-.477.096-1.255-.085-2.036-.09-.387-.545-.691-.908-.605z"
-                          fill="#101D41" />
+                          d="M18.488 1.18c-.8.18-1.602.362-1.9.859l-2.312 4.373L1.864 9.215l-.503 1.397 9.498.853-1.611 3.786-3.602.813-.905 1.488 2.599.268.296 1.217c.133.432.599.72.996.63l1.201-.271 1.392 2.253.904-1.488-.889-3.65 2.608-3.157 4.976 8.293 1.004-1.081-3.063-12.577 2.813-4.057c.302-.498.105-1.308-.093-2.122-.099-.403-.6-.72-.997-.63z"
+                          fill="currentColor" />
                       </g>
                       <defs>
-                        <clipPath>
-                          <path fill="#fff" transform="translate(0 .96)" d="M0 0h20.826v21.12H0z" />
+                        <clipPath id="clip70">
+                          <path fill="#fff" transform="translate(.077)" d="M0 0h22.847v22H0z" />
                         </clipPath>
                       </defs>
                     </svg>
-                    <svg class="vehicles-list__icon" width="18" height="21" fill="none"
-                      xmlns="http://www.w3.org/2000/svg">
-                      <g clip-path="url(#clip0)">
-                        <path opacity=".15"
-                          d="M4.34 13.948a1.3 1.3 0 00-.415-.97 1.392 1.392 0 00-1.004-.4c-.392 0-.726.133-1.003.4a1.3 1.3 0 00-.416.97c0 .38.138.702.416.97.277.268.611.402 1.003.402.392 0 .726-.134 1.004-.402.277-.268.415-.59.415-.97zm11.356 0a1.3 1.3 0 00-.416-.97 1.392 1.392 0 00-1.004-.4c-.392 0-.726.133-1.003.4a1.3 1.3 0 00-.416.97c0 .38.138.702.416.97.277.268.611.402 1.003.402.392 0 .726-.134 1.004-.402a1.3 1.3 0 00.416-.97zm-.51-4.242l-.799-4.115a.695.695 0 00-.25-.401.698.698 0 00-.449-.156H3.508c-.17 0-.319.052-.448.156a.695.695 0 00-.25.401l-.798 4.115a.661.661 0 00.155.568c.14.164.322.246.543.246h11.777a.682.682 0 00.543-.246.661.661 0 00.155-.568zm-2.507-6.558a.488.488 0 00-.155-.364.523.523 0 00-.377-.15H5.05a.523.523 0 00-.377.15.488.488 0 00-.155.364.523.523 0 00.532.514h7.097c.148 0 .274-.05.377-.15a.488.488 0 00.155-.364zm4.436 7.768v6.461h-1.42v1.372a1.3 1.3 0 01-.415.97 1.392 1.392 0 01-1.004.4c-.392 0-.726-.133-1.003-.4a1.299 1.299 0 01-.416-.97v-1.372H4.34v1.372c0 .378-.138.701-.415.97a1.392 1.392 0 01-1.004.4c-.392 0-.726-.133-1.003-.4a1.299 1.299 0 01-.416-.97v-1.372H.082v-6.46c0-.8.093-1.597.278-2.39l1.142-4.864c.066-.557.427-1.047 1.08-1.468.655-.422 1.505-.74 2.551-.954C6.18 1.027 7.334.92 8.6.92c1.264 0 2.419.107 3.465.321 1.046.215 1.896.532 2.55.954.655.421 1.015.91 1.082 1.468l1.164 4.864c.17.729.255 1.525.255 2.39z"
-                          fill="#1D2E5B" />
-                      </g>
-                      <defs>
-                        <clipPath>
-                          <path fill="#fff" transform="translate(.08 .92)" d="M0 0h17.04v19.2H0z" />
-                        </clipPath>
-                      </defs>
-                    </svg>
+                  </li>
 
-                    <svg class="vehicles-list__icon" width="25" height="24" fill="none"
+                  <li class="vehicles-list__item vehicles-list__item--active">
+                    <svg class="vehicles-list__icon vehicles-list__bus" viewBox="0 0 19 20" fill="none"
                       xmlns="http://www.w3.org/2000/svg">
-                      <path opacity=".15"
-                        d="M18.308 21a4.21 4.21 0 01-2.363-.727 4.3 4.3 0 01-1.566-1.935 4.37 4.37 0 01-.242-2.492 4.331 4.331 0 011.163-2.208 4.234 4.234 0 012.178-1.18 4.198 4.198 0 012.457.245c.777.327 1.441.88 1.908 1.589a4.357 4.357 0 01-.53 5.443A4.227 4.227 0 0118.308 21zm0-7.125c-.549 0-1.085.165-1.541.474a2.804 2.804 0 00-1.022 1.262 2.85 2.85 0 00-.158 1.625c.107.546.372 1.047.76 1.44a2.737 2.737 0 003.022.61c.507-.213.94-.573 1.244-1.036a2.84 2.84 0 00-.345-3.55 2.757 2.757 0 00-1.96-.825zM6.104 21a4.21 4.21 0 01-2.362-.727 4.3 4.3 0 01-1.566-1.935 4.369 4.369 0 01-.242-2.492 4.331 4.331 0 011.163-2.208 4.235 4.235 0 012.178-1.18 4.198 4.198 0 012.457.245c.777.327 1.441.88 1.908 1.589a4.356 4.356 0 01-.53 5.443A4.227 4.227 0 016.104 21zm0-7.125c-.548 0-1.084.165-1.54.474a2.804 2.804 0 00-1.022 1.262 2.85 2.85 0 00-.158 1.625c.107.546.372 1.047.76 1.44a2.738 2.738 0 003.022.61c.507-.213.94-.573 1.245-1.036a2.84 2.84 0 00-.346-3.55 2.758 2.758 0 00-1.96-.825zM15.164 6a1.456 1.456 0 001.05-.44 1.495 1.495 0 00.43-1.065 1.495 1.495 0 00-.426-1.06 1.458 1.458 0 00-1.61-.323 1.478 1.478 0 00-.804.81 1.518 1.518 0 00.316 1.635A1.477 1.477 0 0015.164 6z"
-                        fill="#1D2E5B" />
-                      <path opacity=".15"
-                        d="M17.362 9H15.34a.183.183 0 01-.163-.097L13.71 6.176a1.447 1.447 0 00-.435-.511 1.422 1.422 0 00-1.279-.204 1.43 1.43 0 00-.568.352l-3.23 3.3c-.27.28-.425.656-.43 1.05 0 .815.583 1.106.856 1.27 1.317.77 2.245 1.332 2.754 1.645a.187.187 0 01.088.16v3.24c0 .404.306.75.704.77a.732.732 0 00.546-.206.75.75 0 00.23-.542v-4.031a.757.757 0 00-.308-.61l-1.71-1.247a.187.187 0 01-.077-.134.19.19 0 01.05-.147l1.941-2.1A.185.185 0 0113 8.173a.183.183 0 01.139.095l1.008 1.846a.745.745 0 00.647.386h2.589a.73.73 0 00.536-.232A.751.751 0 0017.362 9z"
-                        fill="#1D2E5B" />
+                      <g clip-path="url(#clip80)">
+                        <path
+                          d="M4.835 13.571c0-.394-.152-.73-.457-1.01a1.574 1.574 0 00-1.102-.418c-.43 0-.798.14-1.103.418a1.321 1.321 0 00-.457 1.01c0 .395.153.732.457 1.01.305.28.672.419 1.103.419.43 0 .798-.14 1.102-.418.305-.28.457-.616.457-1.01zm12.475 0a1.32 1.32 0 00-.457-1.01 1.574 1.574 0 00-1.103-.418c-.43 0-.797.14-1.102.418a1.32 1.32 0 00-.457 1.01c0 .395.152.732.457 1.01.305.28.672.419 1.103.419.43 0 .798-.14 1.102-.418.305-.28.457-.616.457-1.01zm-.56-4.42l-.878-4.285a.72.72 0 00-.274-.418.794.794 0 00-.493-.162H3.92a.794.794 0 00-.493.162.72.72 0 00-.274.418l-.877 4.286c-.04.223.016.42.17.591a.767.767 0 00.597.257h12.938a.767.767 0 00.597-.257.664.664 0 00.17-.591zm-2.754-6.83a.496.496 0 00-.17-.379.591.591 0 00-.415-.156H5.615c-.163 0-.3.052-.414.156a.496.496 0 00-.171.38c0 .148.057.275.17.379a.591.591 0 00.415.156h7.796c.163 0 .301-.052.415-.156a.496.496 0 00.17-.38zm4.873 8.092v6.73h-1.56v1.428c0 .395-.151.731-.456 1.01A1.574 1.574 0 0115.75 20c-.43 0-.797-.14-1.102-.419a1.32 1.32 0 01-.457-1.01v-1.428H4.835v1.428c0 .395-.152.731-.457 1.01A1.574 1.574 0 013.276 20c-.43 0-.798-.14-1.103-.419a1.321 1.321 0 01-.457-1.01v-1.428H.157v-6.73c0-.833.102-1.663.305-2.489l1.254-5.067c.073-.58.47-1.09 1.188-1.529C3.623.89 4.557.558 5.706.335 6.856.112 8.124 0 9.513 0c1.389 0 2.658.112 3.807.335 1.15.223 2.083.554 2.802.993.719.44 1.115.949 1.188 1.53l1.279 5.066c.187.759.28 1.589.28 2.489z"
+                          fill="currentColor" />
+                      </g>
+                      <defs>
+                        <clipPath id="clip80">
+                          <path fill="#fff" transform="translate(.154)" d="M0 0h18.72v20H0z" />
+                        </clipPath>
+                      </defs>
                     </svg>
-                    <svg class="vehicles-list__icon" width="21" height="24" fill="none"
+                  </li>
+
+                  <li class="vehicles-list__item">
+                    <svg class="vehicles-list__icon vehicles-list__bike" viewBox="0 0 26 25" fill="none"
                       xmlns="http://www.w3.org/2000/svg">
-                      <path opacity=".15"
-                        d="M14.976 5.76c.95 0 1.721-.86 1.721-1.92s-.77-1.92-1.721-1.92c-.95 0-1.721.86-1.721 1.92s.77 1.92 1.72 1.92zM13.923 10.53c.198.329.481.581.812.724.33.142.693.168 1.037.073l2.854-.796-.416-1.862-2.854.796L14.17 7.48a1.735 1.735 0 00-1.094-.82l-3.31-.739a1.56 1.56 0 00-1.094.158c-.34.185-.614.49-.783.867l-1.427 3.183 1.54.86 1.427-3.185 1.692.378-4.377 8.138H2.927v1.92h3.816c.601 0 1.166-.357 1.476-.932l1.65-3.068 4.45.992 1.562 5.231 1.632-.607-1.562-5.23a1.955 1.955 0 00-.495-.833 1.665 1.665 0 00-.801-.444l-2.615-.583 1.525-2.836.358.6z"
-                        fill="#1D2E5B" />
+                      <path
+                        d="M19.703 21.875a4.806 4.806 0 01-2.595-.757 4.535 4.535 0 01-1.721-2.016 4.333 4.333 0 01-.266-2.596 4.441 4.441 0 011.279-2.3 4.733 4.733 0 012.392-1.23 4.846 4.846 0 012.699.257c.854.34 1.583.915 2.097 1.654a4.37 4.37 0 01.787 2.496 4.411 4.411 0 01-1.37 3.175 4.773 4.773 0 01-3.302 1.317zm0-7.422c-.602 0-1.192.172-1.693.494-.5.322-.891.78-1.122 1.315a2.825 2.825 0 00-.173 1.692c.117.569.407 1.09.834 1.5.426.41.969.69 1.56.802a3.161 3.161 0 001.76-.166 3.024 3.024 0 001.367-1.08 2.85 2.85 0 00.514-1.627c0-.777-.322-1.522-.893-2.07a3.114 3.114 0 00-2.154-.86zM6.297 21.875a4.806 4.806 0 01-2.596-.757 4.535 4.535 0 01-1.72-2.016 4.332 4.332 0 01-.266-2.596 4.441 4.441 0 011.278-2.3 4.733 4.733 0 012.392-1.23 4.846 4.846 0 012.7.257c.853.34 1.583.915 2.096 1.654a4.37 4.37 0 01.788 2.496 4.411 4.411 0 01-1.37 3.175 4.773 4.773 0 01-3.302 1.317zm0-7.422c-.603 0-1.192.172-1.693.494-.5.322-.891.78-1.122 1.315a2.825 2.825 0 00-.173 1.692c.117.569.407 1.09.833 1.5.427.41.97.69 1.56.802a3.161 3.161 0 001.76-.166 3.025 3.025 0 001.368-1.08 2.85 2.85 0 00.514-1.627c-.001-.777-.322-1.522-.894-2.07a3.113 3.113 0 00-2.153-.86zM16.25 6.25c.214 0 .426-.04.624-.118.198-.078.378-.194.529-.34.15-.145.27-.319.351-.51.081-.19.122-.394.121-.6a1.49 1.49 0 00-.118-.597c-.08-.19-.199-.362-.35-.507-.15-.145-.329-.26-.526-.338a1.659 1.659 0 00-.62-.115c-.214 0-.426.04-.623.117a1.63 1.63 0 00-.528.337 1.56 1.56 0 00-.354.506 1.511 1.511 0 00.346 1.704 1.681 1.681 0 001.148.461z"
+                        fill="currentColor" />
+                      <path
+                        d="M18.665 9.375h-2.223a.209.209 0 01-.103-.027.199.199 0 01-.075-.075l-1.612-2.84a1.532 1.532 0 00-.477-.532 1.634 1.634 0 00-1.405-.212 1.587 1.587 0 00-.625.366L8.597 9.492a1.56 1.56 0 00-.472 1.094c0 .85.64 1.152.94 1.323 1.447.802 2.466 1.388 3.025 1.714a.19.19 0 01.098.166v3.376c0 .42.336.78.773.802a.843.843 0 00.6-.215.78.78 0 00.252-.564v-4.2a.756.756 0 00-.09-.356.79.79 0 00-.249-.278l-1.879-1.3a.198.198 0 01-.084-.14.188.188 0 01.055-.153l2.133-2.187a.203.203 0 01.173-.06.208.208 0 01.153.099l1.108 1.923c.07.122.173.223.298.294.125.07.268.108.413.107h2.844a.839.839 0 00.588-.241.776.776 0 00.224-.577c-.021-.42-.398-.744-.835-.744z"
+                        fill="currentColor" />
+                    </svg>
+                  </li>
+
+                  <li class="vehicles-list__item">
+                    <svg class="vehicles-list__icon vehicles-list__run" viewBox="0 0 23 24" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M16.188 6c1.045 0 1.891-.895 1.891-2s-.846-2-1.89-2c-1.045 0-1.892.895-1.892 2s.847 2 1.891 2zM15.032 10.969c.217.342.528.605.892.754a1.8 1.8 0 001.139.076l3.135-.829-.457-1.94-3.135.829-1.304-2.067a1.9 1.9 0 00-1.202-.854l-3.636-.77a1.797 1.797 0 00-1.202.164c-.373.193-.675.51-.86.903l-1.568 3.316 1.691.895 1.568-3.317 1.86.394L7.144 17H2.952v2h4.192c.66 0 1.281-.372 1.622-.971l1.813-3.196 4.887 1.034 1.717 5.449 1.793-.633-1.716-5.448a2.019 2.019 0 00-.544-.867 1.86 1.86 0 00-.88-.463l-2.874-.607 1.676-2.954.394.625z"
+                        fill="currentColor" />
                     </svg>
                   </li>
                 </ul>
@@ -713,7 +1294,10 @@
                 <span class="companion__subtitle">левел:</span>
                 <div class="lvl-wrapper">
                   <div class="lvl">
-                    <span class="lvl__number">50</span>
+                    <svg class="lvl__circle" stroke="#FF8D30" stroke-width="3" viewBox="0 0 60 60" fill="none">
+                      <circle cx="30" cy="30" r="28"></circle>
+                    </svg>
+                    <span class="lvl__number">99</span>
                     <div class="lvl__divider"></div>
                     <span class="lvl__text">level</span>
                   </div>
@@ -724,18 +1308,55 @@
             </div>
           </li>
         </ul>
+
+        <div class="catalog-pagination">
+
+          <button class="catalog-pagination__view-more">
+            <svg class="catalog-pagination__plus" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect y="12" width="26" height="2" rx="1" fill="#1D2E5B" />
+              <rect x="12" y="26" width="26" height="2" rx="1" transform="rotate(-90 12 26)" fill="#1D2E5B" />
+            </svg>
+            <span>Показать еще</span>
+          </button>
+
+          <div class="catalog-pagination__panel">
+            <ul class="catalog-pagination__pages">
+              <li class="catalog-pagination__page catalog-pagination__page--active">
+                <button class="catalog-pagination__button">1</button>
+              </li>
+              <li class="catalog-pagination__page">
+                <button class="catalog-pagination__button">2</button>
+              </li>
+              <li class="catalog-pagination__page">
+                <button class="catalog-pagination__button">3</button>
+              </li>
+              <li class="catalog-pagination__page">
+                <button class="catalog-pagination__button">4</button>
+              </li>
+            </ul>
+            <div class="catalog-pagination__switchers">
+              <button class="catalog-pagination__switcher">
+                <svg width="13" height="20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M0 10l9.75-8.66v17.32L0 10z" fill="#1D2E5B" />
+                </svg>
+              </button>
+              <button class="catalog-pagination__switcher">
+                <svg width="13" height="20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M13 10l-9.75 8.66V1.34L13 10z" fill="#1D2E5B" />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
       </section>
     </div>
 
-    <div class="catalog-pagination">
-      <div>Показать еще</div>
-    </div>
+
   </main>
   <footer class="footer">
-
     <div class="logo">
       <div class="logo__wrapper">
-        <svg width="100" height="15" fill="none" xmlns="http://www.w3.org/2000/svg"
+        <svg viewBox="0 0 100 15" fill="none" xmlns="http://www.w3.org/2000/svg"
           xmlns:xlink="http://www.w3.org/1999/xlink">
           <path fill="url(#pattern0)" d="M0 0h100v15H0z" />
           <defs>
@@ -754,33 +1375,38 @@
     <ul class="socials-list">
       <li class="socials-list__item">
         <a class="socials-list__link">
-          <svg class="socials-list__icon" width="11" height="21" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <svg class="socials-list__icon" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
-              d="M7.488 20.813H2.129v-9.675H0V6.352h2.066c-.157-2.168.236-3.75 1.195-4.83A4.879 4.879 0 014.896.397 5.078 5.078 0 016.867 0h3.756v4.612H7.669a4.7 4.7 0 00-.197 1.74h3.143v4.785H7.472l.016 9.675zm-4.172-1.125h2.97v-9.675h3.143V7.5H6.286v-.57c0-1.5 0-2.842.785-3.345l.15-.098h2.208V1.125h-2.53a3.821 3.821 0 00-1.497.284c-.472.194-.897.48-1.246.841-.785.922-1.107 2.468-.864 4.605l.079.622H1.179v2.535h2.137v9.675z"
-              fill="#192144" />
+              d="M24.488 32.77h-5.359V23.25H17v-4.707h2.066c-.157-2.132.236-3.69 1.195-4.752a4.883 4.883 0 011.635-1.106 5.151 5.151 0 011.971-.392h3.756v4.538h-2.954a4.554 4.554 0 00-.197 1.712h3.143v4.707h-3.143l.016 9.518zm-4.172-1.107h2.97v-9.518h3.143v-2.472h-3.143v-.56c0-1.477 0-2.797.785-3.292l.15-.096h2.208v-2.324h-2.53a3.878 3.878 0 00-1.497.28c-.472.19-.897.472-1.246.827-.785.908-1.107 2.427-.864 4.53l.079.613h-2.192v2.494h2.137v9.518z"
+              fill="inherit" />
           </svg>
           <span class="visually-hidden">Facebook</span>
         </a>
       </li>
       <li class="socials-list__item">
         <a class="socials-list__link">
-          <svg class="socials-list__icon" width="23" height="12" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <svg class="socials-list__icon" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
-              d="M17.766 11.833a2.981 2.981 0 01-1.543-.472 7.566 7.566 0 01-1.32-1.148c-.327-.33-.869-.885-1.076-.885-.208 0-.356.69-.349 1.178a1.32 1.32 0 01-.349.907 1.666 1.666 0 01-.905.375H10.8a8.35 8.35 0 01-5.513-2.25C2.557 7.011.212 2.181.116 1.971A1.014 1.014 0 01.227.86C.51.622.868.494 1.237.5H4.352c.25.037.49.126.704.262.202.137.363.326.467.548.32.692.687 1.361 1.099 2.002.971 1.5 1.402 1.845 1.558 1.92a6.154 6.154 0 00.14-2.152 2.045 2.045 0 00-.155-.96.98.98 0 00-.572-.218l-.541-.517C6.949.89 7.49.463 7.869.298a6.382 6.382 0 012.337-.285h.527a6.688 6.688 0 011.595.15c1.261.27 1.217 1.298 1.165 2.483 0 .345-.037.75-.037 1.215v.36c-.03.326-.007.655.067.975a6.803 6.803 0 001.535-1.86c.43-.67.807-1.372 1.128-2.1.098-.23.266-.424.479-.552.213-.128.461-.184.708-.16h3.176c.093-.01.188-.01.282 0 .742 0 1.18.217 1.357.637.178.42.127 1.245-1.75 3.457l-.742.848c-.36.352-.67.754-.92 1.192.28.323.6.61.95.855.852.65 1.602 1.426 2.225 2.303a1.206 1.206 0 01.193 1.26 1.693 1.693 0 01-1.395.75l-2.812.037-.17-.03zm-3.94-3.63c.668 0 1.247.593 1.863 1.215.333.367.706.695 1.113.975.308.207.67.317 1.039.315h.074l2.82-.037a1.05 1.05 0 00.4-.105l-.074-.12a9.864 9.864 0 00-1.989-2.04c-.883-.75-1.335-1.103-1.387-1.68-.052-.578.363-1.08 1.194-2.033l.742-.832a8.047 8.047 0 001.521-2.213 4.155 4.155 0 00-.497 0h-3.242a.404.404 0 00-.178 0A15.422 15.422 0 0116 3.936c-1.403 2.115-2.063 2.4-2.53 2.4a.876.876 0 01-.416-.105c-.742-.428-.742-1.38-.697-2.07v-.323c0-.487 0-.907.037-1.267.06-1.26 0-1.268-.282-1.335a6.285 6.285 0 00-1.38-.12h-.512a9.543 9.543 0 00-1.41.075.88.88 0 01.186.187c.306.488.458 1.058.438 1.635.096 1.238.044 2.85-.742 3.24-.14.066-.292.1-.446.098-.69 0-1.372-.66-2.537-2.445a17.617 17.617 0 01-1.195-2.138l-.059-.075a.891.891 0 00-.237-.082h-3.02c.438.915 2.515 4.965 4.837 7.087a7.378 7.378 0 004.764 1.973h1.372a.736.736 0 00.2-.075v-.068c0-.202 0-1.95 1.173-2.25a1.23 1.23 0 01.282-.075z"
-              fill="#192144" />
+              d="M28.766 28.854a3.017 3.017 0 01-1.543-.465 7.53 7.53 0 01-1.32-1.129c-.327-.324-.868-.87-1.076-.87-.208 0-.356.679-.349 1.158.003.331-.122.65-.349.893-.258.21-.573.338-.905.369H21.8a8.424 8.424 0 01-5.513-2.214c-2.73-2.486-5.075-7.238-5.171-7.444a.984.984 0 01.111-1.092c.283-.235.641-.36 1.01-.355H15.352c.25.037.49.125.704.259.202.134.363.32.468.538.32.681.686 1.34 1.098 1.97.971 1.476 1.402 1.815 1.558 1.89a5.957 5.957 0 00.14-2.118 1.983 1.983 0 00-.155-.945.99.99 0 00-.572-.214l-.541-.509c-.104-.487.438-.907.816-1.07a6.482 6.482 0 012.337-.28h.527a6.799 6.799 0 011.595.147c1.261.266 1.217 1.277 1.165 2.443 0 .339-.037.738-.037 1.195v.354c-.03.321-.007.645.067.96a6.719 6.719 0 001.535-1.83c.43-.659.807-1.35 1.128-2.067a1.168 1.168 0 011.187-.7h3.176c.093-.01.188-.01.282 0 .742 0 1.18.213 1.357.627.178.413.127 1.224-1.75 3.401l-.742.834c-.36.347-.67.742-.92 1.173.28.318.6.6.95.841a10.543 10.543 0 012.225 2.265 1.177 1.177 0 01.193 1.24 1.705 1.705 0 01-1.395.738l-2.812.037-.17-.03zm-3.94-3.571c.668 0 1.247.583 1.863 1.195.333.362.706.683 1.113.96.308.203.67.31 1.039.31h.074l2.82-.038c.138-.007.274-.043.4-.103l-.074-.118a9.779 9.779 0 00-1.989-2.007c-.883-.738-1.335-1.084-1.387-1.652-.052-.569.363-1.063 1.194-2l.742-.82a7.914 7.914 0 001.521-2.176 4.25 4.25 0 00-.497 0h-3.242a.412.412 0 00-.178 0A15.09 15.09 0 0127 21.084c-1.403 2.081-2.063 2.362-2.53 2.362a.887.887 0 01-.416-.104c-.742-.42-.742-1.357-.697-2.036v-.317c0-.48 0-.893.037-1.247.06-1.24 0-1.247-.282-1.314a6.383 6.383 0 00-1.38-.117h-.512a9.696 9.696 0 00-1.41.073c.071.052.134.114.186.185a2.8 2.8 0 01.438 1.608c.096 1.218.044 2.804-.742 3.188-.14.065-.292.097-.446.096-.69 0-1.372-.65-2.537-2.406a17.246 17.246 0 01-1.195-2.103l-.059-.073a.901.901 0 00-.237-.082h-3.02c.438.9 2.515 4.885 4.837 6.973a7.44 7.44 0 004.764 1.94h1.372a.743.743 0 00.2-.073v-.067c0-.199 0-1.918 1.173-2.213.09-.036.185-.06.282-.074z"
+              fill="inherit" />
           </svg>
           <span class="visually-hidden">VK</span>
         </a>
       </li>
       <li class="socials-list__item">
         <a class="socials-list__link">
-          <svg class="socials-list__icon" width="18" height="18" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <g opacity=".5" fill="#192144">
+          <svg class="socials-list__icon" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip4)" fill="#192144">
               <path
-                d="M12.96 1.8a3.247 3.247 0 013.24 3.24v7.92a3.247 3.247 0 01-3.24 3.24H5.04a3.247 3.247 0 01-3.233-3.24V5.04A3.247 3.247 0 015.04 1.8h7.92zm0-1.08H5.04A4.32 4.32 0 00.72 5.04v7.92a4.32 4.32 0 004.32 4.32h7.92a4.32 4.32 0 004.32-4.32V5.04A4.32 4.32 0 0012.96.72z" />
+                d="M26.96 16.033a3.275 3.275 0 012.289.936c.607.597.95 1.407.951 2.252v7.791a3.169 3.169 0 01-.951 2.252 3.275 3.275 0 01-2.289.936h-7.92a3.274 3.274 0 01-2.284-.938 3.169 3.169 0 01-.949-2.25v-7.791a3.169 3.169 0 01.949-2.25 3.274 3.274 0 012.284-.938h7.92zm0-1.062h-7.92a4.356 4.356 0 00-3.055 1.244 4.215 4.215 0 00-1.265 3.006v7.791c0 1.127.455 2.208 1.265 3.005a4.356 4.356 0 003.055 1.245h7.92a4.357 4.357 0 003.055-1.245 4.216 4.216 0 001.265-3.005v-7.791a4.216 4.216 0 00-1.265-3.006 4.357 4.357 0 00-3.055-1.244z" />
               <path
-                d="M9.007 5.817a3.19 3.19 0 11-2.949 1.968 3.182 3.182 0 012.949-1.968zm0-1.08a4.27 4.27 0 103.94 2.637 4.262 4.262 0 00-3.94-2.637zM13.428 5.56a.965.965 0 100-1.93.965.965 0 000 1.93z" />
+                d="M23.007 19.985c.63 0 1.247.184 1.772.529a3.15 3.15 0 011.175 1.408 3.09 3.09 0 01.181 1.813 3.122 3.122 0 01-.873 1.607 3.206 3.206 0 01-1.633.858 3.238 3.238 0 01-1.843-.178 3.18 3.18 0 01-1.431-1.156 3.102 3.102 0 01.395-3.964 3.189 3.189 0 011.035-.68 3.228 3.228 0 011.222-.237zm0-1.063a4.32 4.32 0 00-2.374.705 4.216 4.216 0 00-1.576 1.883 4.137 4.137 0 00-.246 2.428 4.18 4.18 0 001.167 2.152 4.292 4.292 0 002.186 1.152c.829.162 1.688.08 2.468-.238a4.256 4.256 0 001.917-1.547 4.153 4.153 0 00-.525-5.304c-.396-.39-.867-.7-1.384-.91a4.325 4.325 0 00-1.633-.32zM27.428 19.73a.957.957 0 00.965-.948.957.957 0 00-.965-.95.957.957 0 00-.965.95c0 .524.432.949.965.949z" />
             </g>
+            <defs>
+              <clipPath id="clip4">
+                <path fill="#fff" transform="translate(14 14.262)" d="M0 0h18v17.708H0z" />
+              </clipPath>
+            </defs>
           </svg>
           <span class="visually-hidden">Instagram</span>
         </a>
@@ -789,11 +1415,24 @@
 
     <div class="copyright">
       <span class="copyright__text">Разработано</span>
-      <!-- <img class="copyright__logo" src="" alt="логотип Академии"> -->
-    </div>
 
+      <svg class="copyright__logo" viewBox="0 0 28 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <g clip-path="url(#clip90)">
+          <path
+            d="M13.643.101L13.5.086 0 1.464v24.102l13.5 7.823L27 25.566V1.464L13.643.101zM25.234 24.59l-11.734 6.8-11.734-6.8v-9.88l11.685 6.774.02 1.228-8.017-4.646-.011 1.2 8.046 4.71.02 1.26-8.045-4.66-.01 1.2 8.046 4.71 8.124-4.734v-5.103l3.62-2.105-.01 10.046zm0-11.327l-3.22 1.842-1.482.857-7.065-4.101-.011 1.2 6.04 3.5-.053.03-.13.074-.86.482-4.986-2.888-.011 1.2 3.936 2.28-.933.598-.021.012-2.971-1.706-.011 1.2 1.947 1.11-1.988 1.163-11.618-6.731 11.638-6.815 11.8 6.693zm0-1.2L13.44 5.288 1.766 12.055v-9.04l11.734-1.2 11.734 1.2v9.047z"
+            fill="#192144" />
+        </g>
+        <defs>
+          <clipPath id="clip90">
+            <path fill="#fff" transform="translate(0 .086)" d="M0 0h27v33.303H0z" />
+          </clipPath>
+        </defs>
+      </svg>
+
+    </div>
   </footer>
 
+  <script src="js/script.js"></script>
 </body>
 
 </html>
