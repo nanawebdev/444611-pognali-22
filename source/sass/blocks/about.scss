@@ -19,7 +19,7 @@
 .about__service {
   background-color: $special-blue-1;
   color: $basic-white;
-  background-image: url("./../img/about-mobile.png");
+  background-image: url("./../img/service-back-mobile.png");
   background-repeat: no-repeat;
   background-position: 21px 0;
   padding: 33px 52px 82px 49px;
@@ -27,6 +27,11 @@
   border-bottom-right-radius: 30px;
   position: relative;
   z-index: $z-about-service;
+  background-size: 292px 353px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("./../img/service-back-mobile@2x.png");
+  }
 
   @media (min-width: $tablet-width) {
     background-image: url("./../../img/servis-back-tablet-item2.png"),
@@ -40,6 +45,12 @@
     border-bottom-left-radius: 60px;
     border-bottom-right-radius: 60px;
     padding: 33px 52px 0 74px;
+    background-size: 376px 548px, 688px 212px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("./../../img/servis-back-tablet-item2@2x.png"),
+        url("./../../img/servis-back-tablet-item1@2x.png");
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -50,9 +61,16 @@
     background-color: $special-blue-1;
     padding-top: 124px;
     padding-left: 129px;
-    height: 627px;
+    height: 751px;
     border-bottom-left-radius: 56px;
     border-bottom-right-radius: 56px;
+    background-size: 632px 665px, 212px 212px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("./../../img/service-back-desktop-item1@2x.png"),
+        url("./../../img/service-back-desktop-item2@2x.png");
+      background-position: 749px 86px, 60px 69px;
+    }
   }
 }
 
@@ -155,6 +173,12 @@
     padding-bottom: 80px;
     border-bottom-left-radius: 60px;
     border-bottom-right-radius: 60px;
+    background-size: 288px 574px, 141px 141px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("./../../img/directions-back-tablet-item1@2x.png"),
+        url("./../../img/directions-back-tablet-item2@2x.png");
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -168,6 +192,12 @@
       url("./../../img/directions-back-desktop-item2.png");
     background-position: 1094px 118px, 60px 120px;
     padding-bottom: 108px;
+    background-size: 287px 575px, 140px 140px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("./../../img/directions-back-desktop-item1@2x.png"),
+        url("./../../img/directions-back-desktop-item2@2x.png");
+    }
   }
 }
 
@@ -226,6 +256,13 @@
   position: relative;
   z-index: $z-about-users;
   margin-top: -30px;
+  background-size: 143px 143px, 64px 71px, 113px 132px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("./../../img/companions-back-item1@2x.png"),
+      url("./../../img/companions-back-item2@2x.png"),
+      url("./../../img/companions-back-item3@2x.png");
+  }
 
   @media (min-width: $tablet-width) {
     margin-top: -60px;
@@ -240,6 +277,13 @@
       url("./../../img/users-back-tablet-desk-item3.png");
     background-repeat: no-repeat, no-repeat, no-repeat;
     background-position: 409px 140px, 39px 131px, 39px 483px;
+    background-size: 285px 285px, 212px 212px, 143px 143px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("./../../img/users-back-tablet-desk-item1@2x.png"),
+        url("./../../img/users-back-tablet-desk-item2@2x.png"),
+        url("./../../img/users-back-tablet-desk-item3@2x.png");
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -308,7 +352,7 @@
 
 .about__rates {
   padding: 67px 25px 38px 49px;
-  background-color: $block-background-2;
+  background-color: $block-background-1;
   border-bottom-left-radius: 30px;
   border-bottom-right-radius: 30px;
   position: relative;
