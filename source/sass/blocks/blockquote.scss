@@ -12,6 +12,10 @@
     line-height: 33px;
     padding-left: 34px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 42px 0 28px 25px;
+  }
 }
 
 .blockquote__text {
@@ -32,7 +36,11 @@
     font-weight: bold;
     font-size: 21px;
     line-height: 25px;
-    margin-top: 28px;
+    padding-top: 28px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 25px;
   }
 }
 

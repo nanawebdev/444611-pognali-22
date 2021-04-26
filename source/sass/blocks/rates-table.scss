@@ -5,6 +5,11 @@
   background-image: url("./../../img/add-profile-icon.png");
   background-repeat: no-repeat;
   background-position: 147px 0;
+  background-size: 100px 100px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("./../../img/add-profile-icon@2x.png");
+  }
 
   @media (min-width: $tablet-width) {
     grid-template-columns: max-content 1fr max-content;
@@ -12,12 +17,25 @@
     background-image: url("./../../img/add-profile-icon.png"),
       url("./../../img/rates-back-tablet-item2.png");
     background-position: 543px 373px, 490px 114px;
+    background-size: 100px 100px, 198px 285px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("./../../img/add-profile-icon@2x.png"),
+        url("./../../img/rates-back-tablet-item2@2x.png");
+    }
   }
 
   @media (min-width: $desktop-width) {
     grid-template-columns: max-content 1fr 1fr;
-    background-image: url("./../../img/rates-back-desktop-item1.png");
-    background-position: 980px 249px;
+    background-image: url("./../../img/rates-back-desktop-item1.png"),
+      url("./../../img/rates-back-desktop-item2.png");
+    background-position: 980px 249px, 621px 196px;
+    background-size: 198px 198px, 446px 300px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("./../../img/rates-back-desktop-item1@2x.png"),
+        url("./../../img/rates-back-desktop-item2@2x.png");
+    }
   }
 }
 

@@ -8,6 +8,8 @@
 
 .flag {
   margin-right: 20px;
+  width: 35px;
+  height: 24px;
 }
 
 .flag:last-child {
@@ -21,15 +23,6 @@
 .about__users .flag-wrapper {
   @media (min-width: $tablet-width) {
     top: 272px;
-  }
-}
-
-.about__directions .flag {
-  @media (min-width: $desktop-width) {
-    width: 70px;
-    height: 47px;
-    top: 23px;
-    left: 339px;
   }
 }
 
@@ -69,9 +62,20 @@
 .direction .flag {
   width: 35px;
   height: 24px;
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  left: 25px;
 
   @media (min-width: $tablet-width) {
     width: 70px;
     height: 47px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 70px;
+    height: 47px;
+    top: 23px;
+    left: 339px;
   }
 }

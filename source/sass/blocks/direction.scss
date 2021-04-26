@@ -17,11 +17,14 @@
   border-radius: 10px;
   margin-top: -10px;
   box-sizing: border-box;
+  position: relative;
+  z-index: 1;
 
   @media (min-width: $tablet-width) {
     max-height: 140px;
     margin-top: 0;
     padding: 30px;
+    border-radius: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -33,51 +36,13 @@
   margin-bottom: 8px;
 }
 
-.direction .flag {
-  position: absolute;
-  top: 86px;
-  left: 25px;
-
-  @media (min-width: $tablet-width) {
-    top: 17px;
-    left: 398px;
-    width: 75px;
-    height: 47px;
-  }
-}
-
 .direction__image {
   width: 100%;
   height: 110px;
-  background-repeat: no-repeat;
 
   @media (min-width: $tablet-width) {
-    height: 100%;
-    background-position: -375px 0;
-  }
-}
-
-.direction__image-thailand {
-  background-image: url("./../../img/thailand-direction-mobile.png");
-
-  @media (min-width: $tablet-width) {
-    background-image: url("./../../img/thailand-direction-desktop.png");
-  }
-}
-
-.direction__image-france {
-  background-image: url("./../../img/france-direction-mobile.png");
-
-  @media (min-width: $tablet-width) {
-    background-image: url("./../../img/france-direction-desktop.png");
-  }
-}
-
-.direction__image-czech {
-  background-image: url("./../../img/czech-direction-mobile.png");
-
-  @media (min-width: $tablet-width) {
-    background-image: url("./../../img/czech-direction-desktop.png");
+    height: 140px;
+    width: 186px;
   }
 }
 
