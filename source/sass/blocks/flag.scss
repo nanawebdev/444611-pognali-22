@@ -26,28 +26,25 @@
   }
 }
 
-.step-3 .flag,
-.select-country__flag .flag {
-  margin-right: 0;
+.form-page .flag {
+  width: 35px;
+  height: 25px;
 
   @media (min-width: $tablet-width) {
     width: 70px;
     height: 47px;
   }
 }
+// .step-3 .flag,
+// .select-country__flag .flag {
+//   margin-right: 0;
+// }
 
-.step-2 .flag {
-  @media (min-width: $tablet-width) {
-    width: 70px;
-    height: 47px;
-  }
-}
-
-.step-3 .flag {
-  @media (min-width: $desktop-width) {
-    margin-right: 116px;
-  }
-}
+// .step-3 .flag {
+//   @media (min-width: $desktop-width) {
+//     margin-right: 116px;
+//   }
+// }
 
 .wish-list__item .flag {
   @media (min-width: $tablet-width) {
