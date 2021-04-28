@@ -18,7 +18,11 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 46px;
+    padding-top: 24px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 0;
+    padding-left: 8px;
   }
 }
 
@@ -39,11 +43,13 @@
 
   @media (min-width: $desktop-width) {
     padding: 0;
-    padding-right: 22px;
+    padding-right: 0;
     margin-right: 0;
     margin-bottom: 32px;
     max-height: 285px;
     box-sizing: border-box;
+    border-radius: 20px;
+    overflow: hidden;
   }
 }
 
@@ -72,55 +78,7 @@
     width: 285px;
     height: 285px;
     margin: 0;
-    margin-right: 36px;
-  }
-}
-
-.companions-list__item:nth-of-type(1) .companion__avatar {
-  background-image: url("./../../img/firsova-mobile.jpg");
-
-  @media (min-width: $tablet-width) {
-    background-image: url("./../../img/firsova-tablet-catalog.jpg");
-  }
-
-  @media (min-width: $desktop-width) {
-    background-image: url("./../../img/firsova-desktop-catalog.jpg");
-  }
-}
-
-.companions-list__item:nth-of-type(2) .companion__avatar {
-  background-image: url("./../../img/demin-mobile.jpg");
-
-  @media (min-width: $tablet-width) {
-    background-image: url("./../../img/demin-tablet-catalog.jpg");
-  }
-
-  @media (min-width: $desktop-width) {
-    background-image: url("./../../img/demin-desktop-catalog.jpg");
-  }
-}
-
-.companions-list__item:nth-of-type(3) .companion__avatar {
-  background-image: url("./../../img/smolov-mobile.jpg");
-
-  @media (min-width: $tablet-width) {
-    background-image: url("./../../img/smolov-tablet-catalog.jpg");
-  }
-
-  @media (min-width: $desktop-width) {
-    background-image: url("./../../img/smolov-desktop-catalog.jpg");
-  }
-}
-
-.companions-list__item:nth-of-type(4) .companion__avatar {
-  background-image: url("./../../img/rogovaya-mobile.jpg");
-
-  @media (min-width: $tablet-width) {
-    background-image: url("./../../img/rogovaya-tablet-catalog.jpg");
-  }
-
-  @media (min-width: $desktop-width) {
-    background-image: url("./../../img/rogova-desktop-catalog.jpg");
+    margin-right: 0;
   }
 }
 
@@ -155,6 +113,10 @@
   @media (min-width: $tablet-width) {
     width: 227px;
     height: 46px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 8px;
   }
 }
 

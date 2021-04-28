@@ -49,6 +49,10 @@
     margin: 0;
     margin-left: auto;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 0;
+  }
 }
 
 .form-header .lvl__text,
@@ -178,6 +182,11 @@ $circleLengthBig: 2 * 3.1416 * 48px;
   position: static;
   width: 45px;
   height: 45px;
+
+  @media (min-width: $desktop-width) {
+    width: 60px;
+    height: 60px;
+  }
 }
 
 .companion__level .lvl {

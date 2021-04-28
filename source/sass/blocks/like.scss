@@ -21,7 +21,9 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-right: 79px;
+    position: absolute;
+    top: 0;
+    left: 150px;
   }
 }
 
