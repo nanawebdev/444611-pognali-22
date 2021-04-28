@@ -49,6 +49,10 @@
   }
 }
 
+.option--expanded .option__button {
+  transform: rotate(180deg);
+}
+
 .option__header {
   position: relative;
   display: flex;
@@ -96,12 +100,12 @@
 
 .option:nth-child(5) .option__title {
   @media (min-width: $tablet-width) {
-    padding-top: 20px;
+    padding-top: 23px;
   }
 
-  // @media (min-width: $desktop-width) {
-  //   padding-top: 6px;
-  // }
+  @media (min-width: $desktop-width) {
+    padding-bottom: 7px;
+  }
 }
 
 .option:nth-child(1) .option__title {

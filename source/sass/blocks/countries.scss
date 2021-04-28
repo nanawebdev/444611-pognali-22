@@ -18,6 +18,8 @@
 
   @media (min-width: $desktop-width) {
     position: static;
+    padding-left: 60px;
+    padding-right: 60px;
   }
 }
 
@@ -33,7 +35,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    grid-template-columns: 1fr;
-    grid-template-rows: max-content max-content;
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 0;
   }
 }
