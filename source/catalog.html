@@ -163,13 +163,12 @@
         </svg>
       </symbol>
 
-      <symbol id="active-like" viewBox="0 0 13 11" >
-        <svg fill="none"
-        xmlns="http://www.w3.org/2000/svg">
-        <path
-          d="M3.255.474c1.693 0 3.064 1.348 3.064 3.01 0-1.662 1.371-3.01 3.064-3.01s3.064 1.348 3.064 3.01c0 2.505-2.477 3.389-5.828 7.377a.394.394 0 01-.6 0C2.669 6.873.192 5.989.192 3.484c0-1.662 1.37-3.01 3.063-3.01z"
-          fill="#F02323" />
-      </svg>
+      <symbol id="active-like" viewBox="0 0 13 11">
+        <svg fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M3.255.474c1.693 0 3.064 1.348 3.064 3.01 0-1.662 1.371-3.01 3.064-3.01s3.064 1.348 3.064 3.01c0 2.505-2.477 3.389-5.828 7.377a.394.394 0 01-.6 0C2.669 6.873.192 5.989.192 3.484c0-1.662 1.37-3.01 3.063-3.01z"
+            fill="#F02323" />
+        </svg>
       </symbol>
 
       <symbol id="like" viewBox="0 0 12 13">
@@ -187,7 +186,7 @@
         </svg>
       </symbol>
 
-      <symbol id="view-more" viewBox="0 0 26 26" >
+      <symbol id="view-more" viewBox="0 0 26 26">
         <svg xmlns="http://www.w3.org/2000/svg">
           <rect y="12" width="26" height="2" rx="1" fill="#1D2E5B" />
           <rect x="12" y="26" width="26" height="2" rx="1" transform="rotate(-90 12 26)" fill="#1D2E5B" />
@@ -200,6 +199,29 @@
         </svg>
       </symbol>
 
+      <symbol id="lvl-99" viewBox="0 0 64 64">
+        <svg xmlns="http://www.w3.org/2000/svg">
+          <path d="M28.899 2.16a30 30 0 104.206-.14" stroke="#FF8D30" stroke-width="3" stroke-linecap="round" />
+        </svg>
+      </symbol>
+
+      <symbol id="lvl-80" viewBox="0 0 64 64">
+        <svg xmlns="http://www.w3.org/2000/svg">
+          <path d="M3.703 22.037A30 30 0 1032.76 2.01" stroke="#FF8D30" stroke-width="3" stroke-linecap="round" />
+        </svg>
+      </symbol>
+
+      <symbol id="lvl-25" viewBox="0 0 34 34">
+        <svg xmlns="http://www.w3.org/2000/svg">
+          <path d="M32 32A30 30 0 002 2" stroke="#FF8D30" stroke-width="3" stroke-linecap="round" />
+        </svg>
+      </symbol>
+
+      <symbol id="lvl-50" viewBox="0 0 34 64">
+        <svg xmlns="http://www.w3.org/2000/svg">
+          <path d="M2 62A30 30 0 002 2" stroke="#FF8D30" stroke-width="3" stroke-linecap="round" />
+        </svg>
+      </symbol>
     </svg>
 
     <header class="catalog-page__main-header main-header">
@@ -994,9 +1016,9 @@
                   <span class="list__title">транспорт</span>
 
                   <ul class="vehicles-list">
+
                     <li class="vehicles-list__item vehicles-list__item--active">
-                    <li class="vehicles-list__item vehicles-list__item--active">
-                      <svg width="22" height="22" class="vehicles-list__icon">
+                      <svg width="22" height="22" class="vehicles-list__icon vehicles-list__aero">
                         <use xlink:href="#plane"></use>
                       </svg>
                     </li>
@@ -1025,9 +1047,11 @@
                   <span class="companion__subtitle">левел:</span>
                   <div class="lvl-wrapper">
                     <div class="lvl">
-                      <svg class=" lvl__circle" stroke="#FF8D30" stroke-width="3" viewBox="0 0 60 60" fill="none">
-                        <circle cx="30" cy="30" r="28"></circle>
+
+                      <svg class="lvl__icon" width="60" height="60">
+                        <use xlink:href="#lvl-99"></use>
                       </svg>
+
                       <span class="lvl__number">99</span>
                       <div class="lvl__divider"></div>
                       <span class="lvl__text">level</span>
@@ -1133,10 +1157,12 @@
                   <span class="companion__subtitle">левел:</span>
                   <div class="lvl-wrapper">
                     <div class="lvl">
-                      <svg class="lvl__circle" stroke="#FF8D30" stroke-width="3" viewBox="0 0 60 60" fill="none">
-                        <circle cx="30" cy="30" r="28"></circle>
+
+                      <svg class="lvl__icon" width="60" height="60">
+                        <use xlink:href="#lvl-80"></use>
                       </svg>
-                      <span class="lvl__number">99</span>
+
+                      <span class="lvl__number">80</span>
                       <div class="lvl__divider"></div>
                       <span class="lvl__text">level</span>
                     </div>
@@ -1250,10 +1276,12 @@
                   <span class="companion__subtitle">левел:</span>
                   <div class="lvl-wrapper">
                     <div class="lvl">
-                      <svg class="lvl__circle" stroke="#FF8D30" stroke-width="2" width="60" height="60" fill="none">
-                        <circle cx="30" cy="30" r="28"></circle>
+
+                      <svg class="lvl__icon lvl__icon--25" width="34" height="34">
+                        <use xlink:href="#lvl-25"></use>
                       </svg>
-                      <span class="lvl__number">99</span>
+
+                      <span class="lvl__number">25</span>
                       <div class="lvl__divider"></div>
                       <span class="lvl__text">level</span>
                     </div>
@@ -1357,10 +1385,12 @@
                   <span class="companion__subtitle">левел:</span>
                   <div class="lvl-wrapper">
                     <div class="lvl">
-                      <svg class="lvl__circle" stroke="#FF8D30" stroke-width="3" viewBox="0 0 60 60" fill="none">
-                        <circle cx="30" cy="30" r="28"></circle>
+
+                      <svg class="lvl__icon lvl__icon--50" width="34" height="64">
+                        <use xlink:href="#lvl-50"></use>
                       </svg>
-                      <span class="lvl__number">99</span>
+
+                      <span class="lvl__number">50</span>
                       <div class="lvl__divider"></div>
                       <span class="lvl__text">level</span>
                     </div>
