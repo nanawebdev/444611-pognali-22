@@ -138,3 +138,7 @@
     margin-right: 18px;
   }
 }
+
+.catalog-pagination__switcher:nth-child(2) .catalog-pagination__icon {
+  transform: rotate(180deg);
+}
