@@ -65,7 +65,11 @@
   fill: $basic-yellow;
 }
 
-.action__wrapper:active .action__icon-path {
+// .action__wrapper:active .action__icon-path {
+//   opacity: 0.3;
+// }
+
+.action__wrapper:active .action__icon {
   opacity: 0.3;
 }
 
@@ -79,11 +83,12 @@
 
 .promo__nav .action__icon {
   margin-right: 0;
-}
-
-.promo__nav .action__icon-path {
   fill: $basic-blue;
 }
+
+// .promo__nav .action__icon-path {
+//   fill: $basic-blue;
+// }
 
 .address .action__item {
   color: $basic-blue-light;
@@ -129,6 +134,7 @@
   width: 45px;
   height: 45px;
   margin-right: 0;
+  fill: $basic-yellow;
 
   @media (min-width: $tablet-width) {
     width: 68px;
