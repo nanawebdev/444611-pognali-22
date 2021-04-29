@@ -683,6 +683,7 @@
         </section>
 
         <section class="about__rates">
+          <div class="rate__modal">
           <div class="rate">
             <h3 class="visually-hidden">
               О тарифах
@@ -706,16 +707,46 @@
             <div class="rate__three rate__item">Кастомный цвет карточки</div>
             <div class="rate__three rate__price">59 руб./мес</div>
 
-            <div class="action">
-              <div class="action__wrapper">
 
-                <svg class="action__icon" width="27" height="27">
-                  <use xlink:href="#businessman"></use>
-                </svg>
+              <div class="action">
+                <div class="action__wrapper">
 
+                  <svg class="action__icon" width="27" height="27">
+                    <use xlink:href="#businessman"></use>
+                  </svg>
+
+                </div>
+                <button type="button" class="action__item js-show-business-rates">Показать тарифы для бизнеса</button>
               </div>
-              <a class="action__item">Показать тарифы для бизнеса</a>
+
+              <div class="business-rates">
+                <div class="business-rates__menu">
+                  <h1 class="business-rates__title">Бизнес-тарифы</h1>
+                  <div class="business-rates__wrapper">
+                    <div class="business-rates__item">Реклама у блоггера</div>
+                    <div class="business-rates__price">300 000 руб./пост</div>
+                  </div>
+
+                  <div class="business-rates__wrapper">
+                    <div class="business-rates__item">Накрутка подписчиков</div>
+                    <div class="business-rates__price">от 1 руб./шт.</div>
+                  </div>
+
+                  <div class="business-rates__wrapper">
+                    <div class="business-rates__item">Лайки от ботов</div>
+                    <div class="business-rates__price">от 20 коп./лайк</div>
+                  </div>
+
+                  <div class="business-rates__wrapper">
+                    <div class="business-rates__item">Ваш продакт-плейсмент</div>
+                    <div class="business-rates__price">Индивидуально</div>
+                  </div>
+                </div>
+
+                <button type="button" class="business-rates__button js-close-business-rates">Закрыть окно</button>
+              </div>
             </div>
+
           </div>
 
         </section>

@@ -1,0 +1,133 @@
+.business-rates {
+  width: 270px;
+  position: absolute;
+  display: none;
+  background-color: $basic-white;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 22px;
+  color: $special-grey;
+  padding-top: 34px;
+  overflow: hidden;
+  border-radius: 20px;
+  box-shadow: 0 2px 8px rgba(29, 46, 91, 0.14);
+
+  @media (min-width: $tablet-width) {
+    padding-top: 54px;
+    width: 688px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 28px;
+    width: 750px;
+  }
+}
+
+.business-rates__title {
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 700;
+  color: $special-orange;
+  text-align: center;
+  margin: 0;
+  padding-bottom: 28px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 45px;
+    line-height: 45px;
+  }
+}
+
+.business-rates__menu {
+  padding-left: 25px;
+  padding-right: 26px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 90px;
+    padding-right: 93px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 58px;
+    padding-right: 60px;
+  }
+}
+
+.business-rates__wrapper {
+  position: relative;
+  padding: 11px 0;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    padding: 14px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 16px 0;
+  }
+}
+
+.business-rates__wrapper:nth-of-type(1)::after {
+  content: "";
+  position: absolute;
+  background-color: rgba($basic-black, 0.05);
+  width: 100%;
+  height: 1px;
+  top: 0;
+  left: 0;
+}
+
+.business-rates__wrapper::before {
+  content: "";
+  position: absolute;
+  background-color: rgba($basic-black, 0.05);
+  width: 100%;
+  height: 1px;
+  bottom: 0;
+}
+
+.business-rates__button {
+  border: none;
+  background-color: $block-background-15;
+  margin-top: 34px;
+  width: 100%;
+  height: 59px;
+  font-weight: 700;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: $basic-blue-light;
+  line-height: 24px;
+
+  @media (min-width: $tablet-width) {
+    height: 108px;
+    font-size: 24px;
+    line-height: 24px;
+    text-transform: none;
+    margin-top: 52 px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 57px;
+  }
+}
+
+.rate__modal {
+  position: relative;
+}
+
+.rate__modal--open .business-rates {
+  display: block;
+  top: 0;
+  left: -23px;
+
+  @media (min-width: $tablet-width) {
+    left: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: 230px;
+  }
+}
