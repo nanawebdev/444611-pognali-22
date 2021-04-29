@@ -33,6 +33,12 @@
 .form__subtitle-wrapper .pagination {
   display: flex;
 
+  @media (min-width: $tablet-width) {
+    padding-top: 14px;
+    position: absolute;
+    right: 46px;
+  }
+
   @media (min-width: $desktop-width) {
     display: none;
   }

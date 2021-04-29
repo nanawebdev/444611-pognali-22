@@ -28,9 +28,10 @@
 
 .form-page .footer {
   margin-top: 43px;
+  z-index: $z-form-footer;
 
   @media (min-width: $tablet-width) {
-    margin-top: 60px;
+    margin-top: -66px;
   }
 
   @media (min-width: $desktop-width) {

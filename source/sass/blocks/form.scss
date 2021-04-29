@@ -20,7 +20,7 @@
   @media (min-width: $tablet-width) {
     font-size: 36px;
     line-height: 36px;
-    margin-bottom: 48px;
+    margin-bottom: 49px;
   }
 
   @media (min-width: $desktop-width) {
@@ -35,7 +35,7 @@
   @media (min-width: $tablet-width) {
     font-size: 36px;
     line-height: 36px;
-    padding-bottom: 27px;
+    padding-bottom: 26px;
   }
 
   @media (min-width: $desktop-width) {
@@ -48,6 +48,10 @@
   align-items: center;
   margin-bottom: 29px;
   justify-content: space-between;
+}
+
+.add-plan .form__subtitle-wrapper {
+  align-items: flex-start;
 }
 
 .form__subtitle-wrapper .form__subtitle {
