@@ -37,16 +37,31 @@
   }
 }
 
-.main-page__main-header--no-js .logo--dark,
-.main-header--open-modal .logo--dark,
+// .main-page__main-header--no-js .logo--dark,
+// .main-header--open-modal .logo--dark,
+// .main-header--sticky .logo--dark,
+// .main-header.main-header--scroll .logo--dark {
+//   display: block;
+// }
+
+
+.main-header--no-js .logo--dark,
+.main-header--open .logo--dark,
 .main-header--sticky .logo--dark,
 .main-header.main-header--scroll .logo--dark {
   display: block;
 }
 
 
-.main-page__main-header--no-js .logo--light,
-.main-header--open-modal .logo--light,
+// .main-page__main-header--no-js .logo--light,
+// .main-header--open-modal .logo--light,
+// .main-header--sticky .logo--light,
+// .main-header.main-header--scroll .logo--light {
+//   display: none;
+// }
+
+.main-header--no-js .logo--light,
+.main-header--open .logo--light,
 .main-header--sticky .logo--light,
 .main-header.main-header--scroll .logo--light {
   display: none;

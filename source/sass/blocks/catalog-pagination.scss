@@ -81,7 +81,7 @@
 .catalog-pagination__switchers {
   width: 100%;
 
-  @media (max-width: $only-mobile) {
+  @media (max-width: $tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
@@ -137,4 +137,8 @@
   @media (min-width: $desktop-width) {
     margin-right: 18px;
   }
+}
+
+.catalog-pagination__switcher:nth-child(2) .catalog-pagination__icon {
+  transform: rotate(180deg);
 }

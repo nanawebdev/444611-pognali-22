@@ -11,9 +11,18 @@
   display: flex;
 }
 
-.main-page__main-header--no-js .contacts-list,
-.main-page__main-header--open .contacts-list {
-  @media (max-width: $only-mobile) {
+// .main-page__main-header--no-js .contacts-list,
+// .main-page__main-header--open .contacts-list {
+//   @media (max-width: $only-mobile) {
+//     display: flex;
+//     flex-direction: column;
+//     margin-top: 51px;
+//   }
+// }
+
+.main-header--no-js .contacts-list,
+.main-header--open .contacts-list {
+  @media (max-width: $tablet-width) {
     display: flex;
     flex-direction: column;
     margin-top: 51px;

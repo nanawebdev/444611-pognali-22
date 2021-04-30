@@ -63,7 +63,8 @@
   }
 }
 
-.rate .action {
+.rate .action,
+.rate .rate__modal {
   grid-column: 1 / 3;
   grid-row: 8 / 9;
 

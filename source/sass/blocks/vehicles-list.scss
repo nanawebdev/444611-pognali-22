@@ -85,17 +85,16 @@
   opacity: 0.15;
 }
 
+// .companion__vehicles-list .vehicles-list__icon {
+//   color: $basic-blue-light;
+//   opacity: 0.15;
+//   display: block;
+// }
+
 .companion__vehicles-list .vehicles-list__icon {
   color: $basic-blue-light;
   opacity: 0.15;
   display: block;
-}
-
-.vehicles-list__item--active .vehicles-list__icon {
-  opacity: 1;
-}
-
-.companion__vehicles-list .vehicles-list__aero {
   width: 14px;
   height: 16px;
 
@@ -109,6 +108,14 @@
     height: 22px;
   }
 }
+
+.vehicles-list__item--active .vehicles-list__icon {
+  opacity: 1;
+}
+
+// .companion__vehicles-list .vehicles-list__icon--active {
+//   opacity: 1;
+// }
 
 // .companion__vehicles-list .vehicles-list__bus {
 //   width: 13px;

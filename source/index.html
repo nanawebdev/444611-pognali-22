@@ -157,10 +157,21 @@
       </svg>
     </symbol>
 
+    <symbol id="lvl-99" viewBox="0 0 64 64">
+      <svg xmlns="http://www.w3.org/2000/svg">
+        <path d="M28.899 2.16a30 30 0 104.206-.14" stroke="#FF8D30" stroke-width="3" stroke-linecap="round" />
+      </svg>
+    </symbol>
+
+    <symbol id="lvl-80" viewBox="0 0 64 64">
+      <svg xmlns="http://www.w3.org/2000/svg">
+        <path d="M3.703 22.037A30 30 0 1032.76 2.01" stroke="#FF8D30" stroke-width="3" stroke-linecap="round" />
+      </svg>
+    </symbol>
   </svg>
 
   <div class="main-wrapper">
-    <header class="main-page__main-header main-header">
+    <header class="main-header">
 
       <div class="logo logo--light">
         <span class="visually-hidden">Погнали</span>
@@ -279,7 +290,7 @@
 
         <li class="socials-list__item">
           <a class="socials-list__link">
-            <svg class="socials-list__icon" width="45" height="45">
+            <svg class="socials-list__icon" width="45" height="45" style="opacity: 0.5;">
               <use xlink:href="#instagram" />
             </svg>
             <span class="visually-hidden">Instagram</span>
@@ -517,9 +528,11 @@
               <div class="user">
                 <div class="lvl-wrapper">
                   <div class="lvl">
-                    <svg class="lvl__circle" stroke="#FF8D30" stroke-width="2" width="60" height="60" fill="none">
-                      <circle cx="30" cy="30" r="28"></circle>
+
+                    <svg class="lvl__icon" width="60" height="60">
+                      <use xlink:href="#lvl-99"></use>
                     </svg>
+
                     <span class="lvl__number">99</span>
                     <div class="lvl__divider"></div>
                     <span class="lvl__text">level</span>
@@ -593,9 +606,11 @@
               <div class="user">
                 <div class="lvl-wrapper">
                   <div class="lvl">
-                    <svg class="lvl__circle" stroke="#FF8D30" stroke-width="2" width="60" height="60" fill="none">
-                      <circle cx="30" cy="30" r="28"></circle>
+
+                    <svg class="lvl__icon" width="60" height="60">
+                      <use xlink:href="#lvl-80"></use>
                     </svg>
+
                     <span class="lvl__number">80 </span>
                     <div class="lvl__divider"></div>
                     <span class="lvl__text">level</span>
@@ -668,6 +683,7 @@
         </section>
 
         <section class="about__rates">
+          <div class="rate__modal">
           <div class="rate">
             <h3 class="visually-hidden">
               О тарифах
@@ -691,16 +707,46 @@
             <div class="rate__three rate__item">Кастомный цвет карточки</div>
             <div class="rate__three rate__price">59 руб./мес</div>
 
-            <div class="action">
-              <div class="action__wrapper">
 
-                <svg class="action__icon" width="27" height="27">
-                  <use xlink:href="#businessman"></use>
-                </svg>
+              <div class="action">
+                <div class="action__wrapper">
 
+                  <svg class="action__icon" width="27" height="27">
+                    <use xlink:href="#businessman"></use>
+                  </svg>
+
+                </div>
+                <button type="button" class="action__item js-show-business-rates">Показать тарифы для бизнеса</button>
               </div>
-              <a class="action__item">Показать тарифы для бизнеса</a>
+
+              <div class="business-rates">
+                <div class="business-rates__menu">
+                  <h1 class="business-rates__title">Бизнес-тарифы</h1>
+                  <div class="business-rates__wrapper">
+                    <div class="business-rates__item">Реклама у блоггера</div>
+                    <div class="business-rates__price">300 000 руб./пост</div>
+                  </div>
+
+                  <div class="business-rates__wrapper">
+                    <div class="business-rates__item">Накрутка подписчиков</div>
+                    <div class="business-rates__price">от 1 руб./шт.</div>
+                  </div>
+
+                  <div class="business-rates__wrapper">
+                    <div class="business-rates__item">Лайки от ботов</div>
+                    <div class="business-rates__price">от 20 коп./лайк</div>
+                  </div>
+
+                  <div class="business-rates__wrapper">
+                    <div class="business-rates__item">Ваш продакт-плейсмент</div>
+                    <div class="business-rates__price">Индивидуально</div>
+                  </div>
+                </div>
+
+                <button type="button" class="business-rates__button js-close-business-rates">Закрыть окно</button>
+              </div>
             </div>
+
           </div>
 
         </section>

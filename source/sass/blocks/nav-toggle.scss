@@ -6,6 +6,7 @@
   height: 11px;
   padding: 0;
   margin-left: auto;
+  transition: transform 0.3s;
 
   &::after,
   &::before {
@@ -52,4 +53,17 @@
   @media (min-width: $desktop-width) {
     display: none;
   }
+}
+
+.main-header--open .toggle::before {
+  transform: rotate(45deg);
+  transform-origin: 50% 50%;
+  top: 4px;
+}
+
+.main-header--open .toggle::after {
+  transform: rotate(-45deg);
+  transform-origin: 0 100%;
+  top: 13px;
+  left: 4px;
 }
