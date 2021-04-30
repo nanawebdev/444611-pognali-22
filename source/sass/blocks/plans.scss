@@ -9,7 +9,7 @@
   margin-top: -21px;
 
   @media (min-width: $tablet-width) {
-    margin-top: -64px;
+    margin-top: -67px;
     padding: 56px 75px 104px 75px;
   }
 
@@ -70,7 +70,7 @@
   padding: 0;
 
   @media (min-width: $tablet-width) {
-    justify-content: flex-end;
+    margin-left: 68px;
     font-size: 20px;
     line-height: 20px;
     letter-spacing: 0.1em;
@@ -92,6 +92,7 @@
     padding-left: 38px;
     padding-bottom: 14px;
     padding-right: 33px;
+    margin-bottom: 11px;
   }
 
   @media (min-width: $desktop-width) {
