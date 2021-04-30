@@ -81,7 +81,7 @@
 .catalog-pagination__switchers {
   width: 100%;
 
-  @media (max-width: $only-mobile) {
+  @media (max-width: $tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }

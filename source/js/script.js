@@ -15,7 +15,7 @@
 //   countryFilterModal.classList.toggle('country-filter__modal--open')
 // })
 
-// const header = document.querySelector('.main-header')
+const header = document.querySelector('.main-header')
 
 // window.addEventListener('scroll', function() {
 //   console.log("dd")
@@ -35,10 +35,18 @@ const rateModal = document.querySelector('.rate__modal')
 const closeBusinessRates = document.querySelector('.js-close-business-rates')
 
 
-showBusinessRates.addEventListener('click', function() {
+showBusinessRates.addEventListener('click', function () {
   rateModal.classList.add('rate__modal--open')
 })
 
-closeBusinessRates.addEventListener('click', function() {
+closeBusinessRates.addEventListener('click', function () {
   rateModal.classList.remove('rate__modal--open')
+})
+
+// Меню навигации
+
+const navToggler = document.querySelector('.toggle')
+
+navToggler.addEventListener('click', function () {
+  header.classList.toggle('main-header--open')
 })

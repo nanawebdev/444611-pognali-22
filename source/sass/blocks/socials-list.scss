@@ -69,12 +69,22 @@
   }
 }
 
-.main-page__main-header--open .socials-list {
+// .main-page__main-header--open .socials-list {
+//   display: flex;
+//   margin-top: 30px;
+//   padding-left: 67px;
+// }
+
+.main-header--open .socials-list {
   display: flex;
   margin-top: 30px;
   padding-left: 67px;
 }
 
-.main-page__main-header--open .socials-list__item {
+// .main-page__main-header--open .socials-list__item {
+//   margin-right: 0;
+// }
+
+.main-header--open .socials-list__item {
   margin-right: 0;
 }
