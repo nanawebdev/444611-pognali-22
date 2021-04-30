@@ -64,11 +64,30 @@
   }
 }
 
+.user .vehicles-list__item {
+  background-color: transparent;
+  width: 21px;
+  height: 21px;
+
+  @media (min-width: $tablet-width) {
+    background-color: transparent;
+    width: 23px;
+    height: 22px;
+  }
+}
+
+.user .vehicles-list {
+  display: flex;
+}
+
+.vehicles-list__icon {
+  fill: $basic-blue-light;
+  opacity: 0.15;
+}
+
 .companion__vehicles-list .vehicles-list__icon {
   color: $basic-blue-light;
   opacity: 0.15;
-  // width: 15px;
-  // height: 17px;
   display: block;
 }
 
@@ -91,50 +110,50 @@
   }
 }
 
-.companion__vehicles-list .vehicles-list__bus {
-  width: 13px;
-  height: 16px;
+// .companion__vehicles-list .vehicles-list__bus {
+//   width: 13px;
+//   height: 16px;
 
-  @media (min-width: $tablet-width) {
-    width: 20px;
-    height: 19px;
-  }
+//   @media (min-width: $tablet-width) {
+//     width: 20px;
+//     height: 19px;
+//   }
 
-  @media (min-width: $desktop-width) {
-    width: 18px;
-    height: 20px;
-  }
-}
+//   @media (min-width: $desktop-width) {
+//     width: 18px;
+//     height: 20px;
+//   }
+// }
 
-.companion__vehicles-list .vehicles-list__bike {
-  width: 15px;
-  height: 17px;
+// .companion__vehicles-list .vehicles-list__bike {
+//   width: 15px;
+//   height: 17px;
 
-  @media (min-width: $tablet-width) {
-    width: 26px;
-    height: 25px;
-  }
+//   @media (min-width: $tablet-width) {
+//     width: 26px;
+//     height: 25px;
+//   }
 
-  @media (min-width: $desktop-width) {
-    width: 25px;
-    height: 25px;
-  }
-}
+//   @media (min-width: $desktop-width) {
+//     width: 25px;
+//     height: 25px;
+//   }
+// }
 
-.companion__vehicles-list .vehicles-list__run {
-  width: 14px;
-  height: 17px;
+// .companion__vehicles-list .vehicles-list__run {
+//   width: 14px;
+//   height: 17px;
 
-  @media (min-width: $tablet-width) {
-    width: 23px;
-    height: 24px;
-  }
+//   @media (min-width: $tablet-width) {
+//     width: 23px;
+//     height: 24px;
+//   }
 
-  @media (min-width: $desktop-width) {
-    width: 23px;
-    height: 24px;
-  }
-}
+//   @media (min-width: $desktop-width) {
+//     width: 23px;
+//     height: 24px;
+//   }
+// }
 
 .suboptions-wrapper .vehicles-list {
   display: flex;
