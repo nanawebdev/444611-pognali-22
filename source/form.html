@@ -191,24 +191,38 @@
     </symbol> -->
   <!-- </svg> -->
 
-  <div class="main-wrapper">
+  <!-- <div class="main-wrapper"> -->
 
     <header class="form-page__main-header main-header">
 
       <div class="logo logo--light">
         <span class="visually-hidden">Погнали</span>
         <picture>
+
+          <source type="image/webp" media="(min-width: 1200px)"
+            srcset="./img/logo-desktop-light.webp 1x, ./img/logo-desktop-light@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 768px)"
+            srcset="./img/logo-tablet-light.webp 1x, ./img/logo-tablet-light@2x.webp 2x">
+          <source type="image/webp" srcset="./img/logo-mobile-light@2x.webp 2x, ./img/logo-mobile-light.webp 1x">
+
           <source media="(min-width: 1200px)"
             srcset="./img/logo-desktop-light.png 1x, ./img/logo-desktop-light@2x.png 2x">
           <source media="(min-width: 768px)" srcset="./img/logo-tablet-light.png 1x, ./img/logo-tablet-light@2x.png 2x">
           <img class="logo__image" src="./img/logo-mobile-light.png" srcset="./img/logo-mobile-light@2x.png 2x"
             alt="logo">
+
         </picture>
       </div>
 
       <div class="logo logo--dark">
         <span class="visually-hidden">Погнали</span>
         <picture>
+          <source type="image/webp" media="(min-width: 1200px)"
+            srcset="./img/logo-desktop-dark.webp 1x, ./img/logo-desktop-dark@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 768px)"
+            srcset="./img/logo-tablet-dark.webp 1x, ./img/logo-tablet-dark@2x.webp 2x">
+          <source type="image/webp" srcset="./img/logo-mobile-dark@2x.webp 2x, ./img/logo-mobile-dark.webp 1x">
+
           <source media="(min-width: 1200px)"
             srcset="./img/logo-desktop-dark.png 1x, ./img/logo-desktop-dark@2x.png 2x">
           <source media="(min-width: 768px)" srcset="./img/logo-tablet-dark.png 1x, ./img/logo-tablet-dark@2x.png 2x">
@@ -349,6 +363,8 @@
             </div>
 
             <picture>
+              <source type="image/webp" media="(min-width: 1440px)" srcset="./img/demin-desktop@2x.webp 2x, ./img/demin-desktop.webp 1x">
+
               <source media="(min-width: 1440px)" srcset="./img/demin-desktop@2x.jpg 2x, ./img/demin-desktop.jpg 1x">
               <img class="user__avatar" src="./img/demin-desktop.jpg" alt="аватар пользователя">
             </picture>
@@ -372,6 +388,10 @@
           </div>
 
           <picture>
+            <source media="(min-width: 768px)"
+            srcset="./img/demin-form-tablet.webp 1x, ./img/demin-form-tablet@2x.webp 2x">
+          <source type="image/webp" srcset="./img/demin-form-mobile@2x.webp 2x, ./img/demin-form-mobile.webp 1x">
+
             <source media="(min-width: 768px)"
               srcset="./img/demin-form-tablet.jpg 1x, ./img/demin-form-tablet@2x.jpg 2x">
             <img class="user__avatar" src="./img/demin-form-mobile.jpg" srcset="./img/demin-form-mobile@2x.jpg 2x"
@@ -678,8 +698,11 @@
             <div class="select-country__flag">
 
               <picture>
-                <source media="(min-width: 768px)"
-                  srcset="./img/flag-form-tablet-Bosnia-and-Herzegovina.png 1x, ./img/flag-form-tablet-Bosnia-and-Herzegovina@2x.png 2x">
+                <source type="image/webp" media="(min-width: 768px)"
+                srcset="./img/flag-form-tablet-Bosnia-and-Herzegovina.webp 1x, ./img/flag-form-tablet-Bosnia-and-Herzegovina@2x.webp 2x">
+              <source type="image/webp" srcset="./img/flag-form-mobile-Bosnia-and-Herzegovina@2x.webp 2x, ./img/flag-form-mobile-Bosnia-and-Herzegovina@2x.webp 1x">
+
+                <source media="(min-width: 768px)" srcset="./img/flag-form-tablet-Bosnia-and-Herzegovina.png 1x, ./img/flag-form-tablet-Bosnia-and-Herzegovina@2x.png 2x">
                 <img class="flag" src="./img/flag-form-mobile-Bosnia-and-Herzegovina@2x.png"
                   srcset="./img/flag-form-mobile-Bosnia-and-Herzegovina@2x.png 2x" alt="Флаг">
               </picture>
@@ -710,6 +733,10 @@
             <div class="select-country__flag">
 
               <picture>
+                <source type="image/webp" media="(min-width: 768px)"
+                srcset="./img/flag-form-tablet-Czech.webp 1x, ./img/flag-form-tablet-Czech@2x.webp 2x">
+              <source type="image/webp" srcset="./img/flag-form-czech-mobile@2x.webp 2x, ./img/flag-form-czech-mobile.webp 1x">
+
                 <source media="(min-width: 768px)"
                   srcset="./img/flag-form-tablet-Czech.png 1x, ./img/flag-form-tablet-Czech@2x.png 2x">
                 <img class="flag" src="./img/flag-form-czech-mobile.png" srcset="./img/flag-form-czech-mobile@2x.png 2x"
@@ -1178,6 +1205,11 @@
             </div>
 
             <picture>
+              <source type="image/webp" media="(min-width: 768px)"
+              srcset="./img/flag-form-tablet-Bosnia-and-Herzegovina.webp 1x, ./img/flag-form-tablet-Bosnia-and-Herzegovina@2x.webp 2x">
+            <source type="image/webp"
+              srcset="./img/flag-form-mobile-Bosnia-and-Herzegovina@2x.webp 2x, ./img/flag-form-mobile-Bosnia-and-Herzegovina@2x.webp 1x" >
+
               <source media="(min-width: 768px)"
                 srcset="./img/flag-form-tablet-Bosnia-and-Herzegovina.png 1x, ./img/flag-form-tablet-Bosnia-and-Herzegovina@2x.png 2x">
               <img class="flag" src="./img/flag-form-mobile-Bosnia-and-Herzegovina@2x.png"
@@ -1191,6 +1223,10 @@
             <div class="add-plan__purpose">Чехия</div>
 
             <picture>
+              <source type="image/webp" media="(min-width: 768px)"
+              srcset="./img/flag-form-tablet-Czech.webp 1x, ./img/flag-form-tablet-Czech@2x.webp 2x">
+            <source type="image/webp" srcset="./img/flag-form-czech-mobile@2x.webp 2x, ./img/flag-form-czech-mobile.webp 1x">
+
               <source media="(min-width: 768px)"
                 srcset="./img/flag-form-tablet-Czech.png 1x, ./img/flag-form-tablet-Czech@2x.png 2x">
               <img class="flag" src="./img/flag-form-czech-mobile.png" srcset="./img/flag-form-czech-mobile@2x.png 2x"
@@ -1230,7 +1266,14 @@
 
       <div class="logo logo--dark">
         <span class="visually-hidden">Погнали</span>
+
         <picture>
+          <source type="image/webp" media="(min-width: 1200px)"
+            srcset="./img/logo-desktop-dark.webp 1x, ./img/logo-desktop-dark@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 768px)"
+            srcset="./img/logo-tablet-dark.webp 1x, ./img/logo-tablet-dark@2x.webp 2x">
+          <source type="image/webp" srcset="./img/logo-mobile-dark@2x.webp 2x, ./img/logo-mobile-dark.webp 1x">
+
           <source media="(min-width: 1200px)"
             srcset="./img/logo-desktop-dark.png 1x, ./img/logo-desktop-dark@2x.png 2x">
           <source media="(min-width: 768px)" srcset="./img/logo-tablet-dark.png 1x, ./img/logo-tablet-dark@2x.png 2x">
@@ -1277,7 +1320,7 @@
 
       </div>
     </footer>
-  </div>
+  <!-- </div> -->
   <script src="js/script.min.js"></script>
 </body>
 

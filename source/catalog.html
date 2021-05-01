@@ -9,7 +9,7 @@
 </head>
 
 <body class="catalog-page">
-  <div class="main-wrapper">
+  <!-- <div class="main-wrapper"> -->
 
     <!-- <svg style="display: none;"> -->
 
@@ -228,17 +228,31 @@
       <div class="logo logo--light">
         <span class="visually-hidden">Погнали</span>
         <picture>
+
+          <source type="image/webp" media="(min-width: 1200px)"
+            srcset="./img/logo-desktop-light.webp 1x, ./img/logo-desktop-light@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 768px)"
+            srcset="./img/logo-tablet-light.webp 1x, ./img/logo-tablet-light@2x.webp 2x">
+          <source type="image/webp" srcset="./img/logo-mobile-light@2x.webp 2x, ./img/logo-mobile-light.webp 1x">
+
           <source media="(min-width: 1200px)"
             srcset="./img/logo-desktop-light.png 1x, ./img/logo-desktop-light@2x.png 2x">
           <source media="(min-width: 768px)" srcset="./img/logo-tablet-light.png 1x, ./img/logo-tablet-light@2x.png 2x">
           <img class="logo__image" src="./img/logo-mobile-light.png" srcset="./img/logo-mobile-light@2x.png 2x"
             alt="logo">
+
         </picture>
       </div>
 
       <div class="logo logo--dark">
         <span class="visually-hidden">Погнали</span>
         <picture>
+          <source type="image/webp" media="(min-width: 1200px)"
+            srcset="./img/logo-desktop-dark.webp 1x, ./img/logo-desktop-dark@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 768px)"
+            srcset="./img/logo-tablet-dark.webp 1x, ./img/logo-tablet-dark@2x.webp 2x">
+          <source type="image/webp" srcset="./img/logo-mobile-dark@2x.webp 2x, ./img/logo-mobile-dark.webp 1x">
+
           <source media="(min-width: 1200px)"
             srcset="./img/logo-desktop-dark.png 1x, ./img/logo-desktop-dark@2x.png 2x">
           <source media="(min-width: 768px)" srcset="./img/logo-tablet-dark.png 1x, ./img/logo-tablet-dark@2x.png 2x">
@@ -246,6 +260,7 @@
             alt="logo">
         </picture>
       </div>
+
       <button class="toggle" type="button"></button>
       <ul class="site-list">
         <li class="site-list__item">
@@ -945,7 +960,15 @@
               <div class="companion">
 
                 <div class="companion__avatar">
+
                   <picture>
+                    <source type="image/webp" media="(min-width: 1440px)"
+                      srcset="./img/firsova-desktop-catalog.webp 1x, ./img/firsova-desktop-catalog@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)"
+                      srcset="./img/firsova-tablet-catalog.webp 1x, ./img/firsova-tablet-catalog@2x.webp 2x">
+                    <source type="image/webp"
+                      srcset="./img/firsova-catalog-mobile@2x.webp 2x, ./img/firsova-catalog-mobile.webp 1x">
+
                     <source media="(min-width: 1440px)"
                       srcset="./img/firsova-desktop-catalog.jpg 1x, ./img/firsova-desktop-catalog@2x.jpg 2x">
                     <source media="(min-width: 768px)"
@@ -987,6 +1010,9 @@
 
                     <li class="wish-list__item">
                       <picture>
+                        <source type="image/webp"
+                          srcset="./img/catalog-flag-sri-lanka@2x.png 2x, ./img/catalog-flag-sri-lanka.webp 1x">
+
                         <img alt="флаг" src="./img/catalog-flag-sri-lanka.png"
                           srcset="./img/catalog-flag-sri-lanka@2x.png 2x" class="flag">
                       </picture>
@@ -995,6 +1021,9 @@
 
                     <li class="wish-list__item">
                       <picture>
+                        <source type="image/webp"
+                          srcset="./img/catalog-flag-thailand@2x.png 2x, ./img/catalog-flag-thailand.webp">
+
                         <img alt="флаг" src="./img/catalog-flag-thailand.png"
                           srcset="./img/catalog-flag-thailand@2x.png 2x" class="flag">
                       </picture>
@@ -1003,6 +1032,9 @@
 
                     <li class="wish-list__item">
                       <picture>
+                        <source type="image/webp"
+                        srcset="./img/catalog-flag-seyshely@2x.png 2x, ./img/catalog-flag-seyshely.webp 1x">
+
                         <img alt="флаг" src="./img/catalog-flag-seyshely.png"
                           srcset="./img/catalog-flag-seyshely@2x.png 2x" class="flag">
                       </picture>
@@ -1068,6 +1100,13 @@
 
                 <div class="companion__avatar">
                   <picture>
+                    <source type="image/webp" media="(min-width: 1440px)"
+                    srcset="./img/demin-desktop-catalog.webp 1x, ./img/demin-desktop-catalog@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)"
+                    srcset="./img/demin-tablet-catalog.webp 1x, ./img/demin-tablet-catalog@2x.webp 2x">
+                  <source type="image/webp"
+                    srcset="./img/demin-catalog-mobile@2x.webp 2x, ./img/demin-catalog-mobile.webp 1x">
+
                     <source media="(min-width: 1440px)"
                       srcset="./img/demin-desktop-catalog.jpg 1x, ./img/demin-desktop-catalog@2x.jpg 2x">
                     <source media="(min-width: 768px)"
@@ -1107,6 +1146,9 @@
                   <ul class="wish-list">
                     <li class="wish-list__item">
                       <picture>
+                        <source type="image/webp"
+                          srcset="./img/catalog-flag-Belgium@2x.png 2x, ./img/catalog-flag-Belgium.webp 1x">
+
                         <img class="flag" src="./img/catalog-flag-Belgium.png"
                           srcset="./img/catalog-flag-Belgium@2x.png 2x" alt="Флаг">
                       </picture>
@@ -1115,6 +1157,8 @@
 
                     <li class="wish-list__item">
                       <picture>
+                        <source type="image/webp" srcset="./img/catalog-flag-Czech@2x.png 2x, ./img/catalog-flag-Czech.webp 1x">
+
                         <img class="flag" src="./img/catalog-flag-Czech.png" srcset="./img/catalog-flag-Czech@2x.png 2x"
                           alt="Флаг">
                       </picture>
@@ -1178,6 +1222,13 @@
 
                 <div class="companion__avatar">
                   <picture>
+                    <source type="image/webp" media="(min-width: 1440px)"
+                    srcset="./img/smolov-desktop-catalog.webp 1x, ./img/smolov-desktop-catalog@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)"
+                    srcset="./img/smolov-tablet-catalog.webp 1x, ./img/smolov-tablet-catalog@2x.webp 2x">
+                  <source type="image/webp"
+                    srcset="./img/smolov-catalog-mobile@2x.webp 2x, ./img/smolov-catalog-mobile.webp 1x">
+
                     <source media="(min-width: 1440px)"
                       srcset="./img/smolov-desktop-catalog.jpg 1x, ./img/smolov-desktop-catalog@2x.jpg 2x">
                     <source media="(min-width: 768px)"
@@ -1217,6 +1268,9 @@
                   <ul class="wish-list">
                     <li class="wish-list__item">
                       <picture>
+                        <source type="image/webp"
+                          srcset="./img/catalog-flag-United-States-of-America@2x.webp 2x, ./img/catalog-flag-United-States-of-America.webp 1x">
+
                         <img alt="флаг" src="./img/catalog-flag-United-States-of-America.png"
                           srcset="./img/catalog-flag-United-States-of-America@2x.png 2x" class="flag">
                       </picture>
@@ -1225,6 +1279,9 @@
 
                     <li class="wish-list__item">
                       <picture>
+                        <source type="image/webp"
+                          srcset="./img/catalog-flag-Australia@2x.webp 2x, ./img/catalog-flag-Australia.webp 1x">
+
                         <img alt="флаг" src="./img/catalog-flag-Australia.png"
                           srcset="./img/catalog-flag-Australia@2x.png 2x" class="flag">
                       </picture>
@@ -1233,6 +1290,9 @@
                     <li class="wish-list__item">
 
                       <picture>
+                        <source type="image/webp"
+                        srcset="./img/catalog-flag-Dominica@2x.webp 2x, ./img/catalog-flag-Dominica.webp">
+
                         <img alt="флаг" src="./img/catalog-flag-Dominica.png"
                           srcset="./img/catalog-flag-Dominica@2x.png 2x" class="flag">
                       </picture>
@@ -1297,6 +1357,13 @@
 
                 <div class="companion__avatar">
                   <picture>
+                    <source type="image/webp" media="(min-width: 1440px)"
+                    srcset="./img/rogovaya-desktop-catalog.webp 1x, ./img/rogovaya-desktop-catalog@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)"
+                    srcset="./img/rogovaya-tablet-catalog.webp 1x, ./img/rogovaya-tablet-catalog@2x.webp 2x">
+                  <source type="image/webp"
+                    srcset="./img/rogovaya-catalog-mobile@2x.webp 2x, ./img/rogovaya-catalog-mobile.webp 1x">
+
                     <source media="(min-width: 1440px)"
                       srcset="./img/rogovaya-desktop-catalog.jpg 1x, ./img/rogovaya-desktop-catalog@2x.jpg 2x">
                     <source media="(min-width: 768px)"
@@ -1336,6 +1403,9 @@
                   <ul class="wish-list">
                     <li class="wish-list__item">
                       <picture>
+                        <source type="image/webp"
+                          srcset="./img/catalog-flag-United-Kingdom@2x.webp 2x, ./img/catalog-flag-United-Kingdom.webp">
+
                         <img class="flag" src="./img/catalog-flag-United-Kingdom.png"
                           srcset="./img/catalog-flag-United-Kingdom@2x.png 2x" alt="Флаг">
                       </picture>
@@ -1344,6 +1414,9 @@
 
                     <li class="wish-list__item">
                       <picture>
+                        <source type="image/webp"
+                        srcset="./img/catalog-flag-germany@2x.webp 2x, ./img/catalog-flag-germany.webp 1x">
+
                         <img class="flag" src="./img/catalog-flag-germany.png"
                           srcset="./img/catalog-flag-germany@2x.png 2x" alt="Флаг">
                       </picture>
@@ -1452,7 +1525,14 @@
     <footer class="footer">
       <div class="logo logo--dark">
         <span class="visually-hidden">Погнали</span>
+
         <picture>
+          <source type="image/webp" media="(min-width: 1200px)"
+            srcset="./img/logo-desktop-dark.webp 1x, ./img/logo-desktop-dark@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 768px)"
+            srcset="./img/logo-tablet-dark.webp 1x, ./img/logo-tablet-dark@2x.webp 2x">
+          <source type="image/webp" srcset="./img/logo-mobile-dark@2x.webp 2x, ./img/logo-mobile-dark.webp 1x">
+
           <source media="(min-width: 1200px)"
             srcset="./img/logo-desktop-dark.png 1x, ./img/logo-desktop-dark@2x.png 2x">
           <source media="(min-width: 768px)" srcset="./img/logo-tablet-dark.png 1x, ./img/logo-tablet-dark@2x.png 2x">
@@ -1501,7 +1581,7 @@
 
       </div>
     </footer>
-  </div>
+  <!-- </div> -->
   <script src="js/script.min.js"></script>
 </body>
 
