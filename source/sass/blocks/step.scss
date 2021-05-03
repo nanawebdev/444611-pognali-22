@@ -79,10 +79,10 @@
   left: 11px;
   width: 17px;
   height: 287px;
-  background-image: url("./../../img/purpose-line-mobile.svg");
+  background-image: url("./../img/svg/purpose-line-mobile.svg");
 
   @media (min-width: $tablet-width) {
-    background-image: url("./../../img/purpose-line-tablet.svg");
+    background-image: url("./../img/svg/purpose-line-tablet.svg");
     width: 14px;
     height: 274px;
     left: 563px;

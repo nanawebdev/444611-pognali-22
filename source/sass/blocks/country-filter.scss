@@ -84,6 +84,10 @@
   @media (min-width: $tablet-width) {
     display: flex;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 9px;
+  }
 }
 
 .country-filter__head-item {
@@ -94,6 +98,7 @@
   text-transform: uppercase;
   opacity: 0.3;
   padding-bottom: 9px;
+  cursor: pointer;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;

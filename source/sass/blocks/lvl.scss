@@ -18,9 +18,14 @@
 }
 
 .lvl__number {
+  margin-top: 10px;
   font-weight: bold;
   font-size: 24px;
   line-height: 24px;
+
+  @media (min-width: $desktop-width) {
+    margin-top: 0;
+  }
 }
 
 .lvl__text {
@@ -75,6 +80,7 @@
 }
 
 .form-page__user .lvl__number {
+  margin-top: 1px;
   font-size: 38px;
   line-height: 38px;
 }
@@ -129,6 +135,7 @@ $circleLengthBig: 2 * 3.1416 * 48px;
   height: 100px;
   background-color: transparent;
   color: $basic-blue;
+  margin-right: 20px;
 
   @media (min-width: $desktop-width) {
     display: none;
@@ -229,6 +236,12 @@ $circleLengthBig: 2 * 3.1416 * 48px;
   }
 }
 
+.main-page .lvl__icon {
+  width: 60px;
+  height: 60px;
+  top: -1px;
+}
+
 .companion__level .lvl__text {
   display: none;
 
@@ -272,6 +285,7 @@ $circleLengthBig: 2 * 3.1416 * 48px;
 .form-page__user .lvl__icon {
   width: 100px;
   height: 100px;
+  top: -1px;
 
   @media (min-width: $tablet-width) {
     width: 94px;

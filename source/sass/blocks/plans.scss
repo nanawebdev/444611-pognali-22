@@ -75,6 +75,18 @@
     line-height: 20px;
     letter-spacing: 0.1em;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-left: auto;
+  }
+
+  &:hover {
+    color: rgba($basic-black, 0.6);
+  }
+
+  &:active {
+    color: rgba($basic-black, 0.1);
+  }
 }
 
 .plans-list__item {

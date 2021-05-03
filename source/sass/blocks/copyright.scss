@@ -3,6 +3,7 @@
   justify-content: space-between;
   padding-top: 11px;
   align-items: center;
+  cursor: pointer;
 
   @media (min-width: $tablet-width) {
     padding-top: 0;
@@ -30,4 +31,14 @@
 .copyright__logo {
   width: 27px;
   height: 34px;
+}
+
+.copyright:hover .copyright__text,
+.copyright:hover .copyright__logo {
+  opacity: 0.6;
+}
+
+.copyright:active .copyright__text,
+.copyright:active .copyright__logo {
+  opacity: 0.3;
 }

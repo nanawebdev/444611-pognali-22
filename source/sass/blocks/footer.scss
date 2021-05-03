@@ -2,8 +2,8 @@
   padding: 38px 25px 19px 25px;
   display: flex;
   flex-direction: column;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
   margin-top: -37px;
   z-index: $z-footer;
   background-color: $basic-white;
@@ -27,18 +27,26 @@
 }
 
 .form-page .footer {
-  margin-top: 43px;
   z-index: $z-form-footer;
+  margin-top: -37px;
 
   @media (min-width: $tablet-width) {
     margin-top: -66px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 72px;
+    margin-top: -50px;
   }
 }
 
 .catalog-page .footer {
   margin-top: 0;
+}
+
+.footer__logo {
+  padding-bottom: 35px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 0;
+  }
 }

@@ -3,7 +3,7 @@
   border-radius: 4px;
   display: flex;
   justify-content: space-between;
-  height: 40px;
+  height: 43px;
   align-items: center;
   font-weight: 500;
   font-size: 15px;
@@ -48,15 +48,17 @@
   align-items: center;
 }
 
-.change-quantity__button:first-child {
+.change-quantity__button--minus {
   @media (min-width: $tablet-width) {
     padding-left: 29px;
+    padding-right: 29px;
   }
 }
 
-.change-quantity__button:last-child {
+.change-quantity__button--plus {
   @media (min-width: $tablet-width) {
     padding-right: 29px;
+    padding-left: 29px;
   }
 }
 
@@ -64,7 +66,7 @@
   position: absolute;
   content: "";
   width: 14px;
-  height: 1px;
+  height: 2px;
   background-color: $block-background-3;
 
   @media (min-width: $tablet-width) {
@@ -72,13 +74,17 @@
   }
 }
 
-.change-quantity__button:nth-of-type(2)::before {
+.change-quantity__button--plus::before {
   position: absolute;
   content: "";
   width: 14px;
-  height: 1px;
+  height: 2px;
   background-color: $block-background-3;
   transform: rotate(90deg);
+
+  @media (min-width: $tablet-width) {
+    width: 20px;
+  }
 }
 
 .change-quantity__quantity {
@@ -87,4 +93,35 @@
     font-size: 20px;
     line-height: 20px;
   }
+}
+
+.change-quantity:hover {
+  border-color: $border-color-4;
+}
+
+.change-quantity:hover .change-quantity__button::after {
+  background-color: $border-color-4;
+}
+
+.change-quantity:hover .change-quantity__button::after,
+.change-quantity:hover .change-quantity__button::before {
+  background-color: $border-color-4;
+}
+
+.change-quantity .change-quantity__button:hover::after,
+.change-quantity .change-quantity__button:hover::before {
+  background-color: $border-color-5;
+}
+
+.change-quantity:active {
+  border-color: $basic-blue;
+}
+
+.change-quantity:active .change-quantity__button::after {
+  background-color: $basic-blue;
+}
+
+.change-quantity:active .change-quantity__button::after,
+.change-quantity:active .change-quantity__button::before {
+  background-color: $basic-blue;
 }

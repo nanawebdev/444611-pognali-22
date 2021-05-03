@@ -1,32 +1,52 @@
-// const optionHeaders = document.querySelectorAll('.option__header')
+const optionHeaders = document.querySelectorAll('.option__header')
 
-// for (let i=0; i < optionHeaders.length; i++) {
-//   const optionHeader = optionHeaders[i]
+for (let i = 0; i < optionHeaders.length; i++) {
+  const optionHeader = optionHeaders[i]
 
-//   optionHeader.addEventListener('click', function() {
-//     optionHeader.parentElement.classList.toggle('option--expanded')
+  optionHeader.addEventListener('click', function () {
+    optionHeader.parentElement.classList.toggle('option--expanded')
+  })
+}
+
+// const openCountries = document.querySelector('.open-countries')
+
+
+// if (openCountries && countryFilterModal) {
+//   openCountries.addEventListener('click', function () {
+//     countryFilterModal.classList.toggle('country-filter__modal--open')
 //   })
 // }
 
-// const openCountries = document.querySelector('.open-countries')
-// const countryFilterModal = document.querySelector('.country-filter__modal')
+const countryToggler = document.querySelector('.country-toggler')
+const countryFilterModal = document.querySelector('.country-filter__modal')
 
-// openCountries.addEventListener('click', function() {
-//   countryFilterModal.classList.toggle('country-filter__modal--open')
-// })
+
+if (countryToggler && countryFilterModal) {
+  countryToggler.addEventListener('click', function () {
+    countryFilterModal.classList.toggle('country-filter__modal--open')
+  })
+}
+
+if(countryToggler) {
+  countryToggler.addEventListener('click', function () {
+    countryToggler.classList.toggle('country-toggler--opened')
+  })
+}
 
 const header = document.querySelector('.main-header')
 
-// window.addEventListener('scroll', function() {
+// window.addEventListener('scroll', function () {
 //   console.log("dd")
-//     header.classList.add('main-header--scroll')
+//   header.classList.add('main-header--scroll')
 // })
 
-// const closeCountries = document.querySelector('.close-countries')
+const closeCountries = document.querySelector('.close-countries')
 
-// closeCountries.addEventListener('click', function() {
-//   countryFilterModal.classList.remove('country-filter__modal--open')
-// })
+if(closeCountries){
+  closeCountries.addEventListener('click', function () {
+    countryFilterModal.classList.remove('country-filter__modal--open')
+  })
+}
 
 // Бизнес тарифы
 
@@ -34,19 +54,31 @@ const showBusinessRates = document.querySelector('.js-show-business-rates')
 const rateModal = document.querySelector('.rate__modal')
 const closeBusinessRates = document.querySelector('.js-close-business-rates')
 
+if(showBusinessRates && rateModal && closeBusinessRates) {
 
-showBusinessRates.addEventListener('click', function () {
-  rateModal.classList.add('rate__modal--open')
-})
+  showBusinessRates.addEventListener('click', function () {
+    rateModal.classList.add('rate__modal--open')
+  })
 
-closeBusinessRates.addEventListener('click', function () {
-  rateModal.classList.remove('rate__modal--open')
-})
+  closeBusinessRates.addEventListener('click', function () {
+    rateModal.classList.remove('rate__modal--open')
+  })
+}
 
 // Меню навигации
 
 const navToggler = document.querySelector('.toggle')
 
+
 navToggler.addEventListener('click', function () {
   header.classList.toggle('main-header--open')
 })
+
+const choseCountry = document.querySelector('.chose-country')
+const countries = document.querySelector('.countries')
+
+if(choseCountry && countries) {
+  choseCountry.addEventListener('click', function() {
+    countries.style.display="block"
+  })
+}

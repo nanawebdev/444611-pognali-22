@@ -42,6 +42,8 @@
 .calendar__button .calendar__icon {
   width: 15px;
   height: 21px;
+  fill: $basic-black;
+  opacity: 0.3;
 
   @media (min-width: $tablet-width) {
     width: 46px;
@@ -121,13 +123,14 @@
 }
 
 .calendar__cell {
+  position: relative;
   font-weight: 500;
   font-size: 14px;
   line-height: 18px;
   color: $basic-blue-light;
   display: flex;
   width: 32px;
-  height: 30px;
+  height: 31px;
   justify-content: center;
   align-items: center;
   background-color: $block-background-1;
@@ -175,11 +178,8 @@
   border-bottom: 1px solid $border-color-2;
 }
 
-.calendar__cell--today {
-  position: relative;
-}
-
-.calendar__cell--today::after {
+.calendar__cell::after {
+  display: none;
   position: absolute;
   content: "";
   top: -1px;
@@ -200,6 +200,10 @@
     width: 140px;
     height: 68px;
   }
+}
+// не работает
+.calendar__cell:hover .calendar__cell::after {
+  display: block;
 }
 
 .calendar__table {
@@ -242,4 +246,12 @@
     margin-top: 8px;
     // margin-left: 0;
   }
+}
+
+.calendar__button:hover .calendar__icon {
+  opacity: 0.5;
+}
+
+.calendar__button:active .calendar__icon {
+  opacity: 0.1;
 }

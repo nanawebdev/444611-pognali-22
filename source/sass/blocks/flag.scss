@@ -3,7 +3,7 @@
   width: 100%;
   display: flex;
   justify-content: center;
-  top: 257px;
+  top: 259px;
 }
 
 .flag {
@@ -12,7 +12,7 @@
   height: 24px;
 }
 
-.flag:last-child {
+.step-2 .flag {
   margin-right: 0;
 }
 
@@ -57,12 +57,14 @@
   height: 24px;
   position: absolute;
   z-index: 2;
-  top: 50%;
+  top: 86px;
   left: 25px;
 
   @media (min-width: $tablet-width) {
     width: 70px;
     height: 47px;
+    top: 16px;
+    left: 399px;
   }
 
   @media (min-width: $desktop-width) {

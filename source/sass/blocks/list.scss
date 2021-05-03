@@ -40,6 +40,14 @@
   padding-right: 25px;
   margin-bottom: 24px;
   padding-bottom: 26px;
+
+  &:hover {
+    border-color: $border-color-6;
+  }
+
+  &:active {
+    border-color: $basic-blue;
+  }
 }
 
 .list-wrapper__vehicles-list {

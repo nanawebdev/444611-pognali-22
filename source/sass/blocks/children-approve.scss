@@ -48,10 +48,10 @@
 }
 
 .children-approve__checkbox:checked + .children-approve::before {
-  background-image: url("./../../img/icon_check-mark.svg");
+  background-image: url("./../img/check-mark.png");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 17px 18px;
+  background-size: 26px 26px;
 }
 
 .children-approve__text {

@@ -29,8 +29,17 @@
   display: none;
 }
 
+.footer .logo--dark {
+  display: block;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
+}
+
 .footer .logo {
-  display: none;
+  // display: none;
 
   @media (min-width: $tablet-width) {
     display: inline;

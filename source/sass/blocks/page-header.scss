@@ -4,7 +4,7 @@
   display: flex;
   justify-content: space-between;
   padding-left: 25px;
-  padding-top: 39px;
+  padding-top: 35px;
   padding-bottom: 12px;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
@@ -128,8 +128,10 @@
 }
 
 .header-link {
+  text-decoration: none;
   display: none;
   color: $basic-white;
+  cursor: pointer;
 
   @media (min-width: $tablet-width) {
     display: block;
@@ -143,6 +145,14 @@
 
   @media (min-width: $desktop-width) {
     padding-top: 69px;
+  }
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }
 
