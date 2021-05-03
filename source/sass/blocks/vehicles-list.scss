@@ -80,10 +80,6 @@
   display: flex;
 }
 
-.vehicles-list__icon {
-  fill: $basic-blue-light;
-  opacity: 0.15;
-}
 
 // .companion__vehicles-list .vehicles-list__icon {
 //   color: $basic-blue-light;
@@ -92,8 +88,6 @@
 // }
 
 .companion__vehicles-list .vehicles-list__icon {
-  color: $basic-blue-light;
-  opacity: 0.15;
   display: block;
   width: 14px;
   height: 16px;
@@ -111,6 +105,27 @@
 
 .vehicles-list__item--active .vehicles-list__icon {
   opacity: 1;
+  fill: $basic-blue-light;
+
+  &:hover {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.vehicles-list__icon {
+  fill: $block-background-16;
+
+  &:hover {
+    fill: $block-background-17;
+  }
+
+  &:active {
+    opacity: 0, 1;
+  }
 }
 
 // .companion__vehicles-list .vehicles-list__icon--active {
@@ -197,4 +212,12 @@
     width: 22px;
     height: 22px;
   }
+}
+
+.suboptions-wrapper .vehicles-list__item:hover {
+  filter: drop-shadow(0 2px 6px rgba(22, 28, 53, 0.17));
+}
+
+.suboptions-wrapper .vehicles-list__item:active {
+  background-color: $block-background-5;
 }

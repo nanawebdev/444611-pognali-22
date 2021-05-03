@@ -110,7 +110,12 @@
   }
 
   &:hover span {
+    color: $basic-yellow;
     transform: translateY(-100%);
+  }
+
+  &:active span {
+    color: rgba($basic-yellow, 0.3);
   }
 
   @media (min-width: $desktop-width) {
@@ -123,3 +128,6 @@
   color: $special-blue-1;
 }
 
+.main-header--open .site-list__link {
+  transform: none;
+}

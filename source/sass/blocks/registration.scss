@@ -57,6 +57,14 @@
 
 .registration__link {
   color: $basic-yellow;
+
+  &:hover {
+    color: $special-orange;
+  }
+
+  &:active {
+    color: rgba($special-orange, 0.3);
+  }
 }
 
 .registration__email-input {

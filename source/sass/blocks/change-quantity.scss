@@ -51,12 +51,14 @@
 .change-quantity__button--minus {
   @media (min-width: $tablet-width) {
     padding-left: 29px;
+    padding-right: 29px;
   }
 }
 
 .change-quantity__button--plus {
   @media (min-width: $tablet-width) {
     padding-right: 29px;
+    padding-left: 29px;
   }
 }
 

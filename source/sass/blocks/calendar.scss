@@ -123,6 +123,7 @@
 }
 
 .calendar__cell {
+  position: relative;
   font-weight: 500;
   font-size: 14px;
   line-height: 18px;
@@ -177,11 +178,8 @@
   border-bottom: 1px solid $border-color-2;
 }
 
-.calendar__cell--today {
-  position: relative;
-}
-
-.calendar__cell--today::after {
+.calendar__cell::after {
+  display: none;
   position: absolute;
   content: "";
   top: -1px;
@@ -202,6 +200,10 @@
     width: 140px;
     height: 68px;
   }
+}
+// не работает
+.calendar__cell:hover .calendar__cell::after {
+  display: block;
 }
 
 .calendar__table {

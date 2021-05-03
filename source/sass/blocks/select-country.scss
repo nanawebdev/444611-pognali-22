@@ -315,7 +315,7 @@
     right: -28px;
     position: absolute;
     content: "";
-    height: 73px;
+    height: 82px;
     width: 1px;
     background-color: #e1e3e9;
   }
@@ -331,4 +331,8 @@
     width: 21px;
     height: 21px;
   }
+}
+
+.select-country.chose-country:hover {
+  border-color: $border-color-4;
 }

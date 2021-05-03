@@ -275,3 +275,19 @@
     margin-top: 8px;
   }
 }
+
+.feedback__action:hover .action__icon {
+  fill: $special-yellow-dark;
+}
+
+.feedback__action:active .action__icon {
+  opacity: 0.3;
+}
+
+.feedback__action:hover .action__item {
+  color: $special-yellow-dark;
+}
+
+.feedback__action:active .action__item {
+  color: rgba($special-yellow-dark, 0.3);
+}

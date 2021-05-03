@@ -39,10 +39,14 @@
   width: 14px;
   height: 14px;
   margin-right: 11px;
-  display: none;
+  // display: none;
 
   @media (min-width: $tablet-width) {
     width: 22px;
     height: 24px;
   }
+}
+
+.form-page .close-countries {
+  display: none;
 }

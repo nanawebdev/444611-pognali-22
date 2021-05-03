@@ -128,8 +128,10 @@
 }
 
 .header-link {
+  text-decoration: none;
   display: none;
   color: $basic-white;
+  cursor: pointer;
 
   @media (min-width: $tablet-width) {
     display: block;
@@ -143,6 +145,14 @@
 
   @media (min-width: $desktop-width) {
     padding-top: 69px;
+  }
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }
 

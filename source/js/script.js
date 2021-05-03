@@ -8,12 +8,28 @@ for (let i = 0; i < optionHeaders.length; i++) {
   })
 }
 
-const openCountries = document.querySelector('.open-countries')
+// const openCountries = document.querySelector('.open-countries')
+
+
+// if (openCountries && countryFilterModal) {
+//   openCountries.addEventListener('click', function () {
+//     countryFilterModal.classList.toggle('country-filter__modal--open')
+//   })
+// }
+
+const countryToggler = document.querySelector('.country-toggler')
 const countryFilterModal = document.querySelector('.country-filter__modal')
 
-if (openCountries && countryFilterModal) {
-  openCountries.addEventListener('click', function () {
+
+if (countryToggler && countryFilterModal) {
+  countryToggler.addEventListener('click', function () {
     countryFilterModal.classList.toggle('country-filter__modal--open')
+  })
+}
+
+if(countryToggler) {
+  countryToggler.addEventListener('click', function () {
+    countryToggler.classList.toggle('country-toggler--opened')
   })
 }
 
@@ -57,3 +73,12 @@ const navToggler = document.querySelector('.toggle')
 navToggler.addEventListener('click', function () {
   header.classList.toggle('main-header--open')
 })
+
+const choseCountry = document.querySelector('.chose-country')
+const countries = document.querySelector('.countries')
+
+if(choseCountry && countries) {
+  choseCountry.addEventListener('click', function() {
+    countries.style.display="block"
+  })
+}
