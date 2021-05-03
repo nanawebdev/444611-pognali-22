@@ -36,6 +36,8 @@
   display: flex;
   align-items: center;
   border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.3s;
 
   &--phone {
     background-color: $special-orange;
@@ -47,10 +49,10 @@
 
   &--email {
     background-color: $special-yellow-dark;
-  }
 
-  &:hover {
-    background-color: $special-orange;
+    &:hover {
+      background-color: $special-orange;
+    }
   }
 
   &--basic {
@@ -236,5 +238,40 @@
 .feedback .action {
   @media (min-width: $desktop-width) {
     margin-right: 111px;
+  }
+}
+
+.main-header .action__item {
+  display: block;
+  color: $special-blue-1;
+
+  @media (min-width: $tablet-width) {
+    font-size: 28px;
+    line-height: 28px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.main-header--open .action__wrapper--basic {
+  @media (min-width: $tablet-width) {
+    width: 68px;
+    height: 68px;
+  }
+}
+
+.main-header--open .action__icon {
+  @media (min-width: $tablet-width) {
+    width: 68px;
+    height: 68px;
+  }
+}
+
+.main-header--open .action__item {
+  @media (min-width: $tablet-width) {
+    margin-left: 23px;
+    margin-top: 8px;
   }
 }

@@ -11,6 +11,11 @@
 .step-3 .add-plan__text {
   grid-column: 1 / -1;
   grid-row: 2 / 3;
+  width: 218px;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+  }
 }
 
 .step-3 .add-plan__purpose {

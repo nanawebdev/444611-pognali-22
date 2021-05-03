@@ -2,11 +2,11 @@
   background-color: $block-background-4;
   padding-left: 25px;
   padding-right: 25px;
-  padding-top: 41px;
+  padding-top: 34px;
   padding-bottom: 39px;
   background-image: url("./../../img/promo-mobile-back.png");
   background-repeat: no-repeat;
-  background-position: 0 -53px;
+  background-position: 0 -60px;
   background-size: 320px auto;
 
 
@@ -78,7 +78,7 @@
 
 .promo__wrapper {
   @media (min-width: $tablet-width) {
-    height: 747px;
+    height: 745px;
   }
 
   @media (min-width: $desktop-width) {

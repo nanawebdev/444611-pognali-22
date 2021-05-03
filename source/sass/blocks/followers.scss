@@ -5,9 +5,11 @@
 .followers__icon {
   width: 14px;
   height: 14px;
+  margin-top: 5px;
 
   @media (min-width: $tablet-width) {
     width: 24px;
     height: 24px;
+    margin-top: 7px;
   }
 }

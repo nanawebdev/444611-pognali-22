@@ -89,6 +89,14 @@
   }
 }
 
+.rate .action:hover {
+  opacity: 0.7;
+}
+
+.rate .action:active {
+  opacity: 0.3;
+}
+
 .rate__cell.rate__three {
   padding-top: 3px;
 }

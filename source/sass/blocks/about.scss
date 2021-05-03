@@ -38,7 +38,7 @@
       url("./../../img/servis-back-tablet-item1.png");
     background-position: 384px 50px, 40px 0;
     background-repeat: no-repeat, no-repeat;
-    height: 653px;
+    height: 684px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -156,8 +156,8 @@
 
 .about__directions {
   background-color: $block-background-1;
-  padding: 101px 25px 36px 25px;
-  margin-top: -30px;
+  padding: 101px 25px 34px 25px;
+  margin-top: -60px;
   position: relative;
   z-index: $z-about-directions;
   border-bottom-left-radius: 30px;
@@ -167,9 +167,9 @@
     background-image: url("./../../img/directions-back-tablet-item1.png"),
       url("./../../img/directions-back-tablet-item2.png");
     background-repeat: no-repeat, no-repeat;
-    background-position: 440px 109px, 32px 433px;
+    background-position: 440px 140px, 40px 466px;
     padding: 0 74px;
-    padding-top: 100px;
+    padding-top: 133px;
     padding-bottom: 80px;
     border-bottom-left-radius: 60px;
     border-bottom-right-radius: 60px;
@@ -224,7 +224,7 @@
   margin-bottom: 60px;
 
   @media (min-width: $tablet-width) {
-    margin-top: 60px;
+    margin-top: 58px;
   }
 
   @media (min-width: $desktop-width) {
@@ -301,12 +301,17 @@
 .about__users .about__text {
   color: $basic-white;
   width: 217px;
-  margin-bottom: 24px;
+  padding-top: 19px;
+  margin: 0;
 
   @media (min-width: $tablet-width) {
     padding-top: 27px;
     width: 429px;
   }
+}
+
+.about__users .about__text:nth-of-type(2) {
+  padding-top: 21px;
 }
 
 .about__users .about__text:first-of-type {
@@ -331,6 +336,14 @@
 .about__users .about__title {
   @media (min-width: $tablet-width) {
     margin-bottom: 30px;
+  }
+}
+
+.about__users .about__head {
+  padding-left: 25px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 0;
   }
 }
 

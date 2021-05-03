@@ -14,6 +14,10 @@
   display: none;
 }
 
+.step-3 .step-buttons {
+  padding-right: 20px;
+}
+
 @media (min-width: $tablet-width) {
   .step-buttons {
     display: flex;
@@ -78,4 +82,9 @@
     display: flex;
     justify-content: flex-end;
   }
+}
+
+.step-1 .step-button__icon {
+  position: static;
+  margin-left: auto;
 }

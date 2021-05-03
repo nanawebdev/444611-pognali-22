@@ -23,18 +23,18 @@
   grid-template-columns: 1fr min-content;
   grid-template-rows: 1fr;
   column-gap: 10px;
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
-  padding-top: 24px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  padding-top: 22px;
   padding-left: 24px;
-  padding-bottom: 24px;
+  padding-bottom: 32px;
 
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: column;
     padding-top: 31px;
     padding-left: 32px;
-    padding-bottom: 21px;
+    padding-bottom: 22px;
     position: relative;
   }
 
@@ -48,9 +48,9 @@
   }
 }
 
-.steps-list__item:nth-child(2n) {
-  padding-right: 10px;
-}
+// .steps-list__item:nth-child(2n) {
+// padding-right: 10px;
+// }
 
 .steps-list__number {
   display: flex;
@@ -79,7 +79,7 @@
   background-color: $special-orange;
 
   @media (min-width: $tablet-width) {
-    border-top-left-radius: 18px;
+    border-top-left-radius: 20px;
     border-top-right-radius: 0;
     margin-right: -20px;
   }
@@ -93,13 +93,13 @@
 
 .steps-list__item:nth-child(2) {
   background-color: $block-background-7;
-  margin-top: -5px;
+  margin-top: -10px;
 
   @media (min-width: $tablet-width) {
     margin-top: 0;
     margin-left: 0;
-    border-top-right-radius: 18px;
-    border-top-left-radius: 18px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
     z-index: $z-steps;
   }
 
@@ -115,12 +115,12 @@
 
 .steps-list__item:nth-child(3) {
   background-color: $special-yellow-dark;
-  margin-top: -5px;
+  margin-top: -10px;
 
   @media (min-width: $tablet-width) {
     border-top-right-radius: 0;
     border-top-left-radius: 0;
-    border-bottom-left-radius: 18px;
+    border-bottom-left-radius: 20px;
     margin-top: 0;
     margin-right: -20px;
   }
@@ -137,15 +137,16 @@
 
 .steps-list__item:last-child {
   background-color: $basic-yellow;
-  border-bottom-left-radius: 8px;
-  border-bottom-right-radius: 8px;
-  margin-top: -5px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  margin-top: -10px;
+  padding-bottom: 22px;
 
   @media (min-width: $tablet-width) {
     border-top-left-radius: 0;
-    border-bottom-left-radius: 18px;
+    border-bottom-left-radius: 20px;
     border-top-right-radius: 0;
-    border-bottom-right-radius: 18px;
+    border-bottom-right-radius: 20px;
     margin-top: 0;
     z-index: $z-steps;
   }

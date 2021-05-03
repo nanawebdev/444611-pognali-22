@@ -65,7 +65,7 @@
 
 .select-country__flag {
   padding: 0 9px;
-  height: 40px;
+  height: 43px;
   border: 1px solid $border-color-1;
   border-radius: 4px;
   display: flex;
@@ -133,8 +133,8 @@
   border-radius: 50%;
   background-color: transparent;
   border: 1px solid $border-color-1;
-  right: 0;
-  top: 15px;
+  right: 48px;
+  top: 17px;
   box-sizing: border-box;
 
   @media (min-width: $tablet-width) {
@@ -192,6 +192,7 @@
   background-color: $block-background-1;
   border-color: $block-background-1;
   position: relative;
+  padding-right: 13px;
 
   @media (min-width: $tablet-width) {
     padding-right: 24px;
@@ -232,7 +233,7 @@
 }
 
 .select-country__flag .select-country__delete {
-  left: 100%;
+  right: -10px;
   top: -10px;
 
   @media (min-width: $tablet-width) {
@@ -246,16 +247,21 @@
   }
 }
 
-// .select-country.chose-country .select-country__delete:nth-of-type(1) {
-//   display: none;
-// }
+.chose-country .select-country__delete {
+  right: -10px;
+  top: -10px;
+}
 
 .select-country.chose-country .select-country__delete,
 .select-country.add-country .select-country__delete {
   @media (min-width: $tablet-width) {
     position: absolute;
-    right: -168px;
+    right: -183px;
     top: 21px;
+  }
+
+  @media (min-width: $desktop-width) {
+    right: -270px;
   }
 }
 
@@ -286,7 +292,8 @@
   height: 8px;
   border-radius: 50%;
   background-color: $basic-black;
-  right: 0;
+  right: -5px;
+  z-index: 1;
   top: 15px;
 
   @media (min-width: $tablet-width) {

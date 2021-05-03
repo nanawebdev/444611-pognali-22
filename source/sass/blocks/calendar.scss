@@ -42,6 +42,8 @@
 .calendar__button .calendar__icon {
   width: 15px;
   height: 21px;
+  fill: $basic-black;
+  opacity: 0.3;
 
   @media (min-width: $tablet-width) {
     width: 46px;
@@ -127,7 +129,7 @@
   color: $basic-blue-light;
   display: flex;
   width: 32px;
-  height: 30px;
+  height: 31px;
   justify-content: center;
   align-items: center;
   background-color: $block-background-1;
@@ -242,4 +244,12 @@
     margin-top: 8px;
     // margin-left: 0;
   }
+}
+
+.calendar__button:hover .calendar__icon {
+  opacity: 0.5;
+}
+
+.calendar__button:active .calendar__icon {
+  opacity: 0.1;
 }

@@ -22,10 +22,12 @@
 
 .main-header--no-js .contacts-list,
 .main-header--open .contacts-list {
+  margin-top: 50px;
+
   @media (max-width: $tablet-width) {
     display: flex;
     flex-direction: column;
-    margin-top: 51px;
+    margin-top: 126px;
   }
 }
 

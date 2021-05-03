@@ -32,6 +32,8 @@
 
 .form__subtitle-wrapper .pagination {
   display: flex;
+  margin-top: 10px;
+  margin-left: 10px;
 
   @media (min-width: $tablet-width) {
     padding-top: 14px;
@@ -49,7 +51,8 @@
 }
 
 .form__subtitle-wrapper .pagination__item {
-  margin-right: 21px;
+  // margin-right: 21px;
+  margin-right: 16px;
 
   @media (min-width: $tablet-width) {
     margin-right: 29px;

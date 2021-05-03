@@ -7,6 +7,8 @@
   line-height: 30px;
   border-radius: 25px;
   width: 100%;
+  cursor: pointer;
+  transition: all 0.3s;
 
   &--special {
     background-color: transparent;
@@ -40,7 +42,7 @@
   font-size: 18px;
   line-height: 18px;
   position: relative;
-  height: 61px;
+  min-height: 62px;
 }
 
 // .button--transparent::after,
@@ -53,7 +55,13 @@
 //   width: 13px;
 //   height: 13px;
 //   background-repeat: no-repeat;
-// }
+// } вместо этого, код ниже!
+
+.button__icon {
+  width: 13px;
+  height: 13px;
+  margin-left: auto;
+}
 
 .form-page__user .user__button {
   display: flex;
@@ -120,6 +128,7 @@
     border-radius: 20px;
     width: 276px;
     padding-left: 32px;
+    padding-right: 23px;
   }
 
   @media (min-width: $desktop-width) {
@@ -127,12 +136,12 @@
   }
 }
 
-.about__service .button--square::after {
-  @media (min-width: $tablet-width) {
-    top: 34px;
-    right: 33px;
-  }
-}
+// .about__service .button--square::after {
+//   @media (min-width: $tablet-width) {
+//     top: 34px;
+//     right: 33px;
+//   }
+// }
 
 .about__directions .button--square,
 .about__users .button--square {
@@ -143,13 +152,19 @@
   align-items: center;
   padding-left: 23px;
   padding-top: 3px;
+  padding-right: 23px;
+
+  @media (min-width: $tablet-width) {
+    padding-right: 31px;
+  }
 }
 
 .about__directions .button--square {
   @media (min-width: $tablet-width) {
     margin-top: 45px;
-    padding-top: 44px;
-    padding-bottom: 38px;
+    padding-top: 31px;
+    padding-bottom: 27px;
+
     padding-left: 33px;
     font-size: 24px;
     line-height: 24px;
@@ -199,6 +214,10 @@
     line-height: 24px;
     padding-left: 40px;
   }
+}
+
+.registration .button__icon {
+  margin: 0 auto;
 }
 
 .promo__nav .button {
@@ -323,6 +342,8 @@
 }
 
 .step-1 .button {
+  padding-right: 23px;
+
   @media (min-width: $tablet-width) {
     margin-top: 27px;
     text-transform: none;
@@ -394,4 +415,35 @@
     margin-right: -5px;
     padding-top: 8px;
   }
+}
+
+.button--square:hover {
+  background-color: $special-yellow-dark;
+}
+
+.button--square:active {
+  color: rgba($basic-blue-light, 0.3);
+}
+
+.button--square:active .button__icon {
+  opacity: 0.3;
+}
+
+.button--transparent:hover {
+  background-color: $special-blue-1;
+  color: $basic-white;
+}
+
+.button--transparent:hover .button__icon {
+  fill: $basic-white;
+  opacity: 1;
+}
+
+.button--transparent:active .button__icon {
+  fill: $basic-white;
+  opacity: 0.3;
+}
+
+.button--transparent:active {
+  color: rgba($basic-white, 0.3);
 }
