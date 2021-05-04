@@ -75,10 +75,10 @@ navToggler.addEventListener('click', function () {
 })
 
 const choseCountry = document.querySelector('.chose-country')
-const countries = document.querySelector('.countries')
+const countriesWrapper = document.querySelector('.countries-wrapper')
 
-if(choseCountry && countries) {
+if(choseCountry && countriesWrapper) {
   choseCountry.addEventListener('click', function() {
-    countries.style.display="block"
+    countriesWrapper.classList.toggle('countries-wrapper--open')
   })
 }

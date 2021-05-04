@@ -78,17 +78,17 @@
     <ul class="site-list">
       <li class="site-list__item">
         <a href="./index.html" class="site-list__link">
-          <span data-text="О сервисе">О сервисе</span>
+          <span data-text="О сервисе" class="site-list__text">О сервисе</span>
         </a>
       </li>
       <li class="site-list__item">
         <a href="#" class="site-list__link">
-          <span data-text="Направления">Направления</span>
+          <span data-text="Направления" class="site-list__text">Направления</span>
         </a>
       </li>
       <li class="site-list__item">
         <a href="./catalog.html" class="site-list__link">
-          <span data-text="Попутчики">Попутчики</span>
+          <span data-text="Попутчики" class="site-list__text">Попутчики</span>
         </a>
       </li>
     </ul>
@@ -215,7 +215,10 @@
               srcset="./img/demin-desktop@2x.webp 2x, ./img/demin-desktop.webp 1x">
 
             <source media="(min-width: 1440px)" srcset="./img/demin-desktop@2x.jpg 2x, ./img/demin-desktop.jpg 1x">
-            <img class="user__avatar" src="./img/demin-desktop.jpg" alt="аватар пользователя">
+            <!-- <div class="user__avatar-wrapper"> -->
+              <img class="user__avatar" src="./img/demin-desktop.jpg" alt="аватар пользователя">
+            <!-- </div> -->
+
           </picture>
 
         </div>
@@ -624,6 +627,10 @@
                 <use xlink:href="img/sprite.svg#country-arrow"></use>
               </svg>
 
+              <svg class="select-country__icon select-country__close-icon" width="9" height="9">
+                <use xlink:href="img/sprite.svg#delete"></use>
+              </svg>
+
               <svg class="select-country__arrow-icon" width="8" height="11">
                 <use xlink:href="img/sprite.svg#country-full-arrow"></use>
               </svg>
@@ -633,7 +640,7 @@
               <div class="countries__upper">
                 <ul class="countries__alphabet alphabet">
                   <li class="alphabet__symbol symbol symbol--selected">
-                    <a class="symbol__link" href="#">A</a>
+                    <a class="symbol__link symbol__link--selected" href="#">A</a>
                     <ul class="symbol__results">
                       <li class="symbol__title">А</li>
                       <li class="symbol__result"><a class="symbol__result-link" href="#">Афганистан</a></li>
@@ -1017,7 +1024,7 @@
 
 
           <div class="step-buttons">
-            <button type="button" class="button step-button">
+            <button type="button" class="button step-button step-button--next">
               <span>Следующий шаг</span>
 
               <svg class="step-button__icon" width="11" height="14">
@@ -1026,7 +1033,7 @@
 
             </button>
 
-            <button type="button" class="button step-button">
+            <button type="button" class="button step-button step-button--previous">
               <span>На шаг назад</span>
               <svg class="step-button__icon" width="11" height="14">
                 <use xlink:href="img/sprite.svg#button-arrow"></use>
@@ -1075,8 +1082,7 @@
           </picture>
 
           <textarea class="add-plan__input" aria-label="Поле для описания ваших планов на отпуск"
-            placeholder="План действий">
-              </textarea>
+            placeholder="План действий"></textarea>
 
           <div class="add-plan__purpose">Чехия</div>
 
@@ -1093,11 +1099,10 @@
           </picture>
 
           <textarea class="add-plan__input" aria-label="Поле для описания ваших планов на отпуск"
-            placeholder="План действий">Пить пиво и лазить по старым замкам, наслаждаться архитектурой и вот это все.
-              </textarea>
+            placeholder="План действий">Пить пиво и лазить по старым замкам, наслаждаться архитектурой и вот это все.</textarea>
 
           <div class="step-buttons">
-            <button type="button" class="button step-button">
+            <button type="button" class="button step-button step-button--next">
               <span>Отправить</span>
 
               <svg class="step-button__icon" width="11" height="14">
@@ -1106,7 +1111,7 @@
 
             </button>
 
-            <button type="button" class="button step-button">
+            <button type="button" class="button step-button step-button--previous">
               <span>На шаг назад</span>
               <svg class="step-button__icon" width="11" height="14">
                 <use xlink:href="img/sprite.svg#button-arrow"></use>

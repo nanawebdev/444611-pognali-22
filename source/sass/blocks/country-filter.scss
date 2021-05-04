@@ -109,6 +109,14 @@
   @media (min-width: $desktop-width) {
     margin-right: 33px;
   }
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 1;
+  }
 }
 
 .country-filter__head-item--current {

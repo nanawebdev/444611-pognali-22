@@ -136,10 +136,12 @@
   background-color: $block-background-1;
   border-right: 1px solid $border-color-2;
   border-top: 1px solid $border-color-2;
+  cursor: pointer;
 
   &--disabled {
     color: rgba($special-grey, 0.3);
     background-color: $basic-white;
+    cursor: auto;
 
     @media (min-width: $tablet-width) {
       font-size: 18px;
@@ -187,6 +189,7 @@
   width: 28px;
   height: 28px;
   border: 2px solid $special-sealer;
+  z-index: 1;
 
   @media (min-width: $tablet-width) {
     width: 72px;
@@ -202,8 +205,12 @@
   }
 }
 // не работает
-.calendar__cell:hover .calendar__cell::after {
+.calendar__cell:hover::after {
   display: block;
+}
+
+.calendar__cell--disabled:hover::after {
+  display: none;
 }
 
 .calendar__table {

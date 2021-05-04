@@ -30,3 +30,11 @@
 //     display: flex;
 //   }
 // }
+
+.countries-wrapper--open .countries {
+  display: block;
+}
+
+.countries-wrapper--open {
+  position: relative;
+}

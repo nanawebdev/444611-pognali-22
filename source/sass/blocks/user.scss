@@ -10,6 +10,25 @@
     width: 285px;
     border-radius: 20px;
   }
+
+  &:hover {
+    filter: drop-shadow(0 4px 9px rgba(0, 0, 0, 0.16));
+  }
+}
+
+.main-page .user__avatar-wrapper {
+  overflow: hidden;
+  width: 270px;
+  height: 270px;
+
+  @media (min-width: $tablet-width) {
+    width: 285px;
+    height: 285px;
+  }
+}
+
+.user:hover .user__avatar {
+  transform: scale(1.2);
 }
 
 .user__information {

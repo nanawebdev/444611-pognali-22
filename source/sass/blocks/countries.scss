@@ -42,54 +42,25 @@
 }
 
 .form-page .countries {
+  z-index: $z-modal;
   width: 220px;
-  position: relative;
+  position: absolute;
   background-color: $basic-white;
   padding: 0;
   box-shadow: 0 2px 16px rgba(212, 217, 235, 0.25);
+  top: 40px;
 
   @media (min-width: $tablet-width) {
+    // position: relative;
     border-radius: 0;
     padding-left: 27px;
     width: auto;
     box-shadow: 0 8px 16px rgba(54, 80, 148, 0.18);
+    top: 70px;
   }
 
   @media (min-width: $desktop-width) {
     width: 730px;
-    top: -15px;
-  }
-}
-
-.form-page .countries::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 183px;
-  height: 100%;
-  width: 1px;
-  background-color: rgba($border-color-2, 0.5);
-
-  @media (min-width: $desktop-width) {
-    right: 281px;
-  }
-}
-
-
-.form-page .alphabet {
-  margin: 0;
-  width: 220px;
-
-  @media (min-width: $tablet-width) {
-    width: 262px;
-    margin-right: 80px;
-    margin-bottom: 35px;
-    margin-top: 35px;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 362px;
-    border: none;
-    box-shadow: none;
+    top: 69px;
   }
 }

@@ -18,6 +18,15 @@
     font-size: 17px;
     line-height: 30px;
   }
+
+  &:hover {
+    background-color: $special-yellow-dark;
+  }
+
+  &:active {
+    background-color: $special-yellow-dark;
+    color: rgba($basic-blue, 0.3);
+  }
 }
 
 .button--transparent {
@@ -409,6 +418,15 @@
 
   @media (min-width: $desktop-width) {
     margin-top: 29px;
+  }
+
+  &:hover {
+    filter: drop-shadow(0 3px 6px rgba(0, 0, 0, 0.14));
+  }
+
+  &:active {
+    background-color: $border-color-3;
+    color: rgba($basic-blue, 0.3);
   }
 }
 

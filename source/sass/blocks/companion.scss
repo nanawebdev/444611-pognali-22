@@ -24,6 +24,22 @@
     margin-bottom: 0;
     padding-left: 8px;
   }
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.companion__name:hover + .companion__online {
+  opacity: 0.6;
+}
+
+.companion__name:active + .companion__online {
+  opacity: 0.3;
 }
 
 .companion {
@@ -51,6 +67,10 @@
     border-radius: 20px;
     overflow: hidden;
   }
+
+  &:hover {
+    filter: drop-shadow(0 4px 9px rgba(0, 0, 0, 0.16));
+  }
 }
 
 .companions {
@@ -62,6 +82,7 @@
   width: 70px;
   height: 70px;
   margin-bottom: 15px;
+  overflow: hidden;
 
   @media (min-width: $tablet-width) {
     border-radius: 20px;
@@ -127,4 +148,8 @@
     font-size: 20px;
     line-height: 23px;
   }
+}
+
+.companion:hover .companion__image {
+  transform: scale(1.2);
 }

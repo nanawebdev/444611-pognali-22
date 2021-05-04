@@ -112,6 +112,15 @@
   @media (min-width: $desktop-width) {
     margin-top: 57px;
   }
+
+  &:hover {
+    background-color: $block-background-1;
+  }
+
+  &:active {
+    background-color: $block-background-1;
+    color: rgba($basic-blue-light, 0.3);
+  }
 }
 
 .rate__modal {
