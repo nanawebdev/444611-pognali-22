@@ -94,12 +94,11 @@
   opacity: 0.1;
 }
 
-
 .like__wrapper.like__wrapper--active:hover {
   background-color: $block-background-21;
 }
 
-.like__wrapper.like__wrapper--active:hover .like__icon  {
+.like__wrapper.like__wrapper--active:hover .like__icon {
   opacity: 1;
 }
 
@@ -111,4 +110,3 @@
 .like__wrapper.like__wrapper--active:active .like__icon {
   opacity: 0.3;
 }
-
