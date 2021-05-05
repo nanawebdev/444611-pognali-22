@@ -74,3 +74,12 @@
     left: 339px;
   }
 }
+
+.step-3 .flag__container.flag__container--with-tooltip {
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    width: 70px;
+    height: 47px;
+  }
+}

@@ -7,6 +7,11 @@
   <link rel="stylesheet" href="css/style.min.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="./img/favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="./img/favicons/apple.png">
+  <link rel="manifest" href="manifest.webmanifest">
+
   <link rel="preload" href="./fonts/bloggersans-bold.woff" as="font" type="font/woff" crossorigin>
   <link rel="preload" href="./fonts/bloggersans-bold.woff2" as="font" type="font/woff2" crossorigin>
 
@@ -37,6 +42,7 @@
 
 <body class="form-page">
 
+  <!-- <div class="container"> -->
   <header class="form-page__main-header main-header">
 
     <div class="logo logo--light">
@@ -187,8 +193,11 @@
         </a>
       </li>
     </ul>
-
+    <!-- </div> -->
   </header>
+
+
+  <!-- <div class="container"> -->
 
   <main class="form">
     <form action="https://echo.htmlacademy.ru" method="post">
@@ -216,7 +225,7 @@
 
             <source media="(min-width: 1440px)" srcset="./img/demin-desktop@2x.jpg 2x, ./img/demin-desktop.jpg 1x">
             <!-- <div class="user__avatar-wrapper"> -->
-              <img class="user__avatar" src="./img/demin-desktop.jpg" alt="аватар пользователя">
+            <img class="user__avatar" src="./img/demin-desktop.jpg" alt="аватар пользователя">
             <!-- </div> -->
 
           </picture>
@@ -283,20 +292,45 @@
                 <use xlink:href="img/sprite.svg#plane"></use>
               </svg>
 
+              <!-- <div class="tooltip-wrapper">
+                <div class="tooltip">
+                  <span>Авиаперелет</span>
+                  <svg class="tooltip__icon" width="13" height="10">
+                    <use xlink:href="img/sprite.svg#tooltip-icon"></use>
+                  </svg>
+                </div>
+              </div> -->
+
             </li>
             <li class="vehicles-list__item vehicles-list__item--active">
 
               <svg width="18" height="21" class="vehicles-list__icon">
                 <use xlink:href="img/sprite.svg#bus"></use>
               </svg>
+              <!-- <div class="tooltip-wrapper">
+                <div class="tooltip">
+                  <span>Автотранспорт</span>
 
+                  <svg class="tooltip__icon" width="13" height="10">
+                    <use xlink:href="img/sprite.svg#tooltip-icon"></use>
+                  </svg>
+                </div>
+              </div> -->
             </li>
             <li class="vehicles-list__item">
 
               <svg width="25" height="24" class="vehicles-list__icon">
                 <use xlink:href="img/sprite.svg#bicycle"></use>
               </svg>
+              <!-- <div class="tooltip-wrapper">
+                <div class="tooltip">
+                  <span>Велосипед</span>
 
+                  <svg class="tooltip__icon" width="13" height="10">
+                    <use xlink:href="img/sprite.svg#tooltip-icon"></use>
+                  </svg>
+                </div>
+              </div> -->
             </li>
 
             <li class="vehicles-list__item vehicles-list__item--active">
@@ -304,7 +338,15 @@
               <svg width="21" height="24" class="vehicles-list__icon">
                 <use xlink:href="img/sprite.svg#run"></use>
               </svg>
+              <!-- <div class="tooltip-wrapper">
+                <div class="tooltip">
+                  <span>Пешком</span>
 
+                  <svg class="tooltip__icon" width="13" height="10">
+                    <use xlink:href="img/sprite.svg#tooltip-icon"></use>
+                  </svg>
+                </div>
+              </div> -->
             </li>
           </ul>
         </div>
@@ -566,6 +608,15 @@
                 srcset="./img/flag-form-mobile-Bosnia-and-Herzegovina@2x.png 2x" alt="Флаг">
             </picture>
 
+            <!-- <div class="tooltip-wrapper">
+              <div class="tooltip">
+                <span>Босния и Герцеговина</span>
+                <svg class="tooltip__icon" width="13" height="10">
+                  <use xlink:href="img/sprite.svg#tooltip-icon"></use>
+                </svg>
+              </div>
+            </div> -->
+
             <button class="select-country__delete">
               <svg class="select-country__delete-icon" width="21" height="21">
                 <use xlink:href="img/sprite.svg#delete"></use>
@@ -602,6 +653,15 @@
               <img class="flag" src="./img/flag-form-czech-mobile.png" srcset="./img/flag-form-czech-mobile@2x.png 2x"
                 alt="Флаг">
             </picture>
+<!--
+            <div class="tooltip-wrapper">
+              <div class="tooltip">
+                <span>Чехия</span>
+                <svg class="tooltip__icon" width="13" height="10">
+                  <use xlink:href="img/sprite.svg#tooltip-icon"></use>
+                </svg>
+              </div>
+            </div> -->
 
             <button class="select-country__delete">
               <svg class="select-country__delete-icon" width="21" height="21">
@@ -993,7 +1053,8 @@
                   <li class="symbol-results__result"><a class="symbol-results__link" href="#">Албания</a></li>
                   <li class="symbol-results__result"><a class="symbol-results__link" href="#">Алгерия</a></li>
                   <li class="symbol-results__result"><a class="symbol-results__link" href="#">Андорра</a></li>
-                  <li class="symbol-results__result"><a class="symbol-results__link" href="#">Антигуа и Барбуда</a></li>
+                  <li class="symbol-results__result"><a class="symbol-results__link" href="#">Антигуа и Барбуда</a>
+                  </li>
                   <li class="symbol-results__result"><a class="symbol-results__link" href="#">Аргентина</a></li>
                   <li class="symbol-results__result"><a class="symbol-results__link" href="#">Армения</a></li>
                   <li class="symbol-results__result"><a class="symbol-results__link" href="#">Австралия</a></li>
@@ -1068,6 +1129,7 @@
             <div class="add-plan__item"></div>
             <span>Босния и Герцеговина</span>
           </div>
+          <!-- <div class="flag__container flag__container--with-tooltip"> -->
 
           <picture>
             <source type="image/webp" media="(min-width: 768px)"
@@ -1081,22 +1143,45 @@
               srcset="./img/flag-form-mobile-Bosnia-and-Herzegovina@2x.png 2x" alt="Флаг">
           </picture>
 
+          <!-- <div class="tooltip-wrapper">
+            <div class="tooltip">
+              <span>Босния и Герцеговина</span>
+              <svg class="tooltip__icon" width="13" height="10">
+                <use xlink:href="img/sprite.svg#tooltip-icon"></use>
+              </svg>
+            </div>
+          </div> -->
+          <!-- </div> -->
+
           <textarea class="add-plan__input" aria-label="Поле для описания ваших планов на отпуск"
             placeholder="План действий"></textarea>
 
           <div class="add-plan__purpose">Чехия</div>
 
-          <picture>
-            <source type="image/webp" media="(min-width: 768px)"
-              srcset="./img/flag-form-tablet-Czech.webp 1x, ./img/flag-form-tablet-Czech@2x.webp 2x">
-            <source type="image/webp"
-              srcset="./img/flag-form-czech-mobile@2x.webp 2x, ./img/flag-form-czech-mobile.webp 1x">
+          <!-- <div class="tooltip"> -->
+            <picture>
+              <source type="image/webp" media="(min-width: 768px)"
+                srcset="./img/flag-form-tablet-Czech.webp 1x, ./img/flag-form-tablet-Czech@2x.webp 2x">
+              <source type="image/webp"
+                srcset="./img/flag-form-czech-mobile@2x.webp 2x, ./img/flag-form-czech-mobile.webp 1x">
 
-            <source media="(min-width: 768px)"
-              srcset="./img/flag-form-tablet-Czech.png 1x, ./img/flag-form-tablet-Czech@2x.png 2x">
-            <img class="flag" src="./img/flag-form-czech-mobile.png" srcset="./img/flag-form-czech-mobile@2x.png 2x"
-              alt="Флаг">
-          </picture>
+              <source media="(min-width: 768px)"
+                srcset="./img/flag-form-tablet-Czech.png 1x, ./img/flag-form-tablet-Czech@2x.png 2x">
+              <img class="flag" src="./img/flag-form-czech-mobile.png" srcset="./img/flag-form-czech-mobile@2x.png 2x"
+                alt="Флаг">
+            </picture>
+
+            <!-- <div class="tooltip-wrapper">
+              <div class="tooltip">
+                <span>Чехия</span>
+                <svg class="tooltip__icon" width="13" height="10">
+                  <use xlink:href="img/sprite.svg#tooltip-icon"></use>
+                </svg>
+              </div>
+            </div>
+<!-- -->
+              <!-- <div class="tooltip__text">Чехия</div>
+            </div> -->
 
           <textarea class="add-plan__input" aria-label="Поле для описания ваших планов на отпуск"
             placeholder="План действий">Пить пиво и лазить по старым замкам, наслаждаться архитектурой и вот это все.</textarea>
@@ -1125,6 +1210,9 @@
     </form>
 
   </main>
+  <!-- </div> -->
+
+  <!-- <div class="container"> -->
 
   <footer class="footer">
 
