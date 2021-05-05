@@ -34,6 +34,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 
   @media (min-width: $tablet-width) {
     width: 32px;
@@ -47,11 +48,25 @@
   }
 }
 
+.children-approve__checkbox:hover + .children-approve::before {
+  border-color: $border-color-4;
+}
+
+.children-approve__checkbox:active + .children-approve::before {
+  background-color: $block-background-19;
+  border-color: $block-background-19;
+  background-image: url("./../check-mark-hover.svg");
+}
+
 .children-approve__checkbox:checked + .children-approve::before {
-  background-image: url("./../img/check-mark.png");
+  background-image: url("./../img/svg/check-mark.svg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: 26px 26px;
+
+  @media (min-width: $tablet-width) {
+    background-size: 36px 36px;
+  }
 }
 
 .children-approve__text {

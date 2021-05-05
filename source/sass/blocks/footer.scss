@@ -1,5 +1,5 @@
 .footer {
-  padding: 38px 25px 19px 25px;
+  padding: 34px 25px 19px 25px;
   display: flex;
   flex-direction: column;
   border-top-left-radius: 30px;
@@ -20,7 +20,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 47px 60px 43px 58px;
+    padding: 43px 60px 43px 58px;
     margin-top: -153px;
     justify-content: flex-start;
   }
@@ -35,12 +35,17 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: -50px;
+    margin-top: -59px;
   }
 }
 
 .catalog-page .footer {
-  margin-top: 0;
+  margin-top: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: -2px;
+    padding: 33px 40px 32px 38px;
+  }
 }
 
 .footer__logo {
@@ -48,5 +53,13 @@
 
   @media (min-width: $tablet-width) {
     padding-bottom: 0;
+  }
+}
+
+.form-page__footer .socials-list {
+  margin-top: 37px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 14px;
   }
 }

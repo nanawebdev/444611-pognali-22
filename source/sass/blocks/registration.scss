@@ -89,6 +89,29 @@
     margin-right: 0;
     padding-left: 37px;
   }
+
+  &:hover {
+    background-color: $block-background-1;
+  }
+
+  &:active {
+    background-color: transparent;
+  }
+
+  &:focus {
+    border: 4px solid $basic-white;
+    border-right: none;
+    background-color: transparent;
+    outline: none;
+    box-sizing: border-box;
+    color: white;
+    max-height: 80px;
+  }
+}
+
+.registration__email-input--error {
+  background-color: $basic-white;
+  color: $error;
 }
 
 .registration__email-input::placeholder {
@@ -98,6 +121,10 @@
     font-size: 24px;
     line-height: 24px;
   }
+}
+
+.registration__email-input:hover .registration__email-input::placeholder {
+  opacity: 0.5;
 }
 
 .registration__wrapper {

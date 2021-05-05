@@ -2,6 +2,7 @@
   position: absolute;
   top: 18px;
   left: 18px;
+  z-index: 1;
 }
 
 .lvl {
@@ -46,7 +47,7 @@
 }
 
 .companion__level {
-  padding-top: 19px;
+  padding-top: 5px;
   margin-left: 19px;
 
   @media (min-width: $tablet-width) {
@@ -175,7 +176,7 @@ $circleLengthBig: 2 * 3.1416 * 48px;
   @media (min-width: $desktop-width) {
     display: flex;
     position: static;
-    margin-top: 40px;
+    margin-top: 60px;
     margin-right: 45px;
   }
 }
@@ -196,6 +197,8 @@ $circleLengthBig: 2 * 3.1416 * 48px;
   position: static;
   width: 45px;
   height: 45px;
+  margin-left: -8px;
+  margin-top: 2px;
 
   @media (min-width: $tablet-width) {
     width: 60px;
@@ -296,4 +299,11 @@ $circleLengthBig: 2 * 3.1416 * 48px;
 .form-header__wrapper .lvl__icon {
   width: 95px;
   height: 95px;
+}
+
+.main-page .lvl-wrapper {
+  @media (min-width: $desktop-width) {
+    top: 29px;
+    left: 24px;
+  }
 }

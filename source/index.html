@@ -6,6 +6,40 @@
   <title>HTML Academy: Погнали</title>
   <link rel="stylesheet" href="css/style.min.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="./img/favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="./img/favicons/apple.png">
+  <link rel="manifest" href="manifest.webmanifest">
+
+  <link rel="preload" href="./fonts/bloggersans-bold.woff" as="font" type="font/woff" crossorigin>
+  <link rel="preload" href="./fonts/bloggersans-bold.woff2" as="font" type="font/woff2" crossorigin>
+
+  <link rel="preload" href="./fonts/bloggersans-bolditalic.woff" as="font" type="font/woff" crossorigin>
+  <link rel="preload" href="./fonts/bloggersans-bolditalic.woff2" as="font" type="font/woff2" crossorigin>
+
+  <link rel="preload" href="./fonts/bloggersans-italic.woff" as="font" type="font/woff" crossorigin>
+  <link rel="preload" href="./fonts/bloggersans-italic.woff2" as="font" type="font/woff2" crossorigin>
+
+
+  <link rel="preload" href="./fonts/bloggersans-light.woff" as="font" type="font/woff" crossorigin>
+  <link rel="preload" href="./fonts/bloggersans-light.woff2" as="font" type="font/woff2" crossorigin>
+
+
+  <link rel="preload" href="./fonts/bloggersans-lightitalic.woff" as="font" type="font/woff" crossorigin>
+  <link rel="preload" href="./fonts/bloggersans-lightitalic.woff2" as="font" type="font/woff2" crossorigin>
+
+
+  <link rel="preload" href="./fonts/bloggersans-medium.woff" as="font" type="font/woff" crossorigin>
+  <link rel="preload" href="./fonts/bloggersans-medium.woff2" as="font" type="font/woff2" crossorigin>
+
+  <link rel="preload" href="./fonts/bloggersans-mediumitalic.woff" as="font" type="font/woff" crossorigin>
+  <link rel="preload" href="./fonts/bloggersans-mediumitalic.woff2" as="font" type="font/woff2" crossorigin>
+
+  <link rel="preload" href="./fonts/bloggersans.woff" as="font" type="font/woff" crossorigin>
+  <link rel="preload" href="./fonts/bloggersans.woff2" as="font" type="font/woff2" crossorigin>
+
+
 </head>
 
 <body class="main-page">
@@ -50,17 +84,17 @@
     <ul class="site-list">
       <li class="site-list__item">
         <a href="#" class="site-list__link">
-          <span data-text="О сервисе">О сервисе</span>
+          <span data-text="О сервисе" class="site-list__text">О сервисе</span>
         </a>
       </li>
       <li class="site-list__item">
         <a href="./form.html" class="site-list__link">
-          <span data-text="Направления">Направления</span>
+          <span data-text="Направления" class="site-list__text">Направления</span>
         </a>
       </li>
       <li class="site-list__item">
         <a href="./catalog.html" class="site-list__link">
-          <span data-text="Попутчики">Попутчики</span>
+          <span data-text="Попутчики" class="site-list__text">Попутчики</span>
         </a>
       </li>
     </ul>
@@ -197,8 +231,8 @@
               </div>
             </li>
           </ul>
-          <!-- поменять класс  -->
-          <button type="button" class="main-header__button button">Авторизация</button>
+
+          <button type="button" class="promo__button button">Авторизация</button>
         </div>
 
         <blockquote class="blockquote">
@@ -238,7 +272,7 @@
         <div class="about__service-wrapper">
           <h3 class="about__title">О сервисе</h3>
           <p class="about__text">Любое путешествие веселее
-            с попутчиками, которые на одной волне с тобой! Делитесь своими идеями путешествий<br> и черпайте
+            с попутчиками, которые на одной волне с тобой! Делитесь своими идеями путешествий<br>&nbsp;и черпайте
             вдохновение
             в
             чужих.
@@ -444,7 +478,7 @@
                   <span class="lvl__text">level</span>
                 </div>
               </div>
-
+              <div class="user__avatar-wrapper">
               <picture>
                 <source type="image/webp" media="(min-width: 768px)"
                   srcset="./img/Tanya-tablet-desc.webp 1x, ./img/Tanya-tablet-desc@2x.webp 2x">
@@ -455,6 +489,7 @@
                 <img class="user__avatar" width="270" height="270" src="./img/Tanya.jpg" srcset="./img/Tanya@2x.jpg 2x"
                   alt="аватар пользователя">
               </picture>
+              </div>
 
               <div class="flag-wrapper">
                 <picture>
@@ -502,24 +537,28 @@
                     <svg width="22" height="22" class="vehicles-list__icon">
                       <use xlink:href="img/sprite.svg#plane"></use>
                     </svg>
+
                   </li>
 
                   <li class="vehicles-list__item">
                     <svg width="18" height="20" class="vehicles-list__icon">
                       <use xlink:href="img/sprite.svg#bus"></use>
                     </svg>
+
                   </li>
 
                   <li class="vehicles-list__item">
                     <svg width="25" height="25" class="vehicles-list__icon">
                       <use xlink:href="img/sprite.svg#bicycle"></use>
                     </svg>
+
                   </li>
 
                   <li class="vehicles-list__item">
                     <svg width="22" height="24" class="vehicles-list__icon">
                       <use xlink:href="img/sprite.svg#run"></use>
                     </svg>
+
                   </li>
                 </ul>
               </div>
@@ -539,7 +578,7 @@
                   <span class="lvl__text">level</span>
                 </div>
               </div>
-
+            <div class="user__avatar-wrapper">
               <picture>
                 <source type="image/webp" media="(min-width: 768px)"
                   srcset="./img/demin-tablet-desktop.webp 1x, ./img/demin-tablet-desktop@2x.webp 2x">
@@ -550,6 +589,7 @@
                 <img class="user__avatar" width="270" height="270" src="./img/Demin.jpg" srcset="./img/Demin@2x.jpg 2x"
                   alt="аватар пользователя">
               </picture>
+              </div>
 
               <div class="flag-wrapper">
 
@@ -591,24 +631,28 @@
                     <svg width="22" height="22" class="vehicles-list__icon">
                       <use xlink:href="img/sprite.svg#plane"></use>
                     </svg>
+
                   </li>
 
                   <li class="vehicles-list__item vehicles-list__item--active">
                     <svg width="18" height="20" class="vehicles-list__icon">
                       <use xlink:href="img/sprite.svg#bus"></use>
                     </svg>
+
                   </li>
 
                   <li class="vehicles-list__item">
                     <svg width="25" height="25" class="vehicles-list__icon">
                       <use xlink:href="img/sprite.svg#bicycle"></use>
                     </svg>
+
                   </li>
 
                   <li class="vehicles-list__item vehicles-list__item--active">
                     <svg width="22" height="24" class="vehicles-list__icon">
                       <use xlink:href="img/sprite.svg#run"></use>
                     </svg>
+
                   </li>
                 </ul>
               </div>
@@ -627,7 +671,7 @@
       </section>
 
       <section class="about__rates">
-        <div class="rate__modal">
+        <div class="rate-modal">
           <div class="rate">
             <h3 class="visually-hidden">
               О тарифах
@@ -786,7 +830,7 @@
     </section>
 
     <div class="map">
-      <iframe class="map__iframe"
+      <iframe class="map__iframe" title="Карта с местоположением компании"
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d420.15407100661093!2d30.322683084872!3d59.938765341295365!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1618237903122!5m2!1sru!2sru"
         style="border: 0;" allowfullscreen="" loading="lazy">
       </iframe>
@@ -855,7 +899,7 @@
 
     </div>
   </footer>
-  <!-- </div> -->
+
 
   <script src="js/script.min.js"></script>
 </body>

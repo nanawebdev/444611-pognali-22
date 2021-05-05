@@ -13,7 +13,7 @@
 
   @media (min-width: $desktop-width) {
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    margin-top: -331px;
+    margin-top: -328px;
   }
 }
 
@@ -167,10 +167,18 @@
   }
 
   .steps-list__item:nth-child(2) .steps-list__number {
-    padding-right: 42px;
+    padding-right: 12px;
   }
 
   .steps-list__item:nth-child(3) .steps-list__number {
+    padding-right: 12px;
+  }
+
+  .steps-list__number:nth-child(4) .steps-list__number {
+    padding-right: 0;
+  }
+
+  .steps-list__item:nth-child(4) {
     padding-right: 12px;
   }
 }

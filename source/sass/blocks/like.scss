@@ -3,6 +3,7 @@
   font-size: 14px;
   line-height: 16px;
   color: $basic-blue;
+  text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
     font-weight: bold;
@@ -31,7 +32,7 @@
   width: 12px;
   height: 13px;
   fill: $special-blue-1;
-  opacity: 0.5;
+  opacity: 0.3;
 
   @media (min-width: $tablet-width) {
     width: 20px;
@@ -48,6 +49,7 @@
   justify-content: center;
   align-items: center;
   margin-right: 6px;
+  cursor: pointer;
 
   &--active {
     background-color: $block-background-10;
@@ -56,6 +58,10 @@
   @media (min-width: $tablet-width) {
     width: 50px;
     height: 50px;
+  }
+
+  &:active {
+    background-color: $block-background-5;
   }
 }
 
@@ -79,4 +85,29 @@
   @media (min-width: $tablet-width) {
     height: 50px;
   }
+}
+
+.like__wrapper:hover .like__icon {
+  opacity: 0.5;
+}
+
+.like__wrapper:active .like__icon {
+  opacity: 0.1;
+}
+
+.like__wrapper.like__wrapper--active:hover {
+  background-color: $block-background-21;
+}
+
+.like__wrapper.like__wrapper--active:hover .like__icon {
+  opacity: 1;
+}
+
+.like__wrapper.like__wrapper--active:active {
+  background-color: $block-background-21;
+  opacity: 1;
+}
+
+.like__wrapper.like__wrapper--active:active .like__icon {
+  opacity: 0.3;
 }

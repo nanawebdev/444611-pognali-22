@@ -5,9 +5,17 @@
   line-height: 30px;
 }
 
-.step-button.button:nth-child(2) {
+.step-button--previous {
   background-color: transparent;
   margin-top: 6px;
+
+  &:hover {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .step-button__icon {
@@ -29,7 +37,7 @@
     position: relative;
   }
 
-  .step-button.button:nth-child(1) {
+  .step-button.step-button--next {
     display: flex;
     align-items: center;
     font-size: 24px;
@@ -41,7 +49,7 @@
     min-width: 286px;
   }
 
-  .step-button.button:nth-child(2) {
+  .step-button.step-button--previous {
     font-size: 24px;
     line-height: 22px;
     padding-top: 25px;
@@ -53,14 +61,14 @@
     display: block;
   }
 
-  .step-button.button:nth-child(1) .step-button__icon {
+  .step-button.step-button--next .step-button__icon {
     top: 33px;
     right: 32px;
     width: 13px;
     height: 13px;
   }
 
-  .step-button.button:nth-child(2) .step-button__icon {
+  .step-button.step-button--previous .step-button__icon {
     top: 26px;
     left: 0;
     transform: rotate(180deg);
@@ -78,9 +86,13 @@
     margin-top: 31px;
   }
 
-  .step-3 .step-button.button:nth-child(2) {
+  .step-3 .step-button.step-button--previous {
     display: flex;
-    justify-content: flex-end;
+    padding-top: 38px;
+  }
+
+  .step-button.step-button--previous .step-button__icon {
+    top: 37px;
   }
 }
 

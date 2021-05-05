@@ -9,12 +9,14 @@
   font-weight: bold;
   font-size: 20px;
   line-height: 20px;
+  margin-left: 10px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 19px;
     font-weight: 700;
     font-size: 30px;
     line-height: 30px;
+    margin-left: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -23,7 +25,24 @@
     align-items: center;
     margin-bottom: 0;
     padding-left: 8px;
+    margin-left: 0;
   }
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.companion__name:hover + .companion__online {
+  opacity: 0.6;
+}
+
+.companion__name:active + .companion__online {
+  opacity: 0.3;
 }
 
 .companion {
@@ -37,7 +56,7 @@
     padding-left: 35px;
     padding-top: 35px;
     padding-right: 41px;
-    padding-bottom: 25px;
+    padding-bottom: 22px;
     margin-bottom: 40px;
   }
 
@@ -51,6 +70,10 @@
     border-radius: 20px;
     overflow: hidden;
   }
+
+  &:hover {
+    filter: drop-shadow(0 4px 9px rgba(0, 0, 0, 0.16));
+  }
 }
 
 .companions {
@@ -62,6 +85,7 @@
   width: 70px;
   height: 70px;
   margin-bottom: 15px;
+  overflow: hidden;
 
   @media (min-width: $tablet-width) {
     border-radius: 20px;
@@ -87,16 +111,9 @@
   width: 6px;
   height: 6px;
   border-radius: 50%;
-  margin-left: auto;
   display: block;
-
-  // @media (min-width: $tablet-width) {
-  //   position: absolute;
-  //   margin-left: 0;
-  //   width: 8px;
-  //   height: 8px;
-  // }
-
+  margin-left: 58px;
+  margin-top: 7px;
 
   @media (min-width: $desktop-width) {
     margin-top: 56px;
@@ -108,7 +125,7 @@
   width: 176px;
   display: flex;
   flex-wrap: wrap;
-  padding-bottom: 16px;
+  padding-bottom: 9px;
 
   @media (min-width: $tablet-width) {
     width: 227px;
@@ -127,4 +144,8 @@
     font-size: 20px;
     line-height: 23px;
   }
+}
+
+.companion:hover .companion__image {
+  transform: scale(1.2);
 }

@@ -70,9 +70,7 @@
   }
 }
 
-.range-slider__slider::after,
-.range-slider__slider::before {
-  content: "";
+.range-slider__control {
   position: absolute;
   width: 13px;
   height: 13px;
@@ -80,14 +78,35 @@
   border-radius: 50%;
   opacity: 1;
   top: -5px;
+
+  &:hover {
+    width: 19px;
+    height: 19px;
+  }
+
+  &:active {
+    width: 19px;
+    height: 19px;
+    box-shadow: 0 3px 7px rgba(0, 0, 0, 0.24);
+  }
 }
 
-.range-slider__slider::after {
+.range-slider__control--left {
   left: 0;
+
+  &:hover {
+    top: -9px;
+    left: -2px;
+  }
 }
 
-.range-slider__slider::before {
+.range-slider__control--right {
   right: 0;
+
+  &:hover {
+    top: -9px;
+    right: -3px;
+  }
 }
 
 .range-slider__inputs {
@@ -188,6 +207,14 @@
     color: $basic-blue-light;
     display: flex;
     width: 100%;
+  }
+
+  &:hover {
+    border-color: $border-color-4;
+  }
+
+  &:active {
+    border-color: $basic-blue;
   }
 }
 

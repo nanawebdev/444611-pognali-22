@@ -112,13 +112,22 @@
   @media (min-width: $desktop-width) {
     margin-top: 57px;
   }
+
+  &:hover {
+    background-color: $block-background-1;
+  }
+
+  &:active {
+    background-color: $block-background-1;
+    color: rgba($basic-blue-light, 0.3);
+  }
 }
 
-.rate__modal {
+.rate-modal {
   position: relative;
 }
 
-.rate__modal--open .business-rates {
+.rate-modal--open .business-rates {
   display: block;
   top: 0;
   left: -23px;

@@ -39,7 +39,7 @@
 .wish-list__item .flag {
   width: 26px;
   height: 18px;
-  margin-right: 20px;
+  margin-right: 14px;
 
   @media (min-width: $tablet-width) {
     width: 35px;
@@ -72,5 +72,14 @@
     height: 47px;
     top: 23px;
     left: 339px;
+  }
+}
+
+.step-3 .flag__container.flag__container--with-tooltip {
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    width: 70px;
+    height: 47px;
   }
 }

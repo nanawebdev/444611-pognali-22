@@ -51,17 +51,17 @@ if(closeCountries){
 // Бизнес тарифы
 
 const showBusinessRates = document.querySelector('.js-show-business-rates')
-const rateModal = document.querySelector('.rate__modal')
+const rateModal = document.querySelector('.rate-modal')
 const closeBusinessRates = document.querySelector('.js-close-business-rates')
 
 if(showBusinessRates && rateModal && closeBusinessRates) {
 
   showBusinessRates.addEventListener('click', function () {
-    rateModal.classList.add('rate__modal--open')
+    rateModal.classList.add('rate-modal--open')
   })
 
   closeBusinessRates.addEventListener('click', function () {
-    rateModal.classList.remove('rate__modal--open')
+    rateModal.classList.remove('rate-modal--open')
   })
 }
 
@@ -75,10 +75,10 @@ navToggler.addEventListener('click', function () {
 })
 
 const choseCountry = document.querySelector('.chose-country')
-const countries = document.querySelector('.countries')
+const countriesWrapper = document.querySelector('.countries-wrapper')
 
-if(choseCountry && countries) {
+if(choseCountry && countriesWrapper) {
   choseCountry.addEventListener('click', function() {
-    countries.style.display="block"
+    countriesWrapper.classList.toggle('countries-wrapper--open')
   })
 }

@@ -8,6 +8,11 @@
 
 .vehicles-list__item {
   margin-right: 12px;
+  position: relative;
+}
+
+.catalog-page .vehicles-list__item {
+  margin-right: 0;
 }
 
 .list-wrapper .vehicles-list__item {
@@ -34,8 +39,8 @@
 .companion__vehicles-list .vehicles-list {
   display: flex;
   flex-direction: row;
-  padding-top: 17px;
-  padding-bottom: 13px;
+  padding-top: 11px;
+  padding-bottom: 21px;
 
   @media (min-width: $tablet-width) {
     flex-direction: column;
@@ -80,13 +85,6 @@
   display: flex;
 }
 
-
-// .companion__vehicles-list .vehicles-list__icon {
-//   color: $basic-blue-light;
-//   opacity: 0.15;
-//   display: block;
-// }
-
 .companion__vehicles-list .vehicles-list__icon {
   display: block;
   width: 14px;
@@ -127,55 +125,6 @@
     opacity: 0, 1;
   }
 }
-
-// .companion__vehicles-list .vehicles-list__icon--active {
-//   opacity: 1;
-// }
-
-// .companion__vehicles-list .vehicles-list__bus {
-//   width: 13px;
-//   height: 16px;
-
-//   @media (min-width: $tablet-width) {
-//     width: 20px;
-//     height: 19px;
-//   }
-
-//   @media (min-width: $desktop-width) {
-//     width: 18px;
-//     height: 20px;
-//   }
-// }
-
-// .companion__vehicles-list .vehicles-list__bike {
-//   width: 15px;
-//   height: 17px;
-
-//   @media (min-width: $tablet-width) {
-//     width: 26px;
-//     height: 25px;
-//   }
-
-//   @media (min-width: $desktop-width) {
-//     width: 25px;
-//     height: 25px;
-//   }
-// }
-
-// .companion__vehicles-list .vehicles-list__run {
-//   width: 14px;
-//   height: 17px;
-
-//   @media (min-width: $tablet-width) {
-//     width: 23px;
-//     height: 24px;
-//   }
-
-//   @media (min-width: $desktop-width) {
-//     width: 23px;
-//     height: 24px;
-//   }
-// }
 
 .suboptions-wrapper .vehicles-list {
   display: flex;

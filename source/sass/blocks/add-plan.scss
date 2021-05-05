@@ -156,12 +156,13 @@
   font-size: 16px;
   line-height: 22px;
   // width: 100%;
-  padding-top: 11px;
+  padding-top: 5px;
   padding-left: 14px;
   padding-right: 19px;
   border: 3px solid $block-background-1;
   border-radius: 4px;
   margin-bottom: 23px;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     padding-top: 17px;
@@ -176,9 +177,23 @@
   @media (min-width: $desktop-width) {
     width: 687px;
   }
+
+  &:hover {
+    border-color: $border-color-4;
+  }
+
+  &:active,
+  &:focus {
+    border-color: $basic-blue;
+  }
+}
+
+.add-plan__input--error {
+  border-color: $special-red;
 }
 
 .step-3 .add-plan__input::placeholder {
+  display: inline-block;
   font-weight: normal;
   font-size: 16px;
   line-height: 22px;
@@ -259,6 +274,14 @@
   display: none;
 
   @media (min-width: $tablet-width) {
+    display: block;
+  }
+}
+
+.step-1 .br-second {
+  display: none;
+
+  @media (min-width: $desktop-width) {
     display: block;
   }
 }

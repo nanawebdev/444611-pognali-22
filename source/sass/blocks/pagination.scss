@@ -5,6 +5,7 @@
 .pagination__text {
   display: none;
   opacity: 0.6;
+  text-transform: uppercase;
 }
 
 .pagination__item {
@@ -75,16 +76,18 @@
     font-size: 20px;
     line-height: 24px;
     letter-spacing: 0.1em;
-    margin-left: 21px;
+    margin-left: 36px;
   }
 
   .step-1 .pagination {
-    margin-left: 44px;
+    margin-left: 22px;
     margin-top: 5px;
   }
 
   .step-3 .pagination {
     margin-left: -20px;
     margin-top: 5px;
+    right: 47px;
+    position: absolute;
   }
 }

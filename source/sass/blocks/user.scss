@@ -10,6 +10,25 @@
     width: 285px;
     border-radius: 20px;
   }
+
+  &:hover {
+    filter: drop-shadow(0 4px 9px rgba(0, 0, 0, 0.16));
+  }
+}
+
+.main-page .user__avatar-wrapper {
+  overflow: hidden;
+  width: 270px;
+  height: 270px;
+
+  @media (min-width: $tablet-width) {
+    width: 285px;
+    height: 285px;
+  }
+}
+
+.user:hover .user__avatar {
+  transform: scale(1.2);
 }
 
 .user__information {
@@ -128,10 +147,14 @@
 }
 
 .about__users .user__information {
-  padding: 23px 59px 24px 43px;
+  padding: 27px 59px 25px 43px;
 
   @media (min-width: $tablet-width) {
-    padding: 26px 59px 23px 28px;
+    padding: 38px 59px 28px 28px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 35px 59px 29px 28px;
   }
 }
 

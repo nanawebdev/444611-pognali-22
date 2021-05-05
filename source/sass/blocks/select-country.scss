@@ -124,6 +124,10 @@
   }
 }
 
+.select-country.chose-country {
+  background-color: $basic-white;
+}
+
 .select-country.add-country::after,
 .select-country.chose-country::after {
   content: "";
@@ -189,15 +193,21 @@
 }
 
 .select-country.add-country {
-  background-color: $block-background-1;
+  cursor: pointer;
+  background-color: $special-blue-light;
   border-color: $block-background-1;
   position: relative;
+  margin-bottom: 25px;
   padding-right: 13px;
 
   @media (min-width: $tablet-width) {
     padding-right: 24px;
     padding-top: 24px;
     margin-bottom: 28px;
+  }
+
+  &:hover {
+    background-color: $special-blue-light;
   }
 }
 
@@ -223,12 +233,21 @@
 .select-country__delete-icon {
   width: 11px;
   height: 21px;
+  opacity: 0.5;
+  stroke: $basic-black;
 
   @media (min-width: $tablet-width) {
     width: 22px;
     height: 24px;
-    stroke: $basic-black;
-    opacity: 0.5;
+    opacity: 0.1;
+  }
+
+  &:hover {
+    opacity: 0.3;
+  }
+
+  &:active {
+    opacity: 0.05;
   }
 }
 
@@ -281,10 +300,6 @@
   right: 48px;
 }
 
-.add-country {
-  margin-bottom: 25px;
-}
-
 .chosen-country::before {
   content: "";
   position: absolute;
@@ -304,7 +319,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    top: 15px;
+    top: 25px;
     right: -54px;
   }
 }
@@ -327,12 +342,76 @@
 }
 
 .select-country__plus-icon {
+  stroke: $basic-black;
+  opacity: 0.2;
+
   @media (min-width: $tablet-width) {
     width: 21px;
     height: 21px;
   }
 }
 
+.select-country.add-country:hover .select-country__plus-icon {
+  opacity: 0.3;
+}
+
+.select-country.add-country:active .select-country__plus-icon {
+  opacity: 0.1;
+}
+
 .select-country.chose-country:hover {
   border-color: $border-color-4;
+}
+
+.countries-wrapper--open .select-country__delete {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
+}
+
+.countries-wrapper--open .select-country__arrow-icon {
+  display: none;
+}
+
+.countries-wrapper--open .select-country__icon:nth-of-type(1) {
+  display: none;
+}
+
+.countries-wrapper .select-country__close-icon {
+  display: none;
+}
+
+.countries-wrapper.countries-wrapper--open .select-country__close-icon {
+  stroke: $basic-white;
+  display: block;
+  opacity: 0.3;
+  width: 9px;
+  height: 9px;
+  margin-top: auto;
+  margin-bottom: auto;
+
+
+  @media (min-width: $tablet-width) {
+    width: 22px;
+    height: 21px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 22px;
+    height: 24px;
+  }
+
+  &:hover {
+    opacity: 1;
+  }
+
+  &:active {
+    opacity: 0.1;
+  }
 }
