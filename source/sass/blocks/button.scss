@@ -228,17 +228,21 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 475px;
+    width: 448px;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
     font-size: 24px;
     line-height: 24px;
-    padding-left: 40px;
+    padding-left: 37px;
   }
 }
 
 .registration .button__icon {
   margin: 0 auto;
+
+  @media (min-width: $desktop-width) {
+    margin-left: 104px;
+  }
 }
 
 .promo__nav .button {
@@ -301,6 +305,9 @@
   @media (min-width: $desktop-width) {
     margin: 0;
     padding-right: 62px;
+    min-width: 324px;
+    height: 80px;
+    white-space: nowrap;
   }
 }
 
@@ -325,9 +332,16 @@
     // margin-left: 24px;
   }
 
+  @media (min-width: $tablet-width) {
+    padding-bottom: 29px;
+    padding-top: 27px;
+  }
+
   @media (min-width: $desktop-width) {
-    margin-bottom: 17px;
+    margin-bottom: 21px;
     width: 282px;
+    padding-top: 32px;
+    padding-bottom: 24px;
   }
 }
 
@@ -373,7 +387,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 34px;
+    margin-top: 39px;
   }
 }
 
@@ -391,7 +405,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-left: auto;
+    margin-left: 465px;
   }
 }
 
@@ -431,9 +445,12 @@
 }
 
 .companion .button {
+  text-transform: uppercase;
+  padding-top: 9px;
+  width: 230px;
+
   @media (min-width: $tablet-width) {
     border-radius: 25px;
-    text-transform: uppercase;
     height: 50px;
     font-size: 20px;
     line-height: 20px;

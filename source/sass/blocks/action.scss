@@ -98,6 +98,10 @@
     margin-top: 3px;
     margin-left: 25px;
   }
+
+  @media (min-width: $desktop-width) {
+    white-space: nowrap;
+  }
 }
 
 .address br {

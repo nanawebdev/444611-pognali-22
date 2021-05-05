@@ -5,7 +5,13 @@
   text-transform: uppercase;
   display: flex;
   align-items: center;
-  padding-top: 10px;
+  padding-top: 5px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+    margin-right: 33px;
+  }
 
   @media (min-width: $desktop-width) {
     font-weight: 500;

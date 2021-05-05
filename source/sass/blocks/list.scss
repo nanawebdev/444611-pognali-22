@@ -108,8 +108,12 @@
   }
 }
 
+.companion__vehicles-list .list__title {
+  margin-left: -10px;
+}
+
 .companion__vehicles-list {
-  padding-top: 19px;
+  padding-top: 7px;
   position: relative;
 
   @media (min-width: $tablet-width) {
@@ -123,7 +127,7 @@
   position: absolute;
   background-color: $block-background-1;
   height: 1px;
-  top: 27px;
+  top: 17px;
   width: 100%;
 
   @media (min-width: $tablet-width) {

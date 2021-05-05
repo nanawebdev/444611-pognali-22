@@ -147,10 +147,14 @@
 }
 
 .about__users .user__information {
-  padding: 23px 59px 24px 43px;
+  padding: 27px 59px 25px 43px;
 
   @media (min-width: $tablet-width) {
-    padding: 26px 59px 23px 28px;
+    padding: 38px 59px 28px 28px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 35px 59px 29px 28px;
   }
 }
 

@@ -88,7 +88,11 @@
 
   .step-3 .step-button.step-button--previous {
     display: flex;
-    justify-content: flex-end;
+    padding-top: 38px;
+  }
+
+  .step-button.step-button--previous .step-button__icon {
+    top: 37px;
   }
 }
 

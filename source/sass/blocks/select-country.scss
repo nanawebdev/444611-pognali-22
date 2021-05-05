@@ -114,7 +114,6 @@
 .select-country.chose-country {
   width: 220px;
   position: relative;
-  background-color: $special-blue-light;
 
   @media (min-width: $tablet-width) {
     width: 369px;
@@ -123,6 +122,10 @@
   @media (min-width: $desktop-width) {
     width: 730px;
   }
+}
+
+.select-country.chose-country {
+  background-color: $basic-white;
 }
 
 .select-country.add-country::after,
@@ -191,7 +194,7 @@
 
 .select-country.add-country {
   cursor: pointer;
-  background-color: $block-background-1;
+  background-color: $special-blue-light;
   border-color: $block-background-1;
   position: relative;
   margin-bottom: 25px;
@@ -316,7 +319,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    top: 15px;
+    top: 25px;
     right: -54px;
   }
 }

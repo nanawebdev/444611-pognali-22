@@ -10,7 +10,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 47px;
+    padding-top: 44px;
     padding-left: 60px;
     padding-right: 60px;
     // position: sticky;
@@ -43,6 +43,9 @@
   background-color: $block-background-4;
   padding-top: 20px;
   // 27
+  @media (min-width: $tablet-width) {
+    padding-top: 40px;
+  }
 
   @media (min-width: $desktop-width) {
     padding-top: 45px;
