@@ -51,17 +51,17 @@ if(closeCountries){
 // Бизнес тарифы
 
 const showBusinessRates = document.querySelector('.js-show-business-rates')
-const rateModal = document.querySelector('.rate__modal')
+const rateModal = document.querySelector('.rate-modal')
 const closeBusinessRates = document.querySelector('.js-close-business-rates')
 
 if(showBusinessRates && rateModal && closeBusinessRates) {
 
   showBusinessRates.addEventListener('click', function () {
-    rateModal.classList.add('rate__modal--open')
+    rateModal.classList.add('rate-modal--open')
   })
 
   closeBusinessRates.addEventListener('click', function () {
-    rateModal.classList.remove('rate__modal--open')
+    rateModal.classList.remove('rate-modal--open')
   })
 }
 
