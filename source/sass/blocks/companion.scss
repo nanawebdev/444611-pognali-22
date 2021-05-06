@@ -1,3 +1,9 @@
+.companions-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
 .companion__subtitle {
   font-weight: normal;
   font-size: 15px;
@@ -115,9 +121,13 @@
   margin-left: 58px;
   margin-top: 7px;
 
+  @media (min-width: $tablet-width) {
+    margin-left: 80px;
+  }
+
   @media (min-width: $desktop-width) {
     margin-top: 56px;
-    margin-right: 18px;
+    margin-left: 40px;
   }
 }
 

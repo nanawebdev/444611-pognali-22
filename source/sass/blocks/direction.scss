@@ -74,6 +74,9 @@
 }
 
 .directions-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
   margin-bottom: 26px;
 
   @media (min-width: $tablet-width) {
@@ -119,8 +122,3 @@
 .directions-list__item:nth-child(3) .direction__subtitle {
   margin-bottom: 0;
 }
-
-// .directions-list__item:nth-child(3) {
-//   background-image: url("./../img/directions-back-desktop-item3.png");
-//   background-repeat: no-repeat;
-// }

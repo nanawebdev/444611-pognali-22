@@ -96,6 +96,9 @@
 }
 
 .users-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
   padding-top: 30px;
 
   @media (min-width: $tablet-width) {

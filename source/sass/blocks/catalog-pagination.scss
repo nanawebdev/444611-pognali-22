@@ -1,3 +1,14 @@
+.catalog-pagination__pages {
+  display: none;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
+}
+
 .catalog-pagination__view-more {
   border: none;
   background-color: transparent;
@@ -55,25 +66,14 @@
   padding-top: 17px;
   padding-bottom: 26px;
   background-color: $block-background-1;
-  // padding-left: 25px;
-  // padding-right: 25px;
 
   @media (min-width: $tablet-width) {
     padding: 0;
-    // padding-top: 0;
     padding-bottom: 64px;
   }
 
   @media (min-width: $desktop-width) {
     padding: 0;
-  }
-}
-
-.catalog-pagination__pages {
-  display: none;
-
-  @media (min-width: $tablet-width) {
-    display: flex;
   }
 }
 

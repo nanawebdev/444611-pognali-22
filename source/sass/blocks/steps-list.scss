@@ -17,7 +17,6 @@
   }
 }
 
-// не проходит на переполнение
 .steps-list__item {
   display: grid;
   grid-template-columns: 1fr min-content;
@@ -47,10 +46,6 @@
     align-items: flex-start;
   }
 }
-
-// .steps-list__item:nth-child(2n) {
-// padding-right: 10px;
-// }
 
 .steps-list__number {
   display: flex;

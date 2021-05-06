@@ -42,3 +42,11 @@
 .copyright:active .copyright__logo {
   opacity: 0.3;
 }
+
+.copyright__link {
+  cursor: pointer;
+  border: none;
+  text-decoration: none;
+  align-items: center;
+  display: flex;
+}

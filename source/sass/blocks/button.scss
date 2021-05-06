@@ -54,18 +54,6 @@
   min-height: 62px;
 }
 
-// .button--transparent::after,
-// .button--square::after {
-//   content: "";
-//   position: absolute;
-//   top: 25px;
-//   right: 20px;
-//   background-image: url("./../img/right-icon.svg");
-//   width: 13px;
-//   height: 13px;
-//   background-repeat: no-repeat;
-// } вместо этого, код ниже!
-
 .button__icon {
   width: 13px;
   height: 13px;
@@ -156,13 +144,6 @@
     margin-top: 86px;
   }
 }
-
-// .about__service .button--square::after {
-//   @media (min-width: $tablet-width) {
-//     top: 34px;
-//     right: 33px;
-//   }
-// }
 
 .about__directions .button--square,
 .about__users .button--square {
@@ -327,9 +308,6 @@
     padding-bottom: 39px;
     padding-left: 31px;
     border-radius: 20px;
-    // max-width: 100%;
-    // margin-right: 24px;
-    // margin-left: 24px;
   }
 
   @media (min-width: $tablet-width) {

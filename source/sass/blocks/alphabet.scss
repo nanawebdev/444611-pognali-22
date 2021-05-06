@@ -15,8 +15,6 @@
 
   @media (min-width: $desktop-width) {
     width: 100%;
-    // grid-column: 1 / -1;
-    // grid-row: 1 / 2;
   }
 }
 
@@ -33,7 +31,6 @@
   }
 
   @media (min-width: $desktop-width) {
-    // width: 362px;
     border: none;
     box-shadow: none;
     width: 387px;
