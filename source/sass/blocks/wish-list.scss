@@ -1,3 +1,20 @@
+.wish-list {
+  padding: 0;
+  padding-top: 9px;
+  margin: 0;
+  list-style: none;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: column;
+    min-height: 93px;
+    padding-top: 8px;
+  }
+}
+
 .wish-list__item {
   font-weight: 500;
   font-size: 15px;
@@ -17,19 +34,5 @@
     font-weight: 500;
     font-size: 20px;
     line-height: 20px;
-  }
-}
-
-.wish-list {
-  padding-top: 9px;
-
-  @media (min-width: $tablet-width) {
-    display: flex;
-  }
-
-  @media (min-width: $desktop-width) {
-    flex-direction: column;
-    min-height: 93px;
-    padding-top: 8px;
   }
 }

@@ -14,7 +14,6 @@
   }
 
   @media (min-width: $desktop-width) {
-    // display: flex;
     padding-left: 60px;
     padding-right: 60px;
     padding-top: 113px;
@@ -28,7 +27,6 @@
 
 .catalog {
   @media (min-width: $desktop-width) {
-    // order: -1;
     grid-column: 1 / 2;
     grid-row: 1 / 2;
   }

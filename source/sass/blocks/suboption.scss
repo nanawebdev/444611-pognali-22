@@ -1,3 +1,19 @@
+.suboptions-list {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: column;
+  }
+}
+
 .suboptions-list__item {
   font-weight: 400;
   font-size: 15px;
@@ -18,12 +34,10 @@
 
   &:hover {
     color: rgba($basic-black, 0.6);
-    // opacity: 0.6;
   }
 
   &:active {
     color: rgba($basic-black, 0.3);
-    // opacity: 0.3;
   }
 }
 
@@ -58,19 +72,6 @@
 .option:nth-child(5) .suboptions-wrapper {
   @media (min-width: $tablet-width) {
     padding-bottom: 4px;
-  }
-}
-
-.suboptions-list {
-  display: flex;
-  flex-direction: column;
-
-  @media (min-width: $tablet-width) {
-    flex-direction: row;
-  }
-
-  @media (min-width: $desktop-width) {
-    flex-direction: column;
   }
 }
 
