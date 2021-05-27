@@ -1,3 +1,2 @@
-GH-Pages
-
-https://nanawebdev.github.io/444611-pognali-22/
+Курсовая работа для курсов от HTML Academy Профессия «Фронтенд-разработчик»
+https://htmlacademy.ru/profession/frontender
